@@ -1,0 +1,1 @@
+rasdial 寬頻連線 76426119@hinet.net  dxezgitm
