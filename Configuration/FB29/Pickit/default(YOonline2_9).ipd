@@ -165,7 +165,7 @@
 	[Type] == "Ritual Vessel"      # 	[StashItem]	 == "true"		//祭祀碑器
 	[Type] == "Crescent Splinter"  # 	[StashItem]	 == "true"		//新月裂片
 	//// 6F 劫盜物品				
-	//[Type] == "Rogue's Marker" # 	[StashItem]	 == "true"	//	//盜賊之印
+	[Type] == "Rogue's Marker" # 	[StashItem]	 == "true"	//	//盜賊之印
 	[Type] == "Tailoring Orb" # 	[StashItem]	 == "true"	//	//裁縫石
 	[Type] == "Tempering Orb" # 	[StashItem]	 == "true"	//	//淬鍊石
 	[Type] == "Prime Regrading Lens" # 	[StashItem]	 == "true"	//	//初階篩分之鏡
