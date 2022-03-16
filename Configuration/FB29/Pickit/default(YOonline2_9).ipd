@@ -936,7 +936,7 @@
 	//// 21F 傳奇	//傳奇這欄甭編輯	//傳奇請編輯最前面A欄就好	//		
 //	傳奇 //			//		
 //存倉						
-	[Rarity] == "Unique" # [StashItem] == "true"					
+	[Rarity] == "Unique" # [ForceSellItem] == "true"					
 //基底勿動//	[Type]== "Agate Amulet" && [Rarity] == "Unique" # [ForceSellItem] == "true" // Extractor Mentis / Shaper's Seed / The Aylardex / Voll's Devotion				//福爾的忠誠之符 瑪瑙護身符	拾取且存倉
 	[Type]== "Agate Amulet" && [Rarity] == "Unique" # [gain_endurance_charge_on_power_charge_expiry] >= "1" && [ForceSellItem] == "true" // Voll's Devotion				//福爾的忠誠之符 瑪瑙護身符	拾取且售出
 //基底勿動//	[Type]== "Amber Amulet" && [Rarity] == "Unique" # [ForceSellItem] == "true" // Blood of Corruption / The Anvil / Xoph's Blood / Xoph's Heart				//索伏之心 琥珀護身符	拾取且存倉
