@@ -1,2 +1,2 @@
 
-start "" "C:\Users\Administrator\Desktop\ABCD\ABCD.exe"
+start "" "C:\Users\Administrator\Desktop\yoeb-main\ABCD\ABCD.exe"
