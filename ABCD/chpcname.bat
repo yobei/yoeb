@@ -1,7 +1,7 @@
 
 @echo off
 
-for /f "delims=" %%a in ('call readini.bat /s OutputVar /i rob "setnb.ini"') do (
+for /f "delims=" %%a in ('call readini.bat /s OutputVar /i nob "C:\Users\Administrator\Desktop\iot\setnb.ini"') do (
     set val=%%a
 )
 
@@ -15,4 +15,3 @@ REG ADD HKLM\SYSTEM\ControlSet001\services\LanmanServer\Parameters /v "srvcommen
 
 REG ADD HKLM\System\CurrentControlSet\Services\Tcpip\Parameters    /v "NV Hostname" /t reg_sz /d %name% /f
 REG ADD HKLM\SYSTEM\ControlSet001\Services\Tcpip\Parameters        /v "NV Hostname" /t REG_SZ /d %name% /f
-
