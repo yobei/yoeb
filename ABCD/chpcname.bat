@@ -6,8 +6,8 @@ for /f "delims=" %%a in ('call readini.bat /s OutputVar /i nob "C:\Users\Adminis
 )
 
 
-set name=%val%%computername%
-set srvname=%val%%computername%
+set name=%val%%computername:~0,12%
+set srvname=%val%%computername:~0,12%
 REG ADD HKLM\System\CurrentControlSet\Control\ComputerName\ActiveComputerName /v "ComputerName" /t reg_sz /d %name% /f
 
 REG ADD HKLM\System\CurrentControlSet\Services\Tcpip\Parameters    /v "Hostname"    /t reg_sz    /d %name% /f
