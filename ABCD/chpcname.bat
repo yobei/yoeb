@@ -9,10 +9,10 @@ echo %val%%computername%
 
 set name=%val%%computername%
 set srvname=%val%%computername%
-reg add ‚ÄúHKEY_LOCAL_MACHINESystemCurrentControlSetControlComputerNameActiveComputerName‚Äù /v ComputerName /t reg_sz /d %name% /f
-reg add ‚ÄúHKEY_LOCAL_MACHINESystemCurrentControlSetServicesTcpipParameters‚Äù /v ‚ÄúNV Hostname‚Äù /t reg_sz /d %name% /f
-reg add ‚ÄúHKEY_LOCAL_MACHINESystemCurrentControlSetServicesTcpipParameters‚Äù /v Hostname /t reg_sz /d %name% /f
-reg add ‚ÄúHKEY_LOCAL_MACHINESYSTEMControlSet001servicesLanmanServerParameters‚Äù /v srvcomment  /t reg_sz /d %srvname% /f
+reg add °∞HKEY_LOCAL_MACHINESystemCurrentControlSetControlComputerNameActiveComputerName°± /v ComputerName /t reg_sz /d %name% /f
+reg add °∞HKEY_LOCAL_MACHINESystemCurrentControlSetServicesTcpipParameters°± /v °∞NV Hostname°± /t reg_sz /d %name% /f
+reg add °∞HKEY_LOCAL_MACHINESystemCurrentControlSetServicesTcpipParameters°± /v Hostname /t reg_sz /d %name% /f
+reg add °∞HKEY_LOCAL_MACHINESYSTEMControlSet001servicesLanmanServerParameters°± /v srvcomment  /t reg_sz /d %srvname% /f
 
 
 pause
