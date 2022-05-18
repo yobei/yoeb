@@ -55,7 +55,7 @@ SetSkillLimitMaxLv("信念浪湧",nil,1)
 SetNeedFlaskData(1,"生命药剂","nil")
 SetNeedFlaskData(2,"生命药剂","nil")
 SetNeedFlaskData(3,"水银药剂","nil")
-SetNeedFlaskData(4,"生命药剂","nil")
+SetNeedFlaskData(4,"魔力药剂","nil")
 SetNeedFlaskData(5,"魔力药剂","nil")
 
 
@@ -148,11 +148,11 @@ AddShengJiZhuangBeiGoodsData("富豪石","Metadata/Items/Currency/CurrencyUpgradeMa
 SetGaoJiHuanZhuangData("游侠","简易之袍","Metadata/Items/Armours/BodyArmours/BodyInt1","无尽之衣","Tabula Rasa")
 
 --SetTaskShengJiData(taskClassName,taskIndex,shengjiMapClassName,needLv)--设置跑图时升级 taskClassName=任务类名 taskIndex=任务索引 nil为忽略，只匹配任务类名 shengjiMapClassName=要刷的地图类名 needLv=升级到多少级为止
-SetTaskShengJiData("a5q7",nil,"1_5_5",50,true)--做 到奇塔弗的受难 的时候刷纯净圣地到50级再进行下一任务
-SetTaskShengJiData("a9q3",nil,"2_9_1",68,true)--做 到風暴飛刃 的时候刷滲血水道到68级再进行下一任务
+SetTaskShengJiData("a5q7",nil,"1_5_5",49,true)--做 到奇塔弗的受难 的时候刷纯净圣地到50级再进行下一任务
+SetTaskShengJiData("a9q3",nil,"2_9_1",66,true)--做 到風暴飛刃 的时候刷滲血水道到68级再进行下一任务
 SetTaskShengJiData("a10q2",nil,"2_9_1",80,true)--做 到風暴飛刃 的时候刷滲血水道到68级再进行下一任务
 
-SetTaskMiGongData("a9q1",nil,1)--大于等于a9q1级 做迷宫1
+SetTaskMiGongData("a8q7",nil,1)--大于等于a9q1级 做迷宫1
 SetTaskMiGongData("a10q1",nil,2)--大于等于a10q1 做迷宫2
 SetTaskMiGongDataByLv(80,3)--大于等于80级 做迷宫3
 
