@@ -55,7 +55,7 @@ SetSkillLimitMaxLv("信念浪湧",nil,1)
 SetNeedFlaskData(1,"生命药剂","nil")
 SetNeedFlaskData(2,"生命药剂","nil")
 SetNeedFlaskData(3,"水银药剂","nil")
-SetNeedFlaskData(4,"生命药剂","nil")
+SetNeedFlaskData(4,"魔力药剂","nil")
 SetNeedFlaskData(5,"魔力药剂","nil")
 
 
