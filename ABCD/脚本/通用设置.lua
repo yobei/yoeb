@@ -15,11 +15,11 @@
 2¡¢º¯ÊıĞÍ£ºº¯ÊıÃû(²ÎÊı1,²ÎÊı2) ÕâÑùµÄ¾ÍÊÇº¯ÊıĞÍ ÓÉº¯ÊıÃûÓëÈô¸É¸ö²ÎÊı×é³É ²ÎÊı±»°ë½ÇÀ¨ºÅ()Ì×ÆğÀ´
 ]]
 ------------------»ù±¾ÉèÖÃ
-g_needMinimizeGame=true			--×îĞ¡»¯ß[‘ò´°¿Ú trueÎª×îĞ¡»¯ false»ònilÎª²»×îĞ¡»¯
+g_needMinimizeGame=false			--×îĞ¡»¯ß[‘ò´°¿Ú trueÎª×îĞ¡»¯ false»ònilÎª²»×îĞ¡»¯
 g_imBoss=false			--Èç¹ûÊÇ²Ö¿âºÅÒªÎªtrue ¹Ò»úºÅÎªfalse
 g_attackDis=50					--¹¥»÷¾àÀë
 g_yiJieTimeOut=15*60			--Òì½çµØÍ¼ÄÚµÄ³¬Ê±Ê±¼ä µ¥Î»ÎªÃë Èç¹ûÎ´ÉèÖÃ¾Í»áÓÃg_timeOut *ÊÇ³ËºÅ ÕâÀïÎª15³ËÒÔ60=15·ÖÖÓ
-g_timeOut=20*60					--ÔÚÒ»¸öµØÍ¼´ôµÄÊ±¼ä³¬¹ıÉèÖÃµÄ ¾ÍÖØĞÂ¿ªÍ¼ÖØĞÂ µ¥Î»ÎªÃë
+g_timeOut=15*60					--ÔÚÒ»¸öµØÍ¼´ôµÄÊ±¼ä³¬¹ıÉèÖÃµÄ ¾ÍÖØĞÂ¿ªÍ¼ÖØĞÂ µ¥Î»ÎªÃë
 g_addTianFu=true				--×Ô¶¯°´Éè¶¨ºÃµÄÅäÖÃ¼ÓÌì¸³ trueÎª¼Ó nil»òfalseÎª²»¼Ó
 g_shengJiBaoShi=true			--×Ô¶¯Éı¼¶±¦Ê¯ trueÎªÉı¼¶ nil»òfalseÎª²»Éı¼¶
 g_sellSkillGem=true				--×Ô¶¯Âô³¬¹ı40Æ·ÖÊµÄ¼¼ÄÜ±¦Ê¯
@@ -30,6 +30,14 @@ g_bossGiveZhuangBei=true		--½»Ò×Ê±²Ö¿âºÅ¸øÓèÈ±ÉÙµÄ¸ß¼¶»»×°ÖĞµÄ×°±¸
 g_xiaoHaoGetZhuangBei=true		--¹Ò»úºÅÏò²Ö¿âºÅÉêÇëÁì¸ß¼¶»»×°ÖĞµÄ×°±¸
 g_jiaoYiAddSellGoodsTime=250      --Êı×ÖĞÍ ½»Ò×Ê±°Ñ¶«Î÷·Åµ½½»Ò×À¸µÄµÈ´ıÊ±¼ä µ¥Î»ÎªºÁÃë Ä¬ÈÏÎª250
 g_queueTime=300*60--ÉèÖÃ×î´óÅÅ¶ÓÊ±¼äÎª300·ÖÖÓ
+
+
+
+-- ¿ØÖÆ°á´u”µÁ¿
+SetChangeLimitCnt("ÎäÆ÷|ÒÂ·ş|Í·¿ø|ÊÖÌ×|Ğ¬×Ó",2)
+SetChangeLimitCnt("Ñü´ø",4)
+SetChangeLimitCnt("ÏîÁ´|½äÖ¸",10)
+
 
 SetGameMode(1)----mode Êı×ÖĞÍ ÓÎÏ·Ä£Ê½ 0Îª×Ô¶¯ 1ÎªÔ¤²â 2ÎªÍ¬²½ Ä¬ÈÏÎªÍ¬²½Ä£Ê½
 
@@ -163,13 +171,14 @@ SetZhongShenData("Lunaris","Gruthkul")--ÉèÖÃÔÂÓ°Å®ÉñÖ®»êÓë¾øÍûÖ®Ä¸ ¸ñÂ³Ë¿¿ËÖ®»ê
 --pageType ²Ö¿âÒ³ÀàĞÍ ÊıÖµĞÍ ²»Ìî»ònil»ò0 ÎªÆÕÍ¨²Ö¿â 1ÎªÍ¨»õÒ³ 2ÎªÃüÔË¿¨Ò³  3ÎªËéÆ¬Ò³
 
 -------×¢ÒâÒª´óÀàÔÚÇ° Ğ¡Àà µ¥¶ÀÉèÖÃÔÚºóÃæÌí¼Ó
-SetSaveIndex("ÉúÃüÒ©¼Á|Ä§Á¦Ò©¼Á|¸´ºÏÒ©¼Á|¹¦ÄÜÒ©¼Á|ÃüÔË¿¨","1|2")
+SetSaveIndex("ÉúÃüÒ©¼Á|Ä§Á¦Ò©¼Á|¸´ºÏÒ©¼Á|¹¦ÄÜÒ©¼Á","1|2")
 SetSaveIndex("Í¨»õ|¿É¶ÑµşÍ¨»õ|Òì½çÍ¼¼øÉı¼¶ÎïÆ·","1|2")
-SetSaveIndex("Òì½çµØÍ¼","3")
+SetSaveIndex("Òì½çµØÍ¼","4")
+SetSaveIndex("ÃüÔË¿¨","1|2")
 SetSaveIndex("ÏîÁ´|½äÖ¸|×¦|Ø°Ê×|·¨ÕÈ|µ¥ÊÖ½£|Ï¸½£|µ¥ÊÖ¸«|µ¥ÊÖ´¸|·ûÎÄØ°Ê×|¶ÌÕÈ|Õ½ÕÈ|¹­|³¤ÕÈ|Ë«ÊÖ½£|Ë«ÊÖ¸«|Ë«ÊÖ´¸|Ñü´ø|ÊÖÌ×|Ğ¬×Ó|Í·¿ø|ÒÂ·ş|¶Ü|¼ı´ü","3")
-SetSaveIndex("Ö÷¶¯¼¼ÄÜ±¦Ê¯|¸¨Öú¼¼ÄÜ±¦Ê¯|Öé±¦|µØÍ¼ËéÆ¬","2")
+SetSaveIndex("Ö÷¶¯¼¼ÄÜ±¦Ê¯|¸¨Öú¼¼ÄÜ±¦Ê¯|Öé±¦|µØÍ¼ËéÆ¬","1|2")
 SetSaveIndex("HeistBlueprint","1|2")--À¶Í¼
-SetSaveIndex("ExpeditionLogbook","1|2")--Ì½ëUÈÕÕI
+SetSaveIndex("ExpeditionLogbook","4")--Ì½ëUÈÕÕI
 SetSaveIndex(nil,"1",nil,"Metadata/Items/MapFragments/ClassicVaultKey")--¹Åµäßzè€
 SetSaveIndex(nil,"1",nil,"Metadata/Items/MapFragments/340VaultKey")--¹ÅĞàßzè€
 SetSaveIndex(nil,"1",nil,"Metadata/Items/MapFragments/VaalVaultKey")--Íß –ßzè€
@@ -179,6 +188,8 @@ SetSaveIndex(nil,"1",nil,"Metadata/Items/MapFragments/RitualFragment")--½şÑª±®Æ÷
 --SetSaveIndex(nil,"4","Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy")
 -- SetSaveIndex(nil,"4","æœ½YÊ¯","Metadata/Items/Currency/CurrencyRerollSocketLinks")
 -- SetSaveIndex(nil,"4","¸ÄÔìÊ¯","Metadata/Items/Currency/CurrencyRerollMagic")
+SetGoodsCaoZuo(nil,"0","µã½ğÊ¯","Metadata/Items/Currency/CurrencyUpgradeToRare")--Ö»¼ñ²»´æµã½ğÊ¯
+SetGoodsCaoZuo(nil,"0|1","µã½ğÊ¯","Metadata/Items/Currency/CurrencyUpgradeToRare",nil,nil,nil,10)--°üÖĞÂú10¾Í¸ÄÎª¼ñ´æ
 ------------------¹Ò»úÏà¹Ø
 g_notShuaBaiPao=false    --ÊÇ·ñ²»ĞèÒªË¢°×ÅÛ trueÎª²»ĞèÒª false»ònilÎªĞèÒª
 g_yijieNoWhiteMonster=true		--Òì½çÊ±ÊÇ·ñ²»´ò°×¹Ö trueÎª²»´ò nil»òfalseÎª´ò
@@ -197,7 +208,7 @@ g_puTongWanChengDu=0.8		--ÆÕÍ¨µØÍ¼Íê³É¶È ´ËÉèÖÃ²»Ó°ÏìÖ÷Ïß£¬Ö»ÔÚÉı¼¶Ë¢Í¼ÓĞĞ§(Èç Ë
 g_usePuTongWanChengDuLv=75	--Ê¹ÓÃÆÕÍ¨µØÍ¼Íê³É¶ÈÄÇ¸öÉèÖÃµÄµÈ¼¶£¬Èç¹ûÎ´µ½µÈÔòË¢È«Í¼ Ä¬ÈÏÎªnil²»Ê¹ÓÃ
 g_useCsjzHp=0.6             --Ë²¼äÉÙÑªÊ¹ÓÃ´«ËÍ¾íÖá
 g_useCsjzMinHp= 0.4         --ÑªÁ¿Ì½µ½ÉèÖÃµÄÖµÒÔÏÂÊ¹ÓÃ´«ËÍ
-g_yiJieLv=70				--¹»ÁË¶àÉÙ¼¶²ÅÈ¥Ë¢Òì½ç
+g_yiJieLv=65				--¹»ÁË¶àÉÙ¼¶²ÅÈ¥Ë¢Òì½ç
 g_checkSellMapCnt=60		--µØÍ¼³¬¹ıÕâ¸öÊıÁ¿²Å»á¼ì²â³öÊÛµØÍ¼
 g_destroyNoUseMap=true		--Ïú»ÙÉÏÃæÉèÖÃ²»Ê¹ÓÃµÄµØÍ¼ nil»òfalseÎª²»Ïú»Ù
 g_mapUseFuHaoLv=75			--´óÓÚµÈÓÚ¶àÉÙ¼¶¶ÔÀ¶Í¼Ê¹ÓÃ¸»ºÀÊ¯ nilÎªÓÀÔ¶²»Ê¹ÓÃ
@@ -340,9 +351,9 @@ SetCompoundDivinationCard(nil,"Metadata/Items/DivinationCards/DivinationCardASea
 --name=×Ô¼ºÓĞµÄÍ¨»õÃû className=×Ô¼ºÓĞµÄÍ¨»õÀàÃû cnt=¹»¶àÉÙ¸ö´¥·¢ 0»ònil ²»»á´¥·¢ buyName=ĞèÒª¹ºÂòµÄÎïÆ·Ãû buyClassName=ĞèÒª¹ºÂòµÄÎïÆ·ÀàÃû
 
 g_buyNpcData={
-mapClassName="1_1_town",className="Metadata/NPC/Act1/NessaTown"}
+--mapClassName="1__town",className="Metadata/NPC/Act1/NessaTown"}
 --½«»áÔÚ1ÕÂ 1_1_town ´ËNPCÏÂ¹ºÂò name:ÄÎÉ³
---mapClassName="1_1_town",className="Metadata/NPC/Act3/ClarissaTown"}
+mapClassName="1_1_town",className="Metadata/NPC/Act3/ClarissaTown"}
 --½«»áÔÚ3ÕÂ 1_3_town ´ËNPCÏÂ¹ºÂò name:¿¨¶ûÀöÉ¯
 SetNeedBuyGoodsData("ÖªÊ¶¾íÖá","Metadata/Items/Currency/CurrencyIdentification",nil,"´«ËÍ¾íÖá","Metadata/Items/Currency/CurrencyPortal")
 SetNeedBuyGoodsData("´«ËÍ¾íÖá","Metadata/Items/Currency/CurrencyPortal",9,"ÍÉ±äÊ¯","Metadata/Items/Currency/CurrencyUpgradeToMagic")
@@ -370,26 +381,26 @@ SetNeedBuyGoodsData("¹¤½³Ê¯","Metadata/Items/Currency/CurrencyRerollSocketNumber
 SetGoodsCaoZuo("Í¨»õ|¿É¶ÑµşÍ¨»õ|Òì½çµØÍ¼","0|2")--¶à¸ö´óÀàÉèÖÃ¼ñ´æ
 SetGoodsCaoZuo("Ö÷¶¯¼¼ÄÜ±¦Ê¯|¸¨Öú¼¼ÄÜ±¦Ê¯","0|2",nil,nil,nil,nil,5)--Ê°È¡Æ·ÖÊ³¬¹ı5µÄ¼¼ÄÜ±¦Ê¯
 SetGoodsCaoZuo(nil,"0|1|4",nil,nil,nil,nil,nil,nil,"3")--Ê°È¡ ¼ø¶¨ ³öÊÛ³ÈÉ«ÎïÆ·
-SetGoodsCaoZuo(nil,nil,"ÖªÊ¶¾íÖá","Metadata/Items/Currency/CurrencyIdentification",nil,nil,nil,40)--¹»ÁË¾Í²»¼ñÁË
-SetGoodsCaoZuo(nil,nil,"´«ËÍ¾íÖá","Metadata/Items/Currency/CurrencyPortal",nil,nil,nil,40)--¹»ÁË¾Í²»¼ñÁË
-SetGoodsCaoZuo(nil,nil,"µã½ğÊ¯","Metadata/Items/Currency/CurrencyUpgradeToRare",nil,nil,nil,20)
+SetGoodsCaoZuo(nil,nil,"ÖªÊ¶¾íÖá","Metadata/Items/Currency/CurrencyIdentification",nil,nil,nil,80)--¹»ÁË¾Í²»¼ñÁË
+SetGoodsCaoZuo(nil,nil,"´«ËÍ¾íÖá","Metadata/Items/Currency/CurrencyPortal",nil,nil,nil,80)--¹»ÁË¾Í²»¼ñÁË
 SetGoodsCaoZuo(nil,"0|1",nil,nil,nil,nil,nil,nil,"0|1|2",6)--6¶´×°ÉèÖÃ¼ñÂô
 SetGoodsCaoZuo(nil,"0|1",nil,nil,nil,nil,nil,nil,"0|1|2",nil,6)--6Á¬¶´×°ÉèÖÃ¼ñÂô
-SetGoodsCaoZuo("×¦","0|1|4",nil,nil,nil,nil,5,nil,"2")--¼ñÂô¾«Á¼µÄ»Æ×¦×Ó
-SetGoodsCaoZuo("Öé±¦|ÉîÔ¨Öé±¦|·ûÎÄØ°Ê×|Ø°Ê×|·¨ÕÈ|µ¥ÊÖ½£|Ï¸½£","0|1|4",nil,nil,nil,nil,nil,nil,"2")--Ê°È¡ ¼ø¶¨ ³öÊÛ»ÆÉ«ÎïÆ·Öé±¦
+SetGoodsCaoZuo("×¦|µ¥ÊÖ½£|Ï¸½£|µ¥ÊÖ¸«|µ¥ÊÖ´¸","0|1",nil,nil,nil,nil,nil,nil,"2")--¼ñÂô»ÆÎä
+SetGoodsCaoZuo("Öé±¦|ÉîÔ¨Öé±¦|¶ÌÕÈ|Õ½ÕÈ|¹­|³¤ÕÈ|Ë«ÊÖ½£|Ë«ÊÖ¸«|Ë«ÊÖ´¸","0|1|4",nil,nil,nil,nil,nil,nil,"2")--Ê°È¡ ¼ø¶¨ ³öÊÛ»ÆÉ«ÎïÆ·Öé±¦
 SetGoodsCaoZuo(nil,"1|3","ÖÜÄê¸£´ü","Metadata/Items/MicrotransactionCurrency/MicrotransactionTencentEventCoin")--
 SetGoodsCaoZuo(nil,"1|3","²£Á§µ¯Öé","Metadata/Items/Currency/CurrencyFlaskQuality")--
 SetGoodsCaoZuo(nil,"3","¾íÖáËéÆ¬","Metadata/Items/Currency/CurrencyIdentificationShard")--¾íÖáËéÆ¬¶ª
 SetGoodsCaoZuo(nil,"2|3","Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy")--¶ªÔ¤ÑÔ
 SetGoodsCaoZuo(nil,"0|2","ÌmËş¶äÃÔã¯Ö®Û","Metadata/Items/DivinationCards/DivinationCardLantadorsLostLove")
 SetGoodsCaoZuo(nil,"3","×£¸£Ê¯","Metadata/Items/Currency/CurrencyRerollImplicit",nil,nil,nil,0)--×£¸£Ê¯
-SetGoodsCaoZuo(nil,"3","Êø¿`Ê¯","Metadata/Items/Currency/CurrencyUpgradeToRareAndSetSockets",nil,nil,nil,0)--Êø¿`Ê¯
+SetGoodsCaoZuo(nil,"0","Êø¿`Ê¯","Metadata/Items/Currency/CurrencyUpgradeToRareAndSetSockets",nil,nil,nil,10)--Êø¿`Ê¯
 SetGoodsCaoZuo(nil,"3","¹¤³ÌÊ¯","Metadata/Items/Currency/CurrencyStrongboxQuality",nil,nil,nil,0)--¹¤³ÌÊ¯
-SetGoodsCaoZuo(nil,"0","Ä¥µ¶Ê¯","Metadata/Items/Currency/CurrencyWeaponQuality")--Ä¥µ¶Ê¯²»´æ
+SetGoodsCaoZuo(nil,"0|1","Ä¥µ¶Ê¯","Metadata/Items/Currency/CurrencyWeaponQuality")--Ä¥µ¶Ê¯²»´æ
 SetGoodsCaoZuo(nil,"0","»¤¼×Æ¬","Metadata/Items/Currency/CurrencyArmourQuality")--»¤¼×Æ¬²»´æ
 --SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyWeaponQuality")--Ä¥µ¶Ê¯
 --SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyArmourQuality")--×o¼×Æ¬
 
+ 
 --¹Ò»úºÅÈç¹û²»¼ñÕâ¼¸Ñù¾ÍÒªµ÷³ÉÕâÑùÈÃ×Ô¼ºÓĞÊ¯Í·¿ÉÒÔÓÃ
  SetGoodsCaoZuo(nil,"3",nil,"Metadata/Items/Currency/CurrencyRerollSocketColours",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,function(gd)return g_setAllSkillGemOk end)--»ÃÉ«Ê¯¼¼ÄÜ¹»ÁË¾Í²»¼ñ»ÃÉ«ÁË
  SetGoodsCaoZuo(nil,"3",nil,"Metadata/Items/Currency/CurrencyRerollSocketNumbers",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,function(gd)return g_setAllSkillGemOk end)--¹¤½³Ê¯¼¼ÄÜ¹»ÁË¾Í²»¼ñ»ÃÉ«ÁË
