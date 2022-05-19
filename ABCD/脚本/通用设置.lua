@@ -145,7 +145,7 @@ SetNeedFlaskData(5,"魔力药剂","障礙物之,LocalManaFlaskHinderNearbyEnemies2",48)
 AddNotMakeTaskData("a2q5")--梦中圣地
 AddNotMakeTaskData("a2q10")--白色巨兽
 AddNotMakeTaskData("a3q13")--重生的渴望
-AddNotMakeTaskData("a3q12")--命运之语
+--AddNotMakeTaskData("a3q12")--命运之语
 AddNotMakeTaskData("a6q5")--毕斯特传奇
 AddNotMakeTaskData("a7q5")--银色吊坠
 --AddNotMakeTaskData("a7q8")--古斯特的墓碑
