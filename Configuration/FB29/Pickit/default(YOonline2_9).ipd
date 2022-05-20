@@ -33,7 +33,23 @@
 	[Category] == "Boots"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999"&& 	[StashItem]	 == "true"	//	鞋子
 	[Category] == "Weapon"         && [Rarity]         == "Rare" # [DPS] > "999" && 	[StashItem]	 == "true"	//	武器
 	[Category] == "Shield"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && 	[StashItem]	 == "true"	//	盾牌
-				//	
+	
+	[Type] == "Quicksilver Flask" # 	[StashItem]	 == "true" 	//	//水銀藥劑
+	[Type] == "Gold Flask"     # 	[StashItem]	 == "true" 	//	//黃金藥劑
+	
+//	[Type] == "Imperial Skean" && [Rarity] == "Unique" # [cold_damage_+%_while_off_hand_is_empty] >= "1" && [ForceSellItem] == "true" // White Wind				//白風 帝國雙刃匕	拾取且售出
+[Type] == "Rats" # 	[StashItem]	 == "true" // 1.0 C	//	鼠輩(鼠巢)
+//[Type] == "Heavy Belt" && [Rarity] == "Unique" # [item_found_rarity_+1%_per_X_rampage_stacks] >= "1" && [ForceSellItem] == "true" // Bisco's Leash				//畢斯寇繫帶 重革腰帶	拾取且存倉
+//[Type] == "The Master" # 	[ForceSellItem]	 == "true" // 1.0 C	//	大師級(畢斯寇的項圈)
+//[Type] == "The Master Artisan" # 	[ForceSellItem]	 == "true" // 1.0 C	//	大師級(畢斯寇的項圈) Artisan
+//[Type] == "Gold Amulet" && [Rarity] == "Unique" # [normal_monster_dropped_item_quantity_+%] >= "1" && [ForceSellItem] == "true" // Bisco's Collar				//畢斯寇的項圈 帝金護身符	拾取且售出
+//[Type] == "Nubuck Boots" && [Rarity] == "Unique" # [base_item_found_quantity_+%] > "14" && [ForceSellItem] == "true" // Goldwyrm				//龍炎足跡 砂影短靴	拾取且售出
+//[Type]== "Prismatic Ring" && [Rarity] == "Unique" # [ForceSellItem] == "true" // Lori's Lantern / Precursor's Emblem / The Taming / Thief's Torment				//竊罪 三相戒指	拾取且售出
+//[Type]== "Gold Ring" && [Rarity] == "Unique" # [ForceSellItem] == "true" // Andvarius / The Highwayman / Ventor's Gamble				//賭神芬多 金光戒指	拾取且售出
+//[Type] == "Silken Hood" && [Rarity] == "Unique" # [local_display_trigger_level_20_tornado_when_you_gain_avians_flight_or_avians_might_%] >= "1" && [ForceSellItem] == "true" // Saqawal's Flock				//斯卡沃之徒 綢緞之兜	拾取且售出斯卡沃之徒 綢緞之兜
+//[Type] == "Wool Gloves" && [Rarity] == "Unique" # [base_item_found_quantity_+%] >= "1" && [ForceSellItem] == "true" // Sadima's Touch				//獵寶者的護手 羊毛手套	拾取且售出
+
+				
 	//// 2F 基礎通貨			//	
 	[Type] == "Alchemy Shard" # 	[StashItem]	 == "true"	//	//點金石碎片
 //	[Type] == "Alteration Shard" # 	[StashItem]	 == "true"	//	//改造石碎片
@@ -564,7 +580,7 @@
 	[Type] == "Prosperity" # 	[ForceSellItem]	 == "true" // 1.0 C	//	興盛(普蘭德斯的金光戒指)
 	[Type] == "Rain Tempter" # 	[ForceSellItem]	 == "true" // 1.0 C	//	誘惑之雨(致命岩灘-物品等級：100)
 	[Type] == "Rain of Chaos" # 	[ForceSellItem]	 == "true" // 1.0 C	//	混沌之雨(混沌石)
-	[Type] == "Rats" # 	[ForceSellItem]	 == "true" // 1.0 C	//	鼠輩(鼠巢)
+
 	[Type] == "Reckless Ambition" # 	[ForceSellItem]	 == "true" // 1.0 C	//	魯莽的野心
 	[Type] == "Sambodhi's Vow" # 	[ForceSellItem]	 == "true" // 1.0 C	//	菩提誓約(凡人碎片)
 	[Type] == "Scholar of the Seas" # 	[ForceSellItem]	 == "true" // 1.0 C	//	海洋學者(賊窩)
@@ -646,8 +662,7 @@
 	[Type] == "The Lover" # 	[ForceSellItem]	 == "true" // 1.0 C	//	情人(飾品-物品等級： 79)
 	[Type] == "The Lunaris Priestess" # 	[ForceSellItem]	 == "true" // 1.0 C	//	月影女祭司(破碎傳承者)
 	[Type] == "The Mad King" # 	[ForceSellItem]	 == "true" // 1.0 C	//	瘋癲之王(國王之道)
-	[Type] == "The Master" # 	[ForceSellItem]	 == "true" // 1.0 C	//	大師級(畢斯寇的項圈)
-	[Type] == "The Master Artisan" # 	[ForceSellItem]	 == "true" // 1.0 C	//	大師級(畢斯寇的項圈) Artisan
+
 	[Type] == "The Mercenary" # 	[ForceSellItem]	 == "true" // 1.0 C	//	傭兵(盾-已汙染)
 	[Type] == "The Messenger" # 	[ForceSellItem]	 == "true" // 1.0 C	//	傳訊者(神諭碎片)
 	[Type] == "The Metalsmith's Gift" # 	[ForceSellItem]	 == "true" // 1.0 C	//	鐵匠的贈禮(三相戒指)
@@ -792,9 +807,7 @@
 				//	
 	//// 18F 藥水（預設關閉）			//	
 				//	
-	[Type] == "Quicksilver Flask" # 	[StashItem]	 == "true" 	//	//水銀藥劑
-	[Type] == "Gold Flask"     # 	[StashItem]	 == "true" 	//	//黃金藥劑
-				//	
+
 //	 [Type] == "Small Life Flask" # 	[StashItem]	 == "true" 	//	//小型生命藥劑
 //	 [Type] == "Medium Life Flask" # 	[StashItem]	 == "true" 	//	//生命藥劑（中）
 //	 [Type] == "Large Life Flask" # 	[StashItem]	 == "true" 	//	//生命藥劑（大）
@@ -970,7 +983,7 @@
 	[Type] == "Coral Amulet" && [Rarity] == "Unique" # [minion_raging_spirit_%_of_maximum_life_taken_per_minute_as_chaos_damage] >= "1" && [ForceSellItem] == "true" // Tavukai				//狂靈之怒 珊瑚護身符	拾取且售出
 	[Type] == "Coral Amulet" && [Rarity] == "Unique" # [primordial_jewel_count] >= "1" && [ForceSellItem] == "true" // The Primordial Chain				//珊瑚護身符	拾取且售出
 	[Type] == "Gold Amulet" && [Rarity] == "Unique" # [ForceSellItem] == "true" // Bisco's Collar / Demigod's Presence / Perquil's Toe / The Ascetic / The Ignomon / Winterheart				//冬之心 帝金護身符	拾取且售出
-	[Type] == "Gold Amulet" && [Rarity] == "Unique" # [normal_monster_dropped_item_quantity_+%] >= "1" && [ForceSellItem] == "true" // Bisco's Collar				//畢斯寇的項圈 帝金護身符	拾取且售出
+
 	[Type] == "Gold Amulet" && [Rarity] == "Unique" # [local_display_nearby_allies_extra_damage_rolls] >= "1" && [ForceSellItem] == "true" // Perquil's Toe				//珀奎爾的指頭 帝金護身符	拾取且售出
 	[Type] == "Gold Amulet" && [Rarity] == "Unique" # [item_found_quantity_+%_if_wearing_a_magic_item] >= "1" && [ForceSellItem] == "true" // The Ascetic				//苦行 帝金護身符	拾取且售出
 	[Type] == "Gold Amulet" && [Rarity] == "Unique" # [attack_maximum_added_fire_damage] >= "1" && [ForceSellItem] == "true" // The Ignomon / The Effigon				//帝金護身符	拾取且售出
@@ -1019,7 +1032,6 @@
 	[Type] == "Crystal Belt" && [Rarity] == "Unique" # [ForceSellItem] == "true" // Auxium				//奧術之符 水晶腰帶	拾取且售出
 //基底勿動//	[Type] == "Heavy Belt" && [Rarity] == "Unique" # [ForceSellItem] == "true" // Belt of the Deceiver / Bisco's Leash / Doryani's Invitation / Dyadian Dawn / Meginord's Girdle / Mother's Embrace / Siegebreaker / String of Servitude / Survivor's Guilt				//重革腰帶 魔血基底勿動	拾取且存倉
 	[Type] == "Heavy Belt" && [Rarity] == "Unique" # [local_display_nearby_enemies_are_intimidated] >= "1" && [ForceSellItem] == "true" // Belt of the Deceiver				//重革腰帶	拾取且售出
-//	[Type] == "Heavy Belt" && [Rarity] == "Unique" # [item_found_rarity_+1%_per_X_rampage_stacks] >= "1" && [ForceSellItem] == "true" // Bisco's Leash				//畢斯寇繫帶 重革腰帶	拾取且存倉
 	[Type] == "Heavy Belt" && [Rarity] == "Unique" # [faster_burn_from_attacks_%] >= "1" && [ForceSellItem] == "true" // Dyadian Dawn				//戴亞迪安的晨曦 重革腰帶	拾取且售出
 	[Type] == "Heavy Belt" && [Rarity] == "Unique" # [flask_life_recovery_rate_+%] >= "1" && [ForceSellItem] == "true" // Meginord's Girdle				//梅吉諾德的力量泉源 重革腰帶	拾取且售出
 	[Type] == "Heavy Belt" && [Rarity] == "Unique" # [minions_use_parents_flasks_on_summon] >= "1" && [ForceSellItem] == "true" // Mother's Embrace				//母親的擁抱 重革腰帶	拾取且售出
@@ -1189,7 +1201,6 @@
 	[Type]== "Stygian Vise" && [Rarity] == "Unique" # [ForceSellItem] == "true" // Darkness Enthroned				//夜惡降臨 冥河腰帶	拾取且售出
 //	//////////////////////////////////////////////					
 	[Type] == "Goathide Boots" && [Rarity] == "Unique" # [local_display_movement_speed_+%_for_you_and_nearby_allies] >= "1" && [ForceSellItem] == "true" // Victario's Flight				//維多里奧的飛昇 羊皮短靴	拾取且售出
-	[Type] == "Nubuck Boots" && [Rarity] == "Unique" # [base_item_found_quantity_+%] > "14" && [ForceSellItem] == "true" // Goldwyrm				//龍炎足跡 砂影短靴	拾取且售出
 //	// //					
 	[Type] == "Shagreen Boots" && [Rarity] == "Unique" # [chance_to_dodge_spells_%_while_phased] >= "1" && [ForceSellItem] == "true" // Three-Step Assault				//三步突擊 粗革短靴	拾取且售出
 	[Type] == "Sharkskin Boots" && [Rarity] == "Unique" # [blood_footprints_from_item] >= "1" && [ForceSellItem] == "true" // The Blood Dance				//血影 鯊皮短靴	拾取且售出
@@ -1218,8 +1229,7 @@
 	[Type] == "Two-Toned Boots" && [Rarity] == "Unique" # [chance_to_deal_double_damage_while_affected_by_glorious_madness_%] >= "1" && [ForceSellItem] == "true" // Beacon of Madness Fire/Cold res, 2x Damage/Fortify Effect				//異色鞋	拾取且售出
 	[Type] == "Wyrmscale Boots" && [Rarity] == "Unique" # [scorched_earth_ground_scorch_duration_ms] >= "1" && [ForceSellItem] == "true" // Legacy of Fury				//地蝮鱗長靴	拾取且售出
 	[Type]== "Diamond Ring" && [Rarity] == "Unique" # [ForceSellItem] == "true" // Gifts from Above / Romira's Banquet				//羅米拉的潛力之環 寶鑽戒指	拾取且售出
-	[Type]== "Gold Ring" && [Rarity] == "Unique" # [ForceSellItem] == "true" // Andvarius / The Highwayman / Ventor's Gamble				//賭神芬多 金光戒指	拾取且售出
-	[Type]== "Iron Ring" && [Rarity] == "Unique" # [ForceSellItem] == "true" // Blackheart / Circle of Guilt / Icefang Orbit / Le Heup of All / The Warden's Brand / Venopuncture / Voidheart				//虛空心靈 鍛鐵戒指	拾取且售出
+		[Type]== "Iron Ring" && [Rarity] == "Unique" # [ForceSellItem] == "true" // Blackheart / Circle of Guilt / Icefang Orbit / Le Heup of All / The Warden's Brand / Venopuncture / Voidheart				//虛空心靈 鍛鐵戒指	拾取且售出
 	[Type] == "Legion Boots" && [Rarity] == "Unique" # [damage_+%_vs_ignited_enemies] >= "1" && [ForceSellItem] == "true" // Gang's Momentum				//剛勇 軍團長靴	拾取且售出
 	[Type] == "Legion Boots" && [Rarity] == "Unique" # [local_socketed_aura_gem_level_+] >= "1" && [ForceSellItem] == "true" // March of the Legion				//軍閥行軍 軍團長靴	拾取且售出
 	[Type] == "Mesh Boots" && [Rarity] == "Unique" # [wake_of_destruction_ground_lightning_duration_ms] >= "1" && [ForceSellItem] == "true" // Wake of Destruction				//覆滅之兆 網眼長靴	拾取且售出
@@ -1229,7 +1239,7 @@
 	[Type]== "Moonstone Ring" && [Rarity] == "Unique" # [ForceSellItem] == "true" // Heartbound Loop / Shavronne's Revelation / Timeclasp / Timetwist / Valyrium				//戰日 月光石戒指	拾取且售出
 	[Type]== "Opal Ring" && [Rarity] == "Unique" # [ForceSellItem] == "true" // Mark of the Shaper / Stormfire				//烈風暴 蛋白石戒指	拾取且售出
 	[Type]== "Paua Ring" && [Rarity] == "Unique" # [ForceSellItem] == "true" // Doedre's Damning / Fated End / Perandus Signet / Praxis				//普拉克斯 海靈戒指	拾取且售出
-	[Type]== "Prismatic Ring" && [Rarity] == "Unique" # [ForceSellItem] == "true" // Lori's Lantern / Precursor's Emblem / The Taming / Thief's Torment				//竊罪 三相戒指	拾取且售出
+
 	[Type]== "Ruby Ring" && [Rarity] == "Unique" # [ForceSellItem] == "true" // Ahkeli's Meadow/Mountain/Valley / Circle of Anguish / Emberwake / Mokou's Embrace / Ngamahu's Sign / Precursor's Emblem / Warrior's Legacy				//戰士遺物 紅玉戒指	拾取且售出
 //基底勿改//	[Type] == "Carnal Boots" && [Rarity] == "Unique" # [local_display_trigger_corpse_walk_on_equip_level] >= "1" && [ForceSellItem] == "true" // Corpsewalker				//禁禮之靴	拾取且存倉
 	[Type]== "Sapphire Ring" && [Rarity] == "Unique" # [ForceSellItem] == "true" // Circle of Fear / Dream Fragments / Precursor's Emblem / Pyre / Snakepit / Tasalio's Sign / Uzaza's Meadow/Mountain/Valley				//藍玉戒指	拾取且售出
@@ -1270,7 +1280,7 @@
 //	//////////////////////////////////////////////					
 	[Type] == "Sorcerer Gloves" && [Rarity] == "Unique" # [you_cannot_be_hindered] >= "1" && [ForceSellItem] == "true" // Allelopathy				//相生相剋 術士手套	拾取且售出
 	[Type] == "Velvet Gloves" && [Rarity] == "Unique" # [spell_damage_+%] >= "50" && [ForceSellItem] == "true" // Doedre's Tenure				//德瑞的精神手套 絲絨手套	拾取且售出
-	[Type] == "Wool Gloves" && [Rarity] == "Unique" # [base_item_found_quantity_+%] >= "1" && [ForceSellItem] == "true" // Sadima's Touch				//獵寶者的護手 羊毛手套	拾取且售出
+	
 	[Type] == "Wool Gloves" && [Rarity] == "Unique" # [base_item_found_quantity_+%] < "10" && [ForceSellItem] == "true" // Perfect Qty Sadima's Touch				//羊毛手套	拾取且售出
 //	// //					
 	[Type] == "Bronzescale Gauntlets" && [Rarity] == "Unique" # [ForceSellItem] == "true" // Slitherpinch / Vaal Caress				//瓦爾的靈手 銅影手套	拾取且售出
@@ -1349,7 +1359,7 @@
 	[Type] == "Lion Pelt" && [Rarity] == "Unique" # [projectile_attack_damage_+%_per_200_accuracy] >= "1" && [ForceSellItem] == "true" // Obscurantis				//朦朧詭面 獅首皮盔	拾取且售出
 //	//////////////////////////////////////////////					
 	[Type] == "Silken Hood" && [Rarity] == "Unique" # [evasion_rating_+%_when_on_low_life] >= "1" && [ForceSellItem] == "true" // Starkonja's Head				//斯塔空加之首 綢緞之兜	拾取且售出
-	[Type] == "Silken Hood" && [Rarity] == "Unique" # [local_display_trigger_level_20_tornado_when_you_gain_avians_flight_or_avians_might_%] >= "1" && [ForceSellItem] == "true" // Saqawal's Flock				//斯卡沃之徒 綢緞之兜	拾取且售出
+	
 	[Type] == "Silken Hood" && [Rarity] == "Unique" # [local_item_can_have_x_additional_enchantments] >= "1" && [ForceSellItem] == "true" // Cowl of the Cryophile				//綢緞之兜	拾取且售出
 //	// Armour Boots					
 	[Type] == "Sinner Tricorne" && [Rarity] == "Unique" # [local_display_grant_level_x_snipe_skill] >= "1" && [ForceSellItem] == "true" // Assailum				//刺殺 罪者之帽	拾取且售出
@@ -1614,7 +1624,7 @@
 //	// Evasion & Energy Shield Shields					
 	[Type] == "Fiend Dagger" && [Rarity] == "Unique" # [chaos_damage_chance_to_poison_%] >= "1" && [ForceSellItem] == "true" // The Consuming Dark				//蠶食之闇 妖魔短匕	拾取且售出
 	[Type] == "Imperial Skean" && [Rarity] == "Unique" # [critical_strike_chance_+%_for_spells_if_you_have_killed_recently] >= "1" && [ForceSellItem] == "true" // Divinarius				//戒律之影 帝國雙刃匕	拾取且售出
-	[Type] == "Imperial Skean" && [Rarity] == "Unique" # [cold_damage_+%_while_off_hand_is_empty] >= "1" && [ForceSellItem] == "true" // White Wind				//白風 帝國雙刃匕	拾取且售出
+
 	[Type] == "Imperial Skean" && [Rarity] == "Unique" # [cold_damage_+%_while_off_hand_is_empty] < "200" && [ForceSellItem] == "true" // Perf Cold Damage% White Wind				//帝國雙刃匕	拾取且售出
 	[Type] == "Platinum Kris" && [Rarity] == "Unique" # [local_poison_on_critical_strike_chance_%] >= "1" && [ForceSellItem] == "true" // Mark of the Doubting Knight				//白金波刃	拾取且售出
 	[Type] == "Royal Skean" && [Rarity] == "Unique" # [spells_have_culling_strike] >= "1" && [ForceSellItem] == "true" // Heartbreaker				//裂心刃 皇家雙刃匕	拾取且售出
