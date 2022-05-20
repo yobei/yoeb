@@ -31,7 +31,7 @@ g_duobiHpVal=0.2
 --nType 有效场景 nil为无论何时都有效 0为没在刷异界才有效 1为只在刷异界才有效
 SetNeedSkillLineData(100,"冰霜之刃,nil|夜刃輔助,nil|增加暴擊率輔助,nil|增加暴擊傷害輔助,nil|連鎖輔助,nil|元素攻擊傷害輔助,nil|物品稀有度增幅輔助,nil",nil,nil,nil)
 
-SetNeedSkillLineData(97,"旋風之刃,nil|快速攻擊輔助,nil|召喚寒冰魔像",nil,nil,nil)
+SetNeedSkillLineData(97,"迴旋之刃,nil|快速攻擊輔助,nil|召喚寒冰魔像,nil",nil,nil,nil)
 
 SetNeedSkillLineData(98,"憎恨,nil|冰霜之捷,nil|凋零之步",nil,nil,nil)
 
