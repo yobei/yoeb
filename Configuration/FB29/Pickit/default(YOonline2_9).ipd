@@ -792,8 +792,8 @@
 				//	
 	//// 18F 藥水（預設關閉）			//	
 				//	
-//	[Type] == "Quicksilver Flask" # 	[StashItem]	 == "true" 	//	//水銀藥劑
-//	[Type] == "Gold Flask"     # 	[StashItem]	 == "true" 	//	//黃金藥劑
+	[Type] == "Quicksilver Flask" # 	[StashItem]	 == "true" 	//	//水銀藥劑
+	[Type] == "Gold Flask"     # 	[StashItem]	 == "true" 	//	//黃金藥劑
 				//	
 //	 [Type] == "Small Life Flask" # 	[StashItem]	 == "true" 	//	//小型生命藥劑
 //	 [Type] == "Medium Life Flask" # 	[StashItem]	 == "true" 	//	//生命藥劑（中）
