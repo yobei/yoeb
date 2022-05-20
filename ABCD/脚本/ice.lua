@@ -33,7 +33,7 @@ SetNeedSkillLineData(100,"±ùËªÖ®ÈĞ,nil|Ò¹ÈĞİoÖú,nil|Ôö¼Ó±©“ôÂÊİoÖú,nil|Ôö¼Ó±©“ô‚
 
 SetNeedSkillLineData(97,"Ş’ĞıÖ®ÈĞ,nil|¿ìËÙ¹¥“ôİoÖú,nil|ÕÙ†¾º®±ùÄ§Ïñ,nil",nil,nil,nil)
 
-SetNeedSkillLineData(98,"Ô÷ºŞ,nil|±ùËªÖ®½İ,nil|µòÁãÖ®²½",nil,nil,nil)
+SetNeedSkillLineData(98,"Ô÷ºŞ,nil|±ùËªÖ®½İ,nil|µòÁãÖ®²½,nil",nil,nil,nil)
 
 SetNeedSkillLineData(95,"ä“½îèF¹Ç,nil|ÊÜ‚û•rÊ©·ÅİoÖú,nil|ŒÆĞg‚÷ËÍ,nil|ĞÅÄîÀËœ¥,nil|³ÖÀm•régÑÓéLİoÖú,nil",nil,9,nil)
 
