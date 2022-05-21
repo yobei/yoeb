@@ -25,8 +25,8 @@
 //	//// 1F 黃裝鑑定售出 					
 //	不撿的，最前面加上「//」	下拉選單		//	//中文註釋	//存倉售出中文提示
 
-	[Type] == "Quicksilver Flask" # 	[StashItem]	 == "true" 	//	//水銀藥劑	拾取且售出
-//	[Type] == "Gold Flask"     # 	[StashItem]	 == "true" 	//	//黃金藥劑	拾取且售出
+	//[Type] == "Quicksilver Flask" # 	[StashItem]	 == "true" 	//	//水銀藥劑	拾取且售出
+	[Type] == "Gold Flask"     # 	[StashItem]	 == "true" 	//	//黃金藥劑	拾取且售出
 
 	[Category] == "Helm"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && 	[StashItem]	 == "true"	//	頭盔	拾取且售出
 	[Category] == "Chest"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && 	[StashItem]	 == "true"	//	胸甲	拾取且售出
