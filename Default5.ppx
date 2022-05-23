@@ -17,7 +17,7 @@
 	<ProxyList>
 		<Proxy id="100" type="SOCKS5">
 			<Authentication enabled="true">
-				<Password>AAACbYKAV922l/tzcedYZhKmevdIOr3oZYIDco/J13I8jEc=</Password>
+				<Password>AAACbYKAV922l/tzcedYZhKmeoXa2grWV1wj0uvrWTzZ5JE=</Password>
 				<Username>yobest</Username>
 			</Authentication>
 			<Options>48</Options>
