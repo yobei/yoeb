@@ -63,7 +63,7 @@ SetSkillLimitMaxLv("持續時間延長輔助",nil,10)
 
 SetNeedFlaskData(1,"生命药剂","nil")
 SetNeedFlaskData(2,"生命药剂","nil")
-SetNeedFlaskData(3,"生命药剂","nil")
+SetNeedFlaskData(3,"魔力药剂","nil")
 SetNeedFlaskData(4,"水银药剂","nil")
 SetNeedFlaskData(5,"水银药剂","nil")
 
