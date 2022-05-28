@@ -29,13 +29,22 @@ g_duobiHpVal=0.2
 --invalidLv=失效等级 超过这个等级就不会需要他了
 --pos=指定位置 nil为自动选择 2为衣服 3为主武器 4为副武器 5为头盔 6为项链 7为左戒指 8为右戒指 9为护手 10为鞋子 11为腰带
 --nType 有效场景 nil为无论何时都有效 0为没在刷异界才有效 1为只在刷异界才有效
+
+SetNeedSkillLineData(5,"元素淨化,nil|受傷時施放輔助,nil|信念浪湧,nil",10,9,nil)
+SetNeedSkillLineData(6,"鋼筋鐵骨,nil|先祖衛士,nil|持續時間延長輔助,nil|物品稀有度增幅輔助,nil|連鎖輔助,nil|冰霜之刃,nil|憎恨,nil",10,4,nil)
+SetNeedSkillLineData(7,"冰霜之捷,nil|盜獵者印記,nil|擊中時印記輔助,nil",10,nil,nil)
+SetNeedSkillLineData(8,"凋零之步,nil|召喚寒冰魔像,nil|恢復輔助,nil",10,nil,nil)
+SetNeedSkillLineData(9,"爆裂陷阱,nil|迅速組裝輔助,nil|機率中毒輔助,nil",18,nil,nil)
+SetNeedSkillLineData(10,"靈體旋武,nil|夜刃輔助,nil|附加冰冷傷害輔助,nil|附加閃電傷害輔助,nil|物理轉閃電輔助,nil|霜咬輔助,nil|元素攻擊傷害輔助,nil|快速攻擊輔助,nil",10,nil,nil)
+
+
+
+
+
 SetNeedSkillLineData(100,"冰霜之刃,nil|夜刃輔助,nil|增加暴擊率輔助,nil|增加暴擊傷害輔助,nil|連鎖輔助,nil|元素攻擊傷害輔助,nil|物品稀有度增幅輔助,nil",nil,nil,nil)
-
 SetNeedSkillLineData(97,"迴旋之刃,nil|快速攻擊輔助,nil|召喚寒冰魔像,nil",nil,nil,nil)
-
 SetNeedSkillLineData(98,"憎恨,nil|冰霜之捷,nil|凋零之步,nil",nil,nil,nil)
-
-SetNeedSkillLineData(95,"鋼筋鐵骨,nil|受傷時施放輔助,nil|屍術傳送,nil|信念浪湧,nil|持續時間延長輔助,nil",nil,9,nil)
+SetNeedSkillLineData(95,"鋼筋鐵骨,nil|受傷時施放輔助,nil|屍術傳送,nil|持續時間延長輔助,nil",nil,9,nil)
 
 --添加攻击技能 name=技能名 className=技能类名 noLine=不在直线就能攻击 挑选攻击技能会从上到下寻找，要把厉害的技能加在前面
 
@@ -45,14 +54,15 @@ AddAttackSkillData("普通攻击","melee")
 --SetSkillLimitMaxLv(name,className,maxLv)--设置技能宝石最大等级 name=技能宝石物品名 className=技能宝石物品类名 maxLv=限制的最大等级
 SetSkillLimitMaxLv("受傷時施放輔助",nil,1)
 SetSkillLimitMaxLv("屍術傳送",nil,1)
-SetSkillLimitMaxLv("鋼筋鐵骨",nil,11)
+SetSkillLimitMaxLv("鋼筋鐵骨",nil,7)
+SetSkillLimitMaxLv("持續時間延長輔助",nil,10)
 
 
 -- SetYiJieZhaoHuanLingTiData(mapClassName,name,className)--设置异界时召唤的灵体数据 mapClassName=剧情图类名 name=灵体名 className=灵体类名
 
 SetNeedFlaskData(1,"生命药剂","nil")
-SetNeedFlaskData(2,"黄金药剂","nil")
-SetNeedFlaskData(3,"黄金药剂","nil")
+SetNeedFlaskData(2,"生命药剂","nil")
+SetNeedFlaskData(3,"生命药剂","nil")
 SetNeedFlaskData(4,"水银药剂","nil")
 SetNeedFlaskData(5,"水银药剂","nil")
 
