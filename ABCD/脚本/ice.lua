@@ -45,6 +45,7 @@ SetNeedSkillLineData(100,"±ùËªÖ®ÈĞ,nil|Ò¹ÈĞİoÖú,nil|Ôö¼Ó±©“ôÂÊİoÖú,nil|Ôö¼Ó±©“ô‚
 SetNeedSkillLineData(97,"Ş’ĞıÖ®ÈĞ,nil|¿ìËÙ¹¥“ôİoÖú,nil|ÕÙ†¾º®±ùÄ§Ïñ,nil",nil,nil,nil)
 SetNeedSkillLineData(98,"Ô÷ºŞ,nil|±ùËªÖ®½İ,nil|µòÁãÖ®²½,nil",nil,nil,nil)
 SetNeedSkillLineData(95,"ä“½îèF¹Ç,nil|ÊÜ‚û•rÊ©·ÅİoÖú,nil|ŒÆĞg‚÷ËÍ,nil|³ÖÀm•régÑÓéLİoÖú,nil",nil,9,nil)
+SetNeedSkillLineData(98,"´Ì¿ÍÓ¡Ó›,nil|“ôÖĞ•rÓ¡Ó›İoÖú,nil",nil,nil,nil)
 
 --Ìí¼Ó¹¥»÷¼¼ÄÜ name=¼¼ÄÜÃû className=¼¼ÄÜÀàÃû noLine=²»ÔÚÖ±Ïß¾ÍÄÜ¹¥»÷ ÌôÑ¡¹¥»÷¼¼ÄÜ»á´ÓÉÏµ½ÏÂÑ°ÕÒ£¬Òª°ÑÀ÷º¦µÄ¼¼ÄÜ¼ÓÔÚÇ°Ãæ
 
