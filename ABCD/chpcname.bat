@@ -1,11 +1,11 @@
 
 @echo off
 
-for /f "delims=" %%a in ('call readini.bat /s OutputVar /i nob "C:\Users\Administrator\Desktop\iot\setnb.ini"') do (
+for /f "delims=" %%a in ('call readini.bat /s OutputVar /i pcname "C:\Users\Administrator\Desktop\iot\setnb.ini"') do (
     set val=%%a
 )
 
 
-set name=%val%%computername:~0,12%
+set name=%val%
 
 wmic.exe ComputerSystem Where Name="%ComputerName%" Rename Name="%name%"
