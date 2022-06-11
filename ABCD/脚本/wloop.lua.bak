@@ -56,7 +56,7 @@ SetYiJieZhaoHuanLingTiData("2_8_12_1","日耀神守衛","Metadata/Monsters/HolyFireEl
 ---------------------------------------设置到等级时做迷宫
 --SetTaskMiGongDataByLv(50,1)--大于等于80级 做迷宫3
 --SetTaskMiGongDataByLv(65,2)--大于等于80级 做迷宫3
-SetTaskMiGongDataByLv(71,3)--大于等于80级 做迷宫3
+SetTaskMiGongDataByLv(80,3)--大于等于80级 做迷宫3
 
 ---------------------------------------设置跑图时迷宫 
 --SetTaskMiGongData(taskClassName,taskIndex,migongIndex)

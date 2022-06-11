@@ -393,7 +393,7 @@ SetGoodsCaoZuo(nil,"3","卷轴碎片","Metadata/Items/Currency/CurrencyIdentificatio
 SetGoodsCaoZuo(nil,"2|3","预言","Metadata/Items/Currency/CurrencyItemisedProphecy")--丢预言
 SetGoodsCaoZuo(nil,"0|2","蘭塔朵迷惘之愛","Metadata/Items/DivinationCards/DivinationCardLantadorsLostLove")
 SetGoodsCaoZuo(nil,"3","祝福石","Metadata/Items/Currency/CurrencyRerollImplicit",nil,nil,nil,0)--祝福石
-SetGoodsCaoZuo(nil,"0","束縛石","Metadata/Items/Currency/CurrencyUpgradeToRareAndSetSockets",nil,nil,nil,10)--束縛石
+--SetGoodsCaoZuo(nil,"0","束縛石","Metadata/Items/Currency/CurrencyUpgradeToRareAndSetSockets",nil,nil,nil,10)--束縛石
 SetGoodsCaoZuo(nil,"3","工程石","Metadata/Items/Currency/CurrencyStrongboxQuality",nil,nil,nil,0)--工程石
 SetGoodsCaoZuo(nil,"0|1","磨刀石","Metadata/Items/Currency/CurrencyWeaponQuality")--磨刀石不存
 SetGoodsCaoZuo(nil,"0","护甲片","Metadata/Items/Currency/CurrencyArmourQuality")--护甲片不存
@@ -2878,8 +2878,8 @@ SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardTheTransfor
 SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardMagnumOpus")--巨著
 SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardImperfectMemories")--不完美的回憶
 
-SetSaveIndex("契约","1|4")--设定契约存在哪些仓库页
-SetGoodsCaoZuo("契约","0|2",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,function(r)return r.lv>60 end)--大于60级的契约才捡存
+SetSaveIndex("契约","4")--设定契约存在哪些仓库页
+SetGoodsCaoZuo("契约","2",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,function(r)return r.lv>60 end)--大于60级的契约才捡存
 SetGoodsCaoZuo(nil,"0","赏金猎人印记","Metadata/Items/Heist/HeistCoin")--只捡不存夺宝币
 SetGoodsCaoZuo(nil,"0|2","赏金猎人印记","Metadata/Items/Heist/HeistCoin",nil,nil,nil,50000)--包中满1000就改为捡存
 --如果需要夺宝币交易给仓库号就加上下面这条

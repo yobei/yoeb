@@ -29,7 +29,6 @@ g_duobiHpVal=0.2
 --invalidLv=失效等级 超过这个等级就不会需要他了
 --pos=指定位置 nil为自动选择 2为衣服 3为主武器 4为副武器 5为头盔 6为项链 7为左戒指 8为右戒指 9为护手 10为鞋子 11为腰带
 --nType 有效场景 nil为无论何时都有效 0为没在刷异界才有效 1为只在刷异界才有效
-SetNeedSkillLineData(100,"靈體旋武,nil|夜刃輔助,nil|附加冰冷傷害輔助,nil|附加閃電傷害輔助,nil|物理轉閃電輔助,nil|霜咬輔助,nil|元素攻擊傷害輔助,nil|快速攻擊輔助,nil",nil,nil,nil)
 
 SetNeedSkillLineData(10,"燃燒箭矢,nil",2,nil,nil)
 SetNeedSkillLineData(95,"元素淨化,nil|受傷時施放輔助,nil|信念浪湧,nil",nil,9,nil)
@@ -37,6 +36,7 @@ SetNeedSkillLineData(96,"鋼筋鐵骨,nil|先祖衛士,nil|持續時間延長輔助,nil|物品稀有
 SetNeedSkillLineData(97,"冰霜之捷,nil|盜獵者印記,nil|擊中時印記輔助,nil",nil,nil,nil)
 SetNeedSkillLineData(98,"凋零之步,nil|召喚寒冰魔像,nil|恢復輔助,nil",nil,nil,nil)
 SetNeedSkillLineData(99,"爆裂陷阱,nil|迅速組裝輔助,nil|機率中毒輔助,nil",18,nil,nil)
+SetNeedSkillLineData(100,"靈體旋武,nil|夜刃輔助,nil|附加冰冷傷害輔助,nil|附加閃電傷害輔助,nil|物理轉閃電輔助,nil|霜咬輔助,nil|元素攻擊傷害輔助,nil|快速攻擊輔助,nil",nil,nil,nil)
 
 --添加攻击技能 name=技能名 className=技能类名 noLine=不在直线就能攻击 挑选攻击技能会从上到下寻找，要把厉害的技能加在前面
 
