@@ -34,7 +34,14 @@
 //	[Category] == "Weapon"         && [Rarity]         == "Rare" # [DPS] > "999" && 	[StashItem]	 == "true"	//	武器	不撿不售出																						
 //	[Category] == "Shield"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && 	[StashItem]	 == "true"	//	盾牌	不撿不售出																						
 				//																								
-	//// 2F 基礎通貨			//																								
+	//// 2F 基礎通貨			//	
+
+[Type] == "Writhing Invitation" # [StashItem] == "true" //任務道具	 小藍	
+[Type] == "Screaming Invitation" # [StashItem] == "true" //任務道具	 藍	
+[Type] == "Polaric Invitation" # [StashItem] == "true" //任務道具	 小洪	
+[Type] == "Incandescent Invitation" # [StashItem] == "true" //任務道具	 洪	
+
+																					
 //	[Type] == "Alchemy Shard" # 	[StashItem]	 == "true"	//	//點金石碎片	不撿不存倉																						
 //	[Type] == "Alteration Shard" # 	[StashItem]	 == "true"	//	//改造石碎片	不撿不存倉																						
 //	[Type] == "Scroll Fragment" # 	[StashItem]	 == "true"	//	//卷軸碎片	不撿不存倉																						
@@ -788,7 +795,7 @@
 				//																								
 	//// 15F 輿圖			//																								
 	[Category] == "Map" && [MapTier] >= "1"         # [StashItem] == "true" // Take all Maps & Ignore all Contract/Blueprints/Incubators			//	//輿圖	撿取所有地圖																						
-	[Category] == "Map" && [MapTier] >= "1" && [Rarity] == "Rare"        # [StashItem] == "true" //				//黃圖全部賣掉																							
+	[Category] == "Map" && [MapTier] >= "1" && [Rarity] == "Rare"        # [ForceSellItem] == "true" //				//黃圖全部賣掉																							
 	// Sacrifice Set			//																								
 	[Type] == "Sacrifice at Dawn"        # 	[StashItem]	 == "true" 	//	//黎明的奉獻	拾取且存倉																						
 	[Type] == "Sacrifice at Noon"        # 	[StashItem]	 == "true" 	//	//正午的奉獻	拾取且存倉																						
