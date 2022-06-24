@@ -551,7 +551,7 @@ Show # 通貨 - 初始 - 知識卷軸
     SetTextColor 248 172 184 255
     SetBackgroundColor 0 0 0 255
     SetBorderColor 248 172 184 255
-    SetFontSize 40
+    SetFontSize 5
     MinimapIcon 2 Red Diamond
 
 Show # 通貨 - 初始 - 傳送卷軸
@@ -2693,10 +2693,9 @@ Show # 輿圖物品 - 釋界之邀
     SetTextColor 0 0 0
     SetBackgroundColor 253 204 255
     SetBorderColor 255 94 255
-    SetFontSize 45
-    PlayAlertSound 6 250
+    SetFontSize 60
     MinimapIcon 0 Red Diamond
-    PlayEffect Red
+
 
 Show # 輿圖物品 - 新月裂片
     Class "Currency"
@@ -3010,7 +3009,7 @@ Show # 技能 - 技能品質15~19
     PlayEffect White Temp
 
 Show # 技能 - 技能品質1~14
-    Quality >= 1
+    Quality >= 15
     Class "Gems"
     SetTextColor 10 230 230
     SetFontSize 40
@@ -3027,7 +3026,7 @@ Show # 技能 - 瓦爾技能
     Class "Gems"
     BaseType "Vaal"
 
-Show # 技能 - 一般技能
+Hide # 技能 - 一般技能
     Class "Gems"
 
 # 【裝備】
@@ -5153,14 +5152,14 @@ Hide # 裝備 - 高亮基底 獵首 魔血 # 汙染隱藏
     SetTextColor 255 255 0
     SetFontSize 40
 
-Show # 裝備 - 高亮基底 獵首 魔血 AA盾 # 
+Hide # 裝備 - 高亮基底 獵首 魔血 AA盾 # 
     Rarity = Normal
     Class "Belts"
     BaseType "Leather Belt" "Heavy Belt"
     SetTextColor 255 255 0
     SetFontSize 40
 
-Show # 裝備 - 高亮基底  AA盾 # 
+Hide # 裝備 - 高亮基底  AA盾 # 
     Rarity = Normal
     Class "Shields"
     BaseType  "Champion Kite Shield"
@@ -5454,11 +5453,91 @@ Hide # 裝備 - 隱藏裝備 - 隱藏的白、藍裝 "弓" "法杖" "爪" "匕�
     SetBorderColor 255 255 255 0
     SetFontSize 32
 
+
+Hide 
+	Class "Sentinel"
+    BaseType "Ancient Apex Sentinel"
+Hide 
+	Class "Sentinel"
+    BaseType "Ancient Pandemonium Sentinel" 		
+Hide 
+	Class "Sentinel"
+    BaseType "Ancient Stalker Sentinel" 		
+Hide 
+	Class "Sentinel"
+    BaseType "Brimstone Apex Sentinel" 		
+Hide 
+	Class "Sentinel"
+    BaseType "Brimstone Pandemonium Sentinel" 		
+Hide 
+	Class "Sentinel"
+    BaseType "Brimstone Stalker Sentinel" 		
+Hide 
+	Class "Sentinel"
+    BaseType "Bronze Apex Sentinel" 		
+Hide 
+	Class "Sentinel"
+    BaseType "Bronze Pandemonium Sentinel" 		
+Hide 
+	Class "Sentinel"
+    BaseType "Bronze Stalker Sentinel" 		
+Hide 
+	Class "Sentinel"
+    BaseType "Cobalt Apex Sentinel" 		
+Hide 
+	Class "Sentinel"
+    BaseType "Cobalt Pandemonium Sentinel" 		
+Hide 
+	Class "Sentinel"
+    BaseType "Cobalt Stalker Sentinel" 		
+Hide 
+	Class "Sentinel"
+    BaseType "Cosmic Apex Sentinel" 		
+Hide 
+	Class "Sentinel"
+    BaseType "Cryptic Apex Sentinel" 		
+Hide 
+	Class "Sentinel"
+    BaseType "Cryptic Pandemonium Sentinel" 		
+Hide 
+	Class "Sentinel"
+    BaseType "Cryptic Stalker Sentinel" 		
+Hide 
+	Class "Sentinel"
+    BaseType "Emberstone Apex Sentinel" 		
+Hide 
+	Class "Sentinel"
+    BaseType "Emberstone Pandemonium Sentinel" 		
+Hide 
+	Class "Sentinel"
+    BaseType "Emberstone Stalker Sentinel" 		
+Hide 
+	Class "Sentinel"
+    BaseType "Obsidian Apex Sentinel" 		
+Hide 
+	Class "Sentinel"
+    BaseType "Obsidian Pandemonium Sentinel" 		
+Hide 
+	Class "Sentinel"
+    BaseType "Obsidian Stalker Sentinel" 		
+Hide 
+	Class "Sentinel"
+    BaseType "Primeval Apex Sentinel" 		
+Hide 
+	Class "Sentinel"
+    BaseType "Primeval Pandemonium Sentinel" 		
+Hide 
+	Class "Sentinel"
+    BaseType "Primeval Stalker Sentinel" 		
+Hide 
+	Class "Sentinel"
+    BaseType "Rusted Stalker Sentinel" 		
+
 # 【裝備-新物品防漏】
+
 
 Show # 新物品防漏 - 若遊戲更新添加新物品（新裝備基底除外）都會以此式樣顯示，所以當你看到此式樣的物品時，說明你的過濾需要更新了。
     SetTextColor 255 0 0
     SetBorderColor 255 255 255
     SetFontSize 40
     PlayAlertSound 15 200
-
