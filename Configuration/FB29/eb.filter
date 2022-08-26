@@ -27,6 +27,7 @@ Hide
 　　Corrupted True
     Class "Maps"
     MapTier <= 16
+    Rarity <= Rare
     SetTextColor 255 255 255
     SetBackgroundColor 33 19 38
     SetBorderColor 255 0 0
@@ -37,6 +38,7 @@ Hide
 　　Mirrored True
     Class "Maps"
     MapTier <= 16
+    Rarity <= Rare
     SetTextColor 255 255 255
     SetBackgroundColor 33 19 38
     SetBorderColor 255 0 0
@@ -1429,7 +1431,7 @@ Show # 聯盟 - 3.13祭祀 - 鞋子 - 攻擊格擋鞋
 
 # 【聯盟-3.12劫盜】3020
 
-Show # 聯盟 - 3.12劫盜 - 盜賊之印
+Hide # 聯盟 - 3.12劫盜 - 盜賊之印
     Class "Currency"
     BaseType "Rogue's Marker"
     SetTextColor 255 178 102
@@ -4447,9 +4449,22 @@ Show # 裝備 - 特殊裝備 - 高品質物品
     MinimapIcon 2 Blue Hexagon
     PlayEffect Blue    
 
-Show # 裝備 - 特殊裝備 - 幻色配方 (所有體積)
+Show # 裝備 - 特殊裝備 - 3色連洞 (1*3體積)
     LinkedSockets >= 3
-    LinkedSockets <= 8
+    LinkedSockets <= 4
+    Height = 3
+    Width = 1
+    SocketGroup "RGB"
+    SetTextColor 255 0 0
+    SetBackgroundColor 255 255 255
+    SetBorderColor 0 0 0
+    SetFontSize 45
+
+Show # 裝備 - 特殊裝備 - 3色連洞 (2*2體積)
+    LinkedSockets >= 3
+    LinkedSockets <= 4
+    Height = 2
+    Width = 2
     SocketGroup "RGB"
     SetTextColor 255 0 0
     SetBackgroundColor 255 255 255
@@ -5123,12 +5138,36 @@ Show # 裝備 - 高亮基底 - 飾品 - 腰帶 - 水晶腰帶(80能量護盾)
     SetTextColor 255 255 0
     SetFontSize 40
 
-Show # 裝備 - 高亮基底 獵首 魔血
+Hide # 裝備 - 高亮基底 獵首 魔血 # 複製隱藏
+    Mirrored True 
     Rarity = Normal
     Class "Belts"
     BaseType "Leather Belt" "Heavy Belt"
     SetTextColor 255 255 0
     SetFontSize 40
+
+Hide # 裝備 - 高亮基底 獵首 魔血 # 汙染隱藏
+    Corrupted True
+    Rarity = Normal
+    Class "Belts"
+    BaseType "Leather Belt" "Heavy Belt"
+    SetTextColor 255 255 0
+    SetFontSize 40
+
+Show # 裝備 - 高亮基底 獵首 魔血 AA盾 # 
+    Rarity = Normal
+    Class "Belts"
+    BaseType "Leather Belt" "Heavy Belt" 
+    SetTextColor 255 255 0
+    SetFontSize 40
+	
+Show # 裝備 - 高亮基底  AA盾 # 
+    Rarity = Normal
+    Class "Shields"
+    BaseType  "Champion Kite Shield"
+    SetTextColor 255 255 0
+    SetFontSize 40
+
 
 Show # 裝備 - 高亮基底 - 飾品 - 腰帶 - 先鋒腰帶(320護甲和閃避)
     Class "Belts"

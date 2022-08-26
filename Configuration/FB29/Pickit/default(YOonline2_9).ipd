@@ -54,7 +54,7 @@
 	[Type] == "Gemcutter's Prism" # 	[StashItem]	 == "true"	//	//寶石匠的稜鏡	拾取且存倉																						
 	[Type] == "Jeweller's Orb" # 	[StashItem]	 == "true"	//	//工匠石	拾取且存倉																						
 	[Type] == "Mirror of Kalandra" # 	[StashItem]	 == "true"	//	//卡蘭德的魔鏡	拾取且存倉																						
-	[Type] == "Orb of Alchemy" # 	[StashItem]	 == "true"	//	//點金石	拾取且存倉																						
+//	[Type] == "Orb of Alchemy" # 	[StashItem]	 == "true"	//	//點金石	拾取且存倉																						
 	[Type] == "Orb of Alteration" # 	[StashItem]	 == "true"	//	//改造石	拾取且存倉																						
 	[Type] == "Orb of Transmutation" # 	[StashItem]	 == "true"	//	//蛻變石	拾取且存倉																						
 	[Type] == "Orb of Augmentation" # 	[StashItem]	 == "true"	//	//增幅石	拾取且存倉																						
@@ -835,7 +835,7 @@
 				//																								
 	//// 17F 機會石點裝備 (機會石不足會造成爆倉 請謹慎開啟）			//																								
 //	[Type] == "Leather Belt"                # [ChanceItem] == "true" && [Rarity] == "Normal" // Headhunter(獵首)			//	//自動撿皮革點獵首	關閉中																						
-//	[Type] == "Heavy Belt"                # [ChanceItem] == "true" && [Rarity] == "Normal" // BloodMage			//	//自動撿重革點魔血	關閉中																						
+//	[Type] == "Heavy Belt"                # [StashItem] == "true" && [Rarity] == "Normal" // BloodMage			//	//自動撿重革點魔血	關閉中																						
 				//																								
 	//// 18F 藥水（預設關閉）			//																								
 				//																								
@@ -865,7 +865,7 @@
 //	 [Type] == "Hallowed Mana Flask" # 	[StashItem]	 == "true" 	//	//祝福魔力藥劑	不撿不存倉																						
 //	 [Type] == "Sanctified Mana Flask" # 	[StashItem]	 == "true" 	//	//聖化魔力藥劑	不撿不存倉																						
 //	 [Type] == "Divine Mana Flask" # 	[StashItem]	 == "true" 	//	//不朽魔力藥劑	不撿不存倉																						
-//	 [Type] == "Eternal Mana Flask" # 	[StashItem]	 == "true" 	//	//永恆魔力藥劑	不撿不存倉																						
+	 //[Type] == "Eternal Mana Flask" # 	[StashItem]	 == "true" 	//	//永恆魔力藥劑	不撿不存倉																						
 //	 [Type] == "Small Hybrid Flask" # 	[StashItem]	 == "true" 	//	//小型複合藥劑	不撿不存倉																						
 //	 [Type] == "Medium Hybrid Flask" # 	[StashItem]	 == "true" 	//	//中型複合藥劑	不撿不存倉																						
 //	 [Type] == "Large Hybrid Flask" # 	[StashItem]	 == "true" 	//	//大型複合藥劑	不撿不存倉																						
@@ -880,7 +880,7 @@
 //	 [Type] == "Topaz Flask" # 	[StashItem]	 == "true" 	//	//黃玉藥劑	不撿不存倉																						
 //	 [Type] == "Silver Flask" # 	[StashItem]	 == "true" 	//	//真銀藥劑	不撿不存倉																						
 //	 [Type] == "Aquamarine Flask" # 	[StashItem]	 == "true" 	//	//海藍藥劑	不撿不存倉																						
-//	 [Type] == "Diamond Flask" # 	[StashItem]	 == "true" 	//	//寶鑽藥劑	不撿不存倉																						
+	 //[Type] == "Diamond Flask" # 	[StashItem]	 == "true" 	//	//寶鑽藥劑	不撿不存倉																						
 //	 [Type] == "Granite Flask" # 	[StashItem]	 == "true" 	//	//堅岩藥劑	不撿不存倉																						
 //	 [Type] == "Jade Flask" # 	[StashItem]	 == "true" 	//	//翠玉藥劑	不撿不存倉																						
 //	 [Type] == "Quartz Flask" # 	[StashItem]	 == "true" 	//	//石英藥劑	不撿不存倉																						
@@ -1276,7 +1276,7 @@
 	[Type] == "Riveted Boots" && [Rarity] == "Unique" # [ForceSellItem] == "true" // Ralakesh's Impatience				//儀式短靴	拾取且售出																						
 	[Type] == "Soldier Boots" && [Rarity] == "Unique" # [base_number_of_skeletons_allowed] >= "1" && [ForceSellItem] == "true" // Alberon's Warpath				//阿爾貝隆的征途 戰士之靴	拾取且售出																						
 	[Type] == "Two-Toned Boots" && [Rarity] == "Unique" # [immune_to_elemental_status_ailments_while_affected_by_glorious_madness] >= "1" && [ForceSellItem] == "true" // Beacon of Madness Fire/Lightning res, Ele conflux/Ele Ailment Immunity				//異色鞋	拾取且售出																						
-	[Type]== "Moonstone Ring" && [Rarity] == "Unique" # [ForceSellItem] == "true" // Heartbound Loop / Shavronne's Revelation / Timeclasp / Timetwist / Valyrium				//戰日 月光石戒指	拾取且售出																						
+	[Type]== "Moonstone Ring" && [Rarity] == "Unique" # [StashItem] == "true" // Heartbound Loop / Shavronne's Revelation / Timeclasp / Timetwist / Valyrium				//戰日 月光石戒指	拾取且售出																						
 	[Type]== "Opal Ring" && [Rarity] == "Unique" # [ForceSellItem] == "true" // Mark of the Shaper / Stormfire				//烈風暴 蛋白石戒指	拾取且售出																						
 	[Type]== "Paua Ring" && [Rarity] == "Unique" # [ForceSellItem] == "true" // Doedre's Damning / Fated End / Perandus Signet / Praxis				//普拉克斯 海靈戒指	拾取且售出																						
 	[Type]== "Prismatic Ring" && [Rarity] == "Unique" # [ForceSellItem] == "true" // Lori's Lantern / Precursor's Emblem / The Taming / Thief's Torment				//竊罪 三相戒指	拾取且售出																						
