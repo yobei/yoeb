@@ -828,7 +828,7 @@
 //	[Type] == "Champion Kite Shield"                # [ChanceItem] == "true" && [Rarity] == "Normal" // AA盾			//	//自動撿鬥士鳶盾點AA盾	關閉中																						
 	//// 18F 藥水（預設關閉）			//																								
 				//																								
-	[Type] == "Quicksilver Flask" # 	[StashItem]	 == "true" 	//	//水銀藥劑	不撿不存倉																						
+//	[Type] == "Quicksilver Flask" # 	[StashItem]	 == "true" 	//	//水銀藥劑	不撿不存倉																						
 	[Type] == "Gold Flask"     # 	[StashItem]	 == "true" 	//	//黃金藥劑	不撿不存倉	
 // [Type] == "Diamond Flask" # 	[StashItem]	 == "true" 	//	//寶鑽藥劑	不撿不存倉		
 				//																								
