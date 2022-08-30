@@ -6,7 +6,7 @@
 	[Type] == "Leather Belt" && [Rarity] == "Unique" # [cannot_be_frozen_with_dex_higher_than_int] >= "1" && 	[ForceSellItem]	 == "true" // 		//巨岩之環 皮革腰帶																							
 	[Type] == "Leather Belt" && [Rarity] == "Unique" # [culling_strike_vs_cursed_enemies] >= "1" &&	[ForceSellItem]	 == "true" // 		//貪食腰 皮革腰帶																							
 	[Type] == "Leather Belt" && [Rarity] == "Unique" # [chill_nearby_enemies_when_you_focus] >= "1" &&	[ForceSellItem]	 == "true" // 		//極地束腹 皮革腰帶																							
-//	[Type] == "Leather Belt" && [Rarity] == "Unique" # [physical_damage_reduction_rating_+%_while_not_ignited_frozen_shocked] >= "1" &&	[ForceSellItem]	 == "true" // 		//永生 皮革腰帶																							
+	[Type] == "Leather Belt" && [Rarity] == "Unique" # [physical_damage_reduction_rating_+%_while_not_ignited_frozen_shocked] >= "1" &&	[ForceSellItem]	 == "true" // 		//永生 皮革腰帶																							
 	[Type] == "Leather Belt" && [Rarity] == "Unique" # [allow_multiple_offerings] >= "1" &&	[ForceSellItem]	 == "true" // 		//祭品之繫 皮革腰帶																							
 	[Type] == "Leather Belt" && [Rarity] == "Unique" # [enemies_ignited_by_you_have_physical_damage_%_converted_to_fire] >= "1" &&	[ForceSellItem]	 == "true" // 		//皮革腰帶																							
 	[Type] == "Leather Belt" && [Rarity] == "Unique" # [flasks_apply_to_your_zombies_and_spectres] >= "1" &&	[ForceSellItem]	 == "true" // 		//皮革腰帶																							
@@ -76,24 +76,20 @@
 //	[Type] == "Steel Kite Shield" && [Rarity] == "Unique" # [keystone_glancing_blows] >= "1" && 	[ForceSellItem]	 == "true" // 		帝王戒心																							
 	[Type] == "Steel Kite Shield" && [Rarity] == "Unique" # [keystone_corrupted_defences] >= "1" && 	[ForceSellItem]	 == "true" // 		瑪哈薩多																							
 	//歐喙=1.5D																											
-	[Type] == "Raven Mask" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 		//鷗喙 禍鴉之面
+	//[Type] == "Raven Mask" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 		//鷗喙 禍鴉之面
 	//水道仔或閃打仔會用到的散件																											
-	//熊頭 鳥頭																											
-	[Type] == "Silken Hood" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 																									
-//	[Type] == "Silken Hood" && [Rarity] == "Unique" # [evasion_rating_+%_when_on_low_life] >= "1" && 	[ForceSellItem]	 == "true" // 		//斯塔空加之首 綢緞之兜																							
-//	[Type] == "Silken Hood" && [Rarity] == "Unique" # [local_display_trigger_level_20_tornado_when_you_gain_avians_flight_or_avians_might_%] >= "1" && 	[ForceSellItem]	 == "true" // 		//斯卡沃之徒 綢緞之兜																							
-	[Type] == "Silken Hood" && [Rarity] == "Unique" # [local_item_can_have_x_additional_enchantments] >= "1" && 	[ForceSellItem]	 == "true" // 		//酷寒斗篷 綢緞之兜																							
+																					
 	//白風																											
 	[Type] == "Imperial Skean" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 																									
 	[Type] == "Imperial Skean" && [Rarity] == "Unique" # [critical_strike_chance_+%_for_spells_if_you_have_killed_recently] >= "1" && 	[ForceSellItem]	 == "true" // 		//戒律之影 帝國雙刃匕																							
 //	[Type] == "Imperial Skean" && [Rarity] == "Unique" # [cold_damage_+%_while_off_hand_is_empty] >= "1" && 	[ForceSellItem]	 == "true" // 		//白風 帝國雙刃匕																							
 	//畢斯扣項鍊																											
-	[Type] == "Gold Amulet" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 																									
+//	[Type] == "Gold Amulet" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 																									
 //	[Type] == "Gold Amulet" && [Rarity] == "Unique" # [normal_monster_dropped_item_quantity_+%] >= "1" && 	[ForceSellItem]	 == "true" // 		//畢斯寇的項圈 帝金護身符																							
-	[Type] == "Gold Amulet" && [Rarity] == "Unique" # [local_display_nearby_allies_extra_damage_rolls] >= "1" && 	[ForceSellItem]	 == "true" // 		//珀奎爾的指頭 帝金護身符																							
-	[Type] == "Gold Amulet" && [Rarity] == "Unique" # [item_found_quantity_+%_if_wearing_a_magic_item] >= "1" && 	[ForceSellItem]	 == "true" // 		//苦行 帝金護身符																							
-	[Type] == "Gold Amulet" && [Rarity] == "Unique" # [attack_maximum_added_fire_damage] >= "1" && 	[ForceSellItem]	 == "true" // 		//帝金護身符																							
-	[Type] == "Gold Amulet" && [Rarity] == "Unique" # [life_regeneration_per_minute_%_while_frozen] >= "1" && 	[ForceSellItem]	 == "true" // 		//冬之心 帝金護身符																							
+//	[Type] == "Gold Amulet" && [Rarity] == "Unique" # [local_display_nearby_allies_extra_damage_rolls] >= "1" && 	[ForceSellItem]	 == "true" // 		//珀奎爾的指頭 帝金護身符																							
+//	[Type] == "Gold Amulet" && [Rarity] == "Unique" # [item_found_quantity_+%_if_wearing_a_magic_item] >= "1" && 	[ForceSellItem]	 == "true" // 		//苦行 帝金護身符																							
+//	[Type] == "Gold Amulet" && [Rarity] == "Unique" # [attack_maximum_added_fire_damage] >= "1" && 	[ForceSellItem]	 == "true" // 		//帝金護身符																							
+//	[Type] == "Gold Amulet" && [Rarity] == "Unique" # [life_regeneration_per_minute_%_while_frozen] >= "1" && 	[ForceSellItem]	 == "true" // 		//冬之心 帝金護身符																							
 	//自殺頭																											
 	[Type] == "Ezomyte Burgonet" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 																									
 //	[Type] == "Ezomyte Burgonet" && [Rarity] == "Unique" # [physical_damage_taken_+%] <= "40" && [melee_weapon_critical_strike_multiplier_+] >= "120" && 	[ForceSellItem]	 == "true" // 		//深淵之喚 艾茲麥堅盔																							
@@ -111,7 +107,7 @@
 	//開膛斧																											
 	[Type]== "Siege Axe" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 																									
 	//獅吼、魯米都撿																											
-	[Type] == "Granite Flask" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 																									
+//	[Type] == "Granite Flask" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 																									
 	//大小傷腰 堅毅之環 都撿																											
 	[Type]== "Studded Belt" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 																									
 	//赤紅珠寶																											
@@ -265,15 +261,9 @@
 	[Type] == "Topaz Ring" && [Rarity] == "Unique" # [herald_of_thunder_bolt_frequency_+%] >= "1" && 	[ForceSellItem]	 == "true" // 		風暴之密																							
 	[Type] == "Topaz Ring" && [Rarity] == "Unique" # [nova_spells_cast_at_target_location] >= "1" && 	[ForceSellItem]	 == "true" // 		星空之影																							
 	//新生盾																											
-	[Type] == "Plank Kite Shield" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 																									
+//	[Type] == "Plank Kite Shield" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 																									
 	//靈護																											
-	[Type] == "Basket Rapier" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 																									
-	//塑界者之籽																											
-	[Type] == "Agate Amulet" && [Rarity] == "Unique" #	[StashItem]	 == "true" // 																									
-	[Type] == "Agate Amulet" && [Rarity] == "Unique" # [gain_endurance_charge_on_power_charge_expiry] >= "1" && 	[ForceSellItem]	 == "true" // 		//福爾的忠誠之符 瑪瑙護身符																							
-	[Type] == "Agate Amulet" && [Rarity] == "Unique" # [chance_to_grant_nearby_enemies_unholy_might_on_kill_%] >= "1" && 	[ForceSellItem]	 == "true" // 		//心靈抽取 瑪瑙護身符																							
-//	[Type] == "Agate Amulet" && [Rarity] == "Unique" # [local_display_aura_mana_regeneration_rate_+%] >= "1" &&	[ForceSellItem]	 == "true" // 		//塑界者之籽 瑪瑙護身符																							
-	[Type] == "Agate Amulet" && [Rarity] == "Unique" # [max_power_charges] >= "1" && 	[ForceSellItem]	 == "true" // 		//艾拉黛絲 瑪瑙護身符																							
+//	[Type] == "Basket Rapier" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 																									
 																												
 //	//// 1F 黃裝鑑定售出 ///請務必看說明書複製副本後再自定義																											
 																												
