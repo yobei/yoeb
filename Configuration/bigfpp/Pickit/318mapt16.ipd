@@ -85,3 +85,20 @@
 [Type] == "Heavy Belt" && [Rarity] == "Unique" # [keystone_sacred_bastion] >= "1" &&[ForceSellItem] == "true" // //重革腰帶拾取且售出
 [Type] == "Elegant Round Shield" && [Rarity] == "Unique" #[StashItem] == "true" // //馬上就打到的大地主
 [Type]=="Elegant Round Shield" && [Rarity] == "Unique" # [base_block_%_damage_taken]>="1" &&[ForceSellItem] == "true" // //壓迫者拾取且售出
+
+//	 [Type] == "Bismuth Flask" # 	[StashItem]	 == "true" 	//	//灰岩藥劑	不撿不存倉																						
+//	 [Type] == "Stibnite Flask" # 	[StashItem]	 == "true" 	//	//迷霧藥劑	不撿不存倉																						
+ [Type] == "Amethyst Flask" # 	[StashItem]	 == "true" 	//	//紫晶藥劑	不撿不存倉																						
+//	 [Type] == "Ruby Flask" # 	[StashItem]	 == "true" 	//	//紅玉藥劑	不撿不存倉																						
+//	 [Type] == "Sapphire Flask" # 	[StashItem]	 == "true" 	//	//藍玉藥劑	不撿不存倉																						
+//	 [Type] == "Topaz Flask" # 	[StashItem]	 == "true" 	//	//黃玉藥劑	不撿不存倉																						
+	 [Type] == "Silver Flask" # 	[StashItem]	 == "true" 	//	//真銀藥劑	不撿不存倉																						
+//	 [Type] == "Aquamarine Flask" # 	[StashItem]	 == "true" 	//	//海藍藥劑	不撿不存倉																						
+																					
+//	 [Type] == "Granite Flask" # 	[StashItem]	 == "true" 	//	//堅岩藥劑	不撿不存倉																						
+	 [Type] == "Jade Flask" # 	[StashItem]	 == "true" 	//	//翠玉藥劑	不撿不存倉																						
+//	 [Type] == "Quartz Flask" # 	[StashItem]	 == "true" 	//	//石英藥劑	不撿不存倉																						
+ [Type] == "Sulphur Flask" # 	[StashItem]	 == "true" 	//	//硫磺藥劑	不撿不存倉																						
+//	 [Type] == "Basalt Flask" # 	[StashItem]	 == "true" 	//	//石化藥劑	不撿不售出	
+[Type] == "Diamond Flask" # 	[StashItem]	 == "true" 	//	//寶鑽藥劑	不撿不存倉	
+	[Type] == "Quicksilver Flask" # 	[StashItem]	 == "true" 	//	//水銀藥劑	不撿不存倉	
