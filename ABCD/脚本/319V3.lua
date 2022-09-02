@@ -6,6 +6,8 @@ do
 	require(loadArr[i]);
 end
 
+g_timeOut=30*60     --在一个地图呆的时间超过设置的 就重新开图重新 单位为秒
+
 --指定职业  野蛮人、女巫、贵族、游侠、决斗者、暗影、圣堂武僧、
 g_newRoleJob="游侠"
 --升华职业 勇士、暴徒、酋长、侠客、锐眼、追猎者、秘术家、元素使、召唤师、处刑者、卫士、冠军、判官、圣宗、守护者、暗影大师、欺诈师、破坏者、升华使徒、
@@ -155,7 +157,7 @@ SetTaskShengJiData("a9q3",nil,"2_9_1",68,true)--做 到風暴飛刃 的时候刷滲血水道到
 SetTaskShengJiData("a10q3",nil,"2_9_1",75,true)--做 到風暴飛刃 的时候刷滲血水道到68级再进行下一任务
 
 SetTaskMiGongData("a8q7",nil,1)--大于等于a9q1级 做迷宫1
-SetTaskMiGongData("a10q1",nil,2)--大于等于a10q1 做迷宫2
+SetTaskMiGongData("a9q5",nil,2)--大于等于a10q1 做迷宫2
 SetTaskMiGongDataByLv(80,3)--大于等于80级 做迷宫3
 
 
