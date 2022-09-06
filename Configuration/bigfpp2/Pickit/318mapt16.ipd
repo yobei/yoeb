@@ -18,9 +18,9 @@
 //[Type] == "Timeless Maraketh Emblem" # [StashItem] == "true"////永恆馬拉克斯徽印拾取且存倉
 //[Type] == "Timeless Templar Emblem" # [StashItem] == "true"////永恆聖宗徽印拾取且存倉
 //[Type] == "Timeless Vaal Emblem"# [StashItem] == "true"////永恆瓦爾徽印拾取且存倉
-//[Type] == "Empower Support" #[StashItem] == "true"////賦予輔助拾取且存倉
+[Type] == "Empower Support" #[StashItem] == "true"////賦予輔助拾取且存倉
 //[Type] == "Enhance Support" #[StashItem] == "true"////增幅輔助不撿不存倉
-//[Type] == "Enlighten Support" #[StashItem] == "true"////啟蒙輔助拾取且存倉
+[Type] == "Enlighten Support" #[StashItem] == "true"////啟蒙輔助拾取且存倉
 [Type] == "The Apothecary" #[StashItem] == "true"////(魔血 5/5)拾取且存倉
 [Type] =="Incandescent Invitation" #[StashItem] == "true" ////熾熱之邀拾取且存倉
 [Type] =="Polaric Invitation" #[StashItem] == "true" ////極地之邀不撿不存倉
