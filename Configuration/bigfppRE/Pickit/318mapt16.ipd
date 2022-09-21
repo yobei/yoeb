@@ -1,7 +1,7 @@
 [Type] == "Regal Orb" # [StashItem] == "true"////富豪
 [Type] == "Awakened Sextant" # [StashItem] == "true"////六分
 
- [Type] =="Maven's Invitation: The Elderslayers" # [StashItem]  == "true"   //殺手 拾取且存倉
+// [Type] =="Maven's Invitation: The Elderslayers" # [StashItem]  == "true"   //殺手 拾取且存倉
 
 
 
@@ -133,8 +133,8 @@
 	//潛能魔棒	 																									
 	//[Type]== "Prophecy Wand" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 																									
 	//夜吟=2D	 																									
-	[Type]== "Assassin Bow" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 																									
-	[Type] == "Assassin Bow" && [Rarity] == "Unique" # [unique_chin_sol_close_range_knockback] >= "1" && 	[ForceSellItem]	 == "true" // 		亂矢之弦																							
+//	[Type]== "Assassin Bow" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 																									
+//	[Type] == "Assassin Bow" && [Rarity] == "Unique" # [unique_chin_sol_close_range_knockback] >= "1" && 	[ForceSellItem]	 == "true" // 		亂矢之弦																							
 	//學富之2.5D																											
 	//[Type]== "Carved Wand" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 																									
 	//[Type]== "Carved Wand" && [Rarity] == "Unique" # [max_power_charges] >= "1" &&	[ForceSellItem]	 == "true" // 		禁錮暴風
