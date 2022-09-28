@@ -21,6 +21,15 @@
 #============
 
 # 【特殊語法-六連裝備】0001
+#地圖破裂
+Hide
+    FracturedItem True
+    Class "Maps"
+    MapTier <= 16
+    SetTextColor 255 255 255
+    SetBackgroundColor 33 19 38
+    SetBorderColor 255 0 0
+    SetFontSize 44
 
 #地圖已汙染
 Hide
