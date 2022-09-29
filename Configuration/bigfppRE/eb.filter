@@ -596,7 +596,7 @@ Show # 通貨 - 初始 - 改造石
     SetTextColor 0 0 0
     SetBackgroundColor 128 100 255
     SetBorderColor 128 128 186
-    SetFontSize 45
+    SetFontSize 100
     PlayAlertSound 9 300
 
 Show # 通貨 - 初始 - 機會石
