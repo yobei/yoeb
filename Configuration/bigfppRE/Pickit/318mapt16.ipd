@@ -2,9 +2,6 @@
 [Type] == "Awakened Sextant" # [StashItem] == "true"////六分
 
 // [Type] =="Maven's Invitation: The Elderslayers" # [StashItem]  == "true"   //殺手 拾取且存倉
-
-
-
 //[Type]=="Niko's Memory" # [StashItem]  == "true" // 
 //[Type]=="Alva's Memory" # [StashItem]  == "true" // 
 //[Type]=="Kirac's Memory" # [StashItem]  == "true" // 
@@ -34,14 +31,14 @@
  // [Type] == "Divine Life Flask" # 	[StashItem]	 == "true" 	//	//不朽生命藥劑
  
  //編輯時間：2022/7/5 ex比水餃便宜的季末
-[Type] == "Orb of Alteration" # [StashItem] == "true"////改造石拾取且存倉
+//[Type] == "Orb of Alteration" # [StashItem] == "true"////改造石拾取且存倉
 [Type] == "Chaos Orb" # [StashItem] == "true"////混沌石拾取且存倉
 [Type] == "Divine Orb" # [StashItem] == "true"////神聖石拾取且存倉
 [Type] == "Exalted Orb" # [StashItem] == "true"////崇高石拾取且存倉
 [Type] == "Mirror of Kalandra" # [StashItem] == "true"////卡蘭德的魔鏡拾取且存倉
 [Type] == "Ancient Orb"# [StashItem] == "true"////古變石拾取且存倉
 [Type] == "Mirror Shard"# [StashItem] == "true"////魔鏡碎片拾取且存倉
-[Type] == "Ancient Shard"# [StashItem] == "true"////古變石碎片拾取且存倉
+[Type] == "Ancient Shard"# [StashItem] == "true"////古變石碎片拾取且存倉//
 [Type] == "Exalted Shard"# [StashItem] == "true"////崇高石碎片拾取且存倉
 //[Type] == "Orb of Regret"# [StashItem] == "true"////後悔石拾取且存倉
 //[Type] == "Orb of Unmaking"# [StashItem] == "true"////撤銷石拾取且存倉
