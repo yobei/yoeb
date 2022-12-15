@@ -36,8 +36,66 @@ SetZhuangBeiBoss("这里填上你自己的发装仓库号名字","区名字")--发装备的仓库号 如果
 
 --添加在做到某个任务时购买技能宝石
 --AddNeedBuySkillTime(city,task)-- city=城市索引数值型 1-11 task=任务类名 字符串型 任务类名可以在调试窗口中点击 所有任务 按钮查看到
+----A1
+AddNeedBuySkillTime(1,"a1q1")
+AddNeedBuySkillTime(1,"a1q5")
+AddNeedBuySkillTime(1,"a1q4")
+AddNeedBuySkillTime(1,"a1q2")
+AddNeedBuySkillTime(1,"a1q3")
+AddNeedBuySkillTime(1,"a1q6")
+AddNeedBuySkillTime(1,"a1q9")
+AddNeedBuySkillTime(1,"a1q7")
+----A2
+AddNeedBuySkillTime(2,"a2q7")
+AddNeedBuySkillTime(1,"a2q6")
+AddNeedBuySkillTime(2,"a2q9")
+AddNeedBuySkillTime(1,"a2q9")
+AddNeedBuySkillTime(2,"a2q2")
+AddNeedBuySkillTime(1,"a2q8")
+AddNeedBuySkillTime(1,"a2q2")
+-----A3
+AddNeedBuySkillTime(2,"a3q1")
+AddNeedBuySkillTime(2,"a3q11")
+AddNeedBuySkillTime(1,"a3q3")
+AddNeedBuySkillTime(1,"a3q4")
+AddNeedBuySkillTime(3,"a3q8")
+AddNeedBuySkillTime(3,"a3q9")
+AddNeedBuySkillTime(3,"a3q12")
+AddNeedBuySkillTime(3,"a3q10")
+----A4
+AddNeedBuySkillTime(3,"a4q2")
+AddNeedBuySkillTime(2,"a4q2")
+AddNeedBuySkillTime(1,"a4q2")
+AddNeedBuySkillTime(3,"a4q6")
+AddNeedBuySkillTime(3,"a4q3")
+AddNeedBuySkillTime(3,"a4q4")
+AddNeedBuySkillTime(4,"a4q5")
+AddNeedBuySkillTime(3,"a4q1")
+----A5
+AddNeedBuySkillTime(3,"a5q3")
+AddNeedBuySkillTime(2,"a5q3")
+AddNeedBuySkillTime(1,"a5q3")
+AddNeedBuySkillTime(4,"a5q5")
+
 AddNeedBuySkillTime(6,"a6q1")	--在第6章的惊海之王时 检测购买一遍
-AddNeedBuySkillTime(10,"a10q2")	--第10章的死亡和重生任务 检测购买一遍
+AddNeedBuySkillTime(6,"a6q2")
+AddNeedBuySkillTime(6,"a6q3")
+AddNeedBuySkillTime(6,"a6q5")
+AddNeedBuySkillTime(6,"a7q1")
+AddNeedBuySkillTime(6,"a7q2")
+AddNeedBuySkillTime(6,"a7q3")
+AddNeedBuySkillTime(6,"a7q4")
+AddNeedBuySkillTime(6,"a7q5")
+AddNeedBuySkillTime(6,"a7q6")
+AddNeedBuySkillTime(6,"a7q7")
+AddNeedBuySkillTime(6,"a8q1")
+AddNeedBuySkillTime(6,"a8q2")
+AddNeedBuySkillTime(6,"a8q3")
+AddNeedBuySkillTime(6,"a8q4")
+AddNeedBuySkillTime(6,"a8q5")
+AddNeedBuySkillTime(6,"a8q6")
+AddNeedBuySkillTime(6,"a8q7")
+AddNeedBuySkillTime(6,"a10q2")	--第10章的死亡和重生任务 检测购买一遍
 AddNeedBuySkillTime(11,"a11q1")	--在拾取碎片 这个任务时检测购买一遍
 
 
@@ -46,16 +104,16 @@ AddNeedBuySkillTime(11,"a11q1")	--在拾取碎片 这个任务时检测购买一遍
 SetNeedFlaskData(1,"生命药剂")
 SetNeedFlaskData(2,"生命药剂")
 SetNeedFlaskData(3,"水银药剂")
-SetNeedFlaskData(4,"水银药剂")
+SetNeedFlaskData(4,"魔力药剂")
 SetNeedFlaskData(5,"魔力药剂")
 
 --AddNotMakeTaskData(taskClassName)--添加不需要做的任务 taskClassName为任务类名
 AddNotMakeTaskData("a2q5")--梦中圣地
 AddNotMakeTaskData("a2q10")--白色巨兽
 AddNotMakeTaskData("a3q13")--重生的渴望
-AddNotMakeTaskData("a3q12")--命运之语
+--AddNotMakeTaskData("a3q12")--命运之语
 AddNotMakeTaskData("a6q5")--毕斯特传奇
-AddNotMakeTaskData("a7q8")--古斯特的墓碑
+--AddNotMakeTaskData("a7q8")--古斯特的墓碑
 AddNotMakeTaskData("a7q5")--银色吊坠
 AddNotMakeTaskData("a8q5")--瓦斯提里之翼
 AddNotMakeTaskData("a9q4")--命运之历
@@ -96,21 +154,21 @@ g_yijieNoWhiteMonster=true		--异界时是否不打白怪 true为不打 nil或false为打
 g_yijieNoWhiteBox=true			--异界时是否不开白箱子 true为不开 nil或false为开
 g_useYiJieWanChengDuLv=75	--使用下面异界完成度那个设置的等级，如果未到等则刷全图
 g_yiJieWanChengDu=0.6		--异界完成度 完成多少就回去 为1或1以下的小数
-g_yongHengShiBeiLv=75		--大于等于多少级打永恒石碑 
-g_needTaFangLv=75			--大于等于多少级打塔防
-g_needLianMoLv=80			--大于等于多少级打炼魔
-g_attackFreezeMonsterLv=75	--大于等于多少级打冰冻怪
-g_needChuanYueLv=75			--大于等于多少级打穿越怪
-g_needLieXiLv=75			--大於等于多少级打时空裂缝怪
-g_needMiWuLv=75				--大于等于多少级打迷雾
+g_yongHengShiBeiLv=90		--大于等于多少级打永恒石碑 
+g_needTaFangLv=90			--大于等于多少级打塔防
+g_needLianMoLv=90			--大于等于多少级打炼魔
+g_attackFreezeMonsterLv=90	--大于等于多少级打冰冻怪
+g_needChuanYueLv=90			--大于等于多少级打穿越怪
+g_needLieXiLv=90			--大於等于多少级打时空裂缝怪
+g_needMiWuLv=90				--大于等于多少级打迷雾
 
-g_yuyanCnt=30				--够多少银币去预言，小于10银币或填nil将不会触发 如果设定去预言，那下面还需要设置交易给仓库号的预言
+g_yuyanCnt=0				--够多少银币去预言，小于10银币或填nil将不会触发 如果设定去预言，那下面还需要设置交易给仓库号的预言
 
 --地图相关
 --SetNotMapGoMap(className,cnt) 设置无地图或未到等级时要刷的剧情地图 className字符串型 地图类名 cnt=次数
 SetNotMapGoMap("2_9_1",10)	--无地图时刷血色通道
 
-g_yiJieLv=75				--够了多少级才去刷异界
+g_yiJieLv=100				--够了多少级才去刷异界
 g_checkSellMapCnt=60		--地图超过这个数量才会检测出售地图
 g_destroyNoUseMap=true		--销毁上面设置不使用的地图 nil或false为不销毁
 g_mapUseFuHaoLv=80			--大于等于多少级对蓝图使用富豪石 nil为永远不使用
@@ -135,7 +193,7 @@ SetYouXianUseMapData("惡咒陵墓","Metadata/Items/Maps/MapWorldsCursedCrypt","0|1|
 SetYouXianUseMapData("古兵工廠","Metadata/Items/Maps/MapWorldsArsenal","0|1|2")
 SetYouXianUseMapData("遠古市集","Metadata/Items/Maps/MapWorldsBazaar","0|1|2")
 SetYouXianUseMapData("白沙灘頭","Metadata/Items/Maps/MapWorldsBeach","0|1|2")
-SetYouXianUseMapData("羈破牢","Metadata/Items/Maps/MapWorldsCage","0|1|2")
+SetYouXianUseMapData("羈破牢籠","Metadata/Items/Maps/MapWorldsCage","0|1|2")
 SetYouXianUseMapData("冰川山丘","Metadata/Items/Maps/MapWorldsGorge","0|1|2")
 SetYouXianUseMapData("劇毒林谷","Metadata/Items/Maps/MapWorldsJungleValley","0|1|2")
 SetYouXianUseMapData("濱海幽穴","Metadata/Items/Maps/MapWorldsUndergroundSea","0|1|2")
