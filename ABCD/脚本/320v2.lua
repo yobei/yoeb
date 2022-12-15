@@ -19,7 +19,7 @@ SetTaskShengJiData("a9q3",nil,"2_9_1",70,true)--滲血水道
 --1_5_5,無罪之室
 --1_5_7,聖物間
 --1_5_3b,大廣場廢墟
-g_needMinimizeGame=nil			--最小化遊戲窗口 true为最小化 false或nil为不最小化
+g_needMinimizeGame=true			--最小化遊戲窗口 true为最小化 false或nil为不最小化
 g_imBoss=false					--如果是仓库号要为true 挂机号为false
 g_attackDis=70					--攻击距离
 g_yiJieTimeOut=15*60			--异界地图内的超时时间 单位为秒 如果未设置就会用g_timeOut *是乘号 这里为15乘以60=15分钟
