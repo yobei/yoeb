@@ -193,7 +193,6 @@ SetYouXianUseMapData("ºÖäÁêÄ¹","Metadata/Items/Maps/MapWorldsCursedCrypt","0|1|
 SetYouXianUseMapData("¹Å±ø¹¤S","Metadata/Items/Maps/MapWorldsArsenal","0|1|2")
 SetYouXianUseMapData("ßh¹ÅÊĞ¼¯","Metadata/Items/Maps/MapWorldsBazaar","0|1|2")
 SetYouXianUseMapData("°×É³©î^","Metadata/Items/Maps/MapWorldsBeach","0|1|2")
-SetYouXianUseMapData("ÁbÆÆÀÎ»\","Metadata/Items/Maps/MapWorldsCage","0|1|2")
 SetYouXianUseMapData("±ù´¨É½Çğ","Metadata/Items/Maps/MapWorldsGorge","0|1|2")
 SetYouXianUseMapData("„¡¶¾ÁÖ¹È","Metadata/Items/Maps/MapWorldsJungleValley","0|1|2")
 SetYouXianUseMapData("Iº£ÓÄÑ¨","Metadata/Items/Maps/MapWorldsUndergroundSea","0|1|2")
