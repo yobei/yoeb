@@ -142,9 +142,9 @@
 	[Type] =="Enkindling Orb"#	[StashItem]	 == "true"	//	//點燃石	拾取且存倉
 //特例請勿更動//	[Type] == "Wisdom Scroll" # 	[StashItem]	 == "true"	//	//知識卷軸	不撿不存倉
 //特例請勿更動//	[Type] == "Portal Scroll" # 	[StashItem]	 == "true"	//	//傳送卷軸	不撿不存倉
-//	[Type] == "Blacksmith's Whetstone" # 	[StashItem]	 == "true"	//	//磨刀石	拾取且存倉
-//	[Type] == "Armourer's Scrap" # 	[StashItem]	 == "true"	//	//護甲片	拾取且存倉
-//	[Type] == "Glassblower's Bauble" # 	[StashItem]	 == "true"	//	//玻璃彈珠	拾取且存倉
+	[Type] == "Blacksmith's Whetstone" # 	[StashItem]	 == "true"	//	//磨刀石	拾取且存倉
+	[Type] == "Armourer's Scrap" # 	[StashItem]	 == "true"	//	//護甲片	拾取且存倉
+	[Type] == "Glassblower's Bauble" # 	[StashItem]	 == "true"	//	//玻璃彈珠	拾取且存倉
 	[Type] == "Blessed Orb" # 	[StashItem]	 == "true"	//	//祝福石	拾取且存倉
 	[Type] == "Chaos Orb" # 	[StashItem]	 == "true"	//	//混沌石	拾取且存倉
 	[Type] == "Chromatic Orb" # 	[StashItem]	 == "true"	//	//幻色石	拾取且存倉
@@ -167,10 +167,10 @@
 	[Type] == "Vaal Orb" # 	[StashItem]	 == "true"	//	//瓦爾寶珠	拾取且存倉
 	[Type] == "Cartographer's Chisel" # 	[StashItem]	 == "true"	//	//製圖釘	拾取且存倉
 	[Type] == "Orb of Annulment"         # 	[StashItem]	 == "true"	//	//無效石	拾取且存倉
-//	[Type] == "Orb of Binding"                 # 	[StashItem]	 == "true"	//	//束縛石	不撿不存倉
-//	[Type] == "Orb of Horizons"         # 	[StashItem]	 == "true"	//	//地平石	不撿不存倉
-//	[Type] == "Harbinger's Orb"         # 	[StashItem]	 == "true"	//	//神諭石	不撿不存倉
-//	[Type] == "Engineer's Orb"                 # 	[StashItem]	 == "true"	//	//工程石	不撿不存倉
+	[Type] == "Orb of Binding"                 # 	[StashItem]	 == "true"	//	//束縛石	不撿不存倉
+	[Type] == "Orb of Horizons"         # 	[StashItem]	 == "true"	//	//地平石	不撿不存倉
+	[Type] == "Harbinger's Orb"         # 	[StashItem]	 == "true"	//	//神諭石	不撿不存倉
+	[Type] == "Engineer's Orb"                 # 	[StashItem]	 == "true"	//	//工程石	不撿不存倉
 	[Type] == "Ancient Orb"                 # 	[StashItem]	 == "true"	//	//古變石	拾取且存倉
 	[Type] == "Annulment Shard"         # 	[StashItem]	 == "true"	//	//無效石碎片	拾取且存倉
 //	[Type] == "Binding Shard"                 # 	[StashItem]	 == "true"	//	//束縛石碎片	不撿不存倉
