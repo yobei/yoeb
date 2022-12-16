@@ -37,6 +37,7 @@ g_xiaoHaoGetZhuangBei=false		--挂机号向发装仓库号申请领高级换装中的装备 true为申
 
 SetTaskMiGongDataByLv(40,1)--在复活的梦魇这个任务时 做迷宫1
 SetTaskMiGongDataByLv(68,2)--在复活的梦魇这个任务时 做迷宫2
+SetTaskShengJiData("a10q3",nil,"2_9_1",80,true)--做 到風暴飛刃 的时候刷滲血水道到68级再进行下一任务
 SetTaskMiGongDataByLv(74,3)
 AddNeedBuySkillTime(1,"a1q2")--沖出監牢
 AddNeedBuySkillTime(1,"a1q4")--打破鳥蛋
