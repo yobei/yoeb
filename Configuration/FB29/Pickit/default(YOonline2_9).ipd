@@ -1,15 +1,15 @@
 //水道仔區////水道仔區////水道仔區////水道仔區////水道仔區////水道仔區////水道仔區////水道仔區////水道仔區////水道仔區//
 //水道仔區////水道仔區////水道仔區////水道仔區////水道仔區////水道仔區////水道仔區////水道仔區////水道仔區////水道仔區//
 //水道仔區////水道仔區////水道仔區////水道仔區////水道仔區////水道仔區////水道仔區////水道仔區////水道仔區////水道仔區//
-	[Category] == "Helm"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && 	[StashItem]	 == "true"	//	頭盔	拾取且售出																						
-	[Category] == "Chest"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && 	[StashItem]	 == "true"	//	胸甲	拾取且售出																						
-	[Category] == "Amulet"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && 	[StashItem]	 == "true"	//	護身符	拾取且售出																						
-	[Category] == "Ring"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && 	[StashItem]	 == "true"	//	戒指	拾取且售出																						
-	[Category] == "Belt"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && 	[StashItem]	 == "true"	//	腰帶	拾取且售出																						
-	[Category] == "Gloves"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && 	[StashItem]	 == "true"	//	手套	拾取且售出																						
-	[Category] == "Boots"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999"&& 	[StashItem]	 == "true"	//	鞋子	拾取且售出																						
+//	[Category] == "Helm"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && 	[StashItem]	 == "true"	//	頭盔	拾取且售出																						
+//	[Category] == "Chest"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && 	[StashItem]	 == "true"	//	胸甲	拾取且售出																						
+//	[Category] == "Amulet"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && 	[StashItem]	 == "true"	//	護身符	拾取且售出																						
+//	[Category] == "Ring"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && 	[StashItem]	 == "true"	//	戒指	拾取且售出																						
+//	[Category] == "Belt"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && 	[StashItem]	 == "true"	//	腰帶	拾取且售出																						
+//	[Category] == "Gloves"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && 	[StashItem]	 == "true"	//	手套	拾取且售出																						
+//	[Category] == "Boots"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999"&& 	[StashItem]	 == "true"	//	鞋子	拾取且售出																						
 //	[Category] == "Weapon"         && [Rarity]         == "Rare" # [DPS] > "999" && 	[StashItem]	 == "true"	//	武器	拾取且售出																						
-	[Category] == "Shield"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && 	[StashItem]	 == "true"	//	盾牌	拾取且售出																						
+//	[Category] == "Shield"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && 	[StashItem]	 == "true"	//	盾牌	拾取且售出																						
 			
 
 //	[Type] == "Quicksilver Flask" # 	[StashItem]	 == "true" 	//	//水銀藥劑	拾取且存倉																						
@@ -136,8 +136,8 @@
 	//// 2F 基礎通貨			//		
 //	[Type] == "Alchemy Shard" # 	[StashItem]	 == "true"	//	//點金石碎片	不撿不存倉
 //	[Type] == "Alteration Shard" # 	[StashItem]	 == "true"	//	//改造石碎片	不撿不存倉
-	[Type] == "Scroll Fragment" # 	[StashItem]	 == "true"	//	//卷軸碎片	拾取且存倉
-	[Type] == "Transmutation Shard" # 	[StashItem]	 == "true"	//	//蛻變石碎片	拾取且存倉
+//	[Type] == "Scroll Fragment" # 	[StashItem]	 == "true"	//	//卷軸碎片	拾取且存倉
+//	[Type] == "Transmutation Shard" # 	[StashItem]	 == "true"	//	//蛻變石碎片	拾取且存倉
 	[Type] == "Instilling Orb" #	[StashItem]	 == "true"	//	//滴注石	拾取且存倉
 	[Type] =="Enkindling Orb"#	[StashItem]	 == "true"	//	//點燃石	拾取且存倉
 //特例請勿更動//	[Type] == "Wisdom Scroll" # 	[StashItem]	 == "true"	//	//知識卷軸	不撿不存倉
@@ -275,7 +275,7 @@
 //[Category] == "Map" && [MapTier] >= "1"  && [Rarity] == "Magic"  #[StashItem] == "true" // //藍地圖藍地圖撿取，藍地圖存倉
 //[Category] == "Map" && [MapTier] >= "1"  && [Rarity] == "Rare"  #[StashItem] == "true" // //黃地圖黃地圖不撿，黃地圖售出
 //[Category] == "Map" && [MapTier] >= "1"  && [Rarity] == "Unique"  #[ForceSellItem] == "true" // //傳奇地圖傳奇地圖不撿，傳奇地圖售出
- [Sockets] == "6" && [Linked] >= "0"   #[ForceSellItem] == "true" // //六連全賣
+ [Sockets] == "6"  #[ForceSellItem] == "true" // //六連全賣
 
 //20220821	//以下是 獵首的親兄弟，除了獵首通通賣掉																											
 	[Type] == "Leather Belt" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 		//皮革腰帶 基底																							
