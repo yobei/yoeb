@@ -1,15 +1,15 @@
 //水道仔區////水道仔區////水道仔區////水道仔區////水道仔區////水道仔區////水道仔區////水道仔區////水道仔區////水道仔區//
 //水道仔區////水道仔區////水道仔區////水道仔區////水道仔區////水道仔區////水道仔區////水道仔區////水道仔區////水道仔區//
 //水道仔區////水道仔區////水道仔區////水道仔區////水道仔區////水道仔區////水道仔區////水道仔區////水道仔區////水道仔區//
-//	[Category] == "Helm"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && 	[StashItem]	 == "true"	//	頭盔	拾取且售出																						
+	[Category] == "Helm"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && 	[StashItem]	 == "true"	//	頭盔	拾取且售出																						
 //	[Category] == "Chest"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && 	[StashItem]	 == "true"	//	胸甲	拾取且售出																						
-//	[Category] == "Amulet"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && 	[StashItem]	 == "true"	//	護身符	拾取且售出																						
+	[Category] == "Amulet"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && 	[StashItem]	 == "true"	//	護身符	拾取且售出																						
 	[Category] == "Ring"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && 	[StashItem]	 == "true"	//	戒指	拾取且售出																						
 	[Category] == "Belt"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && 	[StashItem]	 == "true"	//	腰帶	拾取且售出																						
-//	[Category] == "Gloves"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && 	[StashItem]	 == "true"	//	手套	拾取且售出																						
-//	[Category] == "Boots"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999"&& 	[StashItem]	 == "true"	//	鞋子	拾取且售出																						
-//	[Category] == "Weapon"         && [Rarity]         == "Rare" # [DPS] > "999" && 	[StashItem]	 == "true"	//	武器	拾取且售出																						
-//	[Category] == "Shield"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && 	[StashItem]	 == "true"	//	盾牌	拾取且售出																						
+	[Category] == "Gloves"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && 	[StashItem]	 == "true"	//	手套	拾取且售出																						
+	[Category] == "Boots"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999"&& 	[StashItem]	 == "true"	//	鞋子	拾取且售出																						
+	[Category] == "Weapon"         && [Rarity]         == "Rare" # [DPS] > "999" && 	[StashItem]	 == "true"	//	武器	拾取且售出																						
+	[Category] == "Shield"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && 	[StashItem]	 == "true"	//	盾牌	拾取且售出																						
 			
 
 //	[Type] == "Quicksilver Flask" # 	[StashItem]	 == "true" 	//	//水銀藥劑	拾取且存倉																						
@@ -271,7 +271,7 @@
 [Type] == "The Patient" # [StashItem] == "true" // 18.0 C//病患拾取且存倉病患
 [Type] == "Council of Cats" # [StashItem] == "true" // 10.0 C//貓咪議會(費爾羅之物)拾取且存倉貓貓
 [Type] == "The Hoarder" # [StashItem] == "true" // 8.0 C//寶箱(崇高石)拾取且存倉ex
-//[Category] == "Map" && [MapTier] >= "1"  && [Rarity] == "Normal"  #[StashItem] == "true" // //普通地圖普通地圖撿取，普通地圖存倉
+[Category] == "Map" && [MapTier] >= "1"  && [Rarity] == "Normal"  #[StashItem] == "true" // //普通地圖普通地圖撿取，普通地圖存倉
 //[Category] == "Map" && [MapTier] >= "1"  && [Rarity] == "Magic"  #[StashItem] == "true" // //藍地圖藍地圖撿取，藍地圖存倉
 //[Category] == "Map" && [MapTier] >= "1"  && [Rarity] == "Rare"  #[StashItem] == "true" // //黃地圖黃地圖不撿，黃地圖售出
 //[Category] == "Map" && [MapTier] >= "1"  && [Rarity] == "Unique"  #[ForceSellItem] == "true" // //傳奇地圖傳奇地圖不撿，傳奇地圖售出
