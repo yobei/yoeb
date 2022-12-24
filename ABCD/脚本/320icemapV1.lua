@@ -31,14 +31,23 @@ SetNeedSkillLineData(99,"寒霜暴,nil|冰霜之捷,nil|憎恨,nil",nil,3,nil)
 SetNeedSkillLineData(100,"冰霜之刃,nil|多重打擊輔助,nil|夜刃輔助,nil|元素攻擊傷害輔助,nil|三體輔助,nil|啟發輔助,nil",nil,2,nil)
 
 
+--AddAttackSkillData(name,className,noLine,dis,monShuXingCnt)--添加攻击技能   挑选攻击技能会从上到下寻找，要把厉害的技能加在前面
+--name=技能名 字符串型    可填nil忽略 但要确保技能类名填对
+--className=技能类名 字符串型  可填nil忽略 但要确保技能名填对
+--noLine= 逻辑型 不在直线就能攻击 逻辑型 true为是 false 或nil 为否 比如召唤愤怒狂灵就是不在直线就能攻击的
+--dis 数字型 技能距离 可填nil忽略 默认为 g_attackDis 设置的距离
+--monShuXingCnt 数字型 怪物属性数量大于这个里才生效 我是按怪物属性数量来计算颜色的 (0-1为白怪 2-9为蓝怪 10或以上为金怪 其实也不是很准确，先这样用吧) 白怪填0 蓝怪填2 金怪填10
 --添加攻击技能 name=技能名 className=技能类名 noLine=不在直线就能攻击 挑选攻击技能会从上到下寻找，要把厉害的技能加在前面
 AddAttackSkillData("冰霜之刃","Vaal Lightning Strike")
 AddAttackSkillData("普通攻击","melee")
+AddAttackSkillData("寒霜暴","melee",nil,nil,10)
+
 
 --SetSkillLimitMaxLv(name,className,maxLv)--设置技能宝石最大等级 name=技能宝石物品名 className=技能宝石物品类名 maxLv=限制的最大等级
 SetSkillLimitMaxLv("受傷時施放輔助",nil,1)
 SetSkillLimitMaxLv("屍術傳送",nil,1)
 SetSkillLimitMaxLv("鋼筋鐵骨",nil,10)
+SetSkillLimitMaxLv("精準",nil,3)
 
 -- SetYiJieZhaoHuanLingTiData(mapClassName,name,className)--设置异界时召唤的灵体数据 mapClassName=剧情图类名 name=灵体名 className=灵体类名
 
