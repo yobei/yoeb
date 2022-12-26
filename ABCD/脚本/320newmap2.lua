@@ -177,7 +177,7 @@ SetTaskShengJiData("a10q3",nil,"2_9_1",73,true)--×ö µ½ïL±©ïwÈĞ µÄÊ±ºòË¢BÑªË®µÀµ
 
 SetTaskMiGongData("a8q7",nil,1)--´óÓÚµÈÓÚa9q1¼¶ ×öÃÔ¹¬1
 SetTaskMiGongData("a9q5",nil,2)--´óÓÚµÈÓÚa10q1 ×öÃÔ¹¬2
-SetTaskMiGongDataByLv(74,3)--´óÓÚµÈÓÚ80¼¶ ×öÃÔ¹¬3
+SetTaskMiGongDataByLv(85,3)--´óÓÚµÈÓÚ80¼¶ ×öÃÔ¹¬3
 
 g_yiJieLv=72				--¹»ÁË¶àÉÙ¼¶²ÅÈ¥Ë¢Òì½ç
 g_checkSellMapCnt=60		--µØÍ¼³¬¹ıÕâ¸öÊıÁ¿²Å»á¼ì²â³öÊÛµØÍ¼
@@ -210,3 +210,4 @@ g_needChuanYueLv=90			--´óÓÚµÈÓÚ¶àÉÙ¼¶´ò´©Ô½¹Ö
 g_needLieXiLv=90			--´óì¶µÈÓÚ¶àÉÙ¼¶´òÊ±¿ÕÁÑ·ì¹Ö
 g_needMiWuLv=90				--´óÓÚµÈÓÚ¶àÉÙ¼¶´òÃÔÎí
 g_changeHunDunLv=99--¶àÉÙ¼¶Ç°²»»»C
+SetCheckHeistData(5*60,100000,nil,99,false,65,73,78,65,true,6) --ÉèÖÃÈ¥¶á±¦ 
