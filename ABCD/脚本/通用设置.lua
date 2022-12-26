@@ -168,7 +168,7 @@ g_yuyanCnt=0				--够多少银币去预言，小于10银币或填nil将不会触发 如果设定去预言，
 --SetNotMapGoMap(className,cnt) 设置无地图或未到等级时要刷的剧情地图 className字符串型 地图类名 cnt=次数
 SetNotMapGoMap("2_9_1",10)	--无地图时刷血色通道
 
-g_yiJieLv=100				--够了多少级才去刷异界
+g_yiJieLv=73				--够了多少级才去刷异界
 g_checkSellMapCnt=60		--地图超过这个数量才会检测出售地图
 g_destroyNoUseMap=true		--销毁上面设置不使用的地图 nil或false为不销毁
 g_mapUseFuHaoLv=80			--大于等于多少级对蓝图使用富豪石 nil为永远不使用
