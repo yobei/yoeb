@@ -253,3 +253,38 @@ g_useMinLvMapTianFuCnt=70--地图天赋满多少点后 就从低阶地图开始取
 SetYiJieShuaTuModeByMapCnt(60,nil,2)--)--根据仓库里的地图数量设置异界刷图模式 可添加多个 他是从地图数量多到少来判断的
 
 SetCheckHeistData(5*60,100000,nil,99,false,65,73,78,65,true,6) --设置去夺宝 
+
+--SetNeedAddTianFu("异界地图天赋=atlas_boss_adjacent_maps_2-相鄰地圖掉落機率|atlas_path_11-相鄰地圖掉落機率|atlas_path_23_-相鄰地圖掉落機率|atlas_boss_adjacent_maps_1-相鄰地圖掉落機率|atlas_boss_adjacent_maps_8-相鄰地圖掉落機率|atlas_path_38-相鄰地圖掉落機率|atlas_path_21-相鄰地圖掉落機率|atlas_path_27-相鄰地圖掉落機率|atlas_path_28-相鄰地圖掉落機率|atlas_map_drops_20-掉落複製地圖|atlas_map_drops_2-掉落複製地圖|atlas_map_drops_4-掉落複製地圖|atlas_map_drops_8-掉落複製地圖|atlas_path_92-掉落複製地圖|atlas_path_61-物品數量|atlas_path_44-物品數量|atlas_path_35-物品數量|atlas_path_90-掉落複製地圖|atlas_keystone_smallnodes_1-流浪之路|atlas_path_22-相鄰地圖掉落機率|atlas_path_13-相鄰地圖掉落機率|atlas_path_8-相鄰地圖掉落機率|atlas_path_9-相鄰地圖掉落機率|atlas_path_37-相鄰地圖掉落機率|atlas_path_30-相鄰地圖掉落機率|atlas_path_18-相鄰地圖掉落機率|atlas_path_15-相鄰地圖掉落機率|atlas_path_2-相鄰地圖掉落機率|atlas_path_17-相鄰地圖掉落機率|atlas_map_drops_1-掉落複製地圖|atlas_map_drops_16-掉落複製地圖|atlas_map_drops_15-掉落複製地圖|atlas_map_drops_9-掉落複製地圖|atlas_path_95-掉落複製地圖|atlas_path_96-掉落複製地圖|atlas_path_94-掉落複製地圖|atlas_map_tier_5_1-高階地圖機率|atlas_map_tier_3_1-高階地圖機率|atlas_map_tier_3_2-高階地圖機率|atlas_map_tier_5_2-高階地圖機率|atlas_map_tier_4_1-高階地圖機率|atlas_path_82-掉落複製地圖|atlas_map_drops_14-掉落複製地圖|atlas_path_85-掉落複製地圖|atlas_path_14-相鄰地圖掉落機率|atlas_path_26-相鄰地圖掉落機率|atlas_path_83-掉落複製地圖|atlas_map_drops_5-掉落複製地圖|atlas_path_84-掉落複製地圖|atlas_map_drops_3-掉落複製地圖|atlas_map_drops_17_-掉落複製地圖|atlas_path_3-相鄰地圖掉落機率|atlas_path_29-相鄰地圖掉落機率|atlas_path_89-掉落複製地圖|atlas_map_drops_18-掉落複製地圖|atlas_path_86-掉落複製地圖|atlas_map_drops_21-掉落複製地圖|atlas_map_tier_1_2_-高階地圖機率|atlas_map_tier_1_1-高階地圖機率|atlas_map_tier_2_1-高階地圖機率|atlas_map_tier_2_2-高階地圖機率|atlas_map_drops_10-掉落複製地圖|atlas_map_drops_11-掉落複製地圖|atlas_path_4-相鄰地圖掉落機率|atlas_path_7-相鄰地圖掉落機率|atlas_path_88-掉落複製地圖|atlas_map_drops_12_-掉落複製地圖|atlas_path_87-掉落複製地圖|atlas_map_drops_13-掉落複製地圖|")
+g_yiJieLv=72				--够了多少级才去刷异界
+g_checkSellMapCnt=60		--地图超过这个数量才会检测出售地图
+g_destroyNoUseMap=true		--销毁上面设置不使用的地图 nil或false为不销毁
+g_mapUseFuHaoLv=76			--大于等于多少级对蓝图使用富豪石 nil为永远不使用
+g_mapUseZengFuLv=nil			--大于等于多少级对蓝图使用增幅石 nil为永远不使用
+g_mapUseDianJingLv=76		--大于等于多少级对白图使用点金石 nil为永远不使用
+g_mapUseTuiBianLv=72		--大于等于多少级对白图使用蜕变石 nil为永远不使用
+g_mapUseJiHuiLv=nil			--大于等于多少级对白图使用机会石 nil为永远不使用
+g_mapUseWaErLv=83			--大于等于多少级对白、蓝地图使用瓦尔宝珠 nil为永远不使用
+g_mapUseDingZiLv=nil			--大于等于多少级使用制图钉 nil为永远不使用
+g_noUseMapLv=0				--不使用、不捡多少阶及以上的地图 nil或0为忽略 设置优先的地图除外
+
+g_mapUseOrangeMap=false		--true为使用橙图 nil或false为不使用
+SetCheckHeistData(5*60,100000,nil,99,false,65,73,78,65,true,6) --设置去夺宝 
+
+g_yongHengShiBeiLv=90		--大于等于多少级打永恒石碑 
+g_needTaFangLv=95			--大于等于多少级打塔防
+g_needLianMoLv=90			--大于等于多少级打炼魔
+g_attackFreezeMonsterLv=90	--大于等于多少级打冰冻怪
+g_needChuanYueLv=90      	--大于等于多少级打穿越怪
+g_needLieXiLv=90			--大於等于多少级打时空裂缝怪
+g_needMiWuLv=90				--大于等于多少级打迷雾
+
+g_needZaFenLv=90           --设置多少级开始做新赛季炸坟玩法
+g_needMengYanLv=90          --70级以后就点梦魇
+g_needSuDiLv=90             --满75级打强袭宿敌内容
+
+g_notShuaBaiPao=false    --是否不需要刷白袍 true为不需要 false或nil为需要
+g_yijieNoWhiteMonster=false		--异界时是否不打白怪 true为不打 nil或false为打
+SetNoUseMapShuXing("map_monsters_reflect_%_physical_damage")--设置不打物理反射属性
+SetNoUseMapShuXing("map_monsters_reflect_%_elemental_damage")--设置不打魔法反射属性
+SetNoUseMapShuXing("map_players_no_regeneration_including_es")--无法回复
+SetNoUseMapShuXing("is_blighted_map")--凋落地图
