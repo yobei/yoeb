@@ -21,15 +21,6 @@
 #============
 
 # 【特殊語法-六連裝備】0001
-#地圖破裂
-Hide
-    FracturedItem True
-    Class "Maps"
-    MapTier <= 16
-    SetTextColor 255 255 255
-    SetBackgroundColor 33 19 38
-    SetBorderColor 255 0 0
-    SetFontSize 44
 
 #地圖已汙染
 Hide
@@ -65,7 +56,7 @@ Show # 特殊語法 - 六連裝備
 
 # 【特殊語法-六洞裝備】0002
 
-Hide # 特殊語法 - 六洞裝備
+Show # 特殊語法 - 六洞裝備
     Sockets = 6
     SetTextColor 0 0 0
     SetBackgroundColor 224 224 224
@@ -560,7 +551,7 @@ Show # 通貨 - 初始 - 知識卷軸
     SetTextColor 248 172 184 255
     SetBackgroundColor 0 0 0 255
     SetBorderColor 248 172 184 255
-    SetFontSize 5
+    SetFontSize 40
     MinimapIcon 2 Red Diamond
 
 Show # 通貨 - 初始 - 傳送卷軸
@@ -596,7 +587,7 @@ Show # 通貨 - 初始 - 改造石
     SetTextColor 0 0 0
     SetBackgroundColor 128 100 255
     SetBorderColor 128 128 186
-    SetFontSize 100
+    SetFontSize 45
     PlayAlertSound 9 300
 
 Show # 通貨 - 初始 - 機會石
@@ -654,31 +645,31 @@ Show # 通貨 - 初始 - 滴注石
 
 #【通貨-垃圾】1005
 
-Hide # 通貨 - 垃圾 - 磨刀石
+Show # 通貨 - 垃圾 - 磨刀石
     Class "Currency"
     BaseType "Blacksmith's Whetstone"
     SetTextColor 210 150 255
     SetFontSize 45
 
-Hide # 通貨 - 垃圾 - 護甲片
+Show # 通貨 - 垃圾 - 護甲片
     Class "Currency"
     BaseType "Armourer's Scrap"
     SetTextColor 210 150 255
     SetFontSize 45
 
-Hide # 通貨 - 垃圾 - 蛻變石
+Show # 通貨 - 垃圾 - 蛻變石
     Class "Currency"
     BaseType "Orb of Transmutation"
     SetTextColor 210 150 255
     SetFontSize 45
 
-Hide # 通貨 - 垃圾 - 增幅石
+Show # 通貨 - 垃圾 - 增幅石
     Class "Currency"
     BaseType "Orb of Augmentation"
     SetTextColor 210 150 255
     SetFontSize 45
 
-Hide # 通貨 - 垃圾 - 普蘭德斯金幣
+Show # 通貨 - 垃圾 - 普蘭德斯金幣
     Class "Currency"
     BaseType "Perandus Coin"
     SetTextColor 255 255 0 152
@@ -718,7 +709,7 @@ Hide # 通貨 - 垃圾 - 改造石碎片
     BaseType "Alteration Shard"
     SetTextColor 215 190 160
 
-Hide # 通貨 - 垃圾 - 點金石碎片
+Show # 通貨 - 垃圾 - 點金石碎片
     Class "Currency"
     BaseType "Alchemy Shard"
     SetTextColor 215 190 160
@@ -774,7 +765,7 @@ Show # 通貨 - 特殊 - 充能的羅盤
     MinimapIcon 2 Red Diamond
     PlayEffect Red
 
-Hide # 通貨 - 特殊 - 偵查報告
+Show # 通貨 - 特殊 - 偵查報告
     Class "Currency"
     BaseType "Scouting Report"
     SetTextColor 100 50 0
@@ -1440,7 +1431,7 @@ Show # 聯盟 - 3.13祭祀 - 鞋子 - 攻擊格擋鞋
 
 # 【聯盟-3.12劫盜】3020
 
-Hide # 聯盟 - 3.12劫盜 - 盜賊之印
+Show # 聯盟 - 3.12劫盜 - 盜賊之印
     Class "Currency"
     BaseType "Rogue's Marker"
     SetTextColor 255 178 102
@@ -1448,7 +1439,7 @@ Hide # 聯盟 - 3.12劫盜 - 盜賊之印
     SetBorderColor 255 178 102
     SetFontSize 40
 
-Hide # 聯盟 - 3.12劫盜 - 劫盜目標
+Show # 聯盟 - 3.12劫盜 - 劫盜目標
     Class "Heist Target"
     SetTextColor 74 230 58
     SetBackgroundColor 0 0 0 150
@@ -1456,7 +1447,7 @@ Hide # 聯盟 - 3.12劫盜 - 劫盜目標
     SetFontSize 45
     MinimapIcon 2 Green Star
 
-Hide # 聯盟 - 3.12劫盜 - 盜賊飾品
+Show # 聯盟 - 3.12劫盜 - 盜賊飾品
     Class "Trinket"
     BaseType "Thief's Trinket"
     SetTextColor 0 51 0
@@ -1467,14 +1458,14 @@ Hide # 聯盟 - 3.12劫盜 - 盜賊飾品
     MinimapIcon 0 Green Triangle
     PlayEffect Green
 
-Hide # 聯盟 - 3.12劫盜 - 契約書
+Show # 聯盟 - 3.12劫盜 - 契約書
     BaseType "Contract"
     SetTextColor 100 50 0
     SetBackgroundColor 255 178 102
     SetBorderColor 204 102 0
     SetFontSize 40
 
-Hide # 聯盟 - 3.12劫盜 - 合同
+Show # 聯盟 - 3.12劫盜 - 合同
     Class "Quest Item"
     BaseType "Contract"
     SetTextColor 0 255 0
@@ -1485,7 +1476,7 @@ Hide # 聯盟 - 3.12劫盜 - 合同
     MinimapIcon 0 Green Triangle
     PlayEffect Green
 
-Hide # 聯盟 - 3.12劫盜 - 藍圖
+Show # 聯盟 - 3.12劫盜 - 藍圖
     BaseType "Blueprint"
     SetTextColor 0 0 204
     SetBackgroundColor 255 178 102
@@ -1495,7 +1486,7 @@ Hide # 聯盟 - 3.12劫盜 - 藍圖
     MinimapIcon 2 Red Circle
     PlayEffect Red
 
-Hide # 聯盟 - 3.12劫盜 - 劫盜裝備
+Show # 聯盟 - 3.12劫盜 - 劫盜裝備
     Class "Heist Cloak" "Heist Brooch" "Heist Tool" "Heist Gear"
     SetTextColor 254 186 255
     SetBackgroundColor 128 0 128 255
@@ -1505,7 +1496,7 @@ Hide # 聯盟 - 3.12劫盜 - 劫盜裝備
     MinimapIcon 2 Red Star
     PlayEffect Red
 
-Hide # 聯盟 - 3.12劫盜 - 替代技能
+Show # 聯盟 - 3.12劫盜 - 替代技能
     AlternateQuality True
     SetTextColor 0 255 255
     SetBorderColor 0 255 255
@@ -1514,7 +1505,7 @@ Hide # 聯盟 - 3.12劫盜 - 替代技能
     MinimapIcon 0 Blue Star
     PlayEffect Blue
 
-Hide # 聯盟 - 3.12劫盜 - 贗品裝備
+Show # 聯盟 - 3.12劫盜 - 贗品裝備
     Replica True
     SetTextColor 255 165 0 255
     SetBackgroundColor 177 123 63 111
@@ -1524,7 +1515,7 @@ Hide # 聯盟 - 3.12劫盜 - 贗品裝備
     MinimapIcon 0 Orange UpsideDownHouse
     PlayEffect Orange
 
-Hide # 聯盟 - 3.12劫盜 - 裝備 - 能量法杖
+Show # 聯盟 - 3.12劫盜 - 裝備 - 能量法杖
     Class "Wands"
     BaseType "Assembler Wand" "Congregator Wand" "Accumulator Wand"
     SetBorderColor 180 255 0
@@ -1533,7 +1524,7 @@ Hide # 聯盟 - 3.12劫盜 - 裝備 - 能量法杖
     MinimapIcon 2 Blue Hexagon
     PlayEffect Blue
 
-Hide # 聯盟 - 3.12劫盜 - 裝備 - 中毒匕首
+Show # 聯盟 - 3.12劫盜 - 裝備 - 中毒匕首
     Class "Daggers"
     BaseType "Hollowpoint Dagger" "Pressurised Dagger" "Pneumatic Dagger"
     SetBorderColor 180 255 0
@@ -1542,7 +1533,7 @@ Hide # 聯盟 - 3.12劫盜 - 裝備 - 中毒匕首
     MinimapIcon 2 Blue Hexagon
     PlayEffect Blue
 
-Hide # 聯盟 - 3.12劫盜 - 裝備 - 烈衝匕首
+Show # 聯盟 - 3.12劫盜 - 裝備 - 烈衝匕首
     Class "Rune Daggers"
     BaseType "Flickerflame Blade" "Flashfire Blade" "Infernal Blade"
     SetBorderColor 180 255 0
@@ -1551,7 +1542,7 @@ Hide # 聯盟 - 3.12劫盜 - 裝備 - 烈衝匕首
     MinimapIcon 2 Blue Hexagon
     PlayEffect Blue
 
-Hide # 聯盟 - 3.12劫盜 - 裝備 - 混點爪
+Show # 聯盟 - 3.12劫盜 - 裝備 - 混點爪
     Class "Claws"
     BaseType "Shadow Fangs" "Malign Fangs" "Void Fangs"
     SetBorderColor 180 255 0
@@ -1560,7 +1551,7 @@ Hide # 聯盟 - 3.12劫盜 - 裝備 - 混點爪
     MinimapIcon 2 Blue Hexagon
     PlayEffect Blue
 
-Hide # 聯盟 - 3.12劫盜 - 裝備 - 盛怒斧
+Show # 聯盟 - 3.12劫盜 - 裝備 - 盛怒斧
     Class "One Hand Axes"
     BaseType "Maltreatment Axe" "Disapprobation Axe" "Psychotic Axe"
     SetBorderColor 180 255 0
@@ -1569,7 +1560,7 @@ Hide # 聯盟 - 3.12劫盜 - 裝備 - 盛怒斧
     MinimapIcon 2 Blue Hexagon
     PlayEffect Blue
 
-Hide # 聯盟 - 3.12劫盜 - 裝備 - 物轉元劍
+Show # 聯盟 - 3.12劫盜 - 裝備 - 物轉元劍
     Class "One Hand Swords"
     BaseType "Fickle Spiritblade" "Capricious Spiritblade" "Anarchic Spiritblade"
     SetBorderColor 180 255 0
@@ -1578,7 +1569,7 @@ Hide # 聯盟 - 3.12劫盜 - 裝備 - 物轉元劍
     MinimapIcon 2 Blue Hexagon
     PlayEffect Blue
 
-Hide # 聯盟 - 3.12劫盜 - 裝備 - 熾熱衝擊錘
+Show # 聯盟 - 3.12劫盜 - 裝備 - 熾熱衝擊錘
     Class "One Hand Maces"
     BaseType "Flare Mace" "Crack Mace" "Boom Mace"
     SetBorderColor 180 255 0
@@ -1956,7 +1947,7 @@ Show # 聯盟 - 3.7戰亂 - 永恆珠寶
 
 # 【聯盟-3.6追憶】3014
 
-Hide # 聯盟 - 3.6追憶 - 破裂物品
+Show # 聯盟 - 3.6追憶 - 破裂物品
     FracturedItem True
     SetTextColor 237 240 235 255
     SetBackgroundColor 106 172 220
@@ -2594,7 +2585,7 @@ Show # 命運卡 - T1
 
 Show # 命運卡 - T2
     Class "Divination"
-    BaseType "A Note in the Wind" "Broken Promises" "Chaotic Disposition" "Council of Cats" "Dark Dreams" "Dementophobia" "Desecrated Virtue" "Draped in Dreams" "Hunter's Reward" "Keeper's Corruption" "The Academic" "The Artist" "The Bargain" "The Celestial Justicar" "The Dragon's Heart" "The Enlightened" "The Escape" "The Eye of Terror" "The Greatest Intentions" "The Gulf" "The Iron Bard" "The Life Thief" "The Long Con" "The Offspring" "The Patient" "The Price of Loyalty" "The Progeny of Lunaris" "The Sacrifice" "The Saint's Treasure" "The Spark and the Flame" "The Strategist" "The Sustenance" "The Void" "The White Knight" "Wealth and Power" "Winter's Embrace" "The Rabbit's Foot" "Chasing Risk" "The Catch" "The Forgotten Treasure" "The Aspirant" "Judging Voices" "Justified Ambition" "Misery in Darkness" "Duality" "The Transformation" "Magnum Opus" "Imperfect Memories" "The Magma Crab"
+    BaseType "A Note in the Wind" "Broken Promises" "Chaotic Disposition" "Council of Cats" "Dark Dreams" "Dementophobia" "Desecrated Virtue" "Draped in Dreams" "Hunter's Reward" "Keeper's Corruption" "The Academic" "The Artist" "The Bargain" "The Celestial Justicar" "The Dragon's Heart" "The Enlightened" "The Escape" "The Eye of Terror" "The Greatest Intentions" "The Gulf" "The Rusted Bard" "The Life Thief" "The Long Con" "The Offspring" "The Patient" "The Price of Loyalty" "The Progeny of Lunaris" "The Sacrifice" "The Saint's Treasure" "The Spark and the Flame" "The Strategist" "The Sustenance" "The Void" "The White Knight" "Wealth and Power" "Winter's Embrace" "The Rabbit's Foot" "Chasing Risk" "The Catch" "The Forgotten Treasure" "The Aspirant" "Judging Voices" "Justified Ambition" "Misery in Darkness" "Duality" "The Transformation" "Magnum Opus" "Imperfect Memories" "The Magma Crab"
     SetFontSize 45
     SetTextColor 255 255 255 255
     SetBorderColor 255 255 255 255
@@ -2702,9 +2693,10 @@ Show # 輿圖物品 - 釋界之邀
     SetTextColor 0 0 0
     SetBackgroundColor 253 204 255
     SetBorderColor 255 94 255
-    SetFontSize 60
+    SetFontSize 45
+    PlayAlertSound 6 250
     MinimapIcon 0 Red Diamond
-
+    PlayEffect Red
 
 Show # 輿圖物品 - 新月裂片
     Class "Currency"
@@ -3018,7 +3010,7 @@ Show # 技能 - 技能品質15~19
     PlayEffect White Temp
 
 Show # 技能 - 技能品質1~14
-    Quality >= 15
+    Quality >= 1
     Class "Gems"
     SetTextColor 10 230 230
     SetFontSize 40
@@ -3031,11 +3023,11 @@ Show # 技能 - 等級15+
 
 # 【技能寶石-一般技能】6005
 
-Hide # 技能 - 瓦爾技能
+Show # 技能 - 瓦爾技能
     Class "Gems"
     BaseType "Vaal"
 
-Hide # 技能 - 一般技能
+Show # 技能 - 一般技能
     Class "Gems"
 
 # 【裝備】
@@ -5161,14 +5153,14 @@ Hide # 裝備 - 高亮基底 獵首 魔血 # 汙染隱藏
     SetTextColor 255 255 0
     SetFontSize 40
 
-Hide # 裝備 - 高亮基底 獵首 魔血 AA盾 # 
+Show # 裝備 - 高亮基底 獵首 魔血 AA盾 # 
     Rarity = Normal
     Class "Belts"
     BaseType "Leather Belt" "Heavy Belt"
     SetTextColor 255 255 0
     SetFontSize 40
 
-Hide # 裝備 - 高亮基底  AA盾 # 
+Show # 裝備 - 高亮基底  AA盾 # 
     Rarity = Normal
     Class "Shields"
     BaseType  "Champion Kite Shield"
@@ -5462,91 +5454,11 @@ Hide # 裝備 - 隱藏裝備 - 隱藏的白、藍裝 "弓" "法杖" "爪" "匕�
     SetBorderColor 255 255 255 0
     SetFontSize 32
 
-
-Hide 
-	Class "Sentinel"
-    BaseType "Ancient Apex Sentinel"
-Hide 
-	Class "Sentinel"
-    BaseType "Ancient Pandemonium Sentinel" 		
-Hide 
-	Class "Sentinel"
-    BaseType "Ancient Stalker Sentinel" 		
-Hide 
-	Class "Sentinel"
-    BaseType "Brimstone Apex Sentinel" 		
-Hide 
-	Class "Sentinel"
-    BaseType "Brimstone Pandemonium Sentinel" 		
-Hide 
-	Class "Sentinel"
-    BaseType "Brimstone Stalker Sentinel" 		
-Hide 
-	Class "Sentinel"
-    BaseType "Bronze Apex Sentinel" 		
-Hide 
-	Class "Sentinel"
-    BaseType "Bronze Pandemonium Sentinel" 		
-Hide 
-	Class "Sentinel"
-    BaseType "Bronze Stalker Sentinel" 		
-Hide 
-	Class "Sentinel"
-    BaseType "Cobalt Apex Sentinel" 		
-Hide 
-	Class "Sentinel"
-    BaseType "Cobalt Pandemonium Sentinel" 		
-Hide 
-	Class "Sentinel"
-    BaseType "Cobalt Stalker Sentinel" 		
-Hide 
-	Class "Sentinel"
-    BaseType "Cosmic Apex Sentinel" 		
-Hide 
-	Class "Sentinel"
-    BaseType "Cryptic Apex Sentinel" 		
-Hide 
-	Class "Sentinel"
-    BaseType "Cryptic Pandemonium Sentinel" 		
-Hide 
-	Class "Sentinel"
-    BaseType "Cryptic Stalker Sentinel" 		
-Hide 
-	Class "Sentinel"
-    BaseType "Emberstone Apex Sentinel" 		
-Hide 
-	Class "Sentinel"
-    BaseType "Emberstone Pandemonium Sentinel" 		
-Hide 
-	Class "Sentinel"
-    BaseType "Emberstone Stalker Sentinel" 		
-Hide 
-	Class "Sentinel"
-    BaseType "Obsidian Apex Sentinel" 		
-Hide 
-	Class "Sentinel"
-    BaseType "Obsidian Pandemonium Sentinel" 		
-Hide 
-	Class "Sentinel"
-    BaseType "Obsidian Stalker Sentinel" 		
-Hide 
-	Class "Sentinel"
-    BaseType "Primeval Apex Sentinel" 		
-Hide 
-	Class "Sentinel"
-    BaseType "Primeval Pandemonium Sentinel" 		
-Hide 
-	Class "Sentinel"
-    BaseType "Primeval Stalker Sentinel" 		
-Hide 
-	Class "Sentinel"
-    BaseType "Rusted Stalker Sentinel" 		
-
 # 【裝備-新物品防漏】
-
 
 Show # 新物品防漏 - 若遊戲更新添加新物品（新裝備基底除外）都會以此式樣顯示，所以當你看到此式樣的物品時，說明你的過濾需要更新了。
     SetTextColor 255 0 0
     SetBorderColor 255 255 255
     SetFontSize 40
     PlayAlertSound 15 200
+
