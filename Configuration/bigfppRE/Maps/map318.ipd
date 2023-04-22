@@ -282,3 +282,5 @@
  
 	[map_monsters_steal_charges] >= "1" && [Rarity] == "Magic" #  [RerollMods]  =="true"            //被怪偷球
 	[map_monsters_steal_charges] >= "1" && [Rarity] == "Rare" #  [RerollMods]  =="true"             //被怪偷球
+	
+	[3248]>= "1" && [Rarity] == "Magic" # [RerollMods] == "true" // Of Insulation -- Monsters have +% Chance to Avoid Status Elemental Ailments[map_monsters_avoid_ailments_%]
