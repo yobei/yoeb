@@ -30,8 +30,20 @@
 [Type]=="Ever-Changing" #[StashItem] == "true" //				
 [Type]=="A Dusty Memory" #[StashItem] == "true" //				
 		
-[Type]=="The Finishing Touch" #[StashItem] == "true" //				
-				
+[Type]=="The Finishing Touch" #[StashItem] == "true" //	
+
+[Type] == "Bismuth Flask" # 	[StashItem]	 == "true" 	//	//灰岩藥劑	不撿不存倉																						
+	 [Type] == "Stibnite Flask" # 	[StashItem]	 == "true" 	//	//迷霧藥劑	不撿不存倉																						
+	 [Type] == "Amethyst Flask" # 	[StashItem]	 == "true" 	//	//紫晶藥劑	不撿不存倉																																												
+	 [Type] == "Silver Flask" # 	[StashItem]	 == "true" 	//	//真銀藥劑	不撿不存倉																																								
+  [Type] == "Diamond Flask" # 	[StashItem]	 == "true" 	//	//寶鑽藥劑	不撿不存倉																						
+//	 [Type] == "Granite Flask" # 	[StashItem]	 == "true" 	//	//堅岩藥劑	不撿不存倉																						
+//	 [Type] == "Jade Flask" # 	[StashItem]	 == "true" 	//	//翠玉藥劑	不撿不存倉																						
+//	 [Type] == "Quartz Flask" # 	[StashItem]	 == "true" 	//	//石英藥劑	不撿不存倉																						
+	 [Type] == "Sulphur Flask" # 	[StashItem]	 == "true" 	//	//硫磺藥劑	不撿不存倉																						
+//	 [Type] == "Basalt Flask" # 	[StashItem]	 == "true" 	//	//石化藥劑	不撿不售出	
+	 [Type] == "Iron Flask" # 	[StashItem]	 == "true" 	//	//石化藥劑	不撿不售出	
+	
 				
 [Type]=="Fracturing Orb" #[StashItem] == "true" //				破裂石
 [Type]=="Fracturing Shard" #[StashItem] == "true" //				破裂石碎片
