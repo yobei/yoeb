@@ -4,7 +4,23 @@
 //	[MapTier]>= "1" && [MapTier] <= "16"#[RunMap]== "true"//執行輿圖			//這橫行請勿更動																					
 //	[Rarity]== "Normal"#[UpgradeToMagic]== "true"//使用蛻變石			//使用蛻變	不//使用蛻變																				
 //	[Rarity]== "Magic"#[AugmentIfPossible]== "true"//使用增幅石			//使用增幅	不//使用增幅																				
-//	[Rarity]== "Normal"#[UpgradeToRare]== "true"//使用點金石			//使用點金	不//使用點金																				
+//	[Rarity]== "Normal"#[UpgradeToRare]== "true"//使用點金石			//使用點金	不//使用點金	
+
+	//[MapTier]>= "1" && [MapTier] <= "16" && [Rarity] == "Rare" # [IgnoreMap]== "true" // 金圖全部不打
+
+
+	[map_contains_citadel] >= "1"            # [IgnoreMap] == "true" // Elder Maps
+	[map_elder_boss_variation] >= "1"        # [IgnoreMap] == "true" // Guardian Maps
+	[map_atlas_influence_type] >= "1"        # [IgnoreMap] == "true" // Guardian Maps
+	
+	[Type] == "Crimson Temple Map" && [Rarity] != "Rare" # [UpgradeMapTier] == "true"
+	[Type] == "Sulphur Vents Map" && [Rarity] != "Rare" # [UpgradeMapTier] == "true"
+	
+	[Type] == "Crimson Temple Map" && [Rarity] != "Rare" # [UpgradeMapTier] == "true"
+	[Type] == "Sulphur Vents Map" && [Rarity] != "Rare" # [UpgradeMapTier] == "true"
+	
+	
+	
 	//避開王房地圖//(預設)				//中文判斷																				
 	[Type]=="Graveyard Map" #	[SkipBossArena]	=="true"	//墮影墓場	不打這張圖的王																				
 	[Type]=="Dungeon Map" #	[SkipBossArena]	=="true"	//禁魂炎獄	不打這張圖的王																				
@@ -271,8 +287,8 @@
 //	[map_player_has_level_X_vulnerability] >= "1" && [Rarity] == "Rare" #	[RerollMods]	=="true"	//脆弱詛咒	我不怕這個																				
 	[map_monsters_life_leech_resistance_%] >= "1" && [Rarity] == "Magic" #	[RerollMods]	=="true"	//無法偷取	避開//無法偷取的圖，用改造或C去骰																				
 	[map_monsters_life_leech_resistance_%] >= "1" && [Rarity] == "Rare" #	[RerollMods]	=="true"	//無法偷取	避開//無法偷取的圖，用改造或C去骰																				
-//	[map_monsters_avoid_ailments_%] >= "1" && [Rarity] == "Magic" #	[RerollMods]	=="true"	//地圖怪物避免元素異常狀態	我不怕這個																				
-//	[map_monsters_avoid_ailments_%] >= "1" && [Rarity] == "Rare #	[RerollMods]	=="true"	//地圖怪物避免元素異常狀態	我不怕這個																				
+	[map_monsters_avoid_ailments_%] >= "1" && [Rarity] == "Magic" #	[RerollMods]	=="true"	//地圖怪物避免元素異常狀態	我不怕這個																				
+	[map_monsters_avoid_ailments_%] >= "1" && [Rarity] == "Rare #	[RerollMods]	=="true"	//地圖怪物避免元素異常狀態	我不怕這個																				
 	[map_additional_player_maximum_resistances_%] < "0" && [Rarity] == "Magic" #	[RerollMods]	=="true"	//降低最大抗	避開//降低最大抗的圖，用改造或C去骰																				
 	[map_additional_player_maximum_resistances_%] < "0" && [Rarity] == "Rare" #	[RerollMods]	=="true"	//降低最大抗	避開//降低最大抗的圖，用改造或C去骰																				
 	
@@ -281,3 +297,6 @@
  
 	[map_monsters_steal_charges] >= "1" && [Rarity] == "Magic" #  [RerollMods]  =="true"            //被怪偷球
 	[map_monsters_steal_charges] >= "1" && [Rarity] == "Rare" #  [RerollMods]  =="true"             //被怪偷球
+	
+	[3248] >= "1" && [Rarity] == "Magic" #	[RerollMods]	=="true
+	[3248] >= "1" && [Rarity] == "Rare" #	[RerollMods]	=="true
