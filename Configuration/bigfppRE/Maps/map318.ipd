@@ -14,7 +14,7 @@
 	[map_atlas_influence_type] >= "1"        # [IgnoreMap] == "true" // Guardian Maps
 	
 	[Type] == "Crimson Temple Map" && [Rarity] != "Rare" # [UpgradeMapTier] == "true"
-	[Type] == "Sulphur Vents Map" && [Rarity] != "Rare" # [UpgradeMapTier] == "true"
+	//[Type] == "Sulphur Vents Map" && [Rarity] != "Rare" # [UpgradeMapTier] == "true"
 	
 	//[Type] == "Toxic Sewer Map" && [Rarity] != "Rare" # [UpgradeMapTier] == "true" //¤U¤ô¹D
 	//[Type] == "Canyon Map" && [Rarity] != "Rare" # [UpgradeMapTier] == "true" //®l¨¦
