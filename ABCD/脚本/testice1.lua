@@ -92,7 +92,7 @@ AddAttackSkillData("普通攻击","melee")
 
 --SetSkillLimitMaxLv(name,className,maxLv)--设置技能宝石最大等级 name=技能宝石物品名 className=技能宝石物品类名 maxLv=限制的最大等级
 SetSkillLimitMaxLv("受傷時施放輔助",nil,1)
-SetSkillLimitMaxLv("熔岩護盾",nil,10)
+SetSkillLimitMaxLv("熔岩護盾",nil,8)
 SetSkillLimitMaxLv("烈焰衝刺",nil,1)
 -- SetYiJieZhaoHuanLingTiData(mapClassName,name,className)--设置异界时召唤的灵体数据 mapClassName=剧情图类名 name=灵体名 className=灵体类名
 
@@ -126,7 +126,7 @@ SetTaskShengJiData("a9q3",nil,"2_9_1",68,true)--做 到風暴飛刃 的时候刷滲血水道到
 
 SetTaskMiGongData("a8q7",nil,1)--大于等于a9q1级 做迷宫1
 SetTaskMiGongData("a10q1",nil,2)--大于等于a10q1 做迷宫2
-SetTaskMiGongDataByLv(78,3)--大于等于80级 做迷宫3
+SetTaskMiGongDataByLv(82,3)--大于等于80级 做迷宫3
 
 g_openQlkMaxMapTianFuCnt=nil--数值型 满多少天赋后不开奇拉克任务nil为一直开
 g_useMinLvMapTianFuCnt=70--地图天赋满多少点后 就从低阶地图开始取
