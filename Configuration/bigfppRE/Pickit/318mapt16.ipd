@@ -351,4 +351,4 @@
 //	 [Type] == "Sulphur Flask" # 	[StashItem]	 == "true" 	//	//硫磺藥劑	不撿不存倉																						
 //	 [Type] == "Basalt Flask" # 	[StashItem]	 == "true" 	//	//石化藥劑	不撿不售出	
 //	 [Type] == "Iron Flask" # 	[StashItem]	 == "true" 	//	//石化藥劑	不撿不售出	
-	
+	[Type] == "Quicksilver Flask" # 	[StashItem]	 == "true" 	//	//水銀藥劑	不撿不售出	
