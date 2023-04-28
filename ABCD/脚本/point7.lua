@@ -31,7 +31,7 @@ g_duobiHpVal=0.2
 --nType 有效场景 nil为无论何时都有效 0为没在刷异界才有效 1为只在刷异界才有效
 
 SetNeedSkillLineData(10,"燃燒箭矢,nil|氣勢輔助,nil",2,nil,nil)
-SetNeedSkillLineData(95,"元素淨化,nil|受傷時施放輔助,nil|信念浪湧,nil",nil,9,nil)
+SetNeedSkillLineData(95,"憎恨,nil|受傷時施放輔助,nil|信念浪湧,nil",nil,9,nil)
 SetNeedSkillLineData(96,"鋼筋鐵骨,nil|先祖衛士,nil|持續時間延長輔助,nil",nil,4,nil)
 SetNeedSkillLineData(97,"冰霜之捷,nil|盜獵者印記,nil|擊中時印記輔助,nil",nil,nil,nil)
 SetNeedSkillLineData(98,"凋零之步,nil|召喚寒冰魔像,nil",nil,nil,nil)
@@ -125,7 +125,7 @@ SetZhengTiColorVarData(5,0,3,1,nil,300,true)
 SetZhengTiColorVarData(5,0,2,0,nil,200,true)
 SetZhengTiColorVarData(5,0,1,0,nil,100)
 
-SetZhengTiColorVarData(9,2,0,2,nil,400,true)
+SetZhengTiColorVarData(9,1,1,2,nil,400,true)
 SetZhengTiColorVarData(9,1,0,3,nil,350,true)
 SetZhengTiColorVarData(9,1,0,2,nil,300,true)
 SetZhengTiColorVarData(9,1,0,1,nil,200,true)
@@ -148,6 +148,9 @@ AddShengJiZhuangBeiGoodsData("富豪石","Metadata/Items/Currency/CurrencyUpgradeMa
 --高级换装设置
 SetGaoJiHuanZhuangData("游侠","简易之袍","Metadata/Items/Armours/BodyArmours/BodyInt1","无尽之衣","Tabula Rasa")
 SetGaoJiHuanZhuangData("游侠","金缕帽","Metadata/Items/Armours/Helmets/HelmetDex1","金缕帽","Goldrim")
+SetGaoJiHuanZhuangData("游侠","奴役之索","Metadata/Items/Belts/Belt4","奴役之索","String of Servitude")
+
+
 
 --SetTaskShengJiData(taskClassName,taskIndex,shengjiMapClassName,needLv)--设置跑图时升级 taskClassName=任务类名 taskIndex=任务索引 nil为忽略，只匹配任务类名 shengjiMapClassName=要刷的地图类名 needLv=升级到多少级为止
 SetTaskShengJiData("a5q7",nil,"1_5_5",46,true)--做 到奇塔弗的受难 的时候刷纯净圣地到50级再进行下一任务
