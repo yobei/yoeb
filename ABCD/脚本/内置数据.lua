@@ -103,6 +103,9 @@ SetUseBuffSkill("Ñ¸½İ","haste","Ñ¸½İ¹â­h","player_aura_speed")--
 SetUseBuffSkill("ƒÑÅ","grace","ƒÑÅ¹â­h","player_aura_evasion")--
 SetUseBuffSkill("Ô÷ºŞ","hatred","Ô÷ºŞ¹â­h","player_aura_cold_damage")--
 SetUseBuffSkill("±ùËªœQ»¯","cold_resist_aura","±ùÀäœQ»¯¹â­h","player_aura_cold_resist")--
+SetUseBuffSkill("°ÁØˆ×£¸£","Aspect_of_the_Cat","°ÁØˆ×£¸£¹â­h","player_auraAspect_of_the_Cat")--
+
+
 
 SetUseBuffSkill("ÇåÎú","clarity","ÇåÎú¹â­h","player_aura_mana_regen")--
 SetUseBuffSkill("ÕÙ†¾Ì½œy™C«F","skitterbots","Ì½œy™C«F","skitterbots_buff")--
