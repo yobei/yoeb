@@ -60,7 +60,7 @@ g_duobiHpVal=0.2
 
 g_yiJieLv=70				--够了多少级才去刷异界
 g_checkSellMapCnt=20		--地图超过这个数量才会检测出售地图
-g_destroyNoUseMap=true		--销毁上面设置不使用的地图 nil或false为不销毁
+g_destroyNoUseMap=false		--销毁上面设置不使用的地图 nil或false为不销毁
 g_mapUseFuHaoLv=76			--大于等于多少级对蓝图使用富豪石 nil为永远不使用
 g_mapUseZengFuLv=nil			--大于等于多少级对蓝图使用增幅石 nil为永远不使用
 g_mapUseDianJingLv=76		--大于等于多少级对白图使用点金石 nil为永远不使用
@@ -70,12 +70,27 @@ g_mapUseWaErLv=83			--大于等于多少级对白、蓝地图使用瓦尔宝珠 nil为永远不使用
 g_mapUseDingZiLv=nil			--大于等于多少级使用制图钉 nil为永远不使用
 g_noUseMapLv=0				--不使用、不捡多少阶及以上的地图 nil或0为忽略 设置优先的地图除外
 
+g_mapUseOrangeMap=false		--true为使用橙图 nil或false为不使用
+
 SetNoUseMapShuXing("map_monsters_reflect_%_elemental_damage")--设置不打魔法反射属性
 SetNoUseMapShuXing("map_players_no_regeneration_including_es")--无法回复
 SetNoUseMapShuXing("is_blighted_map")--凋落地图
 
 
 SetGoodsCaoZuo("符文匕首","0|1",nil,nil,nil,nil,nil,nil,"0|1|2",nil,nil,nil,true,nil,function(gd)return not g_setAllSkillGemOk end )--技能宝石未全部装备上就 拾取 出售蓝色 白色 黄色的三色相连装备
+
+SetLastEnterSmallMap("MapWorldsArachnidTomb")--灵虫墓穴
+SetLastEnterSmallMap("MapWorldsTropicalIsland")--晴空幽岛
+SetLastEnterSmallMap("MapWorldsBurialChambers")--幽闭墓领
+SetLastEnterSmallMap("MapWorldsResidence")--神主居所
+SetLastEnterSmallMap("MapWorldsCage")--恶念牢笼
+SetLastEnterSmallMap("MapWorldsRamparts")--濱海堡壘
+SetLastEnterSmallMap("MapWorldsCaldera")--火山炎口
+SetLastEnterSmallMap("MapWorldsVaalPyramid")--瓦尔金字塔
+SetLastEnterSmallMap("MapWorldsArena")--競技場
+SetLastEnterSmallMap("MapWorldsOvergrownRuin")--長草遺跡
+SetLastEnterSmallMap("MapWorldsGorge")--冰川山丘
+
 
 
 --SetNeedSkillLineData(val,str,invalidLv,pos)--设置换技能宝石数据 
@@ -130,13 +145,14 @@ SetTaskMiGongDataByLv(81,3)--大于等于80级 做迷宫3
 
 g_openQlkMaxMapTianFuCnt=nil--数值型 满多少天赋后不开奇拉克任务nil为一直开
 g_useMinLvMapTianFuCnt=70--地图天赋满多少点后 就从低阶地图开始取
-SetYiJieShuaTuModeByMapCnt(30,nil,2)--)--根据仓库里的地图数量设置异界刷图模式 可添加多个 他是从地图数量多到少来判断的
+SetYiJieShuaTuModeByMapCnt(20,nil,2)--)--根据仓库里的地图数量设置异界刷图模式 可添加多个 他是从地图数量多到少来判断的
 SetOpenMapMasterData(3)
 
 
 SetChangeLimitCnt("武器|衣服|头盔|手套|鞋子",0)
 SetChangeLimitCnt("腰带",0)
 SetChangeLimitCnt("项链|戒指",0)
+
 SetNeedAddTianFu("异界地图天赋=atlas_boss_adjacent_maps_2-相鄰地圖掉落機率|atlas_path_11-相鄰地圖掉落機率|atlas_path_23_-相鄰地圖掉落機率|atlas_boss_adjacent_maps_1-相鄰地圖掉落機率|atlas_boss_adjacent_maps_8-相鄰地圖掉落機率|atlas_kirac_1_10-基拉克任務機率|atlas_kirac_1_9-基拉克任務機率|atlas_zana_1_6-重點偵察|atlas_kirac_1_8_-基拉克任務機率|atlas_kirac_1_7-基拉克任務機率|atlas_path_96-掉落複製地圖|atlas_map_tier_5_1-高階地圖機率|atlas_map_tier_5_2-高階地圖機率|atlas_map_tier_4_1-高階地圖機率|atlas_map_tier_3_1-高階地圖機率|atlas_map_tier_3_2-高階地圖機率|atlas_path_94-掉落複製地圖|atlas_map_drops_8-掉落複製地圖|atlas_path_92-掉落複製地圖|atlas_path_61-物品數量|atlas_path_44-物品數量|atlas_path_35-物品數量|atlas_path_90-掉落複製地圖|atlas_keystone_smallnodes_1-流浪之路|atlas_path_38-相鄰地圖掉落機率|atlas_path_21-相鄰地圖掉落機率|atlas_path_27-相鄰地圖掉落機率|atlas_map_tier_2_1-高階地圖機率|atlas_map_tier_2_2-高階地圖機率|atlas_path_37-相鄰地圖掉落機率|atlas_path_30-相鄰地圖掉落機率|atlas_path_18-相鄰地圖掉落機率|atlas_map_tier_1_2_-高階地圖機率|atlas_map_tier_1_1-高階地圖機率|atlas_path_15-相鄰地圖掉落機率|atlas_path_2-相鄰地圖掉落機率|atlas_kirac_2_1-基拉克任務機率|atlas_kirac_2_2-基拉克任務機率|atlas_kirac_2_3-基拉克任務機率|atlas_path_6-相鄰地圖掉落機率|atlas_path_8-相鄰地圖掉落機率|atlas_path_5-相鄰地圖掉落機率|atlas_path_13-相鄰地圖掉落機率|atlas_path_10-相鄰地圖掉落機率|atlas_path_19-相鄰地圖掉落機率|atlas_path_1-相鄰地圖掉落機率|atlas_path_20-相鄰地圖掉落機率|atlas_path_9-相鄰地圖掉落機率|atlas_path_22-相鄰地圖掉落機率|atlas_path_12-相鄰地圖掉落機率|atlas_path_24_-相鄰地圖掉落機率|atlas_path_16-相鄰地圖掉落機率|atlas_path_25_-相鄰地圖掉落機率|atlas_map_drops_4-掉落複製地圖|atlas_path_83-掉落複製地圖|atlas_map_drops_5-掉落複製地圖|atlas_path_84-掉落複製地圖|atlas_path_95-掉落複製地圖|atlas_map_drops_9-掉落複製地圖|atlas_map_drops_15-掉落複製地圖|atlas_path_82-掉落複製地圖|atlas_map_drops_14-掉落複製地圖|atlas_path_85-掉落複製地圖|atlas_map_drops_16-掉落複製地圖|atlas_map_drops_1-掉落複製地圖|atlas_map_drops_2-掉落複製地圖|atlas_map_drops_20-掉落複製地圖|atlas_path_93-掉落複製地圖|")
 
 
