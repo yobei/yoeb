@@ -55,11 +55,11 @@ g_needMiWuLv=90				--大于等于多少级打迷雾
 g_yuyanCnt=nil				--够多少银币去预言，小于10银币或填nil将不会触发 如果设定去预言，那下面还需要设置交易给仓库号的预言
 
 
-g_attackDis=30				--攻击距离
+g_attackDis=50				--攻击距离
 g_duobiHpVal=0.2
 
 g_yiJieLv=70				--够了多少级才去刷异界
-g_checkSellMapCnt=20		--地图超过这个数量才会检测出售地图
+g_checkSellMapCnt=40		--地图超过这个数量才会检测出售地图
 g_destroyNoUseMap=false		--销毁上面设置不使用的地图 nil或false为不销毁
 g_mapUseFuHaoLv=76			--大于等于多少级对蓝图使用富豪石 nil为永远不使用
 g_mapUseZengFuLv=nil			--大于等于多少级对蓝图使用增幅石 nil为永远不使用
@@ -70,27 +70,12 @@ g_mapUseWaErLv=83			--大于等于多少级对白、蓝地图使用瓦尔宝珠 nil为永远不使用
 g_mapUseDingZiLv=nil			--大于等于多少级使用制图钉 nil为永远不使用
 g_noUseMapLv=0				--不使用、不捡多少阶及以上的地图 nil或0为忽略 设置优先的地图除外
 
-g_mapUseOrangeMap=false		--true为使用橙图 nil或false为不使用
-
 SetNoUseMapShuXing("map_monsters_reflect_%_elemental_damage")--设置不打魔法反射属性
 SetNoUseMapShuXing("map_players_no_regeneration_including_es")--无法回复
 SetNoUseMapShuXing("is_blighted_map")--凋落地图
 
 
-SetGoodsCaoZuo("符文匕首","0|1",nil,nil,nil,nil,nil,nil,"0|1|2",nil,nil,nil,true,nil,function(gd)return not g_setAllSkillGemOk end )--技能宝石未全部装备上就 拾取 出售蓝色 白色 黄色的三色相连装备
-
-SetLastEnterSmallMap("MapWorldsArachnidTomb")--灵虫墓穴
-SetLastEnterSmallMap("MapWorldsTropicalIsland")--晴空幽岛
-SetLastEnterSmallMap("MapWorldsBurialChambers")--幽闭墓领
-SetLastEnterSmallMap("MapWorldsResidence")--神主居所
-SetLastEnterSmallMap("MapWorldsCage")--恶念牢笼
-SetLastEnterSmallMap("MapWorldsRamparts")--濱海堡壘
-SetLastEnterSmallMap("MapWorldsCaldera")--火山炎口
-SetLastEnterSmallMap("MapWorldsVaalPyramid")--瓦尔金字塔
-SetLastEnterSmallMap("MapWorldsArena")--競技場
-SetLastEnterSmallMap("MapWorldsOvergrownRuin")--長草遺跡
-SetLastEnterSmallMap("MapWorldsGorge")--冰川山丘
-
+SetGoodsCaoZuo("爪|匕首|法杖|单手剑|细剑|单手斧|单手锤|符文匕首|短杖|战杖|弓|长杖|双手剑|双手斧|双手锤|手套|鞋子|衣服|头盔","0|1",nil,nil,nil,nil,nil,nil,"0|1|2",nil,nil,nil,true,nil,function(gd)return not g_setAllSkillGemOk end )--技能宝石未全部装备上就 拾取 出售蓝色 白色 黄色的三色相连装备
 
 
 --SetNeedSkillLineData(val,str,invalidLv,pos)--设置换技能宝石数据 
@@ -141,22 +126,21 @@ SetTaskShengJiData("a9q3",nil,"2_9_1",68,true)--做 到風暴飛刃 的时候刷滲血水道到
 
 SetTaskMiGongData("a8q7",nil,1)--大于等于a9q1级 做迷宫1
 SetTaskMiGongData("a10q1",nil,2)--大于等于a10q1 做迷宫2
-SetTaskMiGongDataByLv(81,3)--大于等于80级 做迷宫3
+SetTaskMiGongDataByLv(82,3)--大于等于80级 做迷宫3
 
 g_openQlkMaxMapTianFuCnt=nil--数值型 满多少天赋后不开奇拉克任务nil为一直开
 g_useMinLvMapTianFuCnt=70--地图天赋满多少点后 就从低阶地图开始取
-SetYiJieShuaTuModeByMapCnt(20,nil,2)--)--根据仓库里的地图数量设置异界刷图模式 可添加多个 他是从地图数量多到少来判断的
+SetYiJieShuaTuModeByMapCnt(40,nil,2)--)--根据仓库里的地图数量设置异界刷图模式 可添加多个 他是从地图数量多到少来判断的
 SetOpenMapMasterData(3)
 
 
 SetChangeLimitCnt("武器|衣服|头盔|手套|鞋子",0)
 SetChangeLimitCnt("腰带",0)
 SetChangeLimitCnt("项链|戒指",0)
-
 SetNeedAddTianFu("异界地图天赋=atlas_boss_adjacent_maps_2-相鄰地圖掉落機率|atlas_path_11-相鄰地圖掉落機率|atlas_path_23_-相鄰地圖掉落機率|atlas_boss_adjacent_maps_1-相鄰地圖掉落機率|atlas_boss_adjacent_maps_8-相鄰地圖掉落機率|atlas_kirac_1_10-基拉克任務機率|atlas_kirac_1_9-基拉克任務機率|atlas_zana_1_6-重點偵察|atlas_kirac_1_8_-基拉克任務機率|atlas_kirac_1_7-基拉克任務機率|atlas_path_96-掉落複製地圖|atlas_map_tier_5_1-高階地圖機率|atlas_map_tier_5_2-高階地圖機率|atlas_map_tier_4_1-高階地圖機率|atlas_map_tier_3_1-高階地圖機率|atlas_map_tier_3_2-高階地圖機率|atlas_path_94-掉落複製地圖|atlas_map_drops_8-掉落複製地圖|atlas_path_92-掉落複製地圖|atlas_path_61-物品數量|atlas_path_44-物品數量|atlas_path_35-物品數量|atlas_path_90-掉落複製地圖|atlas_keystone_smallnodes_1-流浪之路|atlas_path_38-相鄰地圖掉落機率|atlas_path_21-相鄰地圖掉落機率|atlas_path_27-相鄰地圖掉落機率|atlas_map_tier_2_1-高階地圖機率|atlas_map_tier_2_2-高階地圖機率|atlas_path_37-相鄰地圖掉落機率|atlas_path_30-相鄰地圖掉落機率|atlas_path_18-相鄰地圖掉落機率|atlas_map_tier_1_2_-高階地圖機率|atlas_map_tier_1_1-高階地圖機率|atlas_path_15-相鄰地圖掉落機率|atlas_path_2-相鄰地圖掉落機率|atlas_kirac_2_1-基拉克任務機率|atlas_kirac_2_2-基拉克任務機率|atlas_kirac_2_3-基拉克任務機率|atlas_path_6-相鄰地圖掉落機率|atlas_path_8-相鄰地圖掉落機率|atlas_path_5-相鄰地圖掉落機率|atlas_path_13-相鄰地圖掉落機率|atlas_path_10-相鄰地圖掉落機率|atlas_path_19-相鄰地圖掉落機率|atlas_path_1-相鄰地圖掉落機率|atlas_path_20-相鄰地圖掉落機率|atlas_path_9-相鄰地圖掉落機率|atlas_path_22-相鄰地圖掉落機率|atlas_path_12-相鄰地圖掉落機率|atlas_path_24_-相鄰地圖掉落機率|atlas_path_16-相鄰地圖掉落機率|atlas_path_25_-相鄰地圖掉落機率|atlas_map_drops_4-掉落複製地圖|atlas_path_83-掉落複製地圖|atlas_map_drops_5-掉落複製地圖|atlas_path_84-掉落複製地圖|atlas_path_95-掉落複製地圖|atlas_map_drops_9-掉落複製地圖|atlas_map_drops_15-掉落複製地圖|atlas_path_82-掉落複製地圖|atlas_map_drops_14-掉落複製地圖|atlas_path_85-掉落複製地圖|atlas_map_drops_16-掉落複製地圖|atlas_map_drops_1-掉落複製地圖|atlas_map_drops_2-掉落複製地圖|atlas_map_drops_20-掉落複製地圖|atlas_path_93-掉落複製地圖|")
 
 
 --SetNeedAddTianFu(tfStr)--设置天赋加点 
 SetNeedAddTianFu("游侠=evasion731-閃避和生命|dexterity988-敏捷|dexterity986-敏捷|dexterity984-敏捷|finesse993-嫻熟|reduced_mana1480-魔力和藥劑效果|mana1478-原始精神|one_handed_damage636-武器元素傷害|shield_mastery440-自然合一|one_handed_damage637-武器元素傷害|claws_of_the_pride489-直覺|dexterity985-敏捷|cold_damage2025-冰冷傷害|cold_damage2026-冰冷傷害和冰冷異常狀態效果|cold_damage_notable2027-閃現冰凍|dexterity861-敏捷|weapon_elemental_damage2163-武器元素傷害|weapon_elemental_damage2161-武器元素傷害，異常狀態機率|weapon_elemental_damage2162-武器元素傷害，異常狀態機率|weapon_elemental_damage_notable2165-太古之力|mastery_elemental96-元素專精-17942|dexterity862-敏捷|dexterity864-敏捷|dexterity866-敏捷|dexterity865-敏捷|dexterity856-敏捷|dexterity855-敏捷|dexterity848-敏捷|intelligence957-智慧|aura_area_of_effect1203-光環效果範圍|reduced_mana_reservation1199-保留效用|aura_effect_reservation_cost_notable1558-魅力|life1116-閃避和生命|life1115-閃避和生命|life1117-死亡通緝|mastery_life130-閃避專精-57074|strength815-力量|dexterity981-敏捷|agility965-和諧之體|life703-生命|fitness617-血液抽取|life1220-生命|mental_acuity1046-詭計|intelligence964-智慧|dagger_crit2532-匕首的暴擊率|dagger_damage_and_critical_strike_chance258-匕首暴擊率和偷取|nightstalker261-夜襲|dexterity860-敏捷|dagger_damage2060-匕首傷害和移動速度|dagger_mobility2533-匕首的傷害和移動速度|from_the_shadows471-影刃|mastery_dagger78-匕首專精-44869|dexterity867-敏捷|life1415-生命|life_life_leech1629-嗜血者|mastery_life135-生命專精-47642|accuracy587-命中和暴擊率|accuracy586-命中和暴擊率|deadeye588-潛意識|mastery_accuracy2-命中專精-64775|intelligence927-智慧|intelligence926-智慧|dagger_damage264-匕首傷害|dagger_damage_and_critical_strike_chance465-匕首暴擊率和暴擊加成|dagger_damage_and_critical_strike_multiplier262-匕首暴擊率和加成|dagger_damage_and_critical_strike_multiplier263-匕首暴擊率和加成|dagger_global_crit_notable2527-背刺|dagger_damage_and_attack_speed466-匕首傷害和攻擊速度|dagger_damage_and_attack_speed467-匕首傷害和攻擊速度|dagger_damage_and_attack_speed468-匕首傷害和攻擊速度|flaying266-剝皮刃|intelligence1993-智慧|frenzy_charge_duration531-狂怒球持續時間|maximum_frenzy_charges526-狂熱|dexterity873-敏捷|dexterity858-敏捷|dexterity968-敏捷|dexterity835-敏捷|dexterity844-敏捷|dexterity840-敏捷|mana_on_kill1476-魔力和光環範圍效果|mana_on_kill_notable1704-狂歡|mastery_mana171-魔力專精-64875|dexterity838-敏捷|dexterity1990_-敏捷|maximum_frenzy_charges527-野性之心|strength1005-力量|life1213-生命|golem's_blood1088-魔像血統 |iron_reflexes1137-霸體|critical_strike_chance1019-暴擊率|assassination1239-刺殺|strength702-力量|channelling_damage2276-混沌抗性和避免|channelling_damage2277-混沌抗性|channelling_notabel2283-寬容|mark_generic1224-對標記敵人的傷害|mark_generic1225-對標記敵人的傷害|mark_generic_notable1226-標記獵物|elemental_damage2136-元素傷害|elemental_damage_notable2138-元素專注|dagger_damage_and_critical_strike_chance257-匕首暴擊加成|")
 
-SetNeedAddTianFu("游侠升华=AscendancyRaider3-閃避、狂怒球持續時間|AscendancyRaider2-盜獵者之途|AscendancyRaider1-閃避、狂怒球持續時間|AscendancyRaider4-殺戮使徒|AscendancyRaider9-閃避、元素傷害|AscendancyRaider10-石英化身|")
+SetNeedAddTianFu("游侠升华=AscendancyRaider3-閃避、狂怒球持續時間|AscendancyRaider2-盜獵者之途|AscendancyRaider1-閃避、狂怒球持續時間|AscendancyRaider4-殺戮使徒|") 
