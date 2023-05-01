@@ -19,7 +19,10 @@
 	//[Type] == "Toxic Sewer Map" && [Rarity] != "Rare" # [UpgradeMapTier] == "true" //下水道
 	//[Type] == "Canyon Map" && [Rarity] != "Rare" # [UpgradeMapTier] == "true" //峽谷
 	//[Type] == "City Square Map" && [Rarity] != "Rare" # [UpgradeMapTier] == "true" //城
-	
+	[Type] == "Arcade Map" && [Rarity] == "Rare" # [UpgradeMapTier] == "true" //峽谷
+	//[Type] == "Cemetery Map" && [Rarity] == "Rare" # [UpgradeMapTier] == "true" //城
+
+
 	[Type] == "City Square Map" #[RunMap] == "true"
 	[Type] == "Toxic Sewer Map" #[RunMap] == "true"
 	[Type]=="Crimson Temple Map" #	[RunMap]=="true"
