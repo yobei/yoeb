@@ -10,7 +10,6 @@
 // [13855] == "3" # [IgnoreMap] == "true" // Drox maps
 // [13855] == "4" # [IgnoreMap] == "true" // Al-Hezmin maps
 
-	[Type] == "Arcade Map" && [Rarity] == "Rare" # [UpgradeMapTier] == "true" //оlиж
 // Synthesized maps
 [Type] == "Synthesised Map" # [IgnoreMap] == "true" 
 
