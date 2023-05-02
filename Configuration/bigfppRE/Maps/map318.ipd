@@ -19,8 +19,9 @@
 	//[Type] == "Toxic Sewer Map" && [Rarity] != "Rare" # [UpgradeMapTier] == "true" //下水道
 	//[Type] == "Canyon Map" && [Rarity] != "Rare" # [UpgradeMapTier] == "true" //峽谷
 	//[Type] == "City Square Map" && [Rarity] != "Rare" # [UpgradeMapTier] == "true" //城
-	[Type] == "Arcade Map" && [Rarity] == "Rare" # [UpgradeMapTier] == "true" //峽谷
-	//[Type] == "Cemetery Map" && [Rarity] == "Rare" # [UpgradeMapTier] == "true" //城
+	[Type] == "Arcade Map" && [Rarity] == "Rare" && [map_contains_citadel] < "1" && [map_elder_boss_variation] < "1" && [map_atlas_influence_type] < "1"  # [UpgradeMapTier] == "true" //峽谷
+	[Type] == "Cemetery Map" && [Rarity] == "Rare" && [map_contains_citadel] < "1" && [map_elder_boss_variation] < "1" && [map_atlas_influence_type] < "1"  # [UpgradeMapTier] == "true" //峽谷
+	
 
 
 	[Type] == "City Square Map" #[RunMap] == "true"
