@@ -1,32 +1,33 @@
+//[Type] == "Quicksilver Flask"&& [ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //跑水
+
 //3.20新增 111年12月21日
-
 //3.20 12/11 開啟大量有價物品版本//
-
 //3.20 1/15 新增虛誕鑰匙
 
-[Category] == "Map" && [MapTier] >= "16"  && [Rarity] == "Normal"  #[StashItem] == "true" // //普通地圖普通地圖撿取，普通地圖存倉
-[Category] == "Map" && [MapTier] >= "16"  && [Rarity] == "Magic"  #[StashItem] == "true" // //藍地圖藍地圖撿取，藍地圖存倉
-
-//[Category] == "Map" && [MapTier] <= "14"  && [Rarity] == "Normal"  #[ForceSellItem] == "true" // //藍地圖藍地圖撿取，藍地圖存倉
-//[Category] == "Map" && [MapTier] <= "14"  && [Rarity] == "Magic"  #[ForceSellItem] == "true" // //藍地圖藍地圖撿取，藍地圖存倉
 
 
-[Category] == "Map" && [MapTier] >= "1"  && [Rarity] == "Rare"  #[StashItem] == "true" // //黃地圖黃地圖不撿，黃地圖售出
-[Category] == "Map" && [map_contains_citadel]>= "1"  #[StashItem] == "true" // //勢力圖拾取並存倉
-//[Category] == "Map" && [MapTier] >= "1"  && [Rarity] == "Unique"  #[StashItem] == "true" // //傳奇地圖傳奇地圖不撿，傳奇地圖售出
+[Type]=="Sulphur Vents Map" # [StashItem] == "true"
+[Type]=="Crimson Temple Map" #[StashItem] == "true"
+[Type] == "City Square Map" # [StashItem] == "true"
+[Type] == "Toxic Sewer Map" # [StashItem] == "true"
+[Type] == "Canyon Map" # [StashItem] == "true"
+[Type] == "Arcade Map" # [StashItem] == "true"
+[Type]=="Cemetery Map" # [StashItem] == "true"
 
+[Type]=="Sulphur Vents Map" && [MapTier] <= "14" # [ForceSellItem] == "true"
+[Type]=="Crimson Temple Map"&& [MapTier] <= "14" # [ForceSellItem] == "true"
+[Type] == "City Square Map" && [MapTier] <= "14" # [ForceSellItem] == "true"
+[Type] == "Toxic Sewer Map" && [MapTier] <= "14" # [ForceSellItem] == "true"
+[Type] == "Canyon Map" # && [MapTier] <= "14" # [ForceSellItem] == "true"
+[Type] == "Arcade Map" # && [MapTier] <= "14"  # [ForceSellItem] == "true"
+[Type]=="Cemetery Map" # && [MapTier] <= "14 "# [ForceSellItem] == "true"
 
-//[Type]=="Sulphur Vents Map" # [StashItem] == "true"
-//[Type]=="Crimson Temple Map" #[StashItem] == "true"
-//[Type] == "City Square Map" # [StashItem] == "true"
-//[Type] == "Toxic Sewer Map" # [StashItem] == "true"
-
-
-[Type] == "Ashen Wood Map" # [StashItem] == "true"
-[Type] == "Ghetto Map" # [StashItem] == "true"
-
-
+[Category] == "Map" && [Rarity] == "Rare" && [map_contains_citadel] >= "1" # [StashItem] == "true" // 13855 Citadel Maps
 [Category] == "Map" && [Rarity] == "Rare" && [map_elder_boss_variation] >= "1" # [StashItem] == "true" // 6551 Elder Maps
+
+[Category] == "Map" && [Rarity] == "Rare" && [map_atlas_influence_type] >= "1" # [StashItem] == "true" // 6551 Elder Maps
+
+
 [Type] == "Synthesised Map" # [StashItem] == "true" //
 
 //卡蘭德之觸
@@ -57,6 +58,7 @@
 [Type] == "A Chilling Wind" # [StashItem] == "true" // 凜冽之風 
 [Type] == "Matryoshka" # [StashItem] == "true" // 俄羅斯娃娃 有價				
 
+//[Type] == "Divine Vessel" # [StashItem] == "true" //
 
 //下面是3.19以前
 
@@ -98,12 +100,12 @@
 [Type]=="Tainted Divine Teardrop" # [StashItem]  == "true"
  
  
- //[Type] == "Rogue's Marker" # [StashItem]  == "true"  //盜賊之印
+ //[Type] == "Rogue's Marker" # [StashItem]  == "true"
  
  
 
  //編輯時間：2022/7/5 ex比水餃便宜的季末
-[Type] == "Orb of Alteration" # [StashItem] == "true"////改造石拾取且存倉
+//[Type] == "Orb of Alteration" # [StashItem] == "true"////改造石拾取且存倉
 [Type] == "Chaos Orb" # [StashItem] == "true"////混沌石拾取且存倉
 [Type] == "Divine Orb" # [StashItem] == "true"////神聖石拾取且存倉
 [Type] == "Exalted Orb" # [StashItem] == "true"////崇高石拾取且存倉
@@ -114,7 +116,7 @@
 [Type] == "Exalted Shard"# [StashItem] == "true"////崇高石碎片拾取且存倉
 [Type] == "Orb of Regret"# [StashItem] == "true"////後悔石拾取且存倉//
 [Type] == "Orb of Unmaking"# [StashItem] == "true"////撤銷石拾取且存倉
-[Type] == "Orb of Horizons"# [StashItem] == "true"////地平石拾取且存倉
+//[Type] == "Orb of Horizons"# [StashItem] == "true"////地平石拾取且存倉
 [Type] == "Enkindling Orb"# [StashItem] == "true"////點燃石拾取且存倉
 [Type] == "Orb of Annulment"# [StashItem] == "true"////無效 拾取且存倉
 [Type] == "Orb of Scouring"# [StashItem] == "true"////重鑄 拾取且存倉
@@ -174,12 +176,21 @@
 [Type] == "Council of Cats" # [StashItem] == "true" // 10.0 C//貓咪議會(費爾羅之物)拾取且存倉貓貓
 [Type] == "The Hoarder" # [StashItem] == "true" // 8.0 C//寶箱(崇高石)拾取且存倉ex
 
-									
+
+
+[Category] == "Map" && [Rarity] == "Rare" && [map_contains_citadel] >= "1" # [StashItem] == "true" // 13855 Citadel Maps
+
+[Category] == "Map" && [Rarity] == "Rare" && [map_elder_boss_variation] >= "1" # [StashItem] == "true" // 6551 Elder Maps
+
+																		
 [Type]== "Forge of the Phoenix Map"#[StashItem]== "true"//火鳳凰熔核 #																								
 [Type]== "Lair of the Hydra Map"#[StashItem]== "true"//九頭蛇冰窟 #																								
 [Type]== "Maze of the Minotaur Map"#[StashItem]== "true"//牛頭人謎域 #																								
 [Type]== "Pit of the Chimera Map"#[StashItem]== "true"//奇美拉魔坑 #		
+
+
 //[Category] == "Map" && [MapTier] >= "1"  && [Rarity] == "Unique"  #[ForceSellItem] == "true" // //傳奇地圖傳奇地圖不撿，傳奇地圖售出
+
  [Sockets] == "6" && [Linked] >= "6"   #[ForceSellItem] == "true" // //六連全賣
 
 //20220821	//以下是 獵首的親兄弟，除了獵首通通賣掉																											
@@ -343,15 +354,4 @@
 //	[Type] == "Agate Amulet" && [Rarity] == "Unique" # [chance_to_grant_nearby_enemies_unholy_might_on_kill_%] >= "1" && 	[ForceSellItem]	 == "true" // 		//心靈抽取 瑪瑙護身符																							
 //	[Type] == "Agate Amulet" && [Rarity] == "Unique" # [local_display_aura_mana_regeneration_rate_+%] >= "1" &&	[ForceSellItem]	 == "true" // 		//塑界者之籽 瑪瑙護身符																							
 //	[Type] == "Agate Amulet" && [Rarity] == "Unique" # [max_power_charges] >= "1" && 	[ForceSellItem]	 == "true" // 		//艾拉黛絲 瑪瑙護身符																							
-																	[Type] == "Bismuth Flask" # 	[StashItem]	 == "true" 	//	//灰岩藥劑	不撿不存倉																						
-//	 [Type] == "Stibnite Flask" # 	[StashItem]	 == "true" 	//	//迷霧藥劑	不撿不存倉																						
-//	 [Type] == "Amethyst Flask" # 	[StashItem]	 == "true" 	//	//紫晶藥劑	不撿不存倉																																												
-//	 [Type] == "Silver Flask" # 	[StashItem]	 == "true" 	//	//真銀藥劑	不撿不存倉																																								
- // [Type] == "Diamond Flask" # 	[StashItem]	 == "true" 	//	//寶鑽藥劑	不撿不存倉																						
-//	 [Type] == "Granite Flask" # 	[StashItem]	 == "true" 	//	//堅岩藥劑	不撿不存倉																						
-//	 [Type] == "Jade Flask" # 	[StashItem]	 == "true" 	//	//翠玉藥劑	不撿不存倉																						
-//	 [Type] == "Quartz Flask" # 	[StashItem]	 == "true" 	//	//石英藥劑	不撿不存倉																						
-//	 [Type] == "Sulphur Flask" # 	[StashItem]	 == "true" 	//	//硫磺藥劑	不撿不存倉																						
-//	 [Type] == "Basalt Flask" # 	[StashItem]	 == "true" 	//	//石化藥劑	不撿不售出	
-//	 [Type] == "Iron Flask" # 	[StashItem]	 == "true" 	//	//石化藥劑	不撿不售出	
-	
+																	
