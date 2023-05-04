@@ -23,15 +23,23 @@
 	[Type] == "Cemetery Map" && [Rarity] != "Normal" # [UpgradeMapTier] == "true" //城
 
 
-	[Type] == "City Square Map" #[RunMap] == "true"
-	[Type] == "Toxic Sewer Map" #[RunMap] == "true"
-	[Type]=="Crimson Temple Map" #	[RunMap]=="true"
-	[Type]=="Sulphur Vents Map" #	[RunMap]=="true"
-	[Type] == "Canyon Map" # [RunMap] == "true"
-	[Type] == "Arcade Map" # [RunMap] == "true"
-	[Type]=="Cemetery Map" # [RunMap] == "true"
 
 
+[Type] == "City Square Map" #[RunMap] == "true"
+[Type] == "Toxic Sewer Map" #[RunMap] == "true"
+[Type]=="Crimson Temple Map" # [RunMap]=="true"
+[Type]=="Sulphur Vents Map" # [RunMap]=="true"
+[Type] == "Canyon Map" # [RunMap] == "true"
+[Type] == "Arcade Map" # [RunMap] == "true"
+[Type]=="Cemetery Map" # [RunMap] == "true"
+
+[Type] == "City Square Map" # [ExitAfterBossKill] == "true"
+[Type] == "Toxic Sewer Map" # [ExitAfterBossKill] == "true"
+[Type]=="Crimson Temple Map" # [ExitAfterBossKill] == "true"
+[Type]=="Sulphur Vents Map" # [ExitAfterBossKill] == "true"
+[Type] == "Canyon Map" # [ExitAfterBossKill] == "true"
+[Type] == "Arcade Map" # [ExitAfterBossKill] == "true"
+[Type]=="Cemetery Map" # [ExitAfterBossKill] == "true"
 																		
 																									
 	//3.17 忽略圖與忽略傳奇圖																								
