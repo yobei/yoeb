@@ -110,8 +110,8 @@
 [Type] == "Mirror Shard"# [StashItem] == "true"////魔鏡碎片拾取且存倉
 [Type] == "Ancient Shard"# [StashItem] == "true"////古變石碎片拾取且存倉
 [Type] == "Exalted Shard"# [StashItem] == "true"////崇高石碎片拾取且存倉
-[Type] == "Orb of Regret"# [StashItem] == "true"////後悔石拾取且存倉//
-[Type] == "Orb of Unmaking"# [StashItem] == "true"////撤銷石拾取且存倉
+//[Type] == "Orb of Regret"# [StashItem] == "true"////後悔石拾取且存倉//
+//[Type] == "Orb of Unmaking"# [StashItem] == "true"////撤銷石拾取且存倉
 //[Type] == "Orb of Horizons"# [StashItem] == "true"////地平石拾取且存倉
 [Type] == "Enkindling Orb"# [StashItem] == "true"////點燃石拾取且存倉
 [Type] == "Orb of Annulment"# [StashItem] == "true"////無效 拾取且存倉
@@ -132,7 +132,7 @@
 [Type] == "Timeless Vaal Emblem"# [StashItem] == "true"////永恆瓦爾徽印拾取且存倉
 
 [Type] == "Empower Support" #[StashItem] == "true"////賦予輔助拾取且存倉
-[Type] == "Enhance Support" #[StashItem] == "true"////增幅輔助不撿不存倉
+//[Type] == "Enhance Support" #[StashItem] == "true"////增幅輔助不撿不存倉
 [Type] == "Enlighten Support" #[StashItem] == "true"////啟蒙輔助拾取且存倉
 [Type] == "The Apothecary" #[StashItem] == "true"////(魔血 5/5)拾取且存倉
 [Type] =="Incandescent Invitation" #[StashItem] == "true" ////熾熱之邀拾取且存倉
