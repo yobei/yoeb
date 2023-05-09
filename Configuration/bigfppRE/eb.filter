@@ -5552,3 +5552,23 @@ Show # 新物品防漏 - 若遊戲更新添加新物品（新裝備基底除外�
     SetBorderColor 255 255 255
     SetFontSize 40
     PlayAlertSound 15 200
+    
+Show # 通貨 - 特殊 - 超凡偵查報告
+    Class "Currency"
+    BaseType "Otherworldly Scouting Report"
+    SetTextColor 100 50 0
+    SetBackgroundColor 255 178 102
+    SetBorderColor 204 102 0
+    SetFontSize 40
+    MinimapIcon 2 Red Diamond
+    PlayEffect Red
+
+Hide # 通貨 - 特殊 - 偵查報告
+    Class "Currency"
+    BaseType "Scouting Report"
+    SetTextColor 100 50 0
+    SetBackgroundColor 255 178 102
+    SetBorderColor 204 102 0
+    SetFontSize 40
+#    MinimapIcon 2 Red Diamond
+#    PlayEffect Red
