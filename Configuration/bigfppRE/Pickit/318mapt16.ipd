@@ -6,13 +6,22 @@
 
 
 
-[Type]=="Sulphur Vents Map" # [StashItem] == "true"
-[Type]=="Crimson Temple Map" #[StashItem] == "true"
-[Type] == "City Square Map" # [StashItem] == "true"
-[Type] == "Toxic Sewer Map" # [StashItem] == "true"
-[Type] == "Canyon Map" # [StashItem] == "true"
-[Type] == "Arcade Map" # [StashItem] == "true"
-[Type]=="Cemetery Map" # [StashItem] == "true"
+//[Type]=="Sulphur Vents Map" # [StashItem] == "true"
+//[Type]=="Crimson Temple Map" #[StashItem] == "true"
+
+//[Type] == "Canyon Map" # [StashItem] == "true"
+//[Type] == "Arcade Map" # [StashItem] == "true"
+//[Type]=="Cemetery Map" # [StashItem] == "true"
+
+
+//[Type] == "City Square Map" # [StashItem] == "true"
+//[Type] == "Toxic Sewer Map" # [StashItem] == "true"
+
+[Category] == "Map" && [MapTier] >= "16"  && [Rarity] == "Normal"  #[StashItem] == "true" // //普通地圖普通地圖撿取，普通地圖存倉
+[Category] == "Map" && [MapTier] >= "16"  && [Rarity] == "Magic"  #[StashItem] == "true" // //藍地圖藍地圖撿取，藍地圖存倉
+//[Category] == "Map" && [MapTier] >= "1"  && [Rarity] == "Rare"  #[StashItem] == "true" // //黃地圖黃地圖不撿，黃地圖售出
+
+
 
 [Type]=="Sulphur Vents Map" && [MapTier] <= "14" # [ForceSellItem] == "true"
 [Type]=="Crimson Temple Map"&& [MapTier] <= "14" # [ForceSellItem] == "true"
