@@ -3,16 +3,6 @@
 //3.20新增 111年12月21日
 //3.20 12/11 開啟大量有價物品版本//
 //3.20 1/15 新增虛誕鑰匙
-//[Type]=="Sulphur Vents Map" # [StashItem] == "true"
-//[Type]=="Crimson Temple Map" #[StashItem] == "true"
-//[Type] == "Canyon Map" # [StashItem] == "true"
-//[Type] == "Arcade Map" # [StashItem] == "true"
-//[Type]=="Cemetery Map" # [StashItem] == "true"
-//[Type] == "City Square Map" # [StashItem] == "true"
-//[Type] == "Toxic Sewer Map" # [StashItem] == "true"
-[Type] == "Toxic Sewer Map" && [Rarity] == "Normal" # [StashItem] == "true"
-[Type] == "Toxic Sewer Map" && [Rarity] == "Magic" # [StashItem] == "true"
-[Type] == "Toxic Sewer Map" && [Rarity] == "Rare" # [StashItem] == "true"
 
 [Category] == "Map" && [MapTier] >= "16"  && [Rarity] == "Normal"  #[StashItem] == "true" // //普通地圖普通地圖撿取，普通地圖存倉
 [Category] == "Map" && [MapTier] >= "16"  && [Rarity] == "Magic"  #[StashItem] == "true" // //藍地圖藍地圖撿取，藍地圖存倉
@@ -74,17 +64,12 @@
 //[Type] == "Arcade Map" # [StashItem] == "true"
 //[Type]=="Cemetery Map" # [StashItem] == "true"
 
-[Type]=="Sulphur Vents Map" && [MapTier] <= "14" # [ForceSellItem] == "true"
-[Type]=="Crimson Temple Map"&& [MapTier] <= "14" # [ForceSellItem] == "true"
-[Type] == "City Square Map" && [MapTier] <= "14" # [ForceSellItem] == "true"
-[Type] == "Toxic Sewer Map" && [MapTier] <= "14" # [ForceSellItem] == "true"
-[Type] == "Canyon Map" # && [MapTier] <= "14" # [ForceSellItem] == "true"
-[Type] == "Arcade Map" # && [MapTier] <= "14"  # [ForceSellItem] == "true"
-[Type]=="Cemetery Map" # && [MapTier] <= "14 "# [ForceSellItem] == "true"
+[Type] =="Maven's Invitation: The Elderslayers" #	[StashItem]	 == "true" 		//殺手	拾取且存倉
+//[Type] =="Maven's Invitation: The Forgotten" #	[StashItem]	 == "true" 		//釋界之邀：遺忘	拾取且存倉
+[Type] =="Maven's Invitation: The Formed" #	[StashItem]	 == "true" 		//釋界之邀：塑型	拾取且存倉
+[Type] =="Maven's Invitation: The Twisted" #	[StashItem]	 == "true" 		//釋界之邀：扭曲	拾取且存倉
 
-[Category] == "Map" && [Rarity] == "Rare" && [map_contains_citadel] >= "1" # [StashItem] == "true" // 13855 Citadel Maps
-[Category] == "Map" && [Rarity] == "Rare" && [map_elder_boss_variation] >= "1" # [StashItem] == "true" // 6551 Elder Maps
-[Type] == "Synthesised Map" # [StashItem] == "true" //
+
 
 //卡蘭德之觸
 [Type] == "Ring" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 
@@ -172,7 +157,7 @@
 [Type] == "Exalted Shard"# [StashItem] == "true"////崇高石碎片拾取且存倉
 //[Type] == "Orb of Regret"# [StashItem] == "true"////後悔石拾取且存倉//
 //[Type] == "Orb of Unmaking"# [StashItem] == "true"////撤銷石拾取且存倉
-[Type] == "Orb of Horizons"# [StashItem] == "true"////地平石拾取且存倉
+//[Type] == "Orb of Horizons"# [StashItem] == "true"////地平石拾取且存倉
 //[Type] == "Enkindling Orb"# [StashItem] == "true"////點燃石拾取且存倉
 [Type] == "Orb of Annulment"# [StashItem] == "true"////無效 拾取且存倉
 //[Type] == "Orb of Scouring"# [StashItem] == "true"////重鑄 拾取且存倉
@@ -247,7 +232,7 @@
 
 //[Category] == "Map" && [MapTier] >= "1"  && [Rarity] == "Unique"  #[ForceSellItem] == "true" // //傳奇地圖傳奇地圖不撿，傳奇地圖售出
 
- [Sockets] == "6" && [Linked] >= "6"   #[ForceSellItem] == "true" // //六連全賣
+ //[Sockets] == "6" && [Linked] >= "6"   #[ForceSellItem] == "true" // //六連全賣
 
 
 	[Type] == "Spiraled Wand" && [Rarity] == "Unique" # [UniqueName] == "Amplification Rod" && [StashItem] == "true"	//增幅杖 螺紋法杖
@@ -286,4 +271,5 @@
 	[Type] == "Siege Axe" && [Rarity] == "Unique" # [UniqueName] == "Soul Taker" && [StashItem] == "true"	//開膛斧 破城斧
 	[Type] == "Elegant Round Shield" && [Rarity] == "Unique" # [UniqueName] == "The Squire" && [StashItem] == "true"	//大地主權貴圓盾
 //	[Type] == "Carnal Armour" && [Rarity] == "Unique" # [UniqueName] == "Stasis Prison" && [StashItem] == "true"	//靜止牢籠禁禮之甲
+
 	[Type] == "Two-Stone Ring" && [Rarity] == "Unique" # [UniqueName] == "Berek's Respite" && [StashItem] == "true"　//火與雷
