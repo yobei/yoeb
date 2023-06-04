@@ -29,7 +29,7 @@
 //[Type]=="Praetor Crown" && [Rarity] == "Unique" #[UniqueName]=="Voll's Vision"	#[StashItem] == "true"
 
 //岡姆手
-[Type]=="Titan Gauntlets" && [Rarity] == "Unique" # [UniqueName] == "Kaom's Spirit" && [StashItem] == "true"
+//[Type]=="Titan Gauntlets" && [Rarity] == "Unique" # [UniqueName] == "Kaom's Spirit" && [StashItem] == "true"
 
 //盟誓
 [Type]=="Rawhide Boots" && [Rarity] == "Unique" #[UniqueName]=="Seven-League Step"	#[StashItem] == "true"
@@ -47,7 +47,7 @@
 //[Type] == "Diamond Flask"&& 		[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //寶鑽
 //[Type] == "Granite Flask"&& 		[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //+1500護甲
 //[Type] == "Jade Flask"&& 		[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //+1500閃避
-//[Type] == "Quicksilver Flask"&& 	[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //跑水
+[Type] == "Quicksilver Flask"&& 	[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //跑水
 
 
 //3.20新增 111年12月21日
