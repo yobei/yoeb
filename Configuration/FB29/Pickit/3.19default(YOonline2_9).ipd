@@ -25,7 +25,7 @@
 	[Type] =="Elegant Round Shield" && [Rarity] == "Unique" # [base_block_%_damage_taken]>="1" &&	[ForceSellItem]	 == "true" // 		壓迫者																							
 //武器																												
 	//蜘蛛刀=6D																											
-	[Type]== "Fiend Dagger" && [Rarity] == "Unique" #  	[StashItem]	 == "true" // 																									
+	//[Type]== "Fiend Dagger" && [Rarity] == "Unique" #  	[StashItem]	 == "true" // 																									
 	[Type] == "Fiend Dagger" && [Rarity] == "Unique" # [chaos_damage_chance_to_poison_%] >= "1" &&	[ForceSellItem]	 == "true" // 		蠶食之闇 妖魔短匕																							
 	//潛能魔棒	 																									
 	[Type]== "Prophecy Wand" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 																									
@@ -38,7 +38,7 @@
 	[Type] == "Karui Maul" && [Rarity] == "Unique" # [StashItem] == "true" // Marohi Erqi	
 //防具																												
 	//AA盾=5D																											
-	[Type]== "Champion Kite Shield" && [Rarity] == "Unique" #	[StashItem]	 == "true" // 																									
+	//[Type]== "Champion Kite Shield" && [Rarity] == "Unique" #	[StashItem]	 == "true" // 																									
 	//光環盾=4D																											
 	[Type]== "Archon Kite Shield" && [Rarity] == "Unique" #	[StashItem]	 == "true" // 																									
 	[Type] == "Archon Kite Shield" && [Rarity] == "Unique" # [unholy_might_while_you_have_no_energy_shield] >= "1" && 	[ForceSellItem]	 == "true" // 		破碎信念																							
@@ -99,22 +99,22 @@
 	//冰冷之眼																											
 	[Type] == "Goathide Gloves" && [Rarity] == "Unique" # [base_physical_damage_%_to_convert_to_cold] >= "1" && 	[StashItem]	 == "true" // 																									
 	//雙玉戒指：冰火、火雷、雷冰戒、意志呼喚、狼王戒																											
-	[Type]== "Two-Stone Ring" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 																									
+	//[Type]== "Two-Stone Ring" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 																									
 	//三相戒指：竊罪、羅里																											
 	[Type]== "Prismatic Ring" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 																									
 	//裂心刃																											
 	[Type] == "Royal Skean" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 																									
 	//開膛斧																											
-	[Type]== "Siege Axe" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 																									
+	//[Type]== "Siege Axe" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 																									
 	//獅吼、魯米都撿																											
 //	[Type] == "Granite Flask" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 																									
 	//大小傷腰 堅毅之環 都撿																											
-	[Type]== "Studded Belt" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 																									
+	//[Type]== "Studded Belt" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 																									
 	//赤紅珠寶																											
-	[Type]== "Crimson Jewel" && [Rarity] == "Unique" 	[StashItem]	 == "true" // 																									
-//	[Type]== "Crimson Jewel" && [Rarity] == "Unique" # [local_unique_jewel_with_4_notables_gain_X_random_rare_monster_mods_on_kill] >= "1" && 	[ForceSellItem]	 == "true" // 		//求知的熱情																							
-//	[Type]== "Crimson Jewel" && [Rarity] == "Unique" # [golem_damage_+%_if_summoned_in_past_8_seconds] >= "1" && 	[ForceSellItem]	 == "true" // 		//先祖力量																							
-//	[Type]== "Crimson Jewel" && [Rarity] == "Unique" # [totem_number_of_additional_projectiles] >= "1" && 	[ForceSellItem]	 == "true" // 		//碎鏃雨																							
+	//[Type]== "Crimson Jewel" && [Rarity] == "Unique" 	[StashItem]	 == "true" // 																									
+//	//[Type]== "Crimson Jewel" && [Rarity] == "Unique" # [local_unique_jewel_with_4_notables_gain_X_random_rare_monster_mods_on_kill] >= "1" && 	[ForceSellItem]	 == "true" // 		//求知的熱情																							
+//	//[Type]== "Crimson Jewel" && [Rarity] == "Unique" # [golem_damage_+%_if_summoned_in_past_8_seconds] >= "1" && 	[ForceSellItem]	 == "true" // 		//先祖力量																							
+//	//[Type]== "Crimson Jewel" && [Rarity] == "Unique" # [totem_number_of_additional_projectiles] >= "1" && 	[ForceSellItem]	 == "true" // 		//碎鏃雨																							
 	[Type] == "Crimson Jewel" && [Rarity] == "Unique" # [mana_cost_+%_on_totemified_aura_skills] >= "-60" && 	[ForceSellItem]	 == "true" // 		//遠古基石 赤紅珠寶																							
 	[Type] == "Crimson Jewel" && [Rarity] == "Unique" # [vaal_skill_soul_refund_chance_%] >= "1" && 	[ForceSellItem]	 == "true" // 		//阿茲里之權 赤紅珠寶																							
 	[Type] == "Crimson Jewel" && [Rarity] == "Unique" # [maximum_life_%_lost_on_kill] >= "1" && 	[ForceSellItem]	 == "true" // 		//血犧 赤紅珠寶																							
@@ -153,11 +153,11 @@
 	[Type] == "Crimson Jewel" && [Rarity] == "Unique" # [local_unique_jewel_molten_strike_skill_area_of_effect_+%_with_50_str_in_radius] >= "1" && 	[ForceSellItem]	 == "true" // 		//燐火 赤紅珠寶																							
 	[Type] == "Crimson Jewel" && [Rarity] == "Unique" # [local_unique_jewel_glacial_hammer_physical_damage_%_to_convert_to_cold_with_50_str_in_radius] >= "1" && 	[ForceSellItem]	 == "true" // 		//冬葬 赤紅珠寶																							
 	//翠綠珠寶																											
-	[Type]== "Viridian Jewel" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 																									
-//	[Type]== "Viridian Jewel" && [Rarity] == "Unique" # [local_unique_jewel_melee_applies_to_bow] >= "1" && 	[ForceSellItem]	 == "true" // 		//獅眼的隕落 翠綠珠寶																							
-//	[Type]== "Viridian Jewel" && [Rarity] == "Unique" # [minion_chance_to_dodge_spells_%] >= "1" && 	[ForceSellItem]	 == "true" // 		//復甦誓約 翠綠珠寶																							
-//	[Type]== "Viridian Jewel" && [Rarity] == "Unique" # [local_unique_jewel_nearby_disconnected_passives_can_be_allocated] >= "1" && 	[ForceSellItem]	 == "true" // 		//直覺之躍 翠綠珠寶																							
-//	[Type]== "Viridian Jewel" && [Rarity] == "Unique" # [local_jewel_copy_stats_from_unallocated_non_notable_passives_in_radius] >= "1" && 	[ForceSellItem]	 == "true" // 		//神感 翠綠珠寶																							
+	//[Type]== "Viridian Jewel" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 																									
+//	//[Type]== "Viridian Jewel" && [Rarity] == "Unique" # [local_unique_jewel_melee_applies_to_bow] >= "1" && 	[ForceSellItem]	 == "true" // 		//獅眼的隕落 翠綠珠寶																							
+//	//[Type]== "Viridian Jewel" && [Rarity] == "Unique" # [minion_chance_to_dodge_spells_%] >= "1" && 	[ForceSellItem]	 == "true" // 		//復甦誓約 翠綠珠寶																							
+//	//[Type]== "Viridian Jewel" && [Rarity] == "Unique" # [local_unique_jewel_nearby_disconnected_passives_can_be_allocated] >= "1" && 	[ForceSellItem]	 == "true" // 		//直覺之躍 翠綠珠寶																							
+//	//[Type]== "Viridian Jewel" && [Rarity] == "Unique" # [local_jewel_copy_stats_from_unallocated_non_notable_passives_in_radius] >= "1" && 	[ForceSellItem]	 == "true" // 		//神感 翠綠珠寶																							
 	[Type] == "Viridian Jewel" && [Rarity] == "Unique" # [minion_chance_to_dodge_%] >= "1" && 	[ForceSellItem]	 == "true" // 		//映像 翠綠珠寶																							
 	[Type] == "Viridian Jewel" && [Rarity] == "Unique" # [recover_%_maximum_life_when_corpse_destroyed_or_consumed] >= "1" && 	[ForceSellItem]	 == "true" // 		//翠綠珠寶																							
 	[Type] == "Viridian Jewel" && [Rarity] == "Unique" # [local_jewel_nearby_passives_int_to_dex] >= "1" && 	[ForceSellItem]	 == "true" // 		//審慎計畫 翠綠珠寶																							
@@ -205,10 +205,10 @@
 	[Type] == "Viridian Jewel" && [Rarity] == "Unique" # [local_unique_jewel_barrage_final_volley_fires_x_additional_projectiles_simultaneously_with_50_dex_in_radius] >= "1" &&	[ForceSellItem]	 == "true" // 		//怒火齊發 翠綠珠寶																							
 	[Type] == "Viridian Jewel" && [Rarity] == "Unique" # [base movement velocity +%] >= "-15" && [chaos_damage_+%] >= "1" && 	[ForceSellItem]	 == "true" // 		//罪惡的重量 翠綠珠寶																							
 	//鈷藍珠寶																											
-	[Type]== "Cobalt Jewel" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 																									
-//	[Type]== "Cobalt Jewel" && [Rarity] == "Unique" # [local_unique_jewel_life_increases_applies_to_energy_shield] >= "1" && 	[ForceSellItem]	 == "true" // 		//潛能防護 鈷藍珠寶																							
-//	[Type]== "Cobalt Jewel" && [Rarity] == "Unique" # [local_unique_jewel_notable_passives_in_radius_instead_grant_minion_damage_taken_+%] >= "1" && 	[ForceSellItem]	 == "true" // 		//堅壁誓約 鈷藍珠寶																							
-	[Type]== "Cobalt Jewel" && [Rarity] == "Unique" # [local_unique_jewel_spectres_gain_soul_eater_on_kill_%_chance_with_50_int_in_radius] >= "1" && 	[ForceSellItem]	 == "true" // 		//無盡渴望 鈷藍珠寶																							
+	//[Type]== "Cobalt Jewel" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 																									
+//	//[Type]== "Cobalt Jewel" && [Rarity] == "Unique" # [local_unique_jewel_life_increases_applies_to_energy_shield] >= "1" && 	[ForceSellItem]	 == "true" // 		//潛能防護 鈷藍珠寶																							
+//	//[Type]== "Cobalt Jewel" && [Rarity] == "Unique" # [local_unique_jewel_notable_passives_in_radius_instead_grant_minion_damage_taken_+%] >= "1" && 	[ForceSellItem]	 == "true" // 		//堅壁誓約 鈷藍珠寶																							
+	//[Type]== "Cobalt Jewel" && [Rarity] == "Unique" # [local_unique_jewel_spectres_gain_soul_eater_on_kill_%_chance_with_50_int_in_radius] >= "1" && 	[ForceSellItem]	 == "true" // 		//無盡渴望 鈷藍珠寶																							
 	[Type] == "Cobalt Jewel" && [Rarity] == "Unique" # [local_unique_jewel_additional_life_per_X_int_in_radius] >= "1" && 	[ForceSellItem]	 == "true" // 		//真知灼見 鈷藍珠寶																							
 	[Type] == "Cobalt Jewel" && [Rarity] == "Unique" # [skills_gain_intensity_every_x_milliseconds_if_gained_intensity_recently] >= "1" && 	[ForceSellItem]	 == "true" // 		//巔峰模式 鈷藍珠寶																							
 	[Type] == "Cobalt Jewel" && [Rarity] == "Unique" # [attack_and_cast_speed_+%] >= "1" && 	[ForceSellItem]	 == "true" // 		//刺殺者迷影 鈷藍珠寶																							
@@ -297,7 +297,7 @@
 	[Type] == "Jeweller's Orb" # 	[StashItem]	 == "true"	//	//工匠石																							
 	[Type] == "Mirror of Kalandra" # 	[StashItem]	 == "true"	//	//卡蘭德的魔鏡																							
 	[Type] == "Orb of Alchemy" # 	[StashItem]	 == "true"	//	//點金石																							
-	[Type] == "Orb of Alteration" # 	[StashItem]	 == "true"	//	//改造石																							
+	//[Type] == "Orb of Alteration" # 	[StashItem]	 == "true"	//	//改造石																							
 	[Type] == "Orb of Transmutation" # 	[StashItem]	 == "true"	//	//蛻變石																							
 	[Type] == "Orb of Augmentation" # 	[StashItem]	 == "true"	//	//增幅石																							
 	[Type] == "Orb of Chance" # 	[StashItem]	 == "true"	//	//機會石																							
@@ -379,7 +379,7 @@
 	[Type] == "Blueprint: Mansion" # 	[ForceSellItem]	 == "true"	//	//藍圖：官邸																							
 	//// 12F 技能寶石			//																								
 	[Type] == "Empower Support"         #	[StashItem]	 == "true"	//	//賦予輔助																							
-	[Type] == "Enhance Support"         #	[StashItem]	 == "true"	//	//增幅輔助																							
+	//[Type] == "Enhance Support"         #	[StashItem]	 == "true"	//	//增幅輔助																							
 	[Type] == "Enlighten Support"         #	[StashItem]	 == "true"	//	//啟蒙輔助																							
 																												
 	//// 13F命運卡			//																								
@@ -805,10 +805,10 @@
 	[Type] =="Writhing Invitation" #	[StashItem]	 == "true" 	//	//纏繞之邀																							
 																												
 	//// 16F 六洞裝、六連裝 			//																								
-//	[Sockets] == "6" && [Linked] >= "6"                          # [StashItem] =="true"     // Keep 6L6S			//																								
-	[Sockets] == "6" && [Linked] >= "6"  && [Rarity] == "Normal" # [ForceSellItem] =="true" // Sell Normal 6L6S			//		加上//的話是存六連裝																						
-	[Sockets] == "6" && [Linked] >= "6"  && [Rarity] == "Magic"  # [ForceSellItem] =="true" // Sell Magic 6L6S			//		加上//的話是存六連裝																						
-	[Sockets] == "6" && [Linked] >= "6"  && [Rarity] == "Rare"   # [ForceSellItem] =="true" // Sell Rare 6L6S			//		加上//的話是存六連裝																						
+//	//[Sockets] == "6" && [Linked] >= "6"                          # [StashItem] =="true"     // Keep 6L6S			//																								
+	//[Sockets] == "6" && [Linked] >= "6"  && [Rarity] == "Normal" # [ForceSellItem] =="true" // Sell Normal 6L6S			//		加上//的話是存六連裝																						
+	//[Sockets] == "6" && [Linked] >= "6"  && [Rarity] == "Magic"  # [ForceSellItem] =="true" // Sell Magic 6L6S			//		加上//的話是存六連裝																						
+	//[Sockets] == "6" && [Linked] >= "6"  && [Rarity] == "Rare"   # [ForceSellItem] =="true" // Sell Rare 6L6S			//		加上//的話是存六連裝																						
 	 [Sockets] == "6" && [Linked] <= "5" && [Rarity] == "Normal"  # [SellUnid] == "true"     // Sell 6S Whites			//																								
 	 [Sockets] == "6" && [Linked] <= "5" && [Rarity] == "Magic"          # [SellUnid] == "true"     // Sell 6S Magic			//																								
 	 [Sockets] == "6" && [Linked] <= "5" && [Rarity] == "Rare"          # [SellUnid] == "true"     // Sell 6S Rare			//	

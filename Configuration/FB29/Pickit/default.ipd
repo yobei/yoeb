@@ -599,7 +599,7 @@
 
 // Drop Only
 [Type] == "Empower Support" 	# [StashItem] == "true"
-[Type] == "Enhance Support" 	# [StashItem] == "true"
+//[Type] == "Enhance Support" 	# [StashItem] == "true"
 [Type] == "Enlighten Support" 	# [StashItem] == "true"
 
 /////////////////////////////////////////////////////////////////////////////////////
@@ -1208,7 +1208,7 @@
 //                                                                                 //
 /////////////////////////////////////////////////////////////////////////////////////
 
-[Sockets] == "6" && [Linked] >= "6"                         # [StashItem] =="true" // Keep 6L6S
+//[Sockets] == "6" && [Linked] >= "6"                         # [StashItem] =="true" // Keep 6L6S
 
 [Sockets] == "6" && [Linked] <= "5" && [Rarity] == "Normal" # [SellUnid] == "true" // Sell 6S Whites
 [Sockets] == "6" && [Linked] <= "5" && [Rarity] == "Magic" 	# [SellUnid] == "true" // Sell 6S Magic
@@ -1697,7 +1697,7 @@
 [Type] == "Arcanist Slippers" && [Rarity] == "Unique" # [damage_+%_per_power_charge] >= "1" && [ForceSellItem] == "true" // Inya's Epiphany
 [Type] == "Conjurer Boots" && [Rarity] == "Unique"    # [base_spell_block_%] >= "1" && [ForceSellItem] == "true" // RainbowStride
 [Type] == "Scholar Boots" && [Rarity] == "Unique"     # [movement_velocity_+%_when_on_full_life] >= "1" && [ForceSellItem] == "true" // Shavronne's Pace
-[Type] == "Riveted Boots" && [Rarity] == "Unique"     # [gain_random_charge_per_second_while_stationary] >= "1" && [ForceSellItem] == "true" // Ralakesh's Impatience
+//[Type] == "Riveted Boots" && [Rarity] == "Unique"     # [gain_random_charge_per_second_while_stationary] >= "1" && [ForceSellItem] == "true" // Ralakesh's Impatience
 [Type] == "Silk Slippers" && [Rarity] == "Unique"     # [raise_spectre_gem_level_+] >= "1" && [ForceSellItem] == "true" // Bones of Ullr
 // [Type] == "Sorcerer Boots" && [Rarity] == "Unique" # [ForceSellItem] == "true" // Doryani's Delusion / Skyforth / Steppan Eard
 // [Type] == "Sorcerer Boots" && [Rarity] == "Unique" # [local_display_grants_skill_purity_of_lightning_level] >= "1" && [ForceSellItem] == "true" // Doryani's Delusion
@@ -1719,7 +1719,7 @@
 [Type] == "Legion Boots" && [Rarity] == "Unique"      # [damage_+%_vs_ignited_enemies] >= "1" && [ForceSellItem] == "true" // Gang's Momentum
 [Type] == "Legion Boots" && [Rarity] == "Unique"      # [local_socketed_aura_gem_level_+] >= "1" && [ForceSellItem] == "true" // March of the Legion
 [Type] == "Mesh Boots" && [Rarity] == "Unique"        # [wake_of_destruction_ground_lightning_duration_ms] >= "1" && [ForceSellItem] == "true" // Wake of Destruction
-[Type] == "Riveted Boots" && [Rarity] == "Unique"     # [gain_random_charge_per_second_while_stationary] >= "1" && [ForceSellItem] == "true" // Ralakesh's Impatience
+//[Type] == "Riveted Boots" && [Rarity] == "Unique"     # [gain_random_charge_per_second_while_stationary] >= "1" && [ForceSellItem] == "true" // Ralakesh's Impatience
 [Type] == "Soldier Boots" && [Rarity] == "Unique"     # [base_number_of_skeletons_allowed] >= "1" && [ForceSellItem] == "true" // Alberon's Warpath
 [Type] == "Two-Toned Boots" && [Rarity] == "Unique"   # [immune_to_elemental_status_ailments_while_affected_by_glorious_madness] >= "1" && [ForceSellItem] == "true" // Beacon of Madness Fire/Lightning res, Ele conflux/Ele Ailment Immunity
 // Evasion & Energy Shield Boots

@@ -19,7 +19,7 @@
 [Type]=="Cemetery Map" # && [MapTier] <= "14 "# [ForceSellItem] == "true"
 
 [Category] == "Map" && [Rarity] == "Rare" && [map_contains_citadel] >= "1" # [ForceSellItem] == "true" // 13855 Citadel Maps
-[Category] == "Map" && [Rarity] == "Rare" && [map_elder_boss_variation] >= "1" # [ForceSellItem] == "true" // 6551 Elder Maps
+//[Category] == "Map" && [Rarity] == "Rare" && [map_elder_boss_variation] >= "1" # [ForceSellItem] == "true" // 6551 Elder Maps
 [Type] == "Synthesised Map" # [StashItem] == "true" //
 
 //偵查
@@ -64,10 +64,10 @@
 //[Type] == "Arcade Map" # [StashItem] == "true"
 //[Type]=="Cemetery Map" # [StashItem] == "true"
 
-[Type] =="Maven's Invitation: The Elderslayers" #	[StashItem]	 == "true" 		//殺手	拾取且存倉
+//[Type] =="Maven's Invitation: The Elderslayers" #	[StashItem]	 == "true" 		//殺手	拾取且存倉
 //[Type] =="Maven's Invitation: The Forgotten" #	[StashItem]	 == "true" 		//釋界之邀：遺忘	拾取且存倉
-[Type] =="Maven's Invitation: The Formed" #	[StashItem]	 == "true" 		//釋界之邀：塑型	拾取且存倉
-[Type] =="Maven's Invitation: The Twisted" #	[StashItem]	 == "true" 		//釋界之邀：扭曲	拾取且存倉
+//[Type] =="Maven's Invitation: The Formed" #	[StashItem]	 == "true" 		//釋界之邀：塑型	拾取且存倉
+//[Type] =="Maven's Invitation: The Twisted" #	[StashItem]	 == "true" 		//釋界之邀：扭曲	拾取且存倉
 
 
 
@@ -103,10 +103,10 @@
 
 //下面是3.19以前
 
-[Type] =="Maven's Invitation: The Elderslayers" #	[StashItem]	 == "true" 		//殺手	拾取且存倉
+//[Type] =="Maven's Invitation: The Elderslayers" #	[StashItem]	 == "true" 		//殺手	拾取且存倉
 //[Type] =="Maven's Invitation: The Forgotten" #	[StashItem]	 == "true" 		//釋界之邀：遺忘	拾取且存倉
-[Type] =="Maven's Invitation: The Formed" #	[StashItem]	 == "true" 		//釋界之邀：塑型	拾取且存倉
-[Type] =="Maven's Invitation: The Twisted" #	[StashItem]	 == "true" 		//釋界之邀：扭曲	拾取且存倉
+//[Type] =="Maven's Invitation: The Formed" #	[StashItem]	 == "true" 		//釋界之邀：塑型	拾取且存倉
+//[Type] =="Maven's Invitation: The Twisted" #	[StashItem]	 == "true" 		//釋界之邀：扭曲	拾取且存倉
 
 //[Type] == "Last Hope" # 	[StashItem]	 == "true" // 1.0 C	//	最後希望(凡人的希望)	拾取且存倉
 
@@ -146,8 +146,8 @@
  
 
  //編輯時間：2022/7/5 ex比水餃便宜的季末
-//[Type] == "Orb of Alteration" # [StashItem] == "true"////改造石拾取且存倉
-[Type] == "Chaos Orb" # [StashItem] == "true"////混沌石拾取且存倉
+////[Type] == "Orb of Alteration" # [StashItem] == "true"////改造石拾取且存倉
+//[Type] == "Chaos Orb" # [StashItem] == "true"////混沌石拾取且存倉
 [Type] == "Divine Orb" # [StashItem] == "true"////神聖石拾取且存倉
 [Type] == "Exalted Orb" # [StashItem] == "true"////崇高石拾取且存倉
 [Type] == "Mirror of Kalandra" # [StashItem] == "true"////卡蘭德的魔鏡拾取且存倉
@@ -155,12 +155,12 @@
 [Type] == "Mirror Shard"# [StashItem] == "true"////魔鏡碎片拾取且存倉
 [Type] == "Ancient Shard"# [StashItem] == "true"////古變石碎片拾取且存倉
 [Type] == "Exalted Shard"# [StashItem] == "true"////崇高石碎片拾取且存倉
-//[Type] == "Orb of Regret"# [StashItem] == "true"////後悔石拾取且存倉//
+////[Type] == "Orb of Regret"# [StashItem] == "true"////後悔石拾取且存倉//
 //[Type] == "Orb of Unmaking"# [StashItem] == "true"////撤銷石拾取且存倉
 //[Type] == "Orb of Horizons"# [StashItem] == "true"////地平石拾取且存倉
 //[Type] == "Enkindling Orb"# [StashItem] == "true"////點燃石拾取且存倉
 [Type] == "Orb of Annulment"# [StashItem] == "true"////無效 拾取且存倉
-//[Type] == "Orb of Scouring"# [StashItem] == "true"////重鑄 拾取且存倉
+////[Type] == "Orb of Scouring"# [StashItem] == "true"////重鑄 拾取且存倉
 [Type] == "Gemcutter's Prism"# [StashItem] == "true"////GCP 拾取且存倉
 //[Type] == "Regal Orb" # [StashItem] == "true"////富豪
 
@@ -177,7 +177,7 @@
 //[Type] == "Timeless Vaal Emblem"# [StashItem] == "true"////永恆瓦爾徽印拾取且存倉
 
 //[Type] == "Empower Support" #[StashItem] == "true"////賦予輔助拾取且存倉
-//[Type] == "Enhance Support" #[StashItem] == "true"////增幅輔助不撿不存倉
+////[Type] == "Enhance Support" #[StashItem] == "true"////增幅輔助不撿不存倉
 //[Type] == "Enlighten Support" #[StashItem] == "true"////啟蒙輔助拾取且存倉
 [Type] == "The Apothecary" #[StashItem] == "true"////(魔血 5/5)拾取且存倉
 [Type] =="Incandescent Invitation" #[StashItem] == "true" ////熾熱之邀拾取且存倉
@@ -221,7 +221,7 @@
 
 [Category] == "Map" && [Rarity] == "Rare" && [map_contains_citadel] >= "1" # [ForceSellItem] == "true" // 13855 Citadel Maps
 
-[Category] == "Map" && [Rarity] == "Rare" && [map_elder_boss_variation] >= "1" # [ForceSellItem] == "true" // 6551 Elder Maps
+//[Category] == "Map" && [Rarity] == "Rare" && [map_elder_boss_variation] >= "1" # [ForceSellItem] == "true" // 6551 Elder Maps
 
 																		
 [Type]== "Forge of the Phoenix Map"#[StashItem]== "true"//火鳳凰熔核 #																								
@@ -232,7 +232,7 @@
 
 //[Category] == "Map" && [MapTier] >= "1"  && [Rarity] == "Unique"  #[ForceSellItem] == "true" // //傳奇地圖傳奇地圖不撿，傳奇地圖售出
 
- //[Sockets] == "6" && [Linked] >= "6"   #[ForceSellItem] == "true" // //六連全賣
+ ////[Sockets] == "6" && [Linked] >= "6"   #[ForceSellItem] == "true" // //六連全賣
 
 
 	[Type] == "Spiraled Wand" && [Rarity] == "Unique" # [UniqueName] == "Amplification Rod" && [StashItem] == "true"	//增幅杖 螺紋法杖
