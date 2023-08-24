@@ -157,16 +157,16 @@ SetGaoJiHuanZhuangData("游侠","金缕帽","Metadata/Items/Armours/Helmets/HelmetDex
 
 --SetTaskShengJiData(taskClassName,taskIndex,shengjiMapClassName,needLv)--设置跑图时升级 taskClassName=任务类名 taskIndex=任务索引 nil为忽略，只匹配任务类名 shengjiMapClassName=要刷的地图类名 needLv=升级到多少级为止
 SetTaskShengJiData("a5q7",nil,"1_5_5",46,true)--做 到奇塔弗的受难 的时候刷纯净圣地到50级再进行下一任务
-SetTaskShengJiData("a9q3",nil,"2_9_1",68,true)--做 到風暴飛刃 的时候刷滲血水道到68级再进行下一任务
+SetTaskShengJiData("a9q3",nil,"2_9_1",67,true)--做 到風暴飛刃 的时候刷滲血水道到68级再进行下一任务
 
 SetTaskMiGongData("a8q7",nil,1)--大于等于a9q1级 做迷宫1
 SetTaskMiGongData("a10q1",nil,2)--大于等于a10q1 做迷宫2
 SetTaskMiGongDataByLv(80,3)--大于等于80级 做迷宫3
 
 
-SetChangeLimitCnt("武器|衣服|头盔|手套|鞋子",2)
-SetChangeLimitCnt("腰带",3)
-SetChangeLimitCnt("项链|戒指",4)
+SetChangeLimitCnt("武器|衣服|头盔|手套|鞋子",0)
+SetChangeLimitCnt("腰带",0)
+SetChangeLimitCnt("项链|戒指",0)
 
 
 --SetNeedAddTianFu(tfStr)--设置天赋加点 
