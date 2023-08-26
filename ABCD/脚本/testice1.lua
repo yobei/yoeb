@@ -55,7 +55,7 @@ g_needMiWuLv=90				--大于等于多少级打迷雾
 g_yuyanCnt=nil				--够多少银币去预言，小于10银币或填nil将不会触发 如果设定去预言，那下面还需要设置交易给仓库号的预言
 
 
-g_attackDis=50				--攻击距离
+g_attackDis=65				--攻击距离
 g_duobiHpVal=0.2
 
 g_yiJieLv=70				--够了多少级才去刷异界
