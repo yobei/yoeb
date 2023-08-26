@@ -47,6 +47,18 @@
 //[Type] == "Granite Flask"&& 		[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //+1500護甲
 
 //地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖
+	 //[Type] == "Bismuth Flask" # 	[StashItem]	 == "true" 	//	//灰岩藥劑	不撿不存倉																						
+	// [Type] == "Stibnite Flask" # 	[StashItem]	 == "true" 	//	//迷霧藥劑	不撿不存倉																						
+	 [Type] == "Amethyst Flask" # 	[StashItem]	 == "true" 	//	//紫晶藥劑	不撿不存倉																																												
+	 [Type] == "Silver Flask" # 	[StashItem]	 == "true" 	//	//真銀藥劑	不撿不存倉																																								
+  //[Type] == "Diamond Flask" # 	[StashItem]	 == "true" 	//	//寶鑽藥劑	不撿不存倉																						
+//	 [Type] == "Granite Flask" # 	[StashItem]	 == "true" 	//	//堅岩藥劑	不撿不存倉																						
+//	 [Type] == "Jade Flask" # 	[StashItem]	 == "true" 	//	//翠玉藥劑	不撿不存倉																						
+//	 [Type] == "Quartz Flask" # 	[StashItem]	 == "true" 	//	//石英藥劑	不撿不存倉																						
+	// [Type] == "Sulphur Flask" # 	[StashItem]	 == "true" 	//	//硫磺藥劑	不撿不存倉																						
+//	 [Type] == "Basalt Flask" # 	[StashItem]	 == "true" 	//	//石化藥劑	不撿不售出	
+//	 [Type] == "Iron Flask" # 	[StashItem]	 == "true" 	//	//石化藥劑	不撿不售出	
+//	 [Type] == "Divine Life Flask" # 	[StashItem]	 == "true" 	//	//不朽	不撿不售出	
 
 
 [Type] == "Wharf Map" # [StashItem] == "true" //
@@ -177,6 +189,50 @@
 //[Type] =="Polaric Invitation" #[StashItem] == "true" ////極地之邀不撿不存倉
 //[Type] =="Writhing Invitation" #[StashItem] == "true" ////纏繞之邀不撿不存倉
 
+	[Type] == "Blacksmith's Whetstone" # 	[StashItem]	 == "true"	//	//磨刀石	拾取且存倉
+	[Type] == "Armourer's Scrap" # 	[StashItem]	 == "true"	//	//護甲片	拾取且存倉
+	[Type] == "Glassblower's Bauble" # 	[StashItem]	 == "true"	//	//玻璃彈珠	拾取且存倉
+	[Type] == "Blessed Orb" # 	[StashItem]	 == "true"	//	//祝福石	拾取且存倉
+	[Type] == "Chaos Orb" # 	[StashItem]	 == "true"	//	//混沌石	拾取且存倉
+	[Type] == "Chromatic Orb" # 	[StashItem]	 == "true"	//	//幻色石	拾取且存倉
+	[Type] == "Divine Orb" # 	[StashItem]	 == "true"	//	//神聖石	拾取且存倉
+	[Type] == "Exalted Orb" # 	[StashItem]	 == "true"	//	//崇高石	拾取且存倉
+	[Type] == "Gemcutter's Prism" # 	[StashItem]	 == "true"	//	//寶石匠的稜鏡	拾取且存倉
+	[Type] == "Jeweller's Orb" # 	[StashItem]	 == "true"	//	//工匠石	拾取且存倉
+	[Type] == "Mirror of Kalandra" # 	[StashItem]	 == "true"	//	//卡蘭德的魔鏡	拾取且存倉
+	[Type] == "Orb of Alchemy" # 	[StashItem]	 == "true"	//	//點金石	拾取且存倉
+	[Type] == "Orb of Alteration" # 	[StashItem]	 == "true"	//	//改造石	拾取且存倉
+	[Type] == "Orb of Transmutation" # 	[StashItem]	 == "true"	//	//蛻變石	拾取且存倉
+	[Type] == "Orb of Augmentation" # 	[StashItem]	 == "true"	//	//增幅石	拾取且存倉
+	[Type] == "Orb of Chance" # 	[StashItem]	 == "true"	//	//機會石	拾取且存倉
+	[Type] == "Orb of Fusing" # 	[StashItem]	 == "true"	//	//鏈結石	拾取且存倉
+	[Type] == "Orb of Regret" # 	[StashItem]	 == "true"	//	//後悔石	拾取且存倉
+	[Type] == "Orb of Scouring" # 	[StashItem]	 == "true"	//	//重鑄石	拾取且存倉
+	[Type] == "Regal Orb" # 	[StashItem]	 == "true"	//	//富豪石	拾取且存倉
+	[Type] == "Vaal Orb" # 	[StashItem]	 == "true"	//	//瓦爾寶珠	拾取且存倉
+[Type] == "Cartographer's Chisel" # 	[StashItem]	 == "true"	//	//製圖釘	拾取且存倉
+	[Type] == "Orb of Annulment"         # 	[StashItem]	 == "true"	//	//無效石	拾取且存倉
+	[Type] == "Orb of Binding"                 # 	[StashItem]	 == "true"	//	//束縛石	不撿不存倉
+	[Type] == "Orb of Horizons"         # 	[StashItem]	 == "true"	//	//地平石	不撿不存倉
+	[Type] == "Harbinger's Orb"         # 	[StashItem]	 == "true"	//	//神諭石	不撿不存倉
+	[Type] == "Engineer's Orb"                 # 	[StashItem]	 == "true"	//	//工程石	不撿不存倉
+	[Type] == "Ancient Orb"                 # 	[StashItem]	 == "true"	//	//古變石	拾取且存倉
+	[Type] == "Annulment Shard"         # 	[StashItem]	 == "true"	//	//無效石碎片	拾取且存倉
+//	[Type] == "Binding Shard"                 # 	[StashItem]	 == "true"	//	//束縛石碎片	不撿不存倉
+//	[Type] == "Horizon Shard"                 # 	[StashItem]	 == "true"	//	//地平石碎片	不撿不存倉
+	[Type] == "Harbinger's Shard"         # 	[StashItem]	 == "true"	//	//神諭石碎片	拾取且存倉
+//	[Type] == "Engineer's Shard"         # 	[StashItem]	 == "true"	//	//工程石碎片	不撿不存倉
+	[Type] == "Ancient Shard"                 # 	[StashItem]	 == "true"	//	//古變石碎片	拾取且存倉
+	[Type] == "Chaos Shard"                 # 	[StashItem]	 == "true"	//	//混沌石碎片	拾取且存倉
+	[Type] == "Mirror Shard"                 # 	[StashItem]	 == "true"	//	//魔鏡碎片	拾取且存倉
+	[Type] == "Exalted Shard"                 # 	[StashItem]	 == "true"	//	//崇高石碎片	拾取且存倉
+	[Type] == "Regal Shard"                 # 	[StashItem]	 == "true"	//	//富豪石碎片	拾取且存倉
+	[Type] == "Veiled Chaos Orb"	[StashItem]	 == "true"	//	//隱匿混沌石	拾取且存倉
+	[Type] == "Journeyman Cartographer's Seal" # 	[StashItem]	 == "true"	//	//製圖封印．學者	拾取且存倉
+	[Type] == "Master Cartographer's Seal" # 	[StashItem]	 == "true"	//	//製圖封印．大師	拾取且存倉
+	[Type] == "Simple Sextant" # 	[StashItem]	 == "true"	//	//製圖六分儀．簡易	拾取且存倉
+	[Type] == "Prime Sextant" # 	[StashItem]	 == "true"	//	//製圖六分儀．精華	拾取且存倉
+	[Type] == "Awakened Sextant" # 	[StashItem]	 == "true"	//	//製圖六分儀．覺醒	拾取且存倉
 
 //季初開啟////季初開啟////季初開啟////季初開啟////季初開啟////季初開啟////季初開啟////季初開啟////季初開啟////季初開啟////季初開啟////季初開啟//
 
