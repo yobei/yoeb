@@ -36,13 +36,13 @@
 
 //藥水//
 //[Type] == "Divine Life Flask"&& [ItemLevel] >= "60" && [ItemLevel] <="100" # [StashItem] == "true" // 不朽生命藥劑
-[Type] == "Silver Flask"&& 		[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //猛攻
-//[Type] == "Diamond Flask"&& 		[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //寶鑽
+[Type] == "Silver Flask"&& 		[ItemLevel] >= "60" && [ItemLevel] <="100" # [StashItem] == "true" //猛攻
+//[Type] == "Diamond Flask"&& 		[ItemLevel] >= "60" && [ItemLevel] <="100" # [StashItem] == "true" //寶鑽
 //[Type] == "Jade Flask"&& 		[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //+1500閃避
 [Type] == "Quicksilver Flask"&& 	[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //跑水
 
 
-//[Type] == "Amethyst Flask"&& 		[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //紫晶
+[Type] == "Amethyst Flask"&& 		[ItemLevel] >= "60" && [ItemLevel] <="100" # [StashItem] == "true" //紫晶
 //[Type] == "Bismuth Flask"&& 		[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //灰岩
 //[Type] == "Granite Flask"&& 		[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //+1500護甲
 
@@ -152,9 +152,9 @@
 //	[Category] == "Chest"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && 	[StashItem]	 == "true"	//	胸甲	拾取且售出																						
 //	[Category] == "Amulet"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && 	[StashItem]	 == "true"	//	護身符	拾取且售出																						
 	[Category] == "Ring"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && 	[StashItem]	 == "true"	//	戒指	拾取且售出																						
-	[Category] == "Belt"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && 	[StashItem]	 == "true"	//	腰帶	拾取且售出																						
+//	[Category] == "Belt"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && 	[StashItem]	 == "true"	//	腰帶	拾取且售出																						
 //	[Category] == "Gloves"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && 	[StashItem]	 == "true"	//	手套	拾取且售出																						
-	[Category] == "Boots"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999"&& 	[StashItem]	 == "true"	//	鞋子	拾取且售出																						
+//	[Category] == "Boots"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999"&& 	[StashItem]	 == "true"	//	鞋子	拾取且售出																						
 	[Category] == "Weapon"         && [Rarity]         == "Rare" # [DPS] > "999" && 	[StashItem]	 == "true"	//	武器	拾取且售出																						
 	[Category] == "Shield"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && 	[StashItem]	 == "true"	//	盾牌	拾取且售出																						
 			
