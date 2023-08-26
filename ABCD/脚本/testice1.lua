@@ -91,16 +91,14 @@ AddAttackSkillData("閃電箭矢","Lightning Arrow")
 AddAttackSkillData("普通攻击","melee")
 AddAttackSkillData("瓦爾．閃電箭矢","Vaal Lightning Arrow",false,50,10)
 --SetSkillLimitMaxLv(name,className,maxLv)--设置技能宝石最大等级 name=技能宝石物品名 className=技能宝石物品类名 maxLv=限制的最大等级
-SetSkillLimitMaxLv("受傷時施放輔助",nil,1)
-SetSkillLimitMaxLv("熔岩護盾",nil,8)
-SetSkillLimitMaxLv("烈焰衝刺",nil,1)
+
 -- SetYiJieZhaoHuanLingTiData(mapClassName,name,className)--设置异界时召唤的灵体数据 mapClassName=剧情图类名 name=灵体名 className=灵体类名
 
 --SetNeedFlaskData(pos,flask,modsData,minLv)--设置药瓶摆放
 SetNeedFlaskData(1,"生命药剂","nil")
 SetNeedFlaskData(2,"生命药剂","nil")
 SetNeedFlaskData(3,"魔力药剂","耐久的,FlaskEffectNotRemovedOnFullMana1",50)
-SetNeedFlaskData(4,"魔力药剂","nil")
+SetNeedFlaskData(4,"紫晶药剂","nil")
 SetNeedFlaskData(5,"水银药剂","nil")
 
 
