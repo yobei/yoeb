@@ -99,11 +99,11 @@ SetNeedFlaskData(1,"生命药剂","nil")
 SetNeedFlaskData(2,"生命药剂","nil")
 SetNeedFlaskData(3,"魔力药剂","耐久的,FlaskEffectNotRemovedOnFullMana1",50)
 SetNeedFlaskData(4,"紫晶药剂","nil")
-SetNeedFlaskData(5,"水银药剂","nil")
+SetNeedFlaskData(5,"真银药剂","nil")
 
 
-g_addHpVal=0.7--HP低于多少吃红药
-g_addMpVal=0.5--MP低于多少吃蓝药
+g_addHpVal=0.8--HP低于多少吃红药
+g_addMpVal=0.6--MP低于多少吃蓝药
 
 
 --游侠
