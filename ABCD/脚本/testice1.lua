@@ -102,8 +102,8 @@ SetNeedFlaskData(4,"紫晶药剂","nil")
 SetNeedFlaskData(5,"真银药剂","nil")
 
 
-g_addHpVal=0.8--HP低于多少吃红药
-g_addMpVal=0.6--MP低于多少吃蓝药
+g_addHpVal=0.5--HP低于多少吃红药
+g_addMpVal=0.5--MP低于多少吃蓝药
 
 
 --游侠
@@ -124,7 +124,7 @@ SetTaskShengJiData("a9q3",nil,"2_9_1",68,true)--做 到風暴飛刃 的时候刷滲血水道到
 
 SetTaskMiGongData("a8q7",nil,1)--大于等于a9q1级 做迷宫1
 SetTaskMiGongData("a10q1",nil,2)--大于等于a10q1 做迷宫2
-SetTaskMiGongDataByLv(78,3)--大于等于80级 做迷宫3
+SetTaskMiGongDataByLv(82,3)--大于等于80级 做迷宫3
 
 g_openQlkMaxMapTianFuCnt=90--数值型 满多少天赋后不开奇拉克任务nil为一直开
 g_useMinLvMapTianFuCnt=70--地图天赋满多少点后 就从低阶地图开始取
