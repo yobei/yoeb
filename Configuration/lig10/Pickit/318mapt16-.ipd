@@ -87,7 +87,7 @@
 //[Type] == "Feathered Arrow Quiver" &&  [Rarity] == "Unique" # [local_display_grants_skill_call_of_steel] >= "1" &&   [ForceSellItem]	 == "true" //
 
 //[Type] =="Maven's Invitation: The Elderslayers" #	[StashItem]	 == "true" 		//殺手	拾取且存倉
-[Type] =="Maven's Invitation: The Forgotten" #	[StashItem]	 == "true" 		//釋界之邀：遺忘	拾取且存倉
+//[Type] =="Maven's Invitation: The Forgotten" #	[StashItem]	 == "true" 		//釋界之邀：遺忘	拾取且存倉
 //[Type] =="Maven's Invitation: The Formed" #	[StashItem]	 == "true" 		//釋界之邀：塑型	拾取且存倉
 //[Type] =="Maven's Invitation: The Twisted" #	[StashItem]	 == "true" 		//釋界之邀：扭曲	拾取且存倉
 //[Type] == "Mortal Grief"             # 	[StashItem]	 == "true" 	//	//凡人的哀傷	拾取且存倉
@@ -156,20 +156,20 @@
 [Type] == "Vaal Orb" # [StashItem] == "true"////瓦寶
 [Type] == "Awakened Sextant" # [StashItem] == "true"////六分
 
-[Type] == "Timeless Eternal Empire Splinter" # [StashItem] == "true"////永恆不朽帝國裂片不撿不存倉
-[Type] == "Timeless Karui Splinter"# [StashItem] == "true"////永恆卡魯裂片不撿不存倉
-[Type] == "Timeless Maraketh Splinter"# [StashItem] == "true"////永恆馬拉克斯裂片拾取且存倉
-[Type] == "Timeless Templar Splinter"# [StashItem] == "true"////永恆聖宗裂片拾取且存倉
-[Type] == "Timeless Vaal Splinter" # [StashItem] == "true"////永恆瓦爾裂片不撿不存倉
-[Type] == "Timeless Eternal Emblem" # [StashItem] == "true"////永恆不朽帝國徽印拾取且存倉
-[Type] == "Timeless Karui Emblem"# [StashItem] == "true"////永恆卡魯徽印拾取且存倉
-[Type] == "Timeless Maraketh Emblem" # [StashItem] == "true"////永恆馬拉克斯徽印拾取且存倉
-[Type] == "Timeless Templar Emblem" # [StashItem] == "true"////永恆聖宗徽印拾取且存倉
-[Type] == "Timeless Vaal Emblem"# [StashItem] == "true"////永恆瓦爾徽印拾取且存倉
+//[Type] == "Timeless Eternal Empire Splinter" # [StashItem] == "true"////永恆不朽帝國裂片不撿不存倉
+//[Type] == "Timeless Karui Splinter"# [StashItem] == "true"////永恆卡魯裂片不撿不存倉
+//[Type] == "Timeless Maraketh Splinter"# [StashItem] == "true"////永恆馬拉克斯裂片拾取且存倉
+//[Type] == "Timeless Templar Splinter"# [StashItem] == "true"////永恆聖宗裂片拾取且存倉
+//[Type] == "Timeless Vaal Splinter" # [StashItem] == "true"////永恆瓦爾裂片不撿不存倉
+//[Type] == "Timeless Eternal Emblem" # [StashItem] == "true"////永恆不朽帝國徽印拾取且存倉
+//[Type] == "Timeless Karui Emblem"# [StashItem] == "true"////永恆卡魯徽印拾取且存倉
+//[Type] == "Timeless Maraketh Emblem" # [StashItem] == "true"////永恆馬拉克斯徽印拾取且存倉
+//[Type] == "Timeless Templar Emblem" # [StashItem] == "true"////永恆聖宗徽印拾取且存倉
+//[Type] == "Timeless Vaal Emblem"# [StashItem] == "true"////永恆瓦爾徽印拾取且存倉
 
-[Type] == "Empower Support" #[StashItem] == "true"////賦予輔助拾取且存倉
+//[Type] == "Empower Support" #[StashItem] == "true"////賦予輔助拾取且存倉
 ////[Type] == "Enhance Support" #[StashItem] == "true"////增幅輔助不撿不存倉
-[Type] == "Enlighten Support" #[StashItem] == "true"////啟蒙輔助拾取且存倉
+//[Type] == "Enlighten Support" #[StashItem] == "true"////啟蒙輔助拾取且存倉
 
 [Type] == "The Apothecary" #[StashItem] == "true"////(魔血 5/5)拾取且存倉
 [Type] =="Incandescent Invitation" #[StashItem] == "true" ////熾熱之邀拾取且存倉
@@ -204,7 +204,7 @@
 [Type] == "The Sacrifice" # [StashItem] == "true" // 35.0 C//犧牲(6連祭禮束衣-物品等級:100)拾取且存倉1E
 [Type] == "The Strategist" # [StashItem] == "true" // 35.0 C//策略家(求知的熱情-已汙染)拾取且存倉1E
 [Type] == "The Artist" # [StashItem] == "true" // 24.0 C//藝者(等級 4 增幅)拾取且存倉增幅4
-[Type] == "The Saint's Treasure" # [StashItem] == "true" // 21.0 C//聖徒之財(2x 崇高石)拾取且存倉ex
+//[Type] == "The Saint's Treasure" # [StashItem] == "true" // 21.0 C//聖徒之財(2x 崇高石)拾取且存倉ex
 [Type] == "The Patient" # [StashItem] == "true" // 18.0 C//病患拾取且存倉病患
 [Type] == "Council of Cats" # [StashItem] == "true" // 10.0 C//貓咪議會(費爾羅之物)拾取且存倉貓貓
 [Type] == "The Hoarder" # [StashItem] == "true" // 8.0 C//寶箱(崇高石)拾取且存倉ex
@@ -280,8 +280,8 @@
 	[Type] == "Spidersilk Robe" && [Rarity] == "Unique" #	[StashItem]	 == "true" // 																									
 	[Type] == "Spidersilk Robe" && [Rarity] == "Unique" #   [totem_life_+%] >= "1" &&	[ForceSellItem]	 == "true" // 		圖騰衣																							
 	//達拉的罪刑=4D		  																									
-	[Type] == "Sage's Robe" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 																									
-	[Type] == "Sage's Robe" && [Rarity] == "Unique" # [light_radius_+%] >= "1" &&	[ForceSellItem]	 == "true" // 		札德圖斯的聖衣																							
+	//[Type] == "Sage's Robe" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 																									
+	//[Type] == "Sage's Robe" && [Rarity] == "Unique" # [light_radius_+%] >= "1" &&	[ForceSellItem]	 == "true" // 		札德圖斯的聖衣																							
 	//印卜薩=2.5D		 == "true" // 																									
 	[Type]== "Sadist Garb" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 																									
 	[Type] == "Sadist Garb" && [Rarity] == "Unique" # [placing_traps_cooldown_recovery_+%] >= "1" && 	[ForceSellItem]	 == "true" // 		陷阱衣																							
@@ -440,7 +440,7 @@
 //	[Type] == "Prime Sextant" # 	[StashItem]	 == "true"	//	//製圖六分儀．精華																							
 //	[Type] == "Awakened Sextant" # 	[StashItem]	 == "true"	//	//製圖六分儀．覺醒																							
 //	[Type] == "Prophecy" # 	[StashItem]	 == "true"	//	//預言																							
-//	[Type] == "Stacked Deck" # 	[StashItem]	 == "true"	//	//豐裕牌組																							
+//	//[Type] == "Stacked Deck" # 	[StashItem]	 == "true"	//	//豐裕牌組																							
 //	[Type] == "Unshaping Orb" # 	[StashItem]	 == "true"	//	//還原玉																							
 //	[Type] == "Albino Rhoa Feather" # 	[StashItem]	 == "true"	//	//白化的羽毛																							
 //	[Type] == "Offering to the Goddess" # 	[StashItem]	 == "true"	//	//女神祭品																							
