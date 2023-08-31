@@ -13,7 +13,9 @@
 	[map_elder_boss_variation] >= "1"        # [IgnoreMap] == "true" // Guardian Maps
 	[map_atlas_influence_type] >= "1"        # [IgnoreMap] == "true" // Guardian Maps
 	
-[MapTier]>= "1" && [MapTier] <= "16" && [Rarity] == "Rare" # [IgnoreMap]== "true" // 金圖全部不打
+[Type]!="Crimson Temple Map" && [MapTier]>= "1" && [MapTier] <= "16" && [Rarity] == "Rare" # [IgnoreMap]== "true" // 金圖全部不打
+
+
 
 [Type] == "City Square Map" #[RunMap] == "true"
 [Type] == "Toxic Sewer Map" #[RunMap] == "true"
