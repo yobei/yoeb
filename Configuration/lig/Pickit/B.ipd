@@ -191,8 +191,8 @@
 //[Type] == "Orb of Horizons"# [StashItem] == "true"////地平石拾取且存倉
 //[Type] == "Enhance Support" #[StashItem] == "true"////增幅輔助
 
-[Type] =="Polaric Invitation" #[StashItem] == "true" ////極地之邀不撿不存倉
-[Type] =="Writhing Invitation" #[StashItem] == "true" ////纏繞之邀不撿不存倉
+//[Type] =="Polaric Invitation" #[StashItem] == "true" ////極地之邀不撿不存倉
+//[Type] =="Writhing Invitation" #[StashItem] == "true" ////纏繞之邀不撿不存倉
 
 
 //季初開啟////季初開啟////季初開啟////季初開啟////季初開啟////季初開啟////季初開啟////季初開啟////季初開啟////季初開啟////季初開啟////季初開啟//
