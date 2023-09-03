@@ -29,13 +29,13 @@ g_duobiHpVal=0.2
 --pos=指定位置 nil为自动选择 2为衣服 3为主武器 4为副武器 5为头盔 6为项链 7为左戒指 8为右戒指 9为护手 10为鞋子 11为腰带
 --nType 有效场景 nil为无论何时都有效 0为没在刷异界才有效 1为只在刷异界才有效
 
-SetNeedSkillLineData(93,"火砲砲塔,nil|元素攻擊傷害輔助,nil|快速攻擊輔助,nil|多重圖騰輔助,nil",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,30)
+SetNeedSkillLineData(93,"火砲砲塔,nil|元素攻擊傷害輔助,nil|快速攻擊輔助,nil|多重圖騰輔助,nil",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,24)
 SetNeedSkillLineData(95,"狙擊者印記,nil|召喚寒冰魔像,nil|擊中時印記輔助,nil|幻步,nil",nil,5,nil)
 SetNeedSkillLineData(94,"鋼筋鐵骨,nil|元素淨化,nil|憤怒,nil",nil,nil,nil)
-SetNeedSkillLineData(96,"魔改箭矢輔助,nil|狂怒,nil|暴擊獲得暴擊球輔助,nil|腐蝕箭矢,nil",nil,nil,nil)
-SetNeedSkillLineData(97,"彈片砲塔,nil|快速攻擊輔助,nil|猛毒投射物輔助,nil|齊射輔助,nil",30,nil,nil)
-SetNeedSkillLineData(98,"閃電箭矢,nil|投射物返回輔助,nil|元素攻擊傷害輔助,nil|三體輔助,nil|啟發輔助,nil|幻影射手輔助,nil",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,30)
-SetNeedSkillLineData(99,"電流箭矢,nil|附加冰冷傷害輔助,nil|元素攻擊傷害輔助,nil|幻影射手輔助,nil|氣勢輔助,nil",30,nil,nil)
+SetNeedSkillLineData(99,"魔改箭矢輔助,nil|箭雨,nil|龍捲射擊,nil|誘捕箭矢,nil|誘捕,nil",nil,3,nil)
+SetNeedSkillLineData(30,"彈片砲塔,nil|快速攻擊輔助,nil|猛毒投射物輔助,nil|齊射輔助,nil",25,nil,nil)
+SetNeedSkillLineData(98,"閃電箭矢,nil|投射物返回輔助,nil|元素攻擊傷害輔助,nil|三體輔助,nil|啟發輔助,nil|幻影射手輔助,nil",nil,2,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,24)
+SetNeedSkillLineData(30,"電流箭矢,nil|附加冰冷傷害輔助,nil|元素攻擊傷害輔助,nil|幻影射手輔助,nil|氣勢輔助,nil",25,nil,nil)
 SetNeedSkillLineData(100,"燃燒箭矢,nil|氣勢輔助,nil",2,nil,nil)
 
 --添加攻击技能 name=技能名 className=技能类名 noLine=不在直线就能攻击 挑选攻击技能会从上到下寻找，要把厉害的技能加在前面
@@ -135,8 +135,7 @@ SetZhengTiColorVarData(10,0,1,0,nil,100)
 
 SetGaoJiHuanZhuangData("游侠","简易之袍","Metadata/Items/Armours/BodyArmours/BodyInt1","无尽之衣","Tabula Rasa")
 SetGaoJiHuanZhuangData("游侠","金缕帽","Metadata/Items/Armours/Helmets/HelmetDex1","金缕帽","Goldrim")
-
-SetGaoJiHuanZhuangData("游侠","骤雨之弦","	Metadata/Items/Weapons/TwoHandWeapons/Bows/Bow2","骤雨之弦","Quill Rain")
+SetGaoJiHuanZhuangData("游侠","骤雨之弦","Metadata/Items/Weapons/TwoHandWeapons/Bows/Bow2","骤雨之弦","Quill Rain")
 
 
 --AddShengJiZhuangBeiGoodsData("点金石","Metadata/Items/Currency/CurrencyUpgradeToRare",0,30,0)--主线生效 超过50级就用点金点白色装备
