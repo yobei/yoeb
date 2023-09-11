@@ -6,7 +6,7 @@
 //	[Rarity]== "Magic"#[AugmentIfPossible]== "true"//使用增幅石			//使用增幅	不//使用增幅																				
 //	[Rarity]== "Normal"#[UpgradeToRare]== "true"//使用點金石			//使用點金	不//使用點金	
 
-	[Type] == "City Square Map"&& [MapTier]>= "1" && [MapTier] <= "16" && [Rarity] == "Rare" # [IgnoreMap]== "true" // 金圖全部不打
+	//[Type] == "City Square Map"&& [MapTier]>= "1" && [MapTier] <= "16" && [Rarity] == "Rare" # [IgnoreMap]== "true" // 金圖全部不打
 
 
 	[map_contains_citadel] >= "1"            # [IgnoreMap] == "true" // Elder Maps
