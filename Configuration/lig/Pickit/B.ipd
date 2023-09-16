@@ -19,6 +19,9 @@
 //3.22季初傳送門
 [Type] == "Portal" #  [StashItem] == "true"//傳送門
 
+[Type] == "Two-Toned Boots"  && [Rarity] != "Unique"   && [cold_and_lightning_damage_resistance_%] >= "8"  #      [StashItem] == "true"
+
+
 //弓箭手套裝//
 [Type] == "Praetor Crown" && [Rarity] == "Unique" # [UniqueName] == "Voll's Vision" && [StashItem] == "true"	//福爾的遠見
 [Type] == "Zodiac Leather" && [Rarity] == "Unique" # [UniqueName] == "Hyrri's Ire" && [StashItem] == "true"	//西里的戰衣星辰皮甲
