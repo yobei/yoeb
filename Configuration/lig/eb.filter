@@ -24,7 +24,13 @@ Hide
 # 【藥劑】7000
 # 【裝備】8000
 #============
-
+Show
+    Class "Amulets"
+    BaseType "Lapis Amulet"
+	SetTextColor 255 255 255
+    SetBackgroundColor 33 19 38
+    SetBorderColor 255 0 0
+    SetFontSize 44
 #============
 # 【特殊語法-說明欄】0000
 # 【特殊語法-六連裝備】0001
