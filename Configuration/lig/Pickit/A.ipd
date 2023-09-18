@@ -12,7 +12,7 @@
 //[Type] == "Spine Bow" && [Rarity] == "Unique" #    [UniqueName] == "Voltaxic Rift" && [StashItem] == "true"   //魔暴
 //[Type] == "Maata's Teaching Karui Sceptre" && [Rarity] == "Unique" # [UniqueName] == "" && [StashItem] == "true"	//瑪塔的教導 卡魯權杖
 
-[Type] == "Two-Toned Boots"  && [Rarity] != "Unique"   && [cold_and_lightning_damage_resistance_%] >= "8"  #      [StashItem] == "true"
+//[Type] == "Two-Toned Boots"  && [Rarity] != "Unique"   && [cold_and_lightning_damage_resistance_%] >= "8"  #      [StashItem] == "true"
 //[Type] == "Lapis Amulet" #  [StashItem] == "true"
 
 //3.22季初防具
