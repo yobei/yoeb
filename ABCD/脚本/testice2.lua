@@ -66,7 +66,7 @@ g_mapUseZengFuLv=nil			--大于等于多少级对蓝图使用增幅石 nil为永远不使用
 g_mapUseDianJingLv=75		--大于等于多少级对白图使用点金石 nil为永远不使用
 g_mapUseTuiBianLv=60		--大于等于多少级对白图使用蜕变石 nil为永远不使用
 g_mapUseJiHuiLv=nil			--大于等于多少级对白图使用机会石 nil为永远不使用
-g_mapUseWaErLv=83			--大于等于多少级对白、蓝地图使用瓦尔宝珠 nil为永远不使用
+g_mapUseWaErLv=80			--大于等于多少级对白、蓝地图使用瓦尔宝珠 nil为永远不使用
 g_mapUseDingZiLv=nil			--大于等于多少级使用制图钉 nil为永远不使用
 g_noUseMapLv=0				--不使用、不捡多少阶及以上的地图 nil或0为忽略 设置优先的地图除外
 
@@ -124,10 +124,10 @@ SetTaskShengJiData("a9q3",nil,"2_9_1",68,true)--做 到風暴飛刃 的时候刷滲血水道到
 
 SetTaskMiGongData("a8q7",nil,1)--大于等于a9q1级 做迷宫1
 SetTaskMiGongData("a10q1",nil,2)--大于等于a10q1 做迷宫2
-SetTaskMiGongDataByLv(75,3)--大于等于80级 做迷宫3
+SetTaskMiGongDataByLv(80,3)--大于等于80级 做迷宫3
 
 g_openQlkMaxMapTianFuCnt=90--数值型 满多少天赋后不开奇拉克任务nil为一直开
-g_useMinLvMapTianFuCnt=70--地图天赋满多少点后 就从低阶地图开始取
+g_useMinLvMapTianFuCnt=90--地图天赋满多少点后 就从低阶地图开始取
 SetYiJieShuaTuModeByMapCnt(70,nil,2)--)--根据仓库里的地图数量设置异界刷图模式 可添加多个 他是从地图数量多到少来判断的
 SetYiJieShuaTuModeByMapCnt(40,0.7,0)
 SetOpenMapMasterData(3)
