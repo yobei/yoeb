@@ -203,17 +203,17 @@
 
 //季初開啟////季初開啟////季初開啟////季初開啟////季初開啟////季初開啟////季初開啟////季初開啟////季初開啟////季初開啟////季初開啟////季初開啟//
 
-[Type] == "Chaos Orb" # [StashItem] == "true"////混沌石拾取且存倉
+//[Type] == "Chaos Orb" # [StashItem] == "true"////混沌石拾取且存倉
 [Type] == "Divine Orb" # [StashItem] == "true"////神聖石拾取且存倉
 [Type] == "Exalted Orb" # [StashItem] == "true"////崇高石拾取且存倉
 [Type] == "Mirror of Kalandra" # [StashItem] == "true"////卡蘭德的魔鏡拾取且存倉
-[Type] == "Ancient Orb"# [StashItem] == "true"////古變石拾取且存倉
+//[Type] == "Ancient Orb"# [StashItem] == "true"////古變石拾取且存倉
 [Type] == "Mirror Shard"# [StashItem] == "true"////魔鏡碎片拾取且存倉
 //[Type] == "Ancient Shard"# [StashItem] == "true"////古變石碎片拾取且存倉
 //[Type] == "Exalted Shard"# [StashItem] == "true"////崇高石碎片拾取且存倉
 
 //[Type] == "Orb of Annulment"# [StashItem] == "true"////無效 拾取且存倉
-[Type] == "Gemcutter's Prism"# [StashItem] == "true"////GCP 拾取且存倉
+//[Type] == "Gemcutter's Prism"# [StashItem] == "true"////GCP 拾取且存倉
 [Type] == "Awakened Sextant" # [StashItem] == "true"////六分
 
 
@@ -230,7 +230,7 @@
 //[Type] == "Timeless Vaal Emblem"# [StashItem] == "true"////永恆瓦爾徽印拾取且存倉
 
 //[Type] == "Empower Support" #[StashItem] == "true"////賦予輔助拾取且存倉
-[Type] == "Enlighten Support" #[StashItem] == "true"////啟蒙輔助拾取且存倉
+//[Type] == "Enlighten Support" #[StashItem] == "true"////啟蒙輔助拾取且存倉
 
 
 [Type] == "Fire Of Unknown Origin" # [StashItem] == "true"// 3.22尼米斯卡
@@ -318,7 +318,7 @@
 	[Type] == "Crimson Jewel" && [Rarity] == "Unique" # [UniqueName] == "Rain of Splinters" && [StashItem] == "true"	//碎鏃雨 赤紅珠寶
 	[Type] == "Crimson Jewel" && [Rarity] == "Unique" # [UniqueName] == "Thread of Hope" && [StashItem] == "true"	//希望之絃 赤紅珠寶
 	[Type] == "Crimson Jewel" && [Rarity] == "Unique" # [UniqueName] == "Immutable Force" && [StashItem] == "true"	//不變之力 赤紅珠寶
-	[Type] == "Crimson Jewel" && [Rarity] == "Unique" # [UniqueName] == "Bloodnotch" && [StashItem] == "true"	//缺血症 赤紅珠寶
+	//[Type] == "Crimson Jewel" && [Rarity] == "Unique" # [UniqueName] == "Bloodnotch" && [StashItem] == "true"	//缺血症 赤紅珠寶
 //	[Type] == "Viridian Jewel" && [Rarity] == "Unique" # [UniqueName] == "Intuitive Leap" && [StashItem] == "true"	//直覺之躍 翠綠珠寶
 	[Type] == "Viridian Jewel" && [Rarity] == "Unique" # [UniqueName] == "Lioneye's Fall" && [StashItem] == "true"	//獅眼的隕落 翠綠珠寶
 	[Type] == "Viridian Jewel" && [Rarity] == "Unique" # [UniqueName] == "Impossible Escape" && [StashItem] == "true"	//逃脫不能 翠綠珠寶
