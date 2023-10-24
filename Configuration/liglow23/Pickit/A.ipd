@@ -24,7 +24,7 @@
 
 //弓箭手套裝//
 //[Type] == "Praetor Crown" && [Rarity] == "Unique" # [UniqueName] == "Voll's Vision" && [StashItem] == "true"	//福爾的遠見
-[Type] == "Zodiac Leather" && [Rarity] == "Unique" # [UniqueName] == "Hyrri's Ire" && [StashItem] == "true"	//西里的戰衣星辰皮甲
+//[Type] == "Zodiac Leather" && [Rarity] == "Unique" # [UniqueName] == "Hyrri's Ire" && [StashItem] == "true"	//西里的戰衣星辰皮甲
 //[Type] == "Titan Gauntlets" && [Rarity] == "Unique" # [UniqueName] == "Kaom's Spirit" && [StashItem] == "true"	//岡姆之魂
 //[Type] == "Rawhide Boots" && [Rarity] == "Unique" # [UniqueName] == "Seven-League Step" && [StashItem] == "true"	//盟誓之跡
 //[Type] == "Rustic Sash" && [Rarity] == "Unique" # [UniqueName] == "Prismweave" && [StashItem] == "true"	//幻彩菱織 腰帶
@@ -51,7 +51,7 @@
 //[Type] == "Jade Flask"&& 		[ItemLevel] >= "84" && [ItemLevel] <="100" # [StashItem] == "true" //+1500閃避
 //[Type] == "Quicksilver Flask"&& 	[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //跑水
 	
-[Type] == "Crimson Jewel" && [Rarity] == "Unique" # [UniqueName] == "Inertia" && [StashItem] == "true" //慣性
+//[Type] == "Crimson Jewel" && [Rarity] == "Unique" # [UniqueName] == "Inertia" && [StashItem] == "true" //慣性
 
 
 
@@ -100,17 +100,17 @@
 [Type] == "Bazaar Map"  && [MapTier] <= "13"  # [ForceSellItem] == "true"
 [Type]=="Leyline Map"  && [MapTier] <= "13 "# [ForceSellItem] == "true"
 
-[Category] == "Map" && [Rarity] == "Rare" && [map_contains_citadel] >= "1" # [StashItem] == "true" // 13855 Citadel Maps
+//[Category] == "Map" && [Rarity] == "Rare" && [map_contains_citadel] >= "1" # [StashItem] == "true" // 13855 Citadel Maps
 //[Category] == "Map" && [Rarity] == "Rare" && [map_elder_boss_variation] >= "1" # [StashItem] == "true" // 6551 Elder Maps
 [Type] == "Synthesised Map" # [StashItem] == "true" // 追憶系列地圖
 
 
-[Category] == "Map" && [Rarity] == "Rare" && [map_contains_citadel] >= "1" # [StashItem] == "true" // 13855 Citadel Maps
+//[Category] == "Map" && [Rarity] == "Rare" && [map_contains_citadel] >= "1" # [StashItem] == "true" // 13855 Citadel Maps
 //[Category] == "Map" && [Rarity] == "Rare" && [map_elder_boss_variation] >= "1" # [StashItem] == "true" // 6551 Elder Maps																		
-[Type]== "Forge of the Phoenix Map"#[StashItem]== "true"//火鳳凰熔核 #																								
-[Type]== "Lair of the Hydra Map"#[StashItem]== "true"//九頭蛇冰窟 #																								
-[Type]== "Maze of the Minotaur Map"#[StashItem]== "true"//牛頭人謎域 #																								
-[Type]== "Pit of the Chimera Map"#[StashItem]== "true"//奇美拉魔坑 #		
+//[Type]== "Forge of the Phoenix Map"#[StashItem]== "true"//火鳳凰熔核 #																								
+//[Type]== "Lair of the Hydra Map"#[StashItem]== "true"//九頭蛇冰窟 #																								
+//[Type]== "Maze of the Minotaur Map"#[StashItem]== "true"//牛頭人謎域 #																								
+//[Type]== "Pit of the Chimera Map"#[StashItem]== "true"//奇美拉魔坑 #		
 
 
 //地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖
