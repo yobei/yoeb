@@ -313,7 +313,7 @@
 	//[Type] == "Turquoise Amulet" && [Rarity] == "Unique" # [UniqueName] == "Badge of the Brotherhood" && [StashItem] == "true"	//激情之章 青玉護身符
 	[Type] == "Unset Amulet" && [Rarity] == "Unique" # [UniqueName] == "Uul-Netol's Vow" && [StashItem] == "true"	//烏爾尼多之誓 夕暮護身符
 	[Type] == "Leather Belt" && [Rarity] == "Unique" # [UniqueName] == "Headhunter" && [StashItem] == "true"	//獵首 皮革腰帶
-//	[Type] == "Heavy Belt" && [Rarity] == "Unique" # [UniqueName] == "Mageblood" && [StashItem] == "true"	//魔血 重革腰帶
+	[Type] == "Heavy Belt" && [Rarity] == "Unique" # [UniqueName] == "Mageblood" && [StashItem] == "true"	//魔血 重革腰帶
 	//[Type] == "Crimson Jewel" && [Rarity] == "Unique" # [UniqueName] == "Inspired Learning" && [StashItem] == "true"	//求知的熱情 赤紅珠寶
 	[Type] == "Crimson Jewel" && [Rarity] == "Unique" # [UniqueName] == "Rain of Splinters" && [StashItem] == "true"	//碎鏃雨 赤紅珠寶
 	[Type] == "Crimson Jewel" && [Rarity] == "Unique" # [UniqueName] == "Thread of Hope" && [StashItem] == "true"	//希望之絃 赤紅珠寶
