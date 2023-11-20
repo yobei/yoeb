@@ -881,7 +881,7 @@ Show # 通貨 - 異能 - 異能混沌石
 
 # 【地圖-凋落地圖】2005
 
-Show # 地圖 - 凋落輿圖 - T14+
+Hide # 地圖 - 凋落輿圖 - T14+
     MapTier >= 14
     BlightedMap True
     Class "Maps"
@@ -893,7 +893,7 @@ Show # 地圖 - 凋落輿圖 - T14+
     PlayEffect Red
      PlayAlertSound 3 250
 
-Show # 地圖 - 凋落輿圖 - T11~13
+Hide # 地圖 - 凋落輿圖 - T11~13
     MapTier >= 11
     BlightedMap True
     Class "Maps"
@@ -905,7 +905,7 @@ Show # 地圖 - 凋落輿圖 - T11~13
     PlayEffect Red
      PlayAlertSound 3 250
 
-Show # 地圖 - 凋落輿圖 - T6~10
+Hide # 地圖 - 凋落輿圖 - T6~10
     MapTier >= 6
     BlightedMap True
     Class "Maps"
@@ -917,7 +917,7 @@ Show # 地圖 - 凋落輿圖 - T6~10
     PlayEffect Yellow
      PlayAlertSound 3 250
 
-Show # 地圖 - 凋落輿圖 - T1
+Hide # 地圖 - 凋落輿圖 - T1
     MapTier >= 1
     BlightedMap True
     Class "Maps"
@@ -931,7 +931,7 @@ Show # 地圖 - 凋落輿圖 - T1
 
 # 【地圖-勢力地圖】2004
 
-Show # 地圖 - 勢力地圖 - 塑界地圖
+Hide # 地圖 - 勢力地圖 - 塑界地圖
     HasInfluence Shaper 
     MapTier >= 1
     SetBackgroundColor 200 0 0
@@ -941,7 +941,7 @@ Show # 地圖 - 勢力地圖 - 塑界地圖
     PlayEffect Red
      PlayAlertSound 3 250
 
-Show # 地圖 - 勢力地圖 - 尊師地圖
+Hide # 地圖 - 勢力地圖 - 尊師地圖
     HasInfluence Elder
     MapTier >= 1
     SetBackgroundColor 85 26 139
@@ -950,7 +950,7 @@ Show # 地圖 - 勢力地圖 - 尊師地圖
     MinimapIcon 0 Red Circle
      PlayAlertSound 3 250
 
-Show # 地圖 - 勢力地圖 - 牛頭人迷域
+Hide # 地圖 - 勢力地圖 - 牛頭人迷域
     MapTier = 16
     Class "Maps"
     BaseType "Maze of the Minotaur Map"
@@ -962,7 +962,7 @@ Show # 地圖 - 勢力地圖 - 牛頭人迷域
     PlayEffect Red
      PlayAlertSound 3 250
 
-Show # 地圖 - 勢力地圖 - 奇美拉魔坑
+Hide # 地圖 - 勢力地圖 - 奇美拉魔坑
     MapTier = 16
     Class "Maps"
     BaseType "Pit of the Chimera Map"
@@ -974,7 +974,7 @@ Show # 地圖 - 勢力地圖 - 奇美拉魔坑
     PlayEffect Red
      PlayAlertSound 3 250
 
-Show # 地圖 - 勢力地圖 - 九頭蛇冰窟
+Hide # 地圖 - 勢力地圖 - 九頭蛇冰窟
     MapTier = 16
     Class "Maps"
     BaseType "Lair of the Hydra Map"
@@ -986,7 +986,7 @@ Show # 地圖 - 勢力地圖 - 九頭蛇冰窟
     PlayEffect Red
      PlayAlertSound 3 250
 
-Show # 地圖 - 勢力地圖 - 火鳳凰熔核
+Hide # 地圖 - 勢力地圖 - 火鳳凰熔核
     MapTier = 16
     Class "Maps"
     BaseType "Forge of the Phoenix Map"
@@ -1048,7 +1048,7 @@ Show # 地圖 - 譫妄地圖 - T1~5
 
 # 【地圖-傳奇地圖】2002
 
-Show # 地圖 - 傳奇輿圖 - 傳奇地圖
+Hide # 地圖 - 傳奇輿圖 - 傳奇地圖
     Rarity = Unique
     Class "Maps"
     SetBackgroundColor 255 255 255
