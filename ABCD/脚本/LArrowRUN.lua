@@ -155,9 +155,9 @@ SetTaskMiGongData("a8q7",nil,1)--大于等于a8q7级 做迷宫1
 SetTaskMiGongData("a10q1",nil,2)--大于等于a10q1 做迷宫2
 SetTaskMiGongDataByLv(76,3)--大于等于80级 做迷宫3
 
-SetChangeLimitCnt("武器|衣服|头盔|手套|鞋子",0)
-SetChangeLimitCnt("腰带",0)
-SetChangeLimitCnt("项链|戒指",0)
+SetChangeLimitCnt("武器|衣服|头盔|手套|鞋子",2)
+SetChangeLimitCnt("腰带",3)
+SetChangeLimitCnt("项链|戒指",3)
 
 
 --SetNeedAddTianFu(tfStr)--设置天赋加点 
