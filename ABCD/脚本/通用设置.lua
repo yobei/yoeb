@@ -151,15 +151,15 @@ SetZhongShenData("Lunaris","Gruthkul")--ÉèÖÃÔÂÓ°Å®ÉñÖ®»êÓë¾øÍûÖ®Ä¸ ¸ñÂ³Ë¿¿ËÖ®»ê
 -------×¢ÒâÒª´óÀàÔÚÇ° Ğ¡Àà µ¥¶ÀÉèÖÃÔÚºóÃæÌí¼Ó
 SetSaveIndex("Í¨»õ|¿É¶ÑµşÍ¨»õ","1")
 SetSaveIndex("Òì½çµØÍ¼","2")
-SetSaveIndex("ÏîÁ´|½äÖ¸|×¦|Ø°Ê×|·¨ÕÈ|µ¥ÊÖ½£|Ï¸½£|µ¥ÊÖ¸«|µ¥ÊÖ´¸|·ûÎÄØ°Ê×|¶ÌÕÈ|Õ½ÕÈ|¹­|³¤ÕÈ|Ë«ÊÖ½£|Ë«ÊÖ¸«|Ë«ÊÖ´¸|Ñü´ø|ÊÖÌ×|Ğ¬×Ó|Í·¿ø","3|4")
-SetSaveIndex("Ö÷¶¯¼¼ÄÜ±¦Ê¯|¸¨Öú¼¼ÄÜ±¦Ê¯|Öé±¦|ÃüÔË¿¨|ÒÂ·ş|¶Ü|¼ı´ü|µØÍ¼ËéÆ¬","4")
-SetSaveIndex("ÉúÃüÒ©¼Á|Ä§Á¦Ò©¼Á|¸´ºÏÒ©¼Á|¹¦ÄÜÒ©¼Á","4")
-SetSaveIndex(nil,"4","†¢ÃÉİoÖú","Metadata/Items/Gems/SupportGemAdditionalXP")--¼¼ÄÜŒšÊ¯
-SetSaveIndex(nil,"4","ÙxÓèİoÖú","Metadata/Items/Gems/SupportGemAdditionalLevel")--¼¼ÄÜŒšÊ¯
-SetSaveIndex(nil,"4","å€Ä§ÑÛ¾¦","Metadata/Items/Metamorphosis/MetamorphosisEye")
-SetSaveIndex(nil,"4","Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy")
-SetSaveIndex(nil,"4","æœ½YÊ¯","Metadata/Items/Currency/CurrencyRerollSocketLinks")
-SetSaveIndex(nil,"4","¸ÄÔìÊ¯","Metadata/Items/Currency/CurrencyRerollMagic")
+SetSaveIndex("ÏîÁ´|½äÖ¸|×¦|Ø°Ê×|·¨ÕÈ|µ¥ÊÖ½£|Ï¸½£|µ¥ÊÖ¸«|µ¥ÊÖ´¸|·ûÎÄØ°Ê×|¶ÌÕÈ|Õ½ÕÈ|¹­|³¤ÕÈ|Ë«ÊÖ½£|Ë«ÊÖ¸«|Ë«ÊÖ´¸|Ñü´ø|ÊÖÌ×|Ğ¬×Ó|Í·¿ø","3")
+SetSaveIndex("Ö÷¶¯¼¼ÄÜ±¦Ê¯|¸¨Öú¼¼ÄÜ±¦Ê¯|Öé±¦|ÃüÔË¿¨|ÒÂ·ş|¶Ü|¼ı´ü|µØÍ¼ËéÆ¬","2")
+SetSaveIndex("ÉúÃüÒ©¼Á|Ä§Á¦Ò©¼Á|¸´ºÏÒ©¼Á|¹¦ÄÜÒ©¼Á","2")
+SetSaveIndex(nil,"2","†¢ÃÉİoÖú","Metadata/Items/Gems/SupportGemAdditionalXP")--¼¼ÄÜŒšÊ¯
+SetSaveIndex(nil,"2","ÙxÓèİoÖú","Metadata/Items/Gems/SupportGemAdditionalLevel")--¼¼ÄÜŒšÊ¯
+SetSaveIndex(nil,"2","å€Ä§ÑÛ¾¦","Metadata/Items/Metamorphosis/MetamorphosisEye")
+SetSaveIndex(nil,"2","Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy")
+SetSaveIndex(nil,"2","æœ½YÊ¯","Metadata/Items/Currency/CurrencyRerollSocketLinks")
+SetSaveIndex(nil,"2","¸ÄÔìÊ¯","Metadata/Items/Currency/CurrencyRerollMagic")
 
 ------------------¹Ò»úÏà¹Ø
 g_yijieNoWhiteMonster=false		--Òì½çÊ±ÊÇ·ñ²»´ò°×¹Ö trueÎª²»´ò nil»òfalseÎª´ò
@@ -283,8 +283,9 @@ SetSellGoodsData("Ä§ì`»Ãªz","Metadata/Items/Maps/MapWorldsPhantasmagoria",3,"0|1
 SetSellGoodsData("ºì`ŒWÔº","Metadata/Items/Maps/MapWorldsAcademy",3,"0|1|2|")
 SetSellGoodsData("éœªz¼âËş","Metadata/Items/Maps/MapWorldsTower",3,"0|1|2|")
 SetSellGoodsData("»ğÉ½Ñ×¿Ú","Metadata/Items/Maps/MapWorldsCaldera",3,"0|1|2|")
-
-
+SetSellGoodsData("ºéÄµV¿Ó","Metadata/Items/Maps/MapWorldsFloodedMine",3,"0|1|2|")
+	
+	
 
 --SetCompoundDivinationCard(name,className,nType) --ÉèÖÃĞèÒªºÏ³ÉµÄÃüÔË¿¨ name=¿¨Æ¬Ãû className=¿¨Æ¬ÀàÃû nType=ºÏ³É³¡¾° nil»ò²»ÌîÎªÎŞÂÛºÎÊ±¶¼ºÏ³É 0ÎªÃ»ÔÚË¢Òì½ç²ÅºÏ 1ÎªÖ»ÔÚË¢Òì½ç²ÅºÏ
 SetCompoundDivinationCard("ºÚ°µÈıÃæ","Metadata/Items/DivinationCards/DivinationCardThreeFacesInTheDark")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
@@ -350,7 +351,7 @@ SetNeedBuyGoodsData("´«ËÍ¾íÖá","Metadata/Items/Currency/CurrencyPortal",nil,"ÍÉ±
 --lineCnt Êı×ÖĞÍ Á¬¶´ÊıÁ¿ ºöÂÔÔòÌî nil
 --checkCangKu ¼ÆËã±£ÁôÊıÁ¿Ê±ÊÇ·ñÁ¬²Ö¿âÄÚµÄÊıÁ¿Ò²¼ÆËã½øÈ¥ nil»òfalseÎª²»¼ÆËã²Ö¿â true ÎªĞèÒª¼ÆËã
 SetGoodsCaoZuo("Í¨»õ|¿É¶ÑµşÍ¨»õ|Òì½çµØÍ¼","0|2")--¶à¸ö´óÀàÉèÖÃ¼ñ´æ
-SetGoodsCaoZuo("Ö÷¶¯¼¼ÄÜ±¦Ê¯|¸¨Öú¼¼ÄÜ±¦Ê¯","0|2",nil,nil,nil,nil,5)--Ê°È¡Æ·ÖÊ³¬¹ı5µÄ¼¼ÄÜ±¦Ê¯
+SetGoodsCaoZuo("Ö÷¶¯¼¼ÄÜ±¦Ê¯|¸¨Öú¼¼ÄÜ±¦Ê¯","0|2",nil,nil,nil,nil,21)--Ê°È¡Æ·ÖÊ³¬¹ı5µÄ¼¼ÄÜ±¦Ê¯
 
 SetGoodsCaoZuo(nil,"0|1|4",nil,nil,nil,nil,nil,nil,"3")--Ê°È¡ ¼ø¶¨ ³öÊÛ³ÈÉ«ÎïÆ·
 SetGoodsCaoZuo(nil,nil,"ÖªÊ¶¾íÖá","Metadata/Items/Currency/CurrencyIdentification",nil,nil,nil,40)--¹»ÁË¾Í²»¼ñÁË
@@ -358,8 +359,6 @@ SetGoodsCaoZuo(nil,nil,"´«ËÍ¾íÖá","Metadata/Items/Currency/CurrencyPortal",nil,n
 SetGoodsCaoZuo(nil,nil,"µã½ğÊ¯","Metadata/Items/Currency/CurrencyUpgradeToRare",nil,nil,nil,40)--ÉíÉÏ±£Áô40
 SetGoodsCaoZuo(nil,"0|1",nil,nil,nil,nil,nil,nil,"0|1|2",6)--6¶´×°ÉèÖÃ¼ñÂô
 SetGoodsCaoZuo(nil,"0|1",nil,nil,nil,nil,nil,nil,"0|1|2",nil,6)--6Á¬¶´×°ÉèÖÃ¼ñÂô
-SetGoodsCaoZuo("×¦","0|1|4",nil,nil,nil,nil,5,nil,"2")--¼ñÂô¾«Á¼µÄ»Æ×¦×Ó
-SetGoodsCaoZuo("Öé±¦|ÉîÔ¨Öé±¦","0|1|4",nil,nil,nil,nil,nil,nil,"2")--Ê°È¡ ¼ø¶¨ ³öÊÛ»ÆÉ«ÎïÆ·Öé±¦
 SetGoodsCaoZuo(nil,"1|3","ÖÜÄê¸£´ü","Metadata/Items/MicrotransactionCurrency/MicrotransactionTencentEventCoin")--
 SetGoodsCaoZuo(nil,"1|3","²£Á§µ¯Öé","Metadata/Items/Currency/CurrencyFlaskQuality")--
 SetGoodsCaoZuo(nil,"0","Ä¥µ¶Ê¯","Metadata/Items/Currency/CurrencyWeaponQuality")--Ä¥µ¶Ê¯²»´æ

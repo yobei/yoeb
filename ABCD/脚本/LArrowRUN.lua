@@ -166,3 +166,9 @@ SetNeedAddTianFu("游侠=attack_speed568-投射物傷害和命中|dexterity990-敏捷|dexter
 SetNeedAddTianFu("游侠升华=AscendancyDeadeye3-投射物傷害、攻擊速度|AscendancyDeadeye14-集風|AscendancyDeadeye5-投射物傷害、命中率|AscendancyDeadeye4-彈射|AscendancyDeadeye17-投射物傷害、命中率|AscendancyDeadeye6-無限彈藥|AscendancyDeadeye19-投射物傷害、攻擊速度|AscendancyDeadeye20_-風之守衛|") 
 
 
+
+
+SetSellGoodsData("冰川山丘","Metadata/Items/Maps/MapWorldsGorge",1,"0|1|2|")
+SetSellGoodsData("怒浪之港","Metadata/Items/Maps/MapWorldsPier",1,"0|1|2|")
+SetSellGoodsData("骨跡陵墓","Metadata/Items/Maps/MapWorldsBoneCrypt",1,"0|1|2|")
+SetSellGoodsData("洪災礦坑","Metadata/Items/Maps/MapWorldsFloodedMine",1,"0|1|2|")
