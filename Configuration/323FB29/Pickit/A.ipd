@@ -206,8 +206,8 @@
 [Type] == "Otherworldly Scouting Report" # 	[StashItem] == "true" //	//超凡偵查報告
 [Type] == "Influenced Scouting Report" # 	[StashItem] == "true" //	//勢力偵查報告
 
-//[Type] =="Polaric Invitation" #[StashItem] == "true" ////極地之邀不撿不存倉
-//[Type] =="Writhing Invitation" #[StashItem] == "true" ////纏繞之邀不撿不存倉
+[Type] =="Polaric Invitation" #[StashItem] == "true" ////極地之邀不撿不存倉
+[Type] =="Writhing Invitation" #[StashItem] == "true" ////纏繞之邀不撿不存倉
 
 
 //季初開啟////季初開啟////季初開啟////季初開啟////季初開啟////季初開啟////季初開啟////季初開啟////季初開啟////季初開啟////季初開啟////季初開啟//
@@ -357,7 +357,7 @@
 	[Category] == "Ring"        && [Rarity]== "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && 	[StashItem]	 == "true"	//	戒指
 	[Category] == "Belt"        && [Rarity]== "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && 	[StashItem]	 == "true"	//	腰帶
 	[Category] == "Gloves"      && [Rarity]== "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && 	[StashItem]	 == "true"	//	手套
-	[Category] == "Boots"       && [Rarity]== "Rare" # [base_maximum_life] >= "999"&& 					[StashItem]	 == "true"	//	鞋子
+//	[Category] == "Boots"       && [Rarity]== "Rare" # [base_maximum_life] >= "999"&& 					[StashItem]	 == "true"	//	鞋子
 //	[Category] == "Weapon"      && [Rarity]== "Rare" # [DPS] > "999" && 							[StashItem]	 == "true"	//	武器
-	[Category] == "Shield"      && [Rarity]== "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && 	[StashItem]	 == "true"	//	盾牌
+//	[Category] == "Shield"      && [Rarity]== "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && 	[StashItem]	 == "true"	//	盾牌
 																	
