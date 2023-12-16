@@ -19,6 +19,9 @@ SetUseZhuangBeiTypeData("Str|StrInt|Int","手套")
 SetUseZhuangBeiTypeData("Str|StrDex|Dex","鞋子")
 SetUseZhuangBeiTypeData("StrInt","项链")
 
+g_yiJieTimeOut=15*60			--异界地图内的超时时间 单位为秒 如果未设置就会用g_timeOut *是乘号 这里为15乘以60=15分钟
+g_timeOut=20*60					--在一个地图呆的时间超过设置的 就重新开图重新 单位为秒
+
 g_attackDis=50				--攻击距离
 g_duobiHpVal=0.2
 

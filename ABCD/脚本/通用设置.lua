@@ -18,9 +18,9 @@
 ------------------基本设置
 g_needMinimizeGame=false			--最小化遊戲窗口 true为最小化 false或nil为不最小化
 g_imBoss=false					--如果是仓库号要为true 挂机号为false
-g_attackDis=50					--攻击距离
-g_yiJieTimeOut=15*60			--异界地图内的超时时间 单位为秒 如果未设置就会用g_timeOut *是乘号 这里为15乘以60=15分钟
-g_timeOut=25*60					--在一个地图呆的时间超过设置的 就重新开图重新 单位为秒
+g_attackDis=60					--攻击距离
+g_yiJieTimeOut=8*60			--异界地图内的超时时间 单位为秒 如果未设置就会用g_timeOut *是乘号 这里为15乘以60=15分钟
+g_timeOut=10*60					--在一个地图呆的时间超过设置的 就重新开图重新 单位为秒
 g_addTianFu=true				--自动按设定好的配置加天赋 true为加 nil或false为不加
 g_shengJiBaoShi=true			--自动升级宝石 true为升级 nil或false为不升级
 g_sellSkillGem=true				--自动卖超过40品质的技能宝石
@@ -227,6 +227,13 @@ SetLastEnterSmallMap("MapWorldsGorge")--冰川山丘
 --SetSellGoodsData(name,className,cnt,color)--设置卖(换)的地图 
 --name=物品名 className=物品类名 先识别物品名 识别不到就识别类名 cnt=够多少去卖 color=颜色 0白 1蓝 2黄 多个用|隔开
 
+SetSellGoodsData("實驗居所","Metadata/Items/Maps/MapWorldsLaboratory",1,"0|1|2|")
+SetSellGoodsData("魔金寶庫","Metadata/Items/Maps/MapWorldsVault",1,"0|1|2|")
+
+SetGoodsCaoZuo(nil,"1|3","魔金寶庫","Metadata/Items/Maps/MapWorldsVault")
+SetGoodsCaoZuo(nil,"1|3","實驗居所","Metadata/Items/Maps/MapWorldsLaboratory")
+
+
 SetSellGoodsData("冰川山丘","Metadata/Items/Maps/MapWorldsGlacier",3,"0|1|2|")
 SetSellGoodsData("怒浪之港","Metadata/Items/Maps/MapWorldsPier",3,"0|1|2|")
 SetSellGoodsData("骨跡陵墓","Metadata/Items/Maps/MapWorldsBoneCrypt",3,"0|1|2|")
@@ -238,7 +245,7 @@ SetSellGoodsData("暮色沙丘","Metadata/Items/Maps/MapWorldsDunes",3,"0|1|2|")
 SetSellGoodsData("岔河","Metadata/Items/Maps/MapWorldsForkingRiver",3,"0|1|2|")
 SetSellGoodsData("失落城塢","Metadata/Items/Maps/MapWorldsPort",3,"0|1|2|")
 SetSellGoodsData("無疆田野","Metadata/Items/Maps/MapWorldsFields",3,"0|1|2|")
-SetSellGoodsData("實驗居所","Metadata/Items/Maps/MapWorldsLaboratory",3,"0|1|2|")
+
 SetSellGoodsData("核心","Metadata/Items/Maps/MapWorldsCore",3,"0|1|2|")
 
 SetSellGoodsData("濱海堡壘","Metadata/Items/Maps/MapWorldsRamparts",3,"0|1|2|")
@@ -336,7 +343,7 @@ SetSellGoodsData("荊棘谷","Metadata/Items/Maps/MapWorldsBrambleValley",3,"0|1|2|
 SetSellGoodsData("平頂荒漠","Metadata/Items/Maps/MapWorldsMesa",3,"0|1|2|")
 SetSellGoodsData("地底之河","Metadata/Items/Maps/MapWorldsUndergroundRiver",3,"0|1|2|")
 SetSellGoodsData("象牙神殿","Metadata/Items/Maps/MapWorldsIvoryTemple",3,"0|1|2|")
-SetSellGoodsData("魔金寶庫","Metadata/Items/Maps/MapWorldsVault",3,"0|1|2|")
+
 
 
 
