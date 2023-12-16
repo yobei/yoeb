@@ -230,8 +230,8 @@ SetLastEnterSmallMap("MapWorldsGorge")--冰川山丘
 SetSellGoodsData("實驗居所","Metadata/Items/Maps/MapWorldsLaboratory",1,"0|1|2|")
 SetSellGoodsData("魔金寶庫","Metadata/Items/Maps/MapWorldsVault",1,"0|1|2|")
 
-SetGoodsCaoZuo(nil,"1|3","魔金寶庫","Metadata/Items/Maps/MapWorldsVault")
-SetGoodsCaoZuo(nil,"1|3","實驗居所","Metadata/Items/Maps/MapWorldsLaboratory")
+SetGoodsCaoZuo("异界地图","1|3","魔金寶庫","Metadata/Items/Maps/MapWorldsVault")
+SetGoodsCaoZuo("异界地图","1|3","實驗居所","Metadata/Items/Maps/MapWorldsLaboratory")
 
 
 SetSellGoodsData("冰川山丘","Metadata/Items/Maps/MapWorldsGlacier",3,"0|1|2|")
