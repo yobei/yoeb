@@ -47,6 +47,14 @@ g_mapUseWaErLv=83			--大于等于多少级对白、蓝地图使用瓦尔宝珠 nil为永远不使用
 g_mapUseDingZiLv=nil			--大于等于多少级使用制图钉 nil为永远不使用
 g_noUseMapLv=0				--不使用、不捡多少阶及以上的地图 nil或0为忽略 设置优先的地图除外
 
+g_openQlkMaxMapTianFuCnt=nil--数值型 满多少天赋后不开奇拉克任务nil为一直开
+g_useMinLvMapTianFuCnt=100--地图天赋满多少点后 就从低阶地图开始取
+SetYiJieShuaTuModeByMapCnt(60,nil,2)--)--根据仓库里的地图数量设置异界刷图模式 可添加多个 他是从地图数量多到少来判断的
+SetOpenMapMasterData(3)
+g_notShuaBaiPao=true
+
+
+
 SetNoUseMapShuXing("map_monsters_reflect_%_elemental_damage")--设置不打魔法反射属性
 SetNoUseMapShuXing("map_players_no_regeneration_including_es")--无法回复
 SetNoUseMapShuXing("is_blighted_map")--凋落地图
