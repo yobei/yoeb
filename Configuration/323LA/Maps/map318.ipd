@@ -19,10 +19,10 @@
 
 
 [Type]=="Crimson Temple Map" # [RunMap]=="true"
-[Type]=="Crimson Temple Map" # [ExitAfterBossKill] == "true"
+//[Type]=="Crimson Temple Map" # [ExitAfterBossKill] == "true"
 
 [Type]=="Temple Map" # [RunMap]=="true"
-[Type]=="Temple Map" # [ExitAfterBossKill] == "true"
+//[Type]=="Temple Map" # [ExitAfterBossKill] == "true"
 
 [Type]== "Maze Map" # [IgnoreMap]== "true" //冥神之域
 [Type]== "Lava Chamber Map" # [IgnoreMap]== "true" //熔岩之室 #		
