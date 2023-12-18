@@ -38,10 +38,10 @@
 [Type] == "Murder Mitts" && [Rarity] == "Unique" # [UniqueName] == "Thunderfist" && 			[StashItem] == "true"//轟天雷
 [Type] == "Exquisite Leather" && [Rarity] == "Unique" # [UniqueName] == "Yriel's Fostering" && 	[StashItem] == "true"//伊瑞的栽培
 [Type] == "Riveted Boots" && [Rarity] == "Unique" # [UniqueName] == "Ralakesh's Impatience" && 	[StashItem] == "true"//芮勒蓋許的急躁
-[Type] == "Carnal Boots" && [Rarity] == "Unique" # [UniqueName] == "Corpsewalker" && 			[StashItem] == "true"//行屍走肉
-[Type] == "Leather Hood" && [Rarity] == "Unique" # 	[UniqueName] == "Heatshiver" && 			[StashItem] == "true"//寒焰
+//[Type] == "Carnal Boots" && [Rarity] == "Unique" # [UniqueName] == "Corpsewalker" && 			[StashItem] == "true"//行屍走肉
+//[Type] == "Leather Hood" && [Rarity] == "Unique" # 	[UniqueName] == "Heatshiver" && 			[StashItem] == "true"//寒焰
 
-[Type] == "Bone Circlet" && [Rarity] == "Unique" # [UniqueName] == "Wraithlord" && 				[StashItem] == "true"//幽魂頭
+//[Type] == "Bone Circlet" && [Rarity] == "Unique" # [UniqueName] == "Wraithlord" && 				[StashItem] == "true"//幽魂頭
 
 
 [Type] == "Forbidden Tome" #[StashItem] == "true" // 禁忌之書
@@ -69,6 +69,7 @@
 [Type] == "Jade Amulet" && [Rarity] == "Unique" # [UniqueName] == "Hyrri's Truth" && 				[StashItem] == "true"	//西里的真理
 [Type] == "Primal Arrow Quiver" && [Rarity] == "Unique" # [UniqueName] == "The Poised Prism" && 		[StashItem] == "true"	//優雅迷鏡
 [Type] == "Nightmare Bascinet" && [Rarity] == "Unique" # 	[UniqueName] == "Devoto's Devotion" && [StashItem] == "true"				//水銀投
+[Type] == "Wyrmscale Gauntlets" && [Rarity] == "Unique" # [UniqueName] == "Tanu Ahi" && 				[StashItem] == "true"	//埋火
 [Type] == "Wyrmscale Gauntlets" && [attack_speed_+_%] >= "1" && [Rarity] == "Unique" # 			[StashItem] == "true"//埋火
 [Type] == "Crimson Jewel" && [Rarity] == "Unique" # [UniqueName] == "Inertia" && [StashItem] == "true" //慣性
 
@@ -115,9 +116,9 @@
 
 //2022/12/24
 
-[Category] 	== "Map" && [MapTier] >= "13"  && [Rarity] == "Normal"  #			[StashItem] == "true" //白
-[Category] 	== "Map" && [MapTier] >= "13"  && [Rarity] == "Magic"  #			[StashItem] == "true" //藍
-[Category] 	== "Map" && [MapTier] >= "13"  && [Rarity] == "Rare"  #				[StashItem] == "true" //黃
+[Category] 	== "Map" && [MapTier] >= "1"  && [Rarity] == "Normal"  #			[StashItem] == "true" //白
+[Category] 	== "Map" && [MapTier] >= "1"  && [Rarity] == "Magic"  #			[StashItem] == "true" //藍
+[Category] 	== "Map" && [MapTier] >= "1"  && [Rarity] == "Rare"  #				[StashItem] == "true" //黃
 //[Category]  == "Map" && [MapTier] >= "1"  && [Rarity] == "Unique"  #			[StashItem] == "true" //橘
 [Category] 	== "Map" && [map_contains_citadel]>= "1"  #							[StashItem] == "true" //征服
 [Category] 	== "Map" && [map_elder_boss_variation] >= "1"  #					[ForceSellItem] == "true" //尊?
