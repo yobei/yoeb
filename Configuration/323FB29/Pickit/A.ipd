@@ -16,6 +16,8 @@
 [Type] == "Topaz Ring" && [Rarity] == "Unique" # 	[UniqueName] == "Astral Projector" && [StashItem] == "true"				//星空之影
 [Type] == "Sapphire Flask" && [Rarity] == "Unique" # 	[UniqueName] == "Taste of Hate" && [StashItem] == "true"				//恨意
 
+[Type] == "Nightmare Bascinet" && [Rarity] == "Unique" # 	[UniqueName] == "Devoto's Devotion" && [StashItem] == "true"				//水銀投
+
 [Type] == "Cobalt Jewel" && [Rarity] == "Unique" #   	[UniqueName] == "Fertile Mind" && [StashItem] == "true"   				//敏轉智
 [Type] == "A Mother's Parting Gift" #					[StashItem] == "true" //敏轉智卡
 
