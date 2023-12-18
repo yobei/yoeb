@@ -50,11 +50,11 @@
 [Type] == "Portal" #		[StashItem] == "true"//傳送門
 
 //偵查報告
-[Type] == "Influenced Scouting Report" 			#[StashItem] == "true" // 勢力
-[Type] == "Vaal Scouting Report" 			#[StashItem] == "true" // 瓦?
-[Type] == "Singular Scouting Report" 			#[StashItem] == "true" // 卓越
-[Type] == "Explorer's Scouting Report" 			#[StashItem] == "true" // 探險家
-[Type] == "Otherworldly Scouting Report" 		#[StashItem] == "true" // 超凡
+//[Type] == "Influenced Scouting Report" 			#[StashItem] == "true" // 勢力
+//[Type] == "Vaal Scouting Report" 			#[StashItem] == "true" // 瓦?
+//[Type] == "Singular Scouting Report" 			#[StashItem] == "true" // 卓越
+//[Type] == "Explorer's Scouting Report" 			#[StashItem] == "true" // 探險家
+//[Type] == "Otherworldly Scouting Report" 		#[StashItem] == "true" // 超凡
 
 //弓箭手套裝//
 [Type] == "Praetor Crown" && [Rarity] == "Unique" # [UniqueName] == "Voll's Vision" && 				[StashItem] == "true"	//福爾的遠見
