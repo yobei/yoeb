@@ -116,9 +116,9 @@
 
 //2022/12/24
 
-//[Category] 	== "Map" && [MapTier] >= "1"  && [Rarity] == "Normal"  #			[StashItem] == "true" //白
-//[Category] 	== "Map" && [MapTier] >= "1"  && [Rarity] == "Magic"  #			[StashItem] == "true" //藍
-//[Category] 	== "Map" && [MapTier] >= "1"  && [Rarity] == "Rare"  #				[StashItem] == "true" //黃
+[Category] 	== "Map" && [MapTier] >= "1"  && [Rarity] == "Normal"  #			[StashItem] == "true" //白
+[Category] 	== "Map" && [MapTier] >= "1"  && [Rarity] == "Magic"  #			[StashItem] == "true" //藍
+[Category] 	== "Map" && [MapTier] >= "1"  && [Rarity] == "Rare"  #				[StashItem] == "true" //黃
 //[Category]  == "Map" && [MapTier] >= "1"  && [Rarity] == "Unique"  #			[StashItem] == "true" //橘
 [Category] 	== "Map" && [map_contains_citadel]>= "1"  #							[StashItem] == "true" //征服
 [Category] 	== "Map" && [map_elder_boss_variation] >= "1"  #					[ForceSellItem] == "true" //尊?
@@ -126,13 +126,22 @@
 
 
 
-[Type] == "Temple Map" && [MapTier] >= "14"  && [Rarity] == "Normal"  #[StashItem] == "true" // //普通地圖普通地圖撿取，普通地圖存倉
-[Type] == "Temple Map" && [MapTier] >= "14"  && [Rarity] == "Magic"  #[StashItem] == "true" // //藍地圖藍地圖撿取，藍地圖存倉
-[Type] == "Temple Map" && [MapTier] >= "14"  && [Rarity] == "Rare"  #[StashItem] == "true" // //黃地圖黃地圖不撿，黃地圖售出
+//[Type] == "Temple Map" && [MapTier] >= "14"  && [Rarity] == "Normal"  #[StashItem] == "true" // //普通地圖普通地圖撿取，普通地圖存倉
+//[Type] == "Temple Map" && [MapTier] >= "14"  && [Rarity] == "Magic"  #[StashItem] == "true" // //藍地圖藍地圖撿取，藍地圖存倉
+//[Type] == "Temple Map" && [MapTier] >= "14"  && [Rarity] == "Rare"  #[StashItem] == "true" // //黃地圖黃地圖不撿，黃地圖售出
 
-[Type] == "Crimson Temple Map" && [MapTier] >= "14"  && [Rarity] == "Normal"  #[StashItem] == "true" // //普通地圖普通地圖撿取，普通地圖存倉
-[Type] == "Crimson Temple Map" && [MapTier] >= "14"  && [Rarity] == "Magic"  #[StashItem] == "true" // //藍地圖藍地圖撿取，藍地圖存倉
+//[Type] == "Crimson Temple Map" && [MapTier] >= "14"  && [Rarity] == "Normal"  #[StashItem] == "true" // //普通地圖普通地圖撿取，普通地圖存倉
+//[Type] == "Crimson Temple Map" && [MapTier] >= "14"  && [Rarity] == "Magic"  #[StashItem] == "true" // //藍地圖藍地圖撿取，藍地圖存倉
 //[Type] == "Crimson Temple Map" && [MapTier] >= "14"  && [Rarity] == "Rare"  #[StashItem] == "true" // //黃地圖黃地圖不撿，黃地圖售出
+
+//[Type] == "Jungle Valley Map" && [MapTier] >= "14"  && [Rarity] == "Normal"  #[StashItem] == "true" // //劇毒林谷
+//[Type] == "Jungle Valley Map" && [MapTier] >= "14"  && [Rarity] == "Magic"  #[StashItem] == "true" // //藍地圖藍地圖撿取，藍地圖存倉
+//[Type] == "Jungle Valley Map" && [MapTier] >= "14"  && [Rarity] == "Rare"  #[StashItem] == "true" // //黃地圖黃地圖不撿，黃地圖售出
+
+//[Type] == "Arid Lake Map" && [MapTier] >= "14"  && [Rarity] == "Normal"  #[StashItem] == "true" // //乾枯湖岸
+//[Type] == "Arid Lake Map" && [MapTier] >= "14"  && [Rarity] == "Magic"  #[StashItem] == "true" // //藍地圖藍地圖撿取，藍地圖存倉
+//[Type] == "Arid Lake Map" && [MapTier] >= "14"  && [Rarity] == "Rare"  #[StashItem] == "true" // //黃地圖黃地圖不撿，黃地圖售出
+
 
 
 //輝哥版
