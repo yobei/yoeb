@@ -33,13 +33,13 @@
 
 //劇毒林谷
 [Type]=="Jungle Valley Map" # [RunMap]=="true"
-//[Type]=="Jungle Valley Map" # [ExitAfterBossKill] == "true"
+[Type]=="Jungle Valley Map" # [ExitAfterBossKill] == "true"
 //乾枯湖岸
 [Type]=="Arid Lake Map" # [RunMap]=="true"
-//[Type]=="Arid Lake Map" # [ExitAfterBossKill] == "true"
+[Type]=="Arid Lake Map" # [ExitAfterBossKill] == "true"
 
-[Type] == "Jungle Valley Map"&& [MapTier]>= "1" && [MapTier] <= "16" && [Rarity] == "Rare" # [IgnoreMap]== "true" // 金圖全部不打
-[Type] == "Arid Lake Map"&& [MapTier]>= "1" && [MapTier] <= "16" && [Rarity] == "Rare" # [IgnoreMap]== "true" // 金圖全部不打
+//[Type] == "Jungle Valley Map"&& [MapTier]>= "1" && [MapTier] <= "16" && [Rarity] == "Rare" # [IgnoreMap]== "true" // 金圖全部不打
+//[Type] == "Arid Lake Map"&& [MapTier]>= "1" && [MapTier] <= "16" && [Rarity] == "Rare" # [IgnoreMap]== "true" // 金圖全部不打
 
 [Type]== "Mesa Map" # [IgnoreMap]== "true" //平頂荒漠
 [Type]== "Mud Geyser Map" # [IgnoreMap]== "true" //陰晦泥灘	
