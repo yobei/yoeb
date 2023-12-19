@@ -19,18 +19,32 @@
 
 
 [Type]=="Crimson Temple Map" # [RunMap]=="true"
-[Type]=="Crimson Temple Map" # [ExitAfterBossKill] == "true"
+//[Type]=="Crimson Temple Map" # [ExitAfterBossKill] == "true"
 
 [Type]=="Temple Map" # [RunMap]=="true"
-[Type]=="Temple Map" # [ExitAfterBossKill] == "true"
+//[Type]=="Temple Map" # [ExitAfterBossKill] == "true"
 
 [Type]== "Maze Map" # [IgnoreMap]== "true" //冥神之域
 [Type]== "Lava Chamber Map" # [IgnoreMap]== "true" //熔岩之室 #		
 [Type]== "Colosseum Map" # [IgnoreMap]== "true" //大決鬥場 #		
 [Type]== "Bramble Valley Map" # [IgnoreMap]== "true" //荊棘谷 #		
 [Type]== "Canyon Map" # [IgnoreMap]== "true" //炙陽峽谷 #		
-[Type]== "Ivory Temple Map" # [IgnoreMap]== "true" //象牙神殿 #		
-	
+[Type]== "Ivory Temple Map" # [IgnoreMap]== "true" //象牙神殿 #	
+
+//劇毒林谷
+[Type]=="Jungle Valley Map" # [RunMap]=="true"
+[Type]=="Jungle Valley Map" # [ExitAfterBossKill] == "true"
+//乾枯湖岸
+[Type]=="Arid Lake Map" # [RunMap]=="true"
+[Type]=="Arid Lake Map" # [ExitAfterBossKill] == "true"
+
+[Type] == "Jungle Valley Map"&& [MapTier]>= "1" && [MapTier] <= "16" && [Rarity] == "Rare" # [IgnoreMap]== "true" // 金圖全部不打
+[Type] == "Arid Lake Map"&& [MapTier]>= "1" && [MapTier] <= "16" && [Rarity] == "Rare" # [IgnoreMap]== "true" // 金圖全部不打
+
+[Type]== "Mesa Map" # [IgnoreMap]== "true" //平頂荒漠
+[Type]== "Mud Geyser Map" # [IgnoreMap]== "true" //陰晦泥灘	
+[Type]== "Necropolis Map" # [IgnoreMap]== "true" //魔影墓場
+
 
 
 
