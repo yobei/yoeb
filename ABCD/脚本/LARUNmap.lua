@@ -130,7 +130,7 @@ SetTaskShengJiData("a9q3",nil,"2_9_1",63,true)--做 到風暴飛刃 的时候刷滲血水道到
 
 SetTaskMiGongData("a8q7",nil,1)--大于等于a8q7级 做迷宫1
 SetTaskMiGongData("a10q1",nil,2)--大于等于a10q1 做迷宫2
-SetTaskMiGongDataByLv(83,3)--大于等于80级 做迷宫3
+SetTaskMiGongDataByLv(87,3)--大于等于80级 做迷宫3
 
 SetChangeLimitCnt("武器|衣服|头盔|手套|鞋子",0)
 SetChangeLimitCnt("腰带",0)
