@@ -82,7 +82,7 @@ SetUseBuffSkill("法术回音","spellslinger",nil,nil,g_funcCheckFshy)
 SetUseBuffSkill("战旗","banner_war","征戰之旗","bloodstained_banner_buff_aura")
 SetUseBuffSkill("錯亂","unhinge","瘋狂","unhinged")
 SetUseBuffSkill("恐懼之旗","banner_armour_evasion","恐懼之旗","armour_evasion_banner_buff_aura")
-SetUseBuffSkill("冰霜之捷","herald_of_ice")--
+--SetUseBuffSkill("冰霜之捷","herald_of_ice")--
 SetUseBuffSkill("苦痛之捷","herald_of_agony")--
 SetUseBuffSkill("灰烬之捷","herald_of_ash")
 SetUseBuffSkill("純淨之捷","herald_of_light")
