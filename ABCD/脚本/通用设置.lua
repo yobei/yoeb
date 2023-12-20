@@ -459,6 +459,18 @@ SetGoodsCaoZuo("异界地图","1|3","Overgrown Shrine Map","Metadata/Items/Maps/MapW
 SetGoodsCaoZuo("异界地图","1|3","Core Map","Metadata/Items/Maps/MapWorldsCore")--核心--一堆王走很久--
 SetGoodsCaoZuo("异界地图","1|3","Glacier Map","	Metadata/Items/Maps/MapWorldsGorge")--核心--一堆王走很久--
 
+SetMapCfg(nil,"Metadata/Items/Maps/MapWorldsMalformation",true,true,true)--畸形亡域 有8个通道
+SetMapCfg(nil,"Metadata/Items/Maps/MapWorldsOvergrownRuin",true,true,true)--长草遗迹
+SetMapCfg(nil,"Metadata/Items/Maps/MapWorldsLaboratory",true,true,true)--实验密室
+SetMapCfg(nil,"Metadata/Items/Maps/MapWorldsArena",true,true,true)--競技場
+SetMapCfg(nil,"Metadata/Items/Maps/MapWorldsCore",true,true,true)--核心
+
+SetMapCfg(nil,"Metadata/Items/Maps/MapWorldsVault",true,true,true)--動員
+
+SetMapCfg(nil,"Metadata/Items/Maps/MapWorldsFrozenCabins",true,true,true)--核心
+
+SetMapCfg(nil,"Metadata/Items/Maps/MapWorldsGlacier",true,true,true)--冰川
+
 
 
 
