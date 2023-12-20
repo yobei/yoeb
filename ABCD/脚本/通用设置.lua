@@ -227,11 +227,6 @@ SetLastEnterSmallMap("MapWorldsGorge")--冰川山丘
 --SetSellGoodsData(name,className,cnt,color)--设置卖(换)的地图 
 --name=物品名 className=物品类名 先识别物品名 识别不到就识别类名 cnt=够多少去卖 color=颜色 0白 1蓝 2黄 多个用|隔开
 
-SetSellGoodsData("實驗居所","Metadata/Items/Maps/MapWorldsLaboratory",1,"0|1|2|")
-SetSellGoodsData("魔金寶庫","Metadata/Items/Maps/MapWorldsVault",1,"0|1|2|")
-
-SetGoodsCaoZuo("异界地图","1|3","魔金寶庫","Metadata/Items/Maps/MapWorldsVault")
-SetGoodsCaoZuo("异界地图","1|3","實驗居所","Metadata/Items/Maps/MapWorldsLaboratory")
 
 
 SetSellGoodsData("冰川山丘","Metadata/Items/Maps/MapWorldsGlacier",3,"0|1|2|")
@@ -450,6 +445,22 @@ SetGoodsCaoZuo("异界地图","1|3","瓦爾金字塔","Metadata/Items/Maps/MapWorldsVaalP
 SetGoodsCaoZuo("异界地图","1|3","密草神殿","Metadata/Items/Maps/MapWorldsOvergrownShrine",nil,nil,nil,nil,"3")
 SetGoodsCaoZuo("异界地图","1|3","濱海幽穴","Metadata/Items/Maps/MapWorldsUndergroundSea",nil,nil,nil,nil,"3")
 SetGoodsCaoZuo("异界地图","1|3","魔影墓場","Metadata/Items/Maps/MapWorldsNecropolis",nil,nil,nil,nil,"3")
+
+
+SetGoodsCaoZuo("异界地图","1|3","Frozen Cabins Map","Metadata/Items/Maps/MapWorldsFrozenCabins")--凍原小屋機關一堆操--
+SetGoodsCaoZuo("异界地图","1|3","Vault Map","Metadata/Items/Maps/MapWorldsVault")--机关宝库---不能打---15级
+SetGoodsCaoZuo("异界地图","1|3","Summit Map","Metadata/Items/Maps/MapWorldsSummit")--寒顶之巅--16级
+SetGoodsCaoZuo("异界地图","1|3","Laboratory Map","Metadata/Items/Maps/MapWorldsLaboratory")--实验密室---需要开机关难打---5级
+SetGoodsCaoZuo("异界地图","1|3","Crater Map","Metadata/Items/Maps/MapWorldsTribunal")--陨坑---地形复杂---3级
+SetGoodsCaoZuo("异界地图","1|3","Terrace Map","Metadata/Items/Maps/MapWorldsTerrace")--海滨台地---boss复杂难打---4级
+SetGoodsCaoZuo("异界地图","1|3","Pier Map","Metadata/Items/Maps/MapWorldsPier")--怒浪之港---boss阶段多---机关多---2级
+SetGoodsCaoZuo("异界地图","1|3","Moon Temple Map","Metadata/Items/Maps/MapWorldsMoonTemple")--嬋娟神殿--地圖機八大又亂--
+SetGoodsCaoZuo("异界地图","1|3","Overgrown Shrine Map","Metadata/Items/Maps/MapWorldsOvergrownShrine")--密草神殿--卡在王前不知道三小--
+SetGoodsCaoZuo("异界地图","1|3","Core Map","Metadata/Items/Maps/MapWorldsCore")--核心--一堆王走很久--
+SetGoodsCaoZuo("异界地图","1|3","Glacier Map","	Metadata/Items/Maps/MapWorldsGorge")--核心--一堆王走很久--
+
+
+
 
 SetGoodsCaoZuo(nil,"1|3","普兰德斯金币","Metadata/Items/Currency/CurrencyPerandusCoin",nil,nil,nil,nil)
 
