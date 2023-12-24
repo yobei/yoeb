@@ -4,7 +4,11 @@
 [Type] == "Omen of the Jeweller" # 			[StashItem] == "true"////6S預兆
 [Type] == "Hinekora's Lock" # 				[StashItem] == "true"////髮絲
 [Type] == "Omen of Fortune" # 				[StashItem] == "true"////麻雀變鳳凰
-																   
+
+//[Type] == "Two-Toned Boots"  && [Rarity] != "Unique"   && [cold_and_lightning_damage_resistance_%] >= "8"  #      [StashItem] == "true"
+//[Type] == "Two-Toned Boots"  && [Rarity] != "Unique"   && [fire_and_lightning_damage_resistance_%] >= "8"  #      [StashItem] == "true"
+	
+//[Type] == "Lapis Amulet" #  [StashItem] == "true"
 
 
 //3.22季初珠寶、飾品、藥劑
