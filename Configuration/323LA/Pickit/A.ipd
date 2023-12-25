@@ -78,7 +78,7 @@
 [Type] == "Primal Arrow Quiver" && [Rarity] == "Unique" # [UniqueName] == "The Poised Prism" && 		[StashItem] == "true"	//優雅迷鏡
 [Type] == "Nightmare Bascinet" && [Rarity] == "Unique" # 	[UniqueName] == "Devoto's Devotion" && [StashItem] == "true"				//水銀投
 [Type] == "Wyrmscale Gauntlets" && [Rarity] == "Unique" # [UniqueName] == "Tanu Ahi" && 				[StashItem] == "true"	//埋火
-[Type] == "Wyrmscale Gauntlets" && [attack_speed_+_%] >= "1" && [Rarity] == "Unique" # 			[StashItem] == "true"//埋火
+//[Type] == "Wyrmscale Gauntlets" && [attack_speed_+_%] >= "1" && [Rarity] == "Unique" # 			[StashItem] == "true"//埋火
 [Type] == "Crimson Jewel" && [Rarity] == "Unique" # [UniqueName] == "Inertia" && [StashItem] == "true" //慣性
 
 
