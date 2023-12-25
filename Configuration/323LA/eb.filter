@@ -776,7 +776,7 @@ Hide # 通貨 - 特殊 - 充能的羅盤
     MinimapIcon 2 Red Diamond
     PlayEffect Red
 
-Show # 通貨 - 特殊 - 超凡偵查報告
+Hide # 通貨 - 特殊 - 超凡偵查報告
     Class "Currency"
     BaseType "Otherworldly Scouting Report"
     SetTextColor 100 50 0
