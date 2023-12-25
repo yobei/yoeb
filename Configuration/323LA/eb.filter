@@ -466,7 +466,7 @@ Show # 通貨 - 普通 - 地平石
     MinimapIcon 2 Green Diamond
     PlayEffect Green
 
-Show # 通貨 - 普通 - 豐裕牌組
+Hide # 通貨 - 普通 - 豐裕牌組
     Class "Currency"
     BaseType "Stacked Deck"
     SetTextColor 0 0 0
