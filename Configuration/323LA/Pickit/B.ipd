@@ -5,7 +5,7 @@
 [Type] == "Hinekora's Lock" # 				[StashItem] == "true"////髮絲
 [Type] == "Omen of Fortune" # 				[StashItem] == "true"////麻雀變鳳凰
 																   
-
+[Type] == "Niko's Memory" # [StashItem] == "true" // //尼科的記憶 本季限定罪魂
 
 //3.22季初珠寶、飾品、藥劑
 [Type] == "Viridian Jewel" && [Rarity] == "Unique" #   	[UniqueName] == "Stormshroud" && [StashItem] == "true"    				//風暴籠罩 綠
