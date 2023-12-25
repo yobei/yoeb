@@ -7,6 +7,8 @@
 
 //[Type] == "Two-Toned Boots"  && [Rarity] != "Unique"   && [cold_and_lightning_damage_resistance_%] >= "8"  #      [StashItem] == "true"
 //[Type] == "Two-Toned Boots"  && [Rarity] != "Unique"   && [fire_and_lightning_damage_resistance_%] >= "8"  #      [StashItem] == "true"
+
+[Type] == "Niko's Memory" # [StashItem] == "true" // //尼科的記憶 本季限定罪魂
 	
 //[Type] == "Lapis Amulet" #  [StashItem] == "true"
 
