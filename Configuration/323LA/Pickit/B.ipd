@@ -42,7 +42,7 @@
 //3.22季初防具
 //[Type] == "Necromancer Silks" && [Rarity] == "Unique" #  [UniqueName] == "Fleshcrafter" && 		[StashItem] == "true"//人體匠師
 //[Type] == "Sadist Garb" && [Rarity] == "Unique" #    [UniqueName] == "Inpulsa's Broken Heart" &&[StashItem] == "true"//印卜薩
-[Type] == "Murder Mitts" && [Rarity] == "Unique" # [UniqueName] == "Thunderfist" && 			[StashItem] == "true"//轟天雷
+//[Type] == "Murder Mitts" && [Rarity] == "Unique" # [UniqueName] == "Thunderfist" && 			[StashItem] == "true"//轟天雷
 //[Type] == "Exquisite Leather" && [Rarity] == "Unique" # [UniqueName] == "Yriel's Fostering" && 	[StashItem] == "true"//伊瑞的栽培
 [Type] == "Riveted Boots" && [Rarity] == "Unique" # [UniqueName] == "Ralakesh's Impatience" && 	[StashItem] == "true"//芮勒蓋許的急躁
 //[Type] == "Carnal Boots" && [Rarity] == "Unique" # [UniqueName] == "Corpsewalker" && 			[StashItem] == "true"//行屍走肉
@@ -371,9 +371,9 @@
 
 [Type] == "The Apothecary" #		[StashItem] == "true" //?劑?
 [Type] =="Incandescent Invitation" #	[StashItem] == "true" //熾熱之邀
-//[Type] =="Polaric Invitation" #	[StashItem] == "true" //極地之邀
+[Type] =="Polaric Invitation" #	[StashItem] == "true" //極地之邀
 [Type] == "Screaming Invitation" #	[StashItem] == "true" //尖哮之邀
-//[Type] =="Writhing Invitation" #	[StashItem] == "true" //纏繞之邀
+[Type] =="Writhing Invitation" #	[StashItem] == "true" //纏繞之邀
 [Type] == "Humility" # 			[StashItem] == "true" //謙遜
 [Type] == "House of Mirrors" # 		[StashItem] == "true" //明鏡
 [Type] == "The Doctor" # 		[StashItem] == "true" //?醫
