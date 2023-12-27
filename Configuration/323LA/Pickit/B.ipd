@@ -370,10 +370,10 @@
 [Type] == "Enlighten Support" #		[StashItem] == "true"//啟蒙輔助拾取且存倉
 
 [Type] == "The Apothecary" #		[StashItem] == "true" //?劑?
-[Type] =="Incandescent Invitation" #	[StashItem] == "true" //熾熱之邀
+//[Type] =="Incandescent Invitation" #	[StashItem] == "true" //熾熱之邀
 [Type] =="Polaric Invitation" #	[StashItem] == "true" //極地之邀
 [Type] == "Screaming Invitation" #	[StashItem] == "true" //尖哮之邀
-[Type] =="Writhing Invitation" #	[StashItem] == "true" //纏繞之邀
+//[Type] =="Writhing Invitation" #	[StashItem] == "true" //纏繞之邀
 [Type] == "Humility" # 			[StashItem] == "true" //謙遜
 [Type] == "House of Mirrors" # 		[StashItem] == "true" //明鏡
 [Type] == "The Doctor" # 		[StashItem] == "true" //?醫
