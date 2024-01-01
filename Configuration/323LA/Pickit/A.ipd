@@ -8,7 +8,7 @@
 //[Type] == "Two-Toned Boots"  && [Rarity] != "Unique"   && [cold_and_lightning_damage_resistance_%] >= "8"  #      [StashItem] == "true"
 //[Type] == "Two-Toned Boots"  && [Rarity] != "Unique"   && [fire_and_lightning_damage_resistance_%] >= "8"  #      [StashItem] == "true"
 
-[Type] == "Niko's Memory" # [StashItem] == "true" // //尼科的記憶 本季限定罪魂
+//[Type] == "Niko's Memory" # [StashItem] == "true" // //尼科的記憶 本季限定罪魂
 	
 //[Type] == "Lapis Amulet" #  [StashItem] == "true"
 
@@ -52,10 +52,10 @@
 																														  
 
 
-[Type] == "Forbidden Tome" #[StashItem] == "true" // 禁忌之書
+//[Type] == "Forbidden Tome" #[StashItem] == "true" // 禁忌之書
 
 //3.22季初傳送門
-[Type] == "Portal" #		[StashItem] == "true"//傳送門
+//[Type] == "Portal" #		[StashItem] == "true"//傳送門
 
 //偵查報告
 //[Type] == "Influenced Scouting Report" 			#[StashItem] == "true" // 勢力
