@@ -8,7 +8,7 @@
 //[Type] == "Two-Toned Boots"  && [Rarity] != "Unique"   && [cold_and_lightning_damage_resistance_%] >= "8"  #      [StashItem] == "true"
 //[Type] == "Two-Toned Boots"  && [Rarity] != "Unique"   && [fire_and_lightning_damage_resistance_%] >= "8"  #      [StashItem] == "true"
 
-[Type] == "Niko's Memory" # [StashItem] == "true" // //尼科的記憶 本季限定罪魂
+//[Type] == "Niko's Memory" # [StashItem] == "true" // //尼科的記憶 本季限定罪魂
 	
 //[Type] == "Lapis Amulet" #  [StashItem] == "true"
 
@@ -52,7 +52,7 @@
 																														  
 
 
-[Type] == "Forbidden Tome" #[StashItem] == "true" // 禁忌之書
+//[Type] == "Forbidden Tome" #[StashItem] == "true" // 禁忌之書
 
 //3.22季初傳送門
 [Type] == "Portal" #		[StashItem] == "true"//傳送門
@@ -69,15 +69,15 @@
 [Type] == "Zodiac Leather" && [Rarity] == "Unique" # [UniqueName] == "Hyrri's Ire" && 				[StashItem] == "true"	//西里的戰衣星辰皮甲
 //[Type] == "Titan Gauntlets" && [Rarity] == "Unique" # [UniqueName] == "Kaom's Spirit" &&			[StashItem] == "true"	//岡姆之魂
 //[Type] == "Rawhide Boots" && [Rarity] == "Unique" # [UniqueName] == "Seven-League Step" && 			[StashItem] == "true"	//盟誓之跡
-[Type] == "Rustic Sash" && [Rarity] == "Unique" # [UniqueName] == "Prismweave" && 				[StashItem] == "true"	//幻彩菱織 腰帶
-[Type] == "Two-Stone Ring" && [Rarity] == "Unique" # [UniqueName] == "Berek's Respite" && 			[StashItem] == "true"	//貝雷克的火與雷之樂
-[Type] == "Two-Stone Ring" && [Rarity] == "Unique" # [UniqueName] == "Berek's Grip" && 				[StashItem] == "true"	//貝雷克的冰與雷之曲
-[Type] == "Two-Stone Ring" && [Rarity] == "Unique" # [UniqueName] == "Berek's Pass" && 				[StashItem] == "true"	//貝雷克的冰與火之歌
+//[Type] == "Rustic Sash" && [Rarity] == "Unique" # [UniqueName] == "Prismweave" && 				[StashItem] == "true"	//幻彩菱織 腰帶
+//[Type] == "Two-Stone Ring" && [Rarity] == "Unique" # [UniqueName] == "Berek's Respite" && 			[StashItem] == "true"	//貝雷克的火與雷之樂
+//[Type] == "Two-Stone Ring" && [Rarity] == "Unique" # [UniqueName] == "Berek's Grip" && 				[StashItem] == "true"	//貝雷克的冰與雷之曲
+//[Type] == "Two-Stone Ring" && [Rarity] == "Unique" # [UniqueName] == "Berek's Pass" && 				[StashItem] == "true"	//貝雷克的冰與火之歌
 //[Type] == "Amethyst Ring" && [Rarity] == "Unique" # [UniqueName] == "Death Rush" && 				[StashItem] == "true"	//亡者呼喚 紫晶戒指
-[Type] == "Jade Amulet" && [Rarity] == "Unique" # [UniqueName] == "Hyrri's Truth" && 				[StashItem] == "true"	//西里的真理
-[Type] == "Primal Arrow Quiver" && [Rarity] == "Unique" # [UniqueName] == "The Poised Prism" && 		[StashItem] == "true"	//優雅迷鏡
-[Type] == "Nightmare Bascinet" && [Rarity] == "Unique" # 	[UniqueName] == "Devoto's Devotion" && [StashItem] == "true"				//水銀投
-[Type] == "Wyrmscale Gauntlets" && [Rarity] == "Unique" # [UniqueName] == "Tanu Ahi" && 				[StashItem] == "true"	//埋火
+//[Type] == "Jade Amulet" && [Rarity] == "Unique" # [UniqueName] == "Hyrri's Truth" && 				[StashItem] == "true"	//西里的真理
+//[Type] == "Primal Arrow Quiver" && [Rarity] == "Unique" # [UniqueName] == "The Poised Prism" && 		[StashItem] == "true"	//優雅迷鏡
+//[Type] == "Nightmare Bascinet" && [Rarity] == "Unique" # 	[UniqueName] == "Devoto's Devotion" && [StashItem] == "true"				//水銀投
+//[Type] == "Wyrmscale Gauntlets" && [Rarity] == "Unique" # [UniqueName] == "Tanu Ahi" && 				[StashItem] == "true"	//埋火
 //[Type] == "Wyrmscale Gauntlets" && [attack_speed_+_%] >= "1" && [Rarity] == "Unique" # 			[StashItem] == "true"//埋火
 [Type] == "Crimson Jewel" && [Rarity] == "Unique" # [UniqueName] == "Inertia" && [StashItem] == "true" //慣性
 
