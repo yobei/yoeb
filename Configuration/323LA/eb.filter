@@ -33,6 +33,12 @@ Hide
 
 # 【特殊語法-六連裝備】0001
 
+Show # 通貨 - 頂級 - 卡蘭德魔鏡
+    BaseType "Lapis Amulet"
+    SetTextColor 210 0 0
+
+
+
 #地圖已汙染
 Hide
 　　Corrupted True
