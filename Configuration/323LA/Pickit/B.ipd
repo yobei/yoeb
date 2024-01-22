@@ -1,7 +1,7 @@
 //3.23有價紋身、預兆
-[Type] == "Omen of Connections" # 			[StashItem] == "true"////6L預兆
-[Type] == "Omen of Blanching" # 			[StashItem] == "true"////1~3白預兆
-[Type] == "Omen of the Jeweller" # 			[StashItem] == "true"////6S預兆
+//[Type] == "Omen of Connections" # 			[StashItem] == "true"////6L預兆
+//[Type] == "Omen of Blanching" # 			[StashItem] == "true"////1~3白預兆
+//[Type] == "Omen of the Jeweller" # 			[StashItem] == "true"////6S預兆
 [Type] == "Hinekora's Lock" # 				[StashItem] == "true"////髮絲
 [Type] == "Omen of Fortune" # 				[StashItem] == "true"////麻雀變鳳凰
 
@@ -113,11 +113,11 @@
 [Type] == "A Chilling Wind" # 	[StashItem] == "true" // 凜冽之風 
 [Type] == "Matryoshka" # 		[StashItem] == "true" // 俄羅斯娃娃 有價
 
-[Type] == "Xoph's Flawless Breachstone" 		# [StashItem] == "true" // 索伏的無暇裂痕石
-[Type] == "Tul's Flawless Breachstone" 			# [StashItem] == "true" // 托沃的無暇裂痕石
-[Type] == "Esh's Flawless Breachstone" 			# [StashItem] == "true" // 艾許的無暇裂痕石
-[Type] == "Uul-Netol's Flawless Breachstone" 		# [StashItem] == "true" // 烏?尼多的無暇裂痕石
-[Type] == "Chayula's Flawless Breachstone" 		# [StashItem] == "true" // 夏烏拉的無暇裂痕石
+///[Type] == "Xoph's Flawless Breachstone" 		# [StashItem] == "true" // 索伏的無暇裂痕石
+//[Type] == "Tul's Flawless Breachstone" 			# [StashItem] == "true" // 托沃的無暇裂痕石
+///[Type] == "Esh's Flawless Breachstone" 			# [StashItem] == "true" // 艾許的無暇裂痕石
+//[Type] == "Uul-Netol's Flawless Breachstone" 		# [StashItem] == "true" // 烏?尼多的無暇裂痕石
+//[Type] == "Chayula's Flawless Breachstone" 		# [StashItem] == "true" // 夏烏拉的無暇裂痕石
 
 
 //2023/01
@@ -144,11 +144,11 @@
 //[Type] == "Crimson Temple Map" && [MapTier] >= "14"  && [Rarity] == "Rare"  #[StashItem] == "true" // //黃地圖黃地圖不撿，黃地圖售出
 
 [Type] == "Jungle Valley Map" && [MapTier] >= "14"  && [Rarity] == "Normal"  #[StashItem] == "true" // //劇毒林谷
-//[Type] == "Jungle Valley Map" && [MapTier] >= "14"  && [Rarity] == "Magic"  #[StashItem] == "true" // //藍地圖藍地圖撿取，藍地圖存倉
+[Type] == "Jungle Valley Map" && [MapTier] >= "14"  && [Rarity] == "Magic"  #[StashItem] == "true" // //藍地圖藍地圖撿取，藍地圖存倉
 //[Type] == "Jungle Valley Map" && [MapTier] >= "14"  && [Rarity] == "Rare"  #[StashItem] == "true" // //黃地圖黃地圖不撿，黃地圖售出
 
 [Type] == "Arid Lake Map" && [MapTier] >= "14"  && [Rarity] == "Normal"  #[StashItem] == "true" // //乾枯湖岸
-//[Type] == "Arid Lake Map" && [MapTier] >= "14"  && [Rarity] == "Magic"  #[StashItem] == "true" // //藍地圖藍地圖撿取，藍地圖存倉
+[Type] == "Arid Lake Map" && [MapTier] >= "14"  && [Rarity] == "Magic"  #[StashItem] == "true" // //藍地圖藍地圖撿取，藍地圖存倉
 //[Type] == "Arid Lake Map" && [MapTier] >= "14"  && [Rarity] == "Rare"  #[StashItem] == "true" // //黃地圖黃地圖不撿，黃地圖售出
 
 
