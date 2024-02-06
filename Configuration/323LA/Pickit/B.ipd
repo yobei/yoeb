@@ -144,7 +144,7 @@
 //[Type] == "Crimson Temple Map" && [MapTier] >= "14"  && [Rarity] == "Rare"  #[StashItem] == "true" // //黃地圖黃地圖不撿，黃地圖售出
 
 [Type] == "Jungle Valley Map" && [MapTier] >= "14"  && [Rarity] == "Normal"  #[StashItem] == "true" // //劇毒林谷
-//[Type] == "Jungle Valley Map" && [MapTier] >= "14"  && [Rarity] == "Magic"  #[StashItem] == "true" // //藍地圖藍地圖撿取，藍地圖存倉
+[Type] == "Jungle Valley Map" && [MapTier] >= "14"  && [Rarity] == "Magic"  #[StashItem] == "true" // //藍地圖藍地圖撿取，藍地圖存倉
 //[Type] == "Jungle Valley Map" && [MapTier] >= "14"  && [Rarity] == "Rare"  #[StashItem] == "true" // //黃地圖黃地圖不撿，黃地圖售出
 
 [Type] == "Arid Lake Map" && [MapTier] >= "14"  && [Rarity] == "Normal"  #[StashItem] == "true" // //乾枯湖岸
