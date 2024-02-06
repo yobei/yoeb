@@ -161,8 +161,8 @@
 
 
 
-//[Category] == "Map" && [Rarity] == "Rare" && [map_contains_citadel] >= "1" # [StashItem] == "true" // 13855 Citadel Maps
-//[Category] == "Map" && [Rarity] == "Rare" && [map_elder_boss_variation] >= "1" # [StashItem] == "true" // 6551 Elder Maps
+[Category] == "Map" && [Rarity] == "Rare" && [map_contains_citadel] >= "1" # [ForceSellItem] == "true" // 13855 Citadel Maps
+[Category] == "Map" && [Rarity] == "Rare" && [map_elder_boss_variation] >= "1" # [ForceSellItem] == "true" // 6551 Elder Maps
 //[Type] == "Synthesised Map" # [StashItem] == "true" // 追憶系列地圖
 
 //[Category] == "Map" && [Rarity] == "Rare" && [map_contains_citadel] >= "1" # [StashItem] == "true" // 13855 Citadel Maps
