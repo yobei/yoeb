@@ -198,8 +198,8 @@
 [Type] == "Regal Orb" # 			[StashItem] == "true"////富豪
 [Type] == "Orb of Horizons" # 		[StashItem] == "true"////地平石拾取且存倉
 [Type] == "Enhance Support" #		[StashItem] == "true"////增幅輔助
-//[Type] == "Blacksmith's Whetstone" #[StashItem] == "true"////磨刀石
-//[Type] == "Armourer's Scrap" # 		[StashItem] == "true"////護甲片
+[Type] == "Blacksmith's Whetstone" #[StashItem] == "true"////磨刀石
+[Type] == "Armourer's Scrap" # 		[StashItem] == "true"////護甲片
 [Type] == "Glassblower's Bauble" # 	[StashItem] == "true"////玻璃彈珠
 [Type] == "Blessed Orb" # 			[StashItem] == "true"////祝福石
 
