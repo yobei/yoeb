@@ -22,6 +22,14 @@
 
 # 【特殊語法-六連裝備】0001
 
+Show # 裝備 - 特殊裝備 - 3色連洞 (2*2體積)
+    LinkedSockets >= 3
+    SocketGroup "RGB"
+    SetTextColor 255 0 0
+    SetBackgroundColor 255 255 255
+    SetBorderColor 0 0 0
+    SetFontSize 45
+	
 #地圖已汙染
 Hide
 　　Corrupted True
