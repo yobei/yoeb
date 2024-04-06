@@ -27,6 +27,8 @@
 [Type] == "Wool Shoes" && [Rarity] == "Unique" #    [UniqueName] == "Wanderlust" && 				[StashItem] == "true"//苦行之履
 [Type] == "Onyx Amulet" && [Rarity] == "Unique" #    [UniqueName] == "Carnage Heart" && 				[StashItem] == "true"//屠戮之心
 [Type] == "Belt of the Deceiver" && [Rarity] == "Unique" #    [UniqueName] == "Heavy Belt" && 				[StashItem] == "true"//狡徒束腰
+[Type] == "Bronze Gauntlets" && [Rarity] == "Unique" #    [UniqueName] == "Giantsbane" && 				[StashItem] == "true"//大屠殺
+
 
 
 //3.22季初武器
