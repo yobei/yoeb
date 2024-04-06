@@ -25,7 +25,7 @@
 [Type] == "Iron Ring" && [Rarity] == "Unique" #    [UniqueName] == "Le Heup of All" && 				[StashItem] == "true"//英靈戒指 
 [Type] == "Paua Ring" && [Rarity] == "Unique" #    [UniqueName] == "Perandus Signet" && 				[StashItem] == "true"//普蘭德斯之記
 [Type] == "Wool Shoes" && [Rarity] == "Unique" #    [UniqueName] == "Wanderlust" && 				[StashItem] == "true"//苦行之履
-[Type] == "Onyx Amulet" && [Rarity] == "Unique" #    [UniqueName] == "Carnage Heart" && 				[StashItem] == "true"//吸血項鍊
+[Type] == "Onyx Amulet" && [Rarity] == "Unique" #    [UniqueName] == "Carnage Heart" && 				[StashItem] == "true"//屠戮之心
 [Type] == "Belt of the Deceiver" && [Rarity] == "Unique" #    [UniqueName] == "Heavy Belt" && 				[StashItem] == "true"//狡徒束腰
 
 
