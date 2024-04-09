@@ -83,23 +83,23 @@
 
 
 //藥水//
-//[Type] == "Divine Life Flask"&& 	[ItemLevel] >= "60" && [ItemLevel] <="100" # [StashItem] == "true" //不朽生命藥劑
+[Type] == "Divine Life Flask"&& 	[ItemLevel] >= "60" && [ItemLevel] <="100" # [StashItem] == "true" //不朽生命藥劑
 //[Type] == "Silver Flask"&& 		[ItemLevel] >= "50" && [ItemLevel] <="100" # [StashItem] == "true" //猛攻
-//[Type] == "Diamond Flask"&& 		[ItemLevel] >= "50" && [ItemLevel] <="100" # [StashItem] == "true" //寶鑽
+[Type] == "Diamond Flask"&& 		[ItemLevel] >= "50" && [ItemLevel] <="100" # [StashItem] == "true" //寶鑽
 //[Type] == "Jade Flask"&& 			[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //+1500閃避
 [Type] == "Quicksilver Flask"&& 	[ItemLevel] >= "50" && [ItemLevel] <="100" # [StashItem] == "true" //跑水
 
 
-//[Type] == "Amethyst Flask"&& 		[ItemLevel] >= "50" && [ItemLevel] <="100" # [StashItem] == "true" //紫晶
+[Type] == "Amethyst Flask"&& 		[ItemLevel] >= "50" && [ItemLevel] <="100" # [StashItem] == "true" //紫晶
 //[Type] == "Bismuth Flask"&& 		[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //灰岩
 //[Type] == "Granite Flask"&& 		[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //+1500護甲
 
 //地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖
 
 
-[Category] 	== "Map" && [MapTier] >= "16"  && [Rarity] == "Normal"  #			[StashItem] == "true" //白
-[Category] 	== "Map" && [MapTier] >= "16"  && [Rarity] == "Magic"  #			[StashItem] == "true" //藍
-[Category] 	== "Map" && [MapTier] >= "16"  && [Rarity] == "Rare"  #				[StashItem] == "true" //黃
+[Category] 	== "Map" && [MapTier] >= "1"  && [Rarity] == "Normal"  #			[StashItem] == "true" //白
+[Category] 	== "Map" && [MapTier] >= "1"  && [Rarity] == "Magic"  #			[StashItem] == "true" //藍
+[Category] 	== "Map" && [MapTier] >= "1"  && [Rarity] == "Rare"  #				[StashItem] == "true" //黃
 //[Category]  == "Map" && [MapTier] >= "1"  && [Rarity] == "Unique"  #			[StashItem] == "true" //橘
 [Category] 	== "Map" && [map_contains_citadel]>= "1"  #							[StashItem] == "true" //征服
 [Category] 	== "Map" && [map_elder_boss_variation] >= "1"  #					[ForceSellItem] == "true" //尊?
