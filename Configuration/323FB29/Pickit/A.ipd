@@ -83,7 +83,7 @@
 
 
 //藥水//
-[Type] == "Divine Life Flask"&& 	[ItemLevel] >= "60" && [ItemLevel] <="100" # [StashItem] == "true" //不朽生命藥劑
+//[Type] == "Divine Life Flask"&& 	[ItemLevel] >= "60" && [ItemLevel] <="100" # [StashItem] == "true" //不朽生命藥劑
 //[Type] == "Silver Flask"&& 		[ItemLevel] >= "50" && [ItemLevel] <="100" # [StashItem] == "true" //猛攻
 [Type] == "Diamond Flask"&& 		[ItemLevel] >= "50" && [ItemLevel] <="100" # [StashItem] == "true" //寶鑽
 //[Type] == "Jade Flask"&& 			[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //+1500閃避
