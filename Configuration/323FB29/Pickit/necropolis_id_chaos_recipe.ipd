@@ -2466,38 +2466,6 @@
 // [Type] == "Viridian Jewel" && [Rarity] == "Rare" # [critical_strike_chance_+%] >= "20" && [StashItem] == "true" // Keep double crit chance mod jewel
 
 
-
-
-/////////////////////////////////////////////////////////////////////////////////////
-//                                                                                 //
-//                             E X P E D I T I O N                                 //
-//                                                                                 //
-/////////////////////////////////////////////////////////////////////////////////////
-
-// Expedition
-[Type] == "Expedition Logbook" # [StashItem] == "true"
-
-// Uniques
-
-// Helm
-[Type] == "Runic Crown" && [Rarity] == "Unique" # [keystone_battlemage] >= "1" && [StashItem] == "true"                                    // Cadigan's Crown Runic Crown
-[Type] == "Runic Helm" && [Rarity] == "Unique"  # [energy_shield_additive_modifiers_instead_apply_to_ward] >= "1" && [StashItem] == "true" // Faithguard Runic Helm
-
-// Boots
-[Type] == "Runic Sabatons" && [Rarity] == "Unique"  # [local_display_cast_summon_arbalists_on_gain_skill] >= "1" && [StashItem] == "true" // Vorana's March Runic Sabatons
-[Type] == "Runic Sollerets" && [Rarity] == "Unique" # [gain_adrenaline_when_ward_breaks_ms] >= "1" && [StashItem] == "true"               // Olroth's Charge Runic Sollerets
-
-// Gloves
-[Type] == "Runic Gauntlets" && [Rarity] == "Unique" # [gain_flask_charges_every_second_if_hit_unique_enemy_recently] >= "1" && [StashItem] == "true" // Medved's Challenge Runic Gauntlets
-[Type] == "Runic Gloves" && [Rarity] == "Unique"    # [base_damage_bypass_ward_%] >= "1" && [StashItem] == "true"                                    // Nightgrip Runic Gages
-
-// Flask 
-[Type] == "Iron Flask" && [Rarity] == "Unique" # [local_flask_gain_endurance_charge_per_second_during_flask_effect] >= "1" && [StashItem] == "true"          // Elixir of the Unbroken Circle Iron Flask
-[Type] == "Iron Flask" && [Rarity] == "Unique" # [local_flask_ward_does_not_break_during_effect] >= "1" && [StashItem] == "true"                             // Olroth's Resolve Iron Flask
-[Type] == "Iron Flask" && [Rarity] == "Unique" # [local_flask_inflict_fire_cold_lightning_exposure_on_nearby_enemies_on_use] >= "1" && [StashItem] == "true" // Starlight Chalice Iron Flask
-[Type] == "Iron Flask" && [Rarity] == "Unique" # [local_flask_culling_strike_during_flask_effect] >= "1" && [StashItem] == "true"                            // Vorana's Preparation Iron Flask
-
-
 /////////////////////////////////////////////////////////////////////////////////////
 //                                                                                 //
 //                                     E N D                                       //

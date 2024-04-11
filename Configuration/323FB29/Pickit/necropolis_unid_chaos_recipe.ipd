@@ -1,4 +1,4 @@
-// Exiled Bot Pickit - IDENTIFIED Chaos Recipe!
+// Exiled Bot Pickit - UNIDENTIFIED Chaos Recipe!
 //
 // Please report issues and changes you like to see in Slack #pickit-discussion!
 //
@@ -80,18 +80,18 @@
 // Also usable to farm basic life+resist gear obviously
 // All lines except "Shield" have to be enabled in order to make !IDENTIFIED! Chaos Recipe work!
 // 
-// For !UNIDENTIFIED! Simply use the other IPD if you make no changes anyway!
+// For !IDENTIFIED! Simply use the other IPD if you make no changes anyway!
 
-[Category] == "Helm" 	&& [Rarity] 	== "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && [StashItem] == "true"
-[Category] == "Chest" 	&& [Rarity] 	== "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && [StashItem] == "true"
-[Category] == "Amulet" 	&& [Rarity] 	== "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && [StashItem] == "true"
-[Category] == "Ring" 	&& [Rarity] 	== "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && [StashItem] == "true"
-[Category] == "Belt" 	&& [Rarity] 	== "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && [StashItem] == "true"
-[Category] == "Gloves" 	&& [Rarity] 	== "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && [StashItem] == "true"
-[Category] == "Boots" 	&& [Rarity] 	== "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && [base_movement_velocity_+%] >= "999" && [StashItem] == "true"
+// [Category] == "Helm" 	&& [Rarity] 	== "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && [StashItem] == "true"
+// [Category] == "Chest" 	&& [Rarity] 	== "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && [StashItem] == "true"
+// [Category] == "Amulet" 	&& [Rarity] 	== "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && [StashItem] == "true"
+// [Category] == "Ring" 	&& [Rarity] 	== "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && [StashItem] == "true"
+// [Category] == "Belt" 	&& [Rarity] 	== "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && [StashItem] == "true"
+// [Category] == "Gloves" 	&& [Rarity] 	== "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && [StashItem] == "true"
+// [Category] == "Boots" 	&& [Rarity] 	== "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && [base_movement_velocity_+%] >= "999" && [StashItem] == "true"
 
-[Category] == "Weapon" 	&& [Rarity] 	== "Rare" # [DPS] > "999" && [StashItem] == "true"
-[Category] == "Shield" 	&& [Rarity] 	== "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && [StashItem] == "true"
+// [Category] == "Weapon" 	&& [Rarity] 	== "Rare" # [DPS] > "999" && [StashItem] == "true"
+// [Category] == "Shield" 	&& [Rarity] 	== "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && [StashItem] == "true"
 
 
 /////////////////////////////////////////////////////////////////////////////////////
@@ -225,31 +225,37 @@
 [Type] == "Splinter of Tul" 		                # [StashItem] == "true"
 [Type] == "Splinter of Uul-Netol" 	                # [StashItem] == "true"
 [Type] == "Splinter of Xoph" 		                # [StashItem] == "true"
+
 [Type] == "Blessing of Chayula" 	                # [StashItem] == "true"
 [Type] == "Blessing of Esh" 		                # [StashItem] == "true"
 [Type] == "Blessing of Tul" 		                # [StashItem] == "true"
 [Type] == "Blessing of Uul-Netol" 	                # [StashItem] == "true"
 [Type] == "Blessing of Xoph" 		                # [StashItem] == "true"
+
 [Type] == "Xoph's Breachstone" 			        # [StashItem] == "true"
 [Type] == "Xoph's Charged Breachstone"           	# [StashItem] == "true"
 [Type] == "Xoph's Enriched Breachstone"                 # [StashItem] == "true"
 [Type] == "Xoph's Pure Breachstone" 	                # [StashItem] == "true"
 [Type] == "Xoph's Flawless Breachstone" 	        # [StashItem] == "true"
+
 [Type] == "Tul's Breachstone" 			        # [StashItem] == "true"
 [Type] == "Tul's Charged Breachstone"               	# [StashItem] == "true"
 [Type] == "Tul's Enriched Breachstone" 	                # [StashItem] == "true"
 [Type] == "Tul's Pure Breachstone" 		        # [StashItem] == "true"
 [Type] == "Tul's Flawless Breachstone" 		        # [StashItem] == "true"
+
 [Type] == "Esh's Breachstone" 			        # [StashItem] == "true"
 [Type] == "Esh's Charged Breachstone"           	# [StashItem] == "true"
 [Type] == "Esh's Enriched Breachstone" 	                # [StashItem] == "true"
 [Type] == "Esh's Pure Breachstone" 		        # [StashItem] == "true"
 [Type] == "Esh's Flawless Breachstone" 		        # [StashItem] == "true"
+
 [Type] == "Uul-Netol's Breachstone" 			# [StashItem] == "true"
 [Type] == "Uul-Netol's Charged Breachstone" 	        # [StashItem] == "true"
 [Type] == "Uul-Netol's Enriched Breachstone" 	        # [StashItem] == "true"
 [Type] == "Uul-Netol's Pure Breachstone" 		# [StashItem] == "true"
 [Type] == "Uul-Netol's Flawless Breachstone" 		# [StashItem] == "true"
+
 [Type] == "Chayula's Breachstone" 			# [StashItem] == "true"
 [Type] == "Chayula's Charged Breachstone" 	        # [StashItem] == "true"
 [Type] == "Chayula's Enriched Breachstone" 	        # [StashItem] == "true"
@@ -355,7 +361,6 @@
 // [Rarity] == "Rare"           # [veiled_mod_type] >= "1" && [StashItem] == "true" // Keep all rare veiled items
 // [Rarity] == "Unique"         # [veiled_mod_type] >= "1" && [StashItem] == "true" // Keep all unique veiled items
 
-
 // By item class
 // [Category] == "Helm" && [Rarity] == "Rare"    # [veiled_mod_type] >= "1" && [StashItem] == "true"
 // [Category] == "Chest" && [Rarity] == "Rare"   # [veiled_mod_type] >= "1" && [StashItem] == "true"
@@ -364,7 +369,6 @@
 // [Category] == "Belt" && [Rarity] == "Rare"    # [veiled_mod_type] >= "1" && [StashItem] == "true"
 // [Category] == "Gloves" && [Rarity] == "Rare"  # [veiled_mod_type] >= "1" && [StashItem] == "true"
 // [Category] == "Boots" && [Rarity] == "Rare"   # [veiled_mod_type] >= "1" && [StashItem] == "true"
-
 
 // [Category] == "Weapon" && [Rarity] == "Rare"  # [veiled_mod_type] >= "1" && [StashItem] == "true"
 // [Category] == "1Handed" && [Rarity] == "Rare" # [veiled_mod_type] >= "1" && [StashItem] == "true"
@@ -750,10 +754,11 @@
 /////////////////////////////////////////////////////////////////////////////////////
  
 
-// The older Div Card system Has been removed due to outdated and missing infomation. 
+// The older Div Card system Has been removed due to outdated and missing infomation
+// To clean things up most low value cards have been removed. 
 
-[Type] == "Kitt The Wizard"           # [StashItem] == "true"
 [Type] == "House of Mirrors"          # [StashItem] == "true"
+[Type] == "Kitt The Wizard"           # [StashItem] == "true"
 [Type] == "The Apothecary"            # [StashItem] == "true"
 [Type] == "The Price of Devotion"     # [StashItem] == "true"
 [Type] == "Unrequited Love"           # [StashItem] == "true"
@@ -873,12 +878,6 @@
 [Type] == "Lucky Connections"         # [StashItem] == "true"
 [Type] == "A Sea of Blue"             # [StashItem] == "true"
 [Type] == "The Master Artisan"        # [StashItem] == "true"
-
-
-// Drop disabled cards
-[Type] == "Birth of the Three"           # [StashItem] == "true" //  The Goddess Bound
-[Type] == "The Devastator"               # [StashItem] == "true" //  Atziri's Disfavour corrupted
-[Type] == "Luck of the Vaal"             # [StashItem] == "true" //  Vaal Gauntlets corrupted
 
 
 //////////////////////////////////////////////
@@ -2467,39 +2466,9 @@
 
 
 
-
-/////////////////////////////////////////////////////////////////////////////////////
-//                                                                                 //
-//                             E X P E D I T I O N                                 //
-//                                                                                 //
-/////////////////////////////////////////////////////////////////////////////////////
-
-// Expedition
-[Type] == "Expedition Logbook" # [StashItem] == "true"
-
-// Uniques
-
-// Helm
-[Type] == "Runic Crown" && [Rarity] == "Unique" # [keystone_battlemage] >= "1" && [StashItem] == "true"                                    // Cadigan's Crown Runic Crown
-[Type] == "Runic Helm" && [Rarity] == "Unique"  # [energy_shield_additive_modifiers_instead_apply_to_ward] >= "1" && [StashItem] == "true" // Faithguard Runic Helm
-
-// Boots
-[Type] == "Runic Sabatons" && [Rarity] == "Unique"  # [local_display_cast_summon_arbalists_on_gain_skill] >= "1" && [StashItem] == "true" // Vorana's March Runic Sabatons
-[Type] == "Runic Sollerets" && [Rarity] == "Unique" # [gain_adrenaline_when_ward_breaks_ms] >= "1" && [StashItem] == "true"               // Olroth's Charge Runic Sollerets
-
-// Gloves
-[Type] == "Runic Gauntlets" && [Rarity] == "Unique" # [gain_flask_charges_every_second_if_hit_unique_enemy_recently] >= "1" && [StashItem] == "true" // Medved's Challenge Runic Gauntlets
-[Type] == "Runic Gloves" && [Rarity] == "Unique"    # [base_damage_bypass_ward_%] >= "1" && [StashItem] == "true"                                    // Nightgrip Runic Gages
-
-// Flask 
-[Type] == "Iron Flask" && [Rarity] == "Unique" # [local_flask_gain_endurance_charge_per_second_during_flask_effect] >= "1" && [StashItem] == "true"          // Elixir of the Unbroken Circle Iron Flask
-[Type] == "Iron Flask" && [Rarity] == "Unique" # [local_flask_ward_does_not_break_during_effect] >= "1" && [StashItem] == "true"                             // Olroth's Resolve Iron Flask
-[Type] == "Iron Flask" && [Rarity] == "Unique" # [local_flask_inflict_fire_cold_lightning_exposure_on_nearby_enemies_on_use] >= "1" && [StashItem] == "true" // Starlight Chalice Iron Flask
-[Type] == "Iron Flask" && [Rarity] == "Unique" # [local_flask_culling_strike_during_flask_effect] >= "1" && [StashItem] == "true"                            // Vorana's Preparation Iron Flask
-
-
 /////////////////////////////////////////////////////////////////////////////////////
 //                                                                                 //
 //                                     E N D                                       //
 //                                                                                 //
 /////////////////////////////////////////////////////////////////////////////////////
+

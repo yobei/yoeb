@@ -1,42 +1,42 @@
-﻿// In this custom maps ipd, we run maps by type, not by tier or rarity
-// By default, all unique and old (pre-Delirium) T16 maps are disabled
-// For safety reasons, maps with physical, elemental reflect and no regen mods are disabled
-// All maps currently not working properly are disabled, too
+// Archnemesis League
+// In this custom Maps IPD, we run Maps by type, not by tier or rarity
+// By default, all unique and old (pre-Delirium) T16 Maps are disabled
+// For safety reasons, Maps with physical, elemental reflect and no regen mods are disabled
+// All Maps currently not working properly are disabled, too
 // Fell free to create your own rules if you completely understand how it works
 // In the end of this file you'll find original description with comments (read it thoroughly if you think it doesn't work)
 // 
 // Contents:
 // 1 Global 	- Settings
-// 2 Map types 	- UpgradeTier
-// 3 Map types 	- SkipBossArena
-// 4 Map types 	- RunMap
-// 5 Map mods 	- Reroll
-// 6 Map mods 	- Ignore
+// 2 Map Types 	- UpgradeTier
+// 3 Map Types 	- SkipBossArena
+// 4 Map Types 	- RunMap
+// 5 Map Mods 	- Reroll
+// 6 Map Mods 	- Ignore
 // 7 Original description from default.ipd
 // 8 PS
 
-
 // === 1 Settings ===
 
-// Upgrading maps' quality
+// Upgrading Maps' quality
 // [Quality] <= "16" && [Rarity] == "Normal" # [UpgradeQuality] == "true"
 
-// Tiers to run (difficult to use since one map can have up to four tiers)
+// Tiers to run (difficult to use since one Map can have up to four tiers)
 [MapTier] >= "1" && [MapTier] <= "16" # [RunMap] == "true"
 
-// Upgrading maps' rarity - XOR
+// Upgrading Maps' rarity - XOR
 
 // Upgrade to BLUE
-//[Rarity] == "Normal" 	# [UpgradeToMagic] == "true"
-//[Rarity] == "Magic" 	# [AugmentIfPossible] == "true"
+[Rarity] == "Normal" 	# [UpgradeToMagic] == "true"
+[Rarity] == "Magic" 	# [AugmentIfPossible] == "true"
 
 // Upgrade to YELLOW
- [Rarity] == "Normal" # [UpgradeToRare] == "true"
+// [Rarity] == "Normal" # [UpgradeToRare] == "true"
 
 
 // === 2 Map types - UpgradeTier. These will be sold in a quantity of 3 pcs. to get 1 of higher tier ===
 
-// triggered doors - the bot can't open such doors
+// triggered doors - the bot can't open those
 [Type] == "Plaza Map" # [UpgradeMapTier] == "true"
 [Type] == "Vault Map" # [UpgradeMapTier] == "true"
 
@@ -64,199 +64,220 @@
 
 // === 3 Map types - SkipBossArena. The bot will skip bosses there. Usually they not worth time/effort ===
 
-[Type] == "Basilica Map" 		# [SkipBossArena] == "true" // Innocence boss
-[Type] == "Belfry Map" 			# [SkipBossArena] == "true" // A5 Kitava boss
-[Type] == "Core Map" 			# [SkipBossArena] == "true" // A9 Trio boss
-[Type] == "Dark Forest Map" 	# [SkipBossArena] == "true" // Wolf boss
-[Type] == "Desert Spring Map" 	# [SkipBossArena] == "true" // Pantheon scorpion boss
-[Type] == "Graveyard Map" 		# [SkipBossArena] == "true" // Skeleton trio bosses, bot doesn't wait for spawns
-[Type] == "Lair Map" 			# [SkipBossArena] == "true" // Wolf boss
-[Type] == "Lava Chamber Map" 	# [SkipBossArena] == "true" // Buttons on the arena to press
-[Type] == "Malformation Map" 	# [SkipBossArena] == "true" // Corrupted Piety boss
-[Type] == "Pier Map" 			# [SkipBossArena] == "true" // Traps
-[Type] == "Racecourse Map" 		# [SkipBossArena] == "true" // Mini-boss with damage reflection aura
-[Type] == "Reef Map" 			# [SkipBossArena] == "true" // (\/)!_!(\/) boss
-[Type] == "Siege Map" 			# [SkipBossArena] == "true" // Tukokhama boss
-[Type] == "Terrace Map" 		# [SkipBossArena] == "true" // Yugul boss, bot doesn't wait for spawns
-[Type] == "Vaal Temple Map" 	# [SkipBossArena] == "true" // don't even try this
-[Type] == "Infested Valley Map" # [SkipBossArena] == "true" // Gets stuck attacking nothing
+// [Type] == "Basilica Map" 		# [SkipBossArena] == "true" // Innocence boss
+// [Type] == "Belfry Map" 			# [SkipBossArena] == "true" // A5 Kitava boss
+// [Type] == "Core Map" 			# [SkipBossArena] == "true" // A9 Trio boss
+// [Type] == "Dark Forest Map" 		# [SkipBossArena] == "true" // Wolf boss
+// [Type] == "Desert Spring Map" 	# [SkipBossArena] == "true" // Pantheon scorpion boss
+// [Type] == "Graveyard Map" 		# [SkipBossArena] == "true" // Skeleton trio bosses, bot doesn't wait for spawns
+// [Type] == "Lair Map" 			# [SkipBossArena] == "true" // Wolf boss
+// [Type] == "Lava Chamber Map" 	# [SkipBossArena] == "true" // Buttons on the arena to press
+// [Type] == "Malformation Map" 	# [SkipBossArena] == "true" // Corrupted Piety boss
+// [Type] == "Pier Map" 			# [SkipBossArena] == "true" // Traps
+// [Type] == "Racecourse Map" 		# [SkipBossArena] == "true" // Mini-boss with damage reflection aura
+// [Type] == "Reef Map" 			# [SkipBossArena] == "true" // (\/)!_!(\/) boss
+// [Type] == "Siege Map" 			# [SkipBossArena] == "true" // Tukokhama boss
+// [Type] == "Terrace Map" 			# [SkipBossArena] == "true" // Yugul boss, bot doesn't wait for spawns
+// [Type] == "Vaal Temple Map" 		# [SkipBossArena] == "true" // don't even try this
+// [Type] == "Infested Valley Map" 	# [SkipBossArena] == "true" // Gets stuck attacking nothing
 
 
-// === 4 Map types - RunMap. It consists of maps to run. Comment those you don't wanna run ===
+// === 4 Map types - RunMap. It consists of Maps to run. Comment those you don't wanna run ===
 
-// Glennach Cairns
-[Type] == "Acid Caverns map" 		# [RunMap] == "true"
-[Type] == "Ancient City map" 		# [RunMap] == "true"
-[Type] == "Arcade map" 				# [RunMap] == "true"
-[Type] == "Basilica map" 			# [RunMap] == "true"
-[Type] == "Cage map" 				# [RunMap] == "true"
-[Type] == "Graveyard map" 			# [RunMap] == "true"
-[Type] == "Grotto map" 				# [RunMap] == "true"
-[Type] == "Haunted Mansion map" 	# [RunMap] == "true"
-[Type] == "Iceberg map" 			# [RunMap] == "true"
-[Type] == "Infested Valley map" 	# [RunMap] == "true"
-[Type] == "Lava Chamber map"		# [RunMap] == "true"
-[Type] == "Malformation map" 		# [RunMap] == "true"
-[Type] == "Museum map" 				# [RunMap] == "true"
-[Type] == "Plateau map" 			# [RunMap] == "true"
-[Type] == "Residence map" 			# [RunMap] == "true"
-[Type] == "Scriptorium map" 		# [RunMap] == "true"
-[Type] == "Spider Lair map" 		# [RunMap] == "true"
-[Type] == "Stagnation map" 			# [RunMap] == "true" // New in 3.13
-[Type] == "Sunken City map" 		# [RunMap] == "true"
-[Type] == "Tower map" 				# [RunMap] == "true"
-[Type] == "Tropical Island map" 	# [RunMap] == "true"
-[Type] == "Villa map" 				# [RunMap] == "true"
-[Type] == "Wasteland map" 			# [RunMap] == "true"
-
-// Haewark Hamlet
-[Type] == "Arachnid Nest map" 		# [RunMap] == "true"
-[Type] == "Atoll map" 				# [RunMap] == "true"
-[Type] == "Caldera map" 			# [RunMap] == "true"
-[Type] == "Cemetary map" 			# [RunMap] == "true"
-[Type] == "Channel map" 			# [RunMap] == "true"
-[Type] == "Core map" 				# [RunMap] == "true"
-[Type] == "Excavation map" 			# [RunMap] == "true"
-[Type] == "Fungal Hollow map" 		# [RunMap] == "true"
-[Type] == "Grave Trough map" 		# [RunMap] == "true" // New in 3.13
-[Type] == "Leyline map" 			# [RunMap] == "true"
-[Type] == "Palace map" 				# [RunMap] == "true"
-// [Type] == "Plaza map" 			# [RunMap] == "true" // unable to run
-[Type] == "Ramparts map" 			# [RunMap] == "true"
-[Type] == "Summit map" 				# [RunMap] == "true"
-[Type] == "Terrace map" 			# [RunMap] == "true"
-[Type] == "Waterways map" 			# [RunMap] == "true"
-
-// Lex Ejoris
-[Type] == "Alleyways map" 			# [RunMap] == "true"
-[Type] == "Armoury map" 			# [RunMap] == "true"
-[Type] == "Arsenal map" 			# [RunMap] == "true"
-[Type] == "Beach map" 				# [RunMap] == "true"
-[Type] == "Bog map" 				# [RunMap] == "true"
-[Type] == "Bone Crypt map" 			# [RunMap] == "true"
-[Type] == "Burial Chambers map" 	# [RunMap] == "true"
-[Type] == "Cells map" 				# [RunMap] == "true"
-[Type] == "Conservatory map" 		# [RunMap] == "true"
-[Type] == "Crystal Ore map" 		# [RunMap] == "true"
-[Type] == "Dig map" 				# [RunMap] == "true"
-[Type] == "Dungeon map" 			# [RunMap] == "true"
-[Type] == "Forking River map" 		# [RunMap] == "true" // New in 3.13
-[Type] == "Primordial Pool map" 	# [RunMap] == "true"
-[Type] == "Sepulchre map" 			# [RunMap] == "true"
-[Type] == "Waste Pool map" 			# [RunMap] == "true"
-
-// Lex Proxima
-[Type] == "Academy map" 			# [RunMap] == "true"
-[Type] == "Carcass map" 			# [RunMap] == "true"
-[Type] == "Cold River map" 			# [RunMap] == "true" // New in 3.13
-[Type] == "Courtyard map" 			# [RunMap] == "true"
-[Type] == "Crater map" 				# [RunMap] == "true"
-[Type] == "Crimson Township map" 	# [RunMap] == "true" // New in 3.13
-[Type] == "Cursed Crypt map" 		# [RunMap] == "true"
-[Type] == "Defiled Cathedral map" 	# [RunMap] == "true"
-[Type] == "Frozen Cabins map" 		# [RunMap] == "true" // New in 3.13
-[Type] == "Geode map" 				# [RunMap] == "true"
-[Type] == "Glacier map" 			# [RunMap] == "true"
-[Type] == "Jungle Valley map" 		# [RunMap] == "true"
-[Type] == "Lava Lake map" 			# [RunMap] == "true"
-[Type] == "Overgrown Ruin map" 		# [RunMap] == "true"
-[Type] == "Overgrown Shrine map" 	# [RunMap] == "true"
-[Type] == "Park map" 				# [RunMap] == "true"
-[Type] == "Peninsula map" 			# [RunMap] == "true"
-[Type] == "Phantasmagoria map" 		# [RunMap] == "true"
-[Type] == "Reef map" 				# [RunMap] == "true"
-[Type] == "Spider Forest map" 		# [RunMap] == "true"
-[Type] == "Sulphur Vents map" 		# [RunMap] == "true"
-[Type] == "Thicket map" 			# [RunMap] == "true"
-[Type] == "Underground Sea map" 	# [RunMap] == "true"
-// [Type] == "Vaal Pyramid map" 	# [RunMap] == "true" // unable to run
-[Type] == "Vaal Temple map" 		# [RunMap] == "true"
-[Type] == "Volcano map" 			# [RunMap] == "true"
-
-// Lira Arthain
-[Type] == "Barrows map" 			# [RunMap] == "true"
-[Type] == "Castle Ruins map" 		# [RunMap] == "true"
-[Type] == "Courthouse map" 			# [RunMap] == "true"
-[Type] == "Estuary map" 			# [RunMap] == "true"
-[Type] == "Flooded Mine map" 		# [RunMap] == "true"
-[Type] == "Forbidden Woods map" 	# [RunMap] == "true" // New in 3.13
-[Type] == "Lighthouse map" 			# [RunMap] == "true"
-[Type] == "Lookout map" 			# [RunMap] == "true"
-[Type] == "Marshes map" 			# [RunMap] == "true"
-[Type] == "Mausoleum map" 			# [RunMap] == "true"
-[Type] == "Pier map" 				# [RunMap] == "true"
-[Type] == "Precinct map" 			# [RunMap] == "true"
-[Type] == "Primordial Blocks map" 	# [RunMap] == "true"
-[Type] == "Racecourse map" 			# [RunMap] == "true"
-[Type] == "Shipyard map" 			# [RunMap] == "true"
-[Type] == "Toxic Sewer map" 		# [RunMap] == "true"
-
-// New Vastir
-[Type] == "Arachnid Tomb map" 		# [RunMap] == "true"
-[Type] == "Belfry map" 				# [RunMap] == "true"
-[Type] == "Colosseum map" 			# [RunMap] == "true"
-[Type] == "Crimson Temple map" 		# [RunMap] == "true"
-[Type] == "Desert map" 				# [RunMap] == "true"
-[Type] == "Dunes map" 				# [RunMap] == "true"
-[Type] == "Foundry map" 			# [RunMap] == "true" // New in 3.13
-[Type] == "Laboratory map" 			# [RunMap] == "true" // super-bad layout
-[Type] == "Pit map" 				# [RunMap] == "true"
-[Type] == "Relic Chambers map" 		# [RunMap] == "true"
-[Type] == "Shrine map" 				# [RunMap] == "true"
-[Type] == "Siege map" 				# [RunMap] == "true"
-[Type] == "Strand map" 				# [RunMap] == "true"
-// [Type] == "Vault map" 			# [RunMap] == "true" // unable to run
-
-// Tirn's End
-[Type] == "Bazaar map" 				# [RunMap] == "true"
-[Type] == "Chateau map" 			# [RunMap] == "true"
-[Type] == "Colonnade map" 			# [RunMap] == "true"
-[Type] == "Coral Ruins map" 		# [RunMap] == "true"
-[Type] == "Coves map" 				# [RunMap] == "true"
-[Type] == "Desert Spring map" 		# [RunMap] == "true"
-[Type] == "Factory map" 			# [RunMap] == "true"
-[Type] == "Fields map" 				# [RunMap] == "true"
-[Type] == "Mesa map" 				# [RunMap] == "true"
-[Type] == "Moon Temple map" 		# [RunMap] == "true"
-[Type] == "Mud Geyser map" 			# [RunMap] == "true"
-[Type] == "Port map" 				# [RunMap] == "true"
-[Type] == "Shore map" 				# [RunMap] == "true"
-[Type] == "Silo map" 				# [RunMap] == "true" // New in 3.13
-[Type] == "Temple map" 				# [RunMap] == "true"
-[Type] == "Underground River map" 	# [RunMap] == "true"
-[Type] == "Wharf map" 				# [RunMap] == "true"
-
-// Valdo's Rest
-[Type] == "Arena map" 				# [RunMap] == "true"
-[Type] == "Arid Lake map" 			# [RunMap] == "true"
-[Type] == "Ashen Wood map" 			# [RunMap] == "true"
-[Type] == "Bramble Valley map" 		# [RunMap] == "true" // New in 3.13
-[Type] == "Canyon map" 				# [RunMap] == "true"
-[Type] == "City Square map" 		# [RunMap] == "true"
-[Type] == "Dark Forest map" 		# [RunMap] == "true"
-[Type] == "Dry Sea map" 			# [RunMap] == "true" // New in 3.13
-[Type] == "Gardens map" 			# [RunMap] == "true"
-[Type] == "Ghetto map" 				# [RunMap] == "true"
-[Type] == "Ivory Temple map" 		# [RunMap] == "true"
-[Type] == "Lair map" 				# [RunMap] == "true"
-[Type] == "Maze map" 				# [RunMap] == "true"
-[Type] == "Mineral Pools map" 		# [RunMap] == "true"
-[Type] == "Necropolis map" 			# [RunMap] == "true"
-[Type] == "Orchard map" 			# [RunMap] == "true"
-[Type] == "Pen map" 				# [RunMap] == "true"
-[Type] == "Promenade map" 			# [RunMap] == "true"
-
-// Guardian maps
-// [Type] == "Forge of the Phoenix Map" # [RunMap] == "true" // guardian map
-// [Type] == "Lair of the Hydra Map" 	# [RunMap] == "true" // guardian map
-// [Type] == "Maze of the Minotaur Map" # [RunMap] == "true" // guardian map
-// [Type] == "Pit of the Chimera Map" 	# [RunMap] == "true" // guardian map
+// NEW ATLAS REGIONS
 //
+// Glennach Cairns 	<- New Vastir
+// Haewark Hamlet 	<- Tirn's End
+// Valdo’s Rest 	<- Lex Ejoris
+// Lira Arthain 	<- Lex Proxima
 
-// Unique maps
+// REMOVED MAPS in Scourge
+
+// [Type] == "Cage Map" 			# [RunMap] == "true"
+// [Type] == "Graveyard Map" 		# [RunMap] == "true"
+// [Type] == "Iceberg Map" 			# [RunMap] == "true"
+// [Type] == "Infested Valley Map" 	# [RunMap] == "true"
+// [Type] == "Lava Chamber Map"		# [RunMap] == "true"
+// [Type] == "Residence Map" 		# [RunMap] == "true"
+// [Type] == "Scriptorium Map" 		# [RunMap] == "true"
+// [Type] == "Villa Map" 			# [RunMap] == "true"
+// [Type] == "Arachnid Tomb Map" 	# [RunMap] == "true"
+// [Type] == "Belfry Map" 			# [RunMap] == "true"
+// [Type] == "Desert Map" 			# [RunMap] == "true"
+// [Type] == "Shrine Map" 			# [RunMap] == "true"
+// [Type] == "Channel Map" 			# [RunMap] == "true"
+// [Type] == "Excavation Map" 		# [RunMap] == "true"
+// [Type] == "Ramparts Map" 		# [RunMap] == "true"
+// [Type] == "Bazaar Map" 			# [RunMap] == "true"
+// [Type] == "Colonnade Map" 		# [RunMap] == "true"
+// [Type] == "Coral Ruins Map" 		# [RunMap] == "true"
+// [Type] == "Coves Map" 			# [RunMap] == "true"
+// [Type] == "Factory Map" 			# [RunMap] == "true"
+// [Type] == "Mesa Map" 			# [RunMap] == "true"
+// [Type] == "Arena Map" 			# [RunMap] == "true"
+// [Type] == "Bramble Valley Map" 	# [RunMap] == "true"
+// [Type] == "City Square Map" 		# [RunMap] == "true"
+// [Type] == "Ivory Temple Map" 	# [RunMap] == "true"
+// [Type] == "Pen Map" 				# [RunMap] == "true"
+// [Type] == "Beach Map" 			# [RunMap] == "true"
+// [Type] == "Burial Chambers Map" 	# [RunMap] == "true"
+// [Type] == "Crystal Ore Map" 		# [RunMap] == "true"
+// [Type] == "Primordial Pool Map" 	# [RunMap] == "true"
+// [Type] == "Castle Ruins Map" 	# [RunMap] == "true"
+// [Type] == "Marshes Map" 			# [RunMap] == "true"
+// [Type] == "Pier Map" 			# [RunMap] == "true"
+// [Type] == "Precinct Map" 		# [RunMap] == "true"
+// [Type] == "Shipyard Map" 		# [RunMap] == "true"
+// [Type] == "Academy Map" 			# [RunMap] == "true"
+// [Type] == "Cold River Map" 		# [RunMap] == "true"
+// [Type] == "Crater Map" 			# [RunMap] == "true"
+// [Type] == "Frozen Cabins Map" 	# [RunMap] == "true"
+// [Type] == "Geode Map" 			# [RunMap] == "true"
+// [Type] == "Jungle Valley Map" 	# [RunMap] == "true"
+// [Type] == "Peninsula Map" 		# [RunMap] == "true"
+// [Type] == "Phantasmagoria Map" 	# [RunMap] == "true"
+// [Type] == "Volcano Map" 			# [RunMap] == "true"
+
+// [Type] == "Courthouse Map" 		&& [Rarity] == "Unique" # [IgnoreMap] == "true" // Augmented Distant Memory
+
+
+
+///////////////////////
+//  Glennach Cairns  //
+///////////////////////
+[Type] == "Acid Caverns Map" 		# [RunMap] == "true"
+[Type] == "Ancient City Map" 		# [RunMap] == "true"
+[Type] == "Arcade Map" 				# [RunMap] == "true"
+[Type] == "Basilica Map" 			# [RunMap] == "true"
+[Type] == "Grotto Map" 				# [RunMap] == "true"
+[Type] == "Haunted Mansion Map" 	# [RunMap] == "true"
+[Type] == "Malformation Map" 		# [RunMap] == "true"
+[Type] == "Museum Map" 				# [RunMap] == "true"
+[Type] == "Plateau Map" 			# [RunMap] == "true"
+[Type] == "Spider Lair Map" 		# [RunMap] == "true"
+[Type] == "Stagnation Map" 			# [RunMap] == "true"
+[Type] == "Sunken City Map" 		# [RunMap] == "true"
+[Type] == "Tower Map" 				# [RunMap] == "true"
+[Type] == "Tropical Island Map" 	# [RunMap] == "true"
+[Type] == "Wasteland Map" 			# [RunMap] == "true"
+// before  "New Vastir"
+[Type] == "Colosseum Map" 			# [RunMap] == "true"
+[Type] == "Crimson Temple Map" 		# [RunMap] == "true"
+[Type] == "Dunes Map" 				# [RunMap] == "true"
+[Type] == "Foundry Map" 			# [RunMap] == "true"
+[Type] == "Laboratory Map" 			# [RunMap] == "true"
+[Type] == "Pit Map" 				# [RunMap] == "true"
+[Type] == "Relic Chambers Map" 		# [RunMap] == "true"
+[Type] == "Siege Map" 				# [RunMap] == "true"
+[Type] == "Strand Map" 				# [RunMap] == "true"
+[Type] == "Vault Map" 				# [IgnoreMap] == "true" // unable to run
+
+///////////////////////
+//  Haewark Hamlet   //
+///////////////////////
+[Type] == "Arachnid Nest Map" 		# [RunMap] == "true"
+[Type] == "Atoll Map" 				# [RunMap] == "true"
+[Type] == "Caldera Map" 			# [RunMap] == "true"
+[Type] == "Cemetery Map" 			# [RunMap] == "true"
+[Type] == "Core Map" 				# [RunMap] == "true"
+[Type] == "Fungal Hollow Map" 		# [RunMap] == "true"
+[Type] == "Grave Trough Map" 		# [RunMap] == "true"
+[Type] == "Leyline Map" 			# [RunMap] == "true"
+[Type] == "Palace Map" 				# [RunMap] == "true"
+[Type] == "Summit Map" 				# [RunMap] == "true"
+[Type] == "Terrace Map" 			# [RunMap] == "true"
+[Type] == "Waterways Map" 			# [RunMap] == "true"
+[Type] == "Plaza Map" 				# [IgnoreMap] == "true" // unable to run
+// beofre "Tirn's End"
+[Type] == "Chateau Map" 			# [RunMap] == "true"
+[Type] == "Desert Spring Map" 		# [RunMap] == "true"
+[Type] == "Fields Map" 				# [RunMap] == "true"
+[Type] == "Moon Temple Map" 		# [RunMap] == "true"
+[Type] == "Mud Geyser Map" 			# [RunMap] == "true"
+[Type] == "Port Map" 				# [RunMap] == "true"
+[Type] == "Shore Map" 				# [RunMap] == "true"
+[Type] == "Silo Map" 				# [RunMap] == "true"
+[Type] == "Temple Map" 				# [RunMap] == "true"
+[Type] == "Underground River Map" 	# [RunMap] == "true"
+[Type] == "Wharf Map" 				# [RunMap] == "true"
+
+///////////////////////
+//   Valdo's Rest    //
+///////////////////////
+[Type] == "Arid Lake Map" 			# [RunMap] == "true"
+[Type] == "Ashen Wood Map" 			# [RunMap] == "true"
+[Type] == "Canyon Map" 				# [RunMap] == "true"
+[Type] == "Dark Forest Map" 		# [RunMap] == "true"
+[Type] == "Dry Sea Map" 			# [RunMap] == "true"
+[Type] == "Gardens Map" 			# [RunMap] == "true"
+[Type] == "Ghetto Map" 				# [RunMap] == "true"
+[Type] == "Lair Map" 				# [RunMap] == "true"
+[Type] == "Maze Map" 				# [RunMap] == "true"
+[Type] == "Mineral Pools Map" 		# [RunMap] == "true"
+[Type] == "Necropolis Map" 			# [RunMap] == "true"
+[Type] == "Orchard Map" 			# [RunMap] == "true"
+[Type] == "Promenade Map" 			# [RunMap] == "true"
+// before "Lex Ejoris"
+[Type] == "Alleyways Map" 			# [RunMap] == "true"
+[Type] == "Armoury Map" 			# [RunMap] == "true"
+[Type] == "Arsenal Map" 			# [RunMap] == "true"
+[Type] == "Bog Map" 				# [RunMap] == "true"
+[Type] == "Bone Crypt Map" 			# [RunMap] == "true"
+[Type] == "Cells Map" 				# [RunMap] == "true"
+[Type] == "Conservatory Map" 		# [RunMap] == "true"
+[Type] == "Dig Map" 				# [RunMap] == "true"
+[Type] == "Dungeon Map" 			# [RunMap] == "true"
+[Type] == "Forking River Map" 		# [RunMap] == "true"
+[Type] == "Sepulchre Map" 			# [RunMap] == "true"
+[Type] == "Waste Pool Map" 			# [RunMap] == "true"
+
+///////////////////////
+//    Lira Arthain   //
+///////////////////////
+[Type] == "Barrows Map" 			# [RunMap] == "true"
+[Type] == "Courthouse Map" 			# [RunMap] == "true"
+[Type] == "Estuary Map" 			# [RunMap] == "true"
+[Type] == "Flooded Mine Map" 		# [RunMap] == "true"
+[Type] == "Forbidden Woods Map" 	# [RunMap] == "true"
+[Type] == "Lighthouse Map" 			# [RunMap] == "true"
+[Type] == "Lookout Map" 			# [RunMap] == "true"
+[Type] == "Mausoleum Map" 			# [RunMap] == "true"
+[Type] == "Primordial Blocks Map" 	# [RunMap] == "true"
+[Type] == "Racecourse Map" 			# [RunMap] == "true"
+[Type] == "Toxic Sewer Map" 		# [RunMap] == "true"
+// before "Lex Proxima"
+[Type] == "Carcass Map" 			# [RunMap] == "true"
+[Type] == "Courtyard Map" 			# [RunMap] == "true"
+[Type] == "Crimson Township Map" 	# [RunMap] == "true"
+[Type] == "Cursed Crypt Map" 		# [RunMap] == "true"
+[Type] == "Defiled Cathedral Map" 	# [RunMap] == "true"
+[Type] == "Glacier Map" 			# [RunMap] == "true"
+[Type] == "Lava Lake Map" 			# [RunMap] == "true"
+[Type] == "Overgrown Ruin Map" 		# [RunMap] == "true"
+[Type] == "Overgrown Shrine Map" 	# [RunMap] == "true"
+[Type] == "Park Map" 				# [RunMap] == "true"
+[Type] == "Reef Map" 				# [RunMap] == "true"
+[Type] == "Spider Forest Map" 		# [RunMap] == "true"
+[Type] == "Sulphur Vents Map" 		# [RunMap] == "true"
+[Type] == "Thicket Map" 			# [RunMap] == "true"
+[Type] == "Underground Sea Map" 	# [RunMap] == "true"
+[Type] == "Vaal Temple Map" 		# [RunMap] == "true"
+[Type] == "Vaal Pyramid Map" 		# [IgnoreMap] == "true" // unable to run
+
+///////////////////////
+//   Guardian Maps   //
+///////////////////////
+// [Type] == "Forge of the Phoenix Map" # [RunMap] == "true"
+// [Type] == "Lair of the Hydra Map" 	# [RunMap] == "true"
+// [Type] == "Maze of the Minotaur Map" # [RunMap] == "true"
+// [Type] == "Pit of the Chimera Map" 	# [RunMap] == "true"
+
+///////////////////////
+//    Unique Maps    //
+///////////////////////
 [Type] == "Overgrown Shrine Map" 	&& [Rarity] == "Unique" # [IgnoreMap] == "true" // Acton's Nightmare
 [Type] == "Siege Map" 				&& [Rarity] == "Unique" # [IgnoreMap] == "true" // Altered Distant Memory
-[Type] == "Courthouse Map" 			&& [Rarity] == "Unique" # [IgnoreMap] == "true" // Augmented Distant Memory
+[Type] == "Haunted Mansion Map" 	&& [Rarity] == "Unique" # [IgnoreMap] == "true" // Augmented Distant Memory - NEW SCOURGE
 [Type] == "Underground River Map" 	&& [Rarity] == "Unique" # [IgnoreMap] == "true" // Caer Blaidd, Wolfpack's Den
 [Type] == "Relic Chambers Map" 		&& [Rarity] == "Unique" # [IgnoreMap] == "true" // Cortex
 [Type] == "Necropolis Map" 			&& [Rarity] == "Unique" # [IgnoreMap] == "true" // Death and Taxes
@@ -283,7 +304,34 @@
 
 
 
-// === 5 Map mods - reroll ===
+
+//// IMPORTANT REROLL XOR IGNORE MODS REFLECT + NOREGEN ////
+
+// REROLL magic maps with Alteration
+[map_monsters_reflect_%_elemental_damage] 	>= "1" && [Rarity] == "Magic" # [RerollMods] == "true" // Mirrored -- Monsters Reflect % Elemental Damage
+[map_monsters_reflect_%_physical_damage] 	>= "1" && [Rarity] == "Magic" # [RerollMods] == "true" // Punishing -- Monsters Reflect % Physical Damage
+[map_players_no_regeneration_including_es] 	>= "1" && [Rarity] == "Magic" # [RerollMods] == "true" // Of Statis -- Players have no Life or Mana Regeneration
+
+// IGNORE magic maps
+// [map_monsters_reflect_%_elemental_damage] 	>= "1" && [Rarity] == "Magic" # [IgnoreMap] == "true" // Mirrored -- Monsters Reflect % Elemental Damage
+// [map_monsters_reflect_%_physical_damage] 	>= "1" && [Rarity] == "Magic" # [IgnoreMap] == "true" // Punishing -- Monsters Reflect % Physical Damage
+// [map_players_no_regeneration_including_es] 	>= "1" && [Rarity] == "Magic" # [IgnoreMap] == "true" // Of Statis -- Players have no Life or Mana Regeneration
+
+
+// REROLL rare maps with Chaos
+// [map_monsters_reflect_%_elemental_damage] 	>= "1" && [Rarity] == "Rare" # [RerollMods] == "true" // Mirrored -- Monsters Reflect % Elemental Damage
+// [map_monsters_reflect_%_physical_damage] 	>= "1" && [Rarity] == "Rare" # [RerollMods] == "true" // Punishing -- Monsters Reflect % Physical Damage
+// [map_players_no_regeneration_including_es] 	>= "1" && [Rarity] == "Rare" # [RerollMods] == "true" // Of Statis -- Players have no Life or Mana Regeneration
+
+// IGNORE rare maps
+[map_monsters_reflect_%_elemental_damage] 	>= "1" && [Rarity] == "Rare" # [IgnoreMap] == "true" // Mirrored -- Monsters Reflect % Elemental Damage
+[map_monsters_reflect_%_physical_damage] 	>= "1" && [Rarity] == "Rare" # [IgnoreMap] == "true" // Punishing -- Monsters Reflect % Physical Damage
+[map_players_no_regeneration_including_es] 	>= "1" && [Rarity] == "Rare" # [IgnoreMap] == "true" // Of Statis -- Players have no Life or Mana Regeneration
+
+
+
+
+// === 5 Map Mods - REROLL ===
 
 // How to Roll Pack Size - Simple leave appropriate (suffix only) pack size reroll checks (has packsize in description) COMMENTED, and uncomment the rest.
 // This will force bot to reroll/aug until packsize is rolled.
@@ -324,8 +372,7 @@
 // [map_monsters_curse_effect_on_self_+%_final] < "0" && [Rarity] == "Magic" # [RerollMods] == "true" // Hexwarded -- Less effect of curses on mobs
 // [map_monsters_avoid_poison_blind_bleed_%] >= "1" && [Rarity] == "Magic" # [RerollMods] == "true" // Impervious -- Mobs have chance to avoid Poison/Blind/Bleed
 
-[map_monsters_reflect_%_elemental_damage] >= "1" && [Rarity] == "Magic" # [RerollMods] == "true" // Mirrored -- Monsters Reflect % Elemental Damage
-[map_monsters_reflect_%_physical_damage] >= "1" && [Rarity] == "Magic" # [RerollMods] == "true" // Punishing -- Monsters Reflect % Physical Damage
+
 
 // [map_boss_attack_and_cast_speed_+%] >= "1" && [Rarity] == "Magic" # [RerollMods] == "true" // Overlord's -- Unique Boss Deals +% Dmg/ Has +% Attack & Cast Speed
 // [map_monsters_additional_chaos_resistance] >= "1" && [Rarity] == "Magic" # [RerollMods] == "true" // Resistant -- Mobs have Chaos/Ele Resistance
@@ -361,14 +408,14 @@
 // [map_players_block_chance_+%] < "0" && [Rarity] == "Magic" # [RerollMods] == "true" // Of Rust -- Players have -% Block Chance/ -% Less Armour
 // [map_player_life_and_es_recovery_speed_+%_final] < "0" && [Rarity] == "Magic" # [RerollMods] == "true" // Of Smothering -- Players Recover Life, Mana and Energy Shield % slower
 
-[map_players_no_regeneration_including_es] >= "1" && [Rarity] == "Magic" # [RerollMods] == "true" // Of Statis -- Players have no Life or Mana Regeneration
+
 
 // [map_player_has_level_X_temporal_chains] >= "1" && [Rarity] == "Magic" # [RerollMods] == "true" // Of Temporal Chains -- Players are cursed with Temporal Chains
 // [map_monsters_base_self_critical_strike_multiplier_-%] >= "1" && [Rarity] == "Magic" # [RerollMods] == "true" // Of Toughness -- Mobs take reduced Crit Damage
 // [map_player_has_level_X_vulnerability] >= "1" && [Rarity] == "Magic" # [RerollMods] == "true" // Of Vulnerability -- Players are cursed with Vulnerability
 //
 
-// === 6 Map mods - ignore ===
+// === 6 Map Mods - IGNORE ===
 
 // Ignore Map - (Select Map Rarity for each mod to ignore)
 // Prefix
@@ -439,11 +486,7 @@
 // [map_monsters_avoid_poison_blind_bleed_%] >= "1" && [Rarity] == "Magic" # [IgnoreMap] == "true" // Impervious -- Mobs have chance to avoid Poison/Blind/Bleed
 // [map_monsters_avoid_poison_blind_bleed_%] >= "1" && [Rarity] == "Rare" # [IgnoreMap] == "true" // Impervious -- Mobs have chance to avoid Poison/Blind/Bleed
 
-[map_monsters_reflect_%_elemental_damage] >= "1" && [Rarity] == "Magic" # [IgnoreMap] == "true" // Mirrored -- Monsters Reflect % Elemental Damage
-[map_monsters_reflect_%_elemental_damage] >= "1" && [Rarity] == "Rare" # [IgnoreMap] == "true" // Mirrored -- Monsters Reflect % Elemental Damage
 
-[map_monsters_reflect_%_physical_damage] >= "1" && [Rarity] == "Magic" # [IgnoreMap] == "true" // Punishing -- Monsters Reflect % Physical Damage
-[map_monsters_reflect_%_physical_damage] >= "1" && [Rarity] == "Rare" # [IgnoreMap] == "true" // Punishing -- Monsters Reflect % Physical Damage
 
 // [map_boss_attack_and_cast_speed_+%] >= "1" && [Rarity] == "Magic" # [IgnoreMap] == "true" // Overlord's -- Unique Boss Deals +% Dmg/ Has +% Attack & Cast Speed
 // [map_boss_attack_and_cast_speed_+%] >= "1" && [Rarity] == "Rare" # [IgnoreMap] == "true" // Overlord's -- Unique Boss Deals +% Dmg/ Has +% Attack & Cast Speed
@@ -511,7 +554,7 @@
 // [map_players_block_chance_+%] < "0" && [Rarity] == "Rare" # [IgnoreMap] == "true" // Of Rust -- Players have -% Block Chance/ -% Less Armour
 // [map_players_no_regeneration_including_es] >= "1" && [Rarity] == "Magic" # [IgnoreMap] == "true" // Of Statis -- Players have no Life or Mana Regeneration
 
-[map_players_no_regeneration_including_es] >= "1" && [Rarity] == "Rare" # [IgnoreMap] == "true" // Of Statis -- Players have no Life or Mana Regeneration
+
 
 // [map_player_has_level_X_temporal_chains] >= "1" && [Rarity] == "Magic" # [IgnoreMap] == "true" // Of Temporal Chains -- Players are cursed with Temporal Chains
 // [map_player_has_level_X_temporal_chains] >= "1" && [Rarity] == "Rare" # [IgnoreMap] == "true" // Of Temporal Chains -- Players are cursed with Temporal Chains
@@ -523,23 +566,23 @@
 
 // === 7 Original intro ===
 // ====================================
-// Welcome to the map runner configuration file. Syntax is the same as in Pickit/default.ipd.
+// Welcome to the Map runner configuration file. Syntax is the same as in Pickit/default.ipd.
 // Keys available: [RunMap], [IgnoreMap], [MapTier], [UpgradeQuality], [UpgradeToMagic], [UpgradeToRare], [RerollMods], [UpgradeMapTier], [SkipBossArena].
 // Please note that [IgnoreMap] has higher priority than other keys.
-// Please note that [SkipBossArena] needs bot to open map for it to work, if you open it and then start the bot it won't work.
+// Please note that [SkipBossArena] needs bot to open Map for it to work, if you open it and then start the bot it won't work.
 // Whenever you use the "less than" symbol (<) for MapTier, you'll need to add [MapTier] >= "66" (could be more than 66 but never less). This is to avoid bug, sry about that.
-// Map upgrading will only be made on a map that has been selected by the bot to farm.
-// All the map mods can be found in ModsList.html file.
+// Map upgrading will only be made on a Map that has been selected by the bot to farm.
+// All the Map mods can be found in ModsList.html file.
 // Big thanks to jps42 for updating and improving this file.
-// Example: Run rare maps level less than 3
+// Example: Run rare Maps level less than 3
 // [MapTier] >= "1" && [MapTier] < "3" && [Rarity] == "Rare" # [RunMap] == "true"
 // ====================================
 
 
 // === 8 PS ===
 // Priority list of actions is: [UpgradeMapTier](3) >> [IgnoreMap] >> [UpgradeToRare] >> [UpgradeToMagic] >> [RunMap]
-// If you enabled UpgradeMapTier and RunMap simultaneously for a map, the bot will run that map
+// If you enabled UpgradeMapTier and RunMap simultaneously for a Map, the bot will run that Map
 // 
-// ver. for 3.13, updated by Impuls.
+// created by Impuls, updated by Kintaro
 
-// All the map mods can be found in ModsList.html file.
+// All the Map mods can be found in ModsList.html file.
