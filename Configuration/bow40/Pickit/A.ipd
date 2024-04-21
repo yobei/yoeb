@@ -156,6 +156,7 @@
 [Type] == "Abomination # [StashItem] == true" //T17地圖
 [Type] == "Ziggurat # [StashItem] == true" //T17地圖
 
+[Category] == "Map" && [MapTier] >= "14 #[StashItem] == "true"
 
 
 //地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖
