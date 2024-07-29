@@ -30,6 +30,16 @@ Show # 裝備 - 特殊裝備 - 3色連洞 (2*2體積)
     SetBorderColor 0 0 0
     SetFontSize 45
 	
+Show # 裝備 - 特殊裝備 - 幻色配方 (所有體積)
+    LinkedSockets >= 3
+    LinkedSockets <= 8
+    SocketGroup "RGB"
+    SetTextColor 255 0 0
+    SetBackgroundColor 255 255 255
+    SetBorderColor 0 0 0
+    SetFontSize 45
+
+	
 #地圖已汙染
 Hide
 　　Corrupted True
@@ -1316,47 +1326,9 @@ Show # 聯盟 - 3.13祭祀 - 頭盔 - 護體頭
     SetFontSize 42
     PlayAlertSound 9 200
 
-Show # 聯盟 - 3.13祭祀 - 手套 - 竭盡攻擊手
-    Class "Helmets"
-    BaseType "Debilitation Gauntlets" "Gruelling Gauntlets" "Taxing Gauntlets"
-    SetBorderColor 138 71 255
-    SetFontSize 42
-    PlayAlertSound 9 200
 
-Show # 聯盟 - 3.13祭祀 - 手套 - 副手增傷手
-    Class "Helmets"
-    BaseType "Sinistral Gloves" "Southswing Gloves" "Gauche Gloves"
-    SetBorderColor 138 71 255
-    SetFontSize 42
-    PlayAlertSound 9 200
 
-Show # 聯盟 - 3.13祭祀 - 手套 - 魔耗手套
-    Class "Helmets"
-    BaseType "Nexus Gloves" "Aetherwind Gloves" "Leyline Gloves"
-    SetBorderColor 138 71 255
-    SetFontSize 42
-    PlayAlertSound 9 200
 
-Show # 聯盟 - 3.13祭祀 - 鞋子 - 位移冷卻鞋
-    Class "Boots"
-    BaseType "Duskwalk Slippers" "Nightwind Slippers" "Dreamquest Slippers"
-    SetBorderColor 138 71 255
-    SetFontSize 42
-    PlayAlertSound 9 200
-
-Show # 聯盟 - 3.13祭祀 - 鞋子 - 命中閃點傷鞋
-    Class "Boots"
-    BaseType "Stormrider Boots" "Windbreak Boots" "Cloudwhisper Boots"
-    SetBorderColor 138 71 255
-    SetFontSize 42
-    PlayAlertSound 9 200
-
-Show # 聯盟 - 3.13祭祀 - 鞋子 - 攻擊格擋鞋
-    Class "Boots"
-    BaseType "Brimstone Treads" "Darksteel Treads" "Basemetal Treads"
-    SetBorderColor 138 71 255
-    SetFontSize 42
-    PlayAlertSound 9 200
 
 # 【聯盟-3.12劫盜】3020
 
@@ -1981,16 +1953,6 @@ Show # 聯盟 - 3.4掘獄 - 1S/2S/3S混沌鑄新儀(黃色)
     MinimapIcon 2 White Triangle
     PlayEffect White
 
-Show # 聯盟 - 3.4掘獄 - 化石 -高階化石(血漬/破裂/雕琢/鑲金/鏤空/雕紋/暴擊/能力/無瑕化石)
-    Class "Currency"
-    BaseType "Bloodstained Fossil" "Fractured Fossil" "Faceted Fossil" "Gilded Fossil" "Hollow Fossil" "Glyphic Fossil" "Sanctified Fossil" "Deft Fossil" "Fundamental Fossil" "Perfect Fossil"
-    SetTextColor 0 0 0
-    SetBackgroundColor 255 255 0
-    SetBorderColor 250 240 190
-    SetFontSize 45
-    PlayAlertSound 6 300
-    MinimapIcon 0 Yellow Star
-    PlayEffect Yellow
 
 Show # 聯盟 - 3.4掘獄 - 化石 -一般化石
     Class "Currency"
