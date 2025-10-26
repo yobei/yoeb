@@ -23,7 +23,7 @@ SetDebuffSkill(nil,"izaro_temporal_chains",nil,"curse_temporal_chains")--Ê±¿ÕËøÁ
 SetDebuffSkill(nil,"izaro_vulnerability",nil,"curse_vulnerability")--´àÈõ
 SetDebuffSkill(nil,"izaro_elemental_weakness",nil,"curse_elemental_weakness")--ÔªËØÒªº¦
 SetDebuffSkill(nil,"despair",nil,"curse_chaos_weakness")--¾øÍû
-SetDebuffSkill(nil,"minion_focus_fire",nil,"minion_focussed_fire_target",10)--ÍöÓ¡
+SetDebuffSkill(nil,"minion_focus_fire",nil,"minion_focussed_fire_target","2|3")--ÍöÓ¡
 
 
 --SetUseTuTengData(className,ttClassName,dis,useDis,monHouMian)--ÉèÖÃÍ¼ÌÚÓĞĞ§·¶Î§¸ú·ÅÖÃ¾àÀë
@@ -38,6 +38,7 @@ SetUseTuTengData("totem_melee","Metadata/Monsters/Totems/MeleeTotem",35,nil,true
 SetUseTuTengData("totem_life_regen","Metadata/Monsters/Totems/LifeRegenTotem")--»Ø´ºÍ¼ÌÚ
 SetUseTuTengData("totem_consume_corpse","Metadata/Monsters/Totems/ConsumeCorpseTotem")--ÍÌÊÉÍ¼ÌÚ
 SetUseTuTengData("flame_totem_channelled","Metadata/Monsters/Totems/HolyFireSprayTotem")--Ê¥ÑæÍ¼ÌÚ
+SetUseTuTengData("holy_flame_totem","Metadata/Monsters/Totems/HolyFireSprayTotem")--Ê¥ÑæÍ¼ÌÚ
 SetUseTuTengData("totem_earthquake","Metadata/Monsters/Totems/EarthquakeTotem")--Õğ²¨Í¼ÌÚ
 SetUseTuTengData("searing_bond","Metadata/Monsters/Totems/SearingBondTotem",nil,nil,true)--ÖËÈÈÁ¬½Ó Í¼ÌÚÊıÁ¿£ºskill_display_number_of_traps_allowed
 SetUseTuTengData("shrapnel_ballista_totem","Metadata/Monsters/Totems/ShotgunTotem")--É¢ÉäæåÅÚ
@@ -52,14 +53,14 @@ SetUseTuTengData("artillery_ballista_totem","Metadata/Monsters/Totems/MortarTote
 --buffClassName ÔöÒæÀàÃû ×Ö·û´®ĞÍ Èç¹ûÓĞÕâ¸öÔöÒæ ¾Í²»Ê¹ÓÃ
 --funcNeedUse Ê¹ÓÃµÄ¼ì²âº¯Êı£¬ÄãÃÇ²»ĞèÒªÌî£¬ÊÇ¸ø×÷ÕßÓÃÀ´Ìí¼ÓÌØÊâ¼¼ÄÜµÄ½Ó¿Ú ÌînilºöÂÔ
 AddUseSkillData(2,"°µÓ°ÃÔ×Ù","phase_run")
-AddUseSkillData(1,"µòÁãÖ®²½","wlither")
+AddUseSkillData(1,"µòÁãÖ®²½","slither")
 AddUseSkillData(1,"¹ÇÖÆÕ½¼×","bone_armour")
 AddUseSkillData(1,"ÈÛÑÒ»¤¶Ü","molten_shell_barrier")
 AddUseSkillData(1,"¸ÖÌúÖ®·ô","steelskin")
---AddUseSkillData(1,"ÏÊÑª¿ñÅ­","blood_rage")
+AddUseSkillData(1,"ÏÊÑª¿ñÅ­","blood_rage")
 AddUseSkillData(1,"±©·çÖ®¶Ü","tempest_shield","±©·çÖ®¶Ü","lightning_shield")
 AddUseSkillData(1,"µzÄÜÅûïL","arcane_cloak")
-AddUseSkillData(1,"¼á¾öÕ½ºğ","enduring_cry")
+AddUseSkillData(2,"¼á¾öÕ½ºğ","enduring_cry",nil,nil,function(sk,me)local hpf=me.hp/me.maxHp;local needUse=hpf<0.8;MYTRACE1("-----------------hpf:%g needUse:%s",hpf,tostring(needUse))return needUse --[[me.hp/me.maxHp<0.7]] end)
 AddUseSkillData(1,"¼¤ÀøÕ½ºğ","inspiring_cry")
 AddUseSkillData(1,"ÉîÔ¨Õ½ºğ","abyssal_cry")
 AddUseSkillData(1,"ÍşÏÅÕ½ºğ","intimidating_cry")
@@ -68,7 +69,6 @@ AddUseSkillData(1,"ÕğµØÕ½ºğ","seismic_cry")
 AddUseSkillData(1,"ÏÈ×æÕ½ºğ","ancestral_cry")
 AddUseSkillData(1,"½«¾üÕ½ºğ","spiritual_cry")
 AddUseSkillData(1,"ÎÁÒßÊ¹Í½","corrosive_shroud",nil,nil,g_funcCheckWyst)
-AddUseSkillData(1,"¿ñ‘ğ","berserk")
 
 
 --SetUseBuffSkill(name,className,buffName,buffClassName,funcNeedUse)--ÉèÖÃÒªÓÃµÄbuff¼¼ÄÜ
@@ -77,20 +77,22 @@ AddUseSkillData(1,"¿ñ‘ğ","berserk")
 --buffName=buffÃû 			¿ÉÌînilºöÂÔ µ«ÒªÈ·±£buffÀàÃûÌî¶Ô
 --buffClassName=buffÀàÃû 	¿ÉÌînilºöÂÔ µ«ÒªÈ·±£buffÃû×ÖÌî¶Ô   Èç¹ûbuffÃû»òÀàÃûÓë¼¼ÄÜÃû»òÀàÃû²»Ò»Ñù¾ÍĞèÒªÌîbuffµÄÃû»òÀàÃû
 --funcNeedUse=Ê¹ÓÃµÄ¼ì²âº¯Êı£¬ÄãÃÇ²»ĞèÒªÌî£¬ÊÇ¸ø×÷ÕßÓÃÀ´Ìí¼ÓÌØÊâ¼¼ÄÜµÄ½Ó¿Ú ÌînilºöÂÔ
+
 SetUseBuffSkill("·¨Êõ»ØÒô","spellslinger",nil,nil,g_funcCheckFshy)
 
 SetUseBuffSkill("Õ½Æì","banner_war","Õ÷‘ğÖ®Æì","bloodstained_banner_buff_aura")
-SetUseBuffSkill("åey","unhinge","¯‚¿ñ","unhinged")
+--SetUseBuffSkill("¿Ö‘ÖÖ®Æì","banner_dread","¿Ö‘ÖÖ®Æì","puresteel_banner_buff_aura")
 SetUseBuffSkill("¿Ö‘ÖÖ®Æì","banner_armour_evasion","¿Ö‘ÖÖ®Æì","armour_evasion_banner_buff_aura")
---SetUseBuffSkill("±ùËªÖ®½İ","herald_of_ice")--
+SetUseBuffSkill("±ùËªÖ®½İ","herald_of_ice")--
 SetUseBuffSkill("¿àÍ´Ö®½İ","herald_of_agony")--
 SetUseBuffSkill("»Ò½ıÖ®½İ","herald_of_ash")
 SetUseBuffSkill("¼ƒœQÖ®½İ","herald_of_light")
 SetUseBuffSkill("éWëŠÖ®½İ","herald_of_thunder")--
+
 SetUseBuffSkill("˜OµØÑb¼×","arctic_armour")
 SetUseBuffSkill("ÑªÓëÉ³","blood_sand_stance","Ñª×ËÌ¬","blood_stance")--É³×ËÌ¬,"sand_stance"
 SetUseBuffSkill("ÑªÈâÓëÑÒÊ¯","blood_sand_armour","ÑªÈâ","blood_armour")--ÑÒÊ¯,"sand_armour"
-SetUseBuffSkill("ÔªËØ¾»»¯","purity","ÔªËØ¾»»¯¹â»·","player_aura_resists")--
+SetUseBuffSkill("ÔªËØ¾»»¯","purity_of_elements","ÔªËØ¾»»¯¹â»·","player_aura_resists")--
 SetUseBuffSkill("»ğÑæœQ»¯","fire_resist_aura","»ğÑæœQ»¯¹â­h","player_aura_fire_resist")--
 SetUseBuffSkill("·ßÅ­","anger","·ßÅ­¹â»·","player_aura_fire_damage")--
 
@@ -99,7 +101,7 @@ SetUseBuffSkill("»îÁ¦","vitality","»îÁ¦¹â­h","player_aura_life_regen")--
 SetUseBuffSkill("òœ°Á","physical_damage_aura","òœ°Á","player_physical_damage_aura")--
 
 SetUseBuffSkill("¾«œÊ","aura_accuracy_and_crits","¾«œÊ¹â­h","player_aura_accuracy_and_crits")--
---SetUseBuffSkill("Ñ¸½İ","haste","Ñ¸½İ¹â­h","player_aura_speed")--
+SetUseBuffSkill("Ñ¸½İ","haste","Ñ¸½İ¹â­h","player_aura_speed")--
 SetUseBuffSkill("ƒÑÅ","grace","ƒÑÅ¹â­h","player_aura_evasion")--
 SetUseBuffSkill("Ô÷ºŞ","hatred","Ô÷ºŞ¹â­h","player_aura_cold_damage")--
 SetUseBuffSkill("±ùËªœQ»¯","cold_resist_aura","±ùÀäœQ»¯¹â­h","player_aura_cold_resist")--
@@ -138,7 +140,7 @@ SetLastEnterSmallMap("MapWorldsTower")--¸ßËş
 --name=¼¼ÄÜÃû ×Ö·û´®ĞÍ			 ¿ÉÌînilºöÂÔ µ«ÒªÈ·±£¼¼ÄÜÀàÃûÌî¶Ô
 --className=¼¼ÄÜÀàÃû ×Ö·û´®ĞÍ	 ¿ÉÌînilºöÂÔ µ«ÒªÈ·±£¼¼ÄÜÃûÌî¶Ô
 AddMoveSkillData("ÁÒÑæ³å´Ì","flame_dash")
---AddMoveSkillData("»Ã²½","quick_dodge")
+AddMoveSkillData("»Ã²½","quick_dodge")
 AddMoveSkillData("ÜS“ô","leap_slam")
 AddMoveSkillData("Ş’ĞıÖ®ÈĞ","blade_flurry")
 AddMoveSkillData("éW¬FÉä“ô","blink_arrow")
@@ -148,12 +150,13 @@ AddMoveSkillData("ÖØ¶ÜĞnäh","shield_charge")
 
 --SetOpenMapMasterData(masterData)--ÉèÖÃÒì½ç¿ªÍ¼Ê±Ñ¡ÔñµÄÊÂ¼ş
 --masterData ÒªÑ¡ÖĞµÄÊÂ¼ş ×Ö·û´®ĞÍ ·¶Î§ 1-5 1:Ä§Îï´óÊ¦ 2:´©Ô½´óÊ¦ 3:Ä§±©ÁòËá 4:ÓÀÉúÃÜ½Ì 5:ÔıÄÈ ÖÆÍ¼´óÊ¦ ¿ÉÌî¶à¸öÖĞ¼äÓÃ|¸ô¿ª Ä¬ÈÏÎª"1|2|3|4|5" ¶à¸öµÄ»°»áËæ»úÑ¡Ôñ
-SetOpenMapMasterData("3")
+SetOpenMapMasterData("1|2|3|4|5")
 
 SetAtuoChangeEquipData("°µÓ°|Ò°ÂùÈË|¾ö¶·Õß|Å®Î×|ÓÎÏÀ|Ê¥ÌÃÎäÉ®","½äÖ¸|ÏîÁ´|Ñü´ø|Ğ¬×Ó|ÊÖÌ×|ÒÂ·ş|Í·¿ø|¶Ü}¼ı´ü}×¦}Ø°Ê×|·¨ÕÈ|µ¥ÊÖ½£|Ï¸½£|µ¥ÊÖ¸«|µ¥ÊÖ´¸|·ûÎÄØ°Ê×|¶ÌÕÈ|Õ½ÕÈ|¹­|³¤ÕÈ|Ë«ÊÖ½£|Ë«ÊÖ¸«|Ë«ÊÖ´¸","local_display_socketed_gems_get_concentrated_area_level",-3000)--¶Ô´øÓĞ¼¯ÖĞĞ§Ó¦¼¼ÄÜµÄ×°±¸½øĞĞ¼õ·Ö²Ù×÷ 1¼¶¼õ3Ç§·Ö
 SetAtuoChangeEquipData("°µÓ°|Ò°ÂùÈË|¾ö¶·Õß|Å®Î×|ÓÎÏÀ|Ê¥ÌÃÎäÉ®","Ä§Á¦Ò©¼Á","local_flask_mana_recovery_occurs_instantly_at_end_of_flask_effect",-3000)--¶Ô°üº¬ CD½áÊøÊ±²Å»Ø¸´À¶ µÄÒ©Æ¿½øĞĞ¼õ·Ö²Ù×÷
 SetAtuoChangeEquipData("°µÓ°|Ò°ÂùÈË|¾ö¶·Õß|Å®Î×|ÓÎÏÀ|Ê¥ÌÃÎäÉ®","ÉúÃüÒ©¼Á","local_unique_flask_cannot_recover_life_while_healing",-3000)--¶Ô°üº¬ CD½áÊøÊ±²Å»Ø¸´ÉúÃü µÄÒ©Æ¿½øĞĞ¼õ·Ö²Ù×÷
 
+SetGoodsCaoZuo(nil,"0|1",nil,nil,nil,nil,nil,nil,"0|1|2",nil,nil,nil,true,nil,function(gd)return not g_setAllSkillGemOk end )--¼¼ÄÜ±¦Ê¯Î´È«²¿×°±¸ÉÏ¾Í Ê°È¡ ³öÊÛÀ¶É« °×É« »ÆÉ«µÄÈıÉ«ÏàÁ¬×°±¸
 --ÏÂÃæÕâÌõ¿É°´ÖÖ×ÓµÈ¼¶ÉèÖÃ½»Ò× ĞèÒªµÄ¿ÉÒÔÊ¹ÓÃËû
 --SetJiaoYiGoods("HarvestSeed",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,function(goodsData)return goodsData.harvestSeedLv>=76 end)--ÉèÖÃÖÖ×ÓµÈ¼¶´óÓÚµÈÓÚ76µÄÖÖ×Ó½»Ò×
 
