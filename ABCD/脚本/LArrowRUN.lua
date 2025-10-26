@@ -19,10 +19,7 @@ SetUseZhuangBeiTypeData("Str|StrInt|Int","手套")
 SetUseZhuangBeiTypeData("Str|StrDex|Dex","鞋子")
 SetUseZhuangBeiTypeData("StrInt","项链")
 
-g_yiJieTimeOut=15*60			--异界地图内的超时时间 单位为秒 如果未设置就会用g_timeOut *是乘号 这里为15乘以60=15分钟
-g_timeOut=20*60					--在一个地图呆的时间超过设置的 就重新开图重新 单位为秒
-
-g_attackDis=50				--攻击距离
+g_attackDis=30			--攻击距离
 g_duobiHpVal=0.2
 
 --SetNeedSkillLineData(val,str,invalidLv,pos)--设置换技能宝石数据 
@@ -39,7 +36,7 @@ SetNeedSkillLineData(96,"鋼筋鐵骨,nil|元素淨化,nil|憤怒,nil",nil,nil,nil)
 SetNeedSkillLineData(97,"狙擊者印記,nil|召喚寒冰魔像,nil|擊中時印記輔助,nil",nil,nil,nil)
 SetNeedSkillLineData(98,"彈片砲塔,nil|快速攻擊輔助,nil|猛毒投射物輔助,nil|齊射輔助,nil",30,nil,nil)
 SetNeedSkillLineData(99,"電流箭矢,nil|附加冰冷傷害輔助,nil|元素攻擊傷害輔助,nil|幻影射手輔助,nil|附加火焰傷害輔助,nil",16,nil,nil)
-SetNeedSkillLineData(100,"閃電箭矢,nil,1|附加冰冷傷害輔助,nil|元素攻擊傷害輔助,nil|三體輔助,nil|啟發輔助,nil|幻影射手輔助,nil|附加火焰傷害輔助,nil",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,15)
+SetNeedSkillLineData(100,"閃電箭矢,nil,1|附加冰冷傷害輔助,nil|元素攻擊傷害輔助,nil|三體輔助,nil|啟發輔助,nil|幻影射手輔助,nil|附加火焰傷害輔助,nil",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,12)
 
 
 --添加攻击技能 name=技能名 className=技能类名 noLine=不在直线就能攻击 挑选攻击技能会从上到下寻找，要把厉害的技能加在前面
@@ -47,19 +44,20 @@ AddAttackSkillData("閃電箭矢","Lightning Arrow",false,100,0)--添加攻击技能
 AddAttackSkillData("電流箭矢","Galvanic Arrow",false,50,0)--添加攻击技能
 AddAttackSkillData("燃燒箭矢","Burning Arrow")
 AddAttackSkillData("普通攻击","melee")
-SetDebuffSkill(nil,"snipers_mark",nil,"curse_snipers_mark")--狙擊者印記
 
 --SetSkillLimitMaxLv(name,className,maxLv)--设置技能宝石最大等级 name=技能宝石物品名 className=技能宝石物品类名 maxLv=限制的最大等级
+SetDebuffSkill(nil,"snipers_mark",nil,"curse_snipers_mark")--狙擊者印記
 SetSkillLimitMaxLv("鋼筋鐵骨",nil,14)
 
 -- SetYiJieZhaoHuanLingTiData(mapClassName,name,className)--设置异界时召唤的灵体数据 mapClassName=剧情图类名 name=灵体名 className=灵体类名
 
+--药瓶摆放
 --SetNeedFlaskData(pos,flask,modsData,minLv)--设置药瓶摆放
-SetNeedFlaskData(1,"生命药剂","nil")
-SetNeedFlaskData(2,"生命药剂","nil")
-SetNeedFlaskData(3,"水银药剂","nil")
-SetNeedFlaskData(4,"魔力药剂","nil")
-SetNeedFlaskData(5,"魔力药剂","nil")
+SetNeedFlaskData(1,"生命药剂","熱情洋溢的,FlaskPartialInstantRecovery3|密封之,FlaskBleedCorruptingBloodImmunity1",90)
+SetNeedFlaskData(2,"魔力药剂","耐久的,FlaskEffectNotRemovedOnFullMana1|奧術師之FlaskBuffReducedManaCostWhileHealing4",90)
+SetNeedFlaskData(3,"宝钻药剂","nil")
+SetNeedFlaskData(4,"紫晶药剂","nil")
+SetNeedFlaskData(5,"水银药剂","nil")
 
 
 g_addHpVal=0.7--HP低于多少吃红药
@@ -149,8 +147,6 @@ AddShengJiZhuangBeiGoodsData("富豪石","Metadata/Items/Currency/CurrencyUpgradeMa
 --高级换装设置
 SetGaoJiHuanZhuangData("游侠","簡易之袍","Metadata/Items/Armours/BodyArmours/BodyInt1","無盡之衣","Tabula Rasa",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
 SetGaoJiHuanZhuangData("游侠","皮帽","Metadata/Items/Armours/Helmets/HelmetDex1","金縷帽","Goldrim",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
-SetGaoJiHuanZhuangData("游侠","短弓","MMetadata/Items/Weapons/TwoHandWeapons/Bows/Bow2","驟雨之弦","Quill Rain",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
-
 
 --SetTaskShengJiData(taskClassName,taskIndex,shengjiMapClassName,needLv)--设置跑图时升级 taskClassName=任务类名 taskIndex=任务索引 nil为忽略，只匹配任务类名 shengjiMapClassName=要刷的地图类名 needLv=升级到多少级为止
 SetTaskShengJiData("a5q7",nil,"1_5_5",46,true)--做 到奇塔弗的受难 的时候刷纯净圣地到50级再进行下一任务
@@ -158,7 +154,7 @@ SetTaskShengJiData("a9q3",nil,"2_9_1",68,true)--做 到風暴飛刃 的时候刷滲血水道到
 
 SetTaskMiGongData("a8q7",nil,1)--大于等于a8q7级 做迷宫1
 SetTaskMiGongData("a10q1",nil,2)--大于等于a10q1 做迷宫2
-SetTaskMiGongDataByLv(82,3)--大于等于80级 做迷宫3
+SetTaskMiGongDataByLv(76,3)--大于等于80级 做迷宫3
 
 SetChangeLimitCnt("武器|衣服|头盔|手套|鞋子",2)
 SetChangeLimitCnt("腰带",3)
@@ -171,9 +167,3 @@ SetNeedAddTianFu("游侠=attack_speed568-投射物傷害和命中|dexterity990-敏捷|dexter
 SetNeedAddTianFu("游侠升华=AscendancyDeadeye3-投射物傷害、攻擊速度|AscendancyDeadeye14-集風|AscendancyDeadeye5-投射物傷害、命中率|AscendancyDeadeye4-彈射|AscendancyDeadeye17-投射物傷害、命中率|AscendancyDeadeye6-無限彈藥|AscendancyDeadeye19-投射物傷害、攻擊速度|AscendancyDeadeye20_-風之守衛|") 
 
 
-
-
-SetSellGoodsData("冰川山丘","Metadata/Items/Maps/MapWorldsGorge",1,"0|1|2|")
-SetSellGoodsData("怒浪之港","Metadata/Items/Maps/MapWorldsPier",1,"0|1|2|")
-SetSellGoodsData("骨跡陵墓","Metadata/Items/Maps/MapWorldsBoneCrypt",1,"0|1|2|")
-SetSellGoodsData("洪災礦坑","Metadata/Items/Maps/MapWorldsFloodedMine",1,"0|1|2|")
