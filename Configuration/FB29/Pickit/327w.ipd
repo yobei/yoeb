@@ -909,7 +909,7 @@
 [Type] == "Maven's Invitation: The Twisted" # [StashItem] == "true" //	//釋界之邀：扭曲		存倉																									
 //																												
 //	// 15F 六連裝 (目前有無法正常賣出的語法錯誤，但是我找不到問題點)			//																								
-[Sockets] == "6" && [Linked] >= "6" # [StashItem] ="true" //	//六連裝		存倉	//																								
+[Sockets] == "6" && [Linked] >= "6" # [ForceSellItem] ="true" //	//六連裝		存倉	//																								
 //[Sockets] == "6" && [Linked] >= "6" && [Rarity] == "Normal" # [ForceSellItem] =="true"	//普通六連裝			//																								
 //[Sockets] == "6" && [Linked] >= "6" && [Rarity] == "Magic" # [ForceSellItem] =="true"	//魔法六連裝			//																								
 //[Sockets] == "6" && [Linked] >= "6" && [Rarity] == "Rare" # [ForceSellItem] =="true"	//稀有六連裝			//																								
@@ -2418,4 +2418,5 @@
 [Type] == "Allflame Ember of Syndicate Researchers" # [StashItem] == "true" //	//Allflame Ember of Syndicate Researchers		存倉																									
 [Type] == "Allflame Ember of Synthetic Fury" # [StashItem] == "true" //	//Allflame Ember of Synthetic Fury		存倉																									
 [Type] == "Flaring Allflame Ember of the Vaal" # [StashItem] == "true" //	//Flaring Allflame Ember of the Vaal		存倉																									
+
 [Type] == "Flaring Allflame Ember of Breachlords" # [StashItem] == "true" //	//Flaring Allflame Ember of Breachlords		存倉																									
