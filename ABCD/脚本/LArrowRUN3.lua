@@ -153,6 +153,23 @@ SetTaskShengJiData("a5q7",nil,"1_5_5",47,true)--做 到奇塔弗的受难 的时候刷纯净圣
 SetTaskShengJiData("a9q3",nil,"2_9_1",68,true)--做 到風暴飛刃 的时候刷滲血水道到68级再进行下一任务
 SetTaskShengJiData("a10q3",nil,"2_9_1",80,true)--做 到風暴飛刃 的时候刷滲血水道到68级再进行下一任务
 
+SetGaoJiHuanZhuangData("游侠","簡易之袍","Metadata/Items/Armours/BodyArmours/BodyInt1","無盡之衣","Tabula Rasa",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
+SetGaoJiHuanZhuangData("游侠","皮帽","Metadata/Items/Armours/Helmets/HelmetDex1","金縷帽","Goldrim",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,4000)
+
+SetGaoJiHuanZhuangData("游侠","鍛鐵戒指","Metadata/Items/Rings/Ring1","英靈寶環","Le Heup of All",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
+
+SetGaoJiHuanZhuangData("游侠","海靈戒指","Metadata/Items/Rings/Ring3","普蘭德斯之記","Perandus Signet",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
+
+SetGaoJiHuanZhuangData("游侠","素布腰帶","Metadata/Items/Belts/Belt1","幻彩菱織","Prismweave",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
+
+SetGaoJiHuanZhuangData("游侠","始祖箭袋","Metadata/Items/Quivers/QuiverNew13","優雅迷鏡","The Poised Prism",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
+
+SetGaoJiHuanZhuangData("游侠","熊首皮盔","Metadata/Items/Armours/Helmets/HelmetDex7","鼠巢","Rat's Nest",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
+
+SetGaoJiHuanZhuangData("游侠","環帶護手","Metadata/Items/Armours/Gloves/GlovesDexInt3","沙塵之影","Shadows and Dust",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
+
+SetGaoJiHuanZhuangData("游侠","環帶長靴","Metadata/Items/Armours/Boots/BootsDexInt3","日耀","Sundance",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
+
 
 SetTaskMiGongData("a8q7",nil,1)--大于等于a8q7级 做迷宫1
 SetTaskMiGongData("a10q1",nil,2)--大于等于a10q1 做迷宫2
