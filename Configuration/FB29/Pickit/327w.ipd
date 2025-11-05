@@ -46,10 +46,10 @@
 [Type] == "Orb of Fusing" # [StashItem] == "true" //	//鏈結石		存倉																									
 [Type] == "Orb of Regret" # [StashItem] == "true" //	//後悔石		存倉																									
 [Type] == "Orb of Scouring" # [StashItem] == "true" //	//重鑄石		存倉																									
-[Type] == "Regal Orb" # [StashItem] == "true" //	//富豪石		存倉																									
+//[Type] == "Regal Orb" # [StashItem] == "true" //	//富豪石		存倉																									
 [Type] == "Vaal Orb" # [StashItem] == "true" //	//瓦爾寶珠		存倉																									
 [Type] == "Cartographer's Chisel" # [StashItem] == "true" //	//製圖釘		存倉																									
-[Type] == "Orb of Horizons" # [StashItem] == "true" //	//地平石		存倉																									
+//[Type] == "Orb of Horizons" # [StashItem] == "true" //	//地平石		存倉																									
 [Type] == "Harbinger's Orb" # [StashItem] == "true" //	//神諭石		存倉																									
 //此通貨不撿	//工程石		賣出																									
 [Type] == "Blacksmith's Whetstone" # [StashItem] == "true" //	//磨刀石		存倉																									
@@ -69,7 +69,7 @@
 [Type] == "Mirror Shard" # [StashItem] == "true" //	//魔鏡碎片		存倉																									
 [Type] == "Exalted Shard" # [StashItem] == "true" //	//崇高石碎片		存倉																									
 [Type] == "Regal Shard" # [StashItem] == "true" //	//富豪石碎片		存倉																									
-[Type] == "Veiled Chaos Orb" # [StashItem] == "true" //	//隱匿混沌石		存倉																									
+//[Type] == "Veiled Chaos Orb" # [StashItem] == "true" //	//隱匿混沌石		存倉																									
 
 [Type] == "Empower Support" # [StashItem] == "true" //	//賦予輔助		存倉																																														
 [Type] == "Enlighten Support" # [StashItem] == "true" //	//啟蒙輔助		存倉		
@@ -87,5 +87,6 @@
 [Sockets] == "6" && [Linked] <= "5" && [Rarity] == "Normal" # [SellUnid] == "true"	//六洞裝		賣出	//																								
 [Sockets] == "6" && [Linked] <= "5" && [Rarity] == "Magic" # [SellUnid] == "true"	//魔法六洞裝			//																								
 [Sockets] == "6" && [Linked] <= "5" && [Rarity] == "Rare" # [SellUnid] == "true"	//稀有六洞裝			//																								
+
 
 
