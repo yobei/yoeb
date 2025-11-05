@@ -17,12 +17,13 @@
 [Type] == "Gold Flask"&& 	[ItemLevel] >= "50" && [ItemLevel] <="100" # [StashItem] == "true" //黃金藥劑
 
 
+
 //[Type] == "Amethyst Flask"&& 		[ItemLevel] >= "50" && [ItemLevel] <="100" # [StashItem] == "true" //紫晶
 //[Type] == "Bismuth Flask"&& 		[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //灰岩
 //[Type] == "Granite Flask"&& 		[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //+1500護甲
 //[Type] == "Diamond Flask"&& 		[ItemLevel] >= "50" && [ItemLevel] <="100" # [StashItem] == "true" //寶鑽
 //[Type] == "Jade Flask"&& 			[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //+1500閃避
-																											
+[Type] == "Rogue's Marker" # [StashItem] == "true" //	//盜賊																											
 //	// 高級通貨																											
 [Type] == "Divine Orb" # [StashItem] == "true" //	//神聖石		存倉																									
 [Type] == "Exalted Orb" # [StashItem] == "true" //	//崇高石		存倉																									
@@ -86,4 +87,5 @@
 [Sockets] == "6" && [Linked] <= "5" && [Rarity] == "Normal" # [SellUnid] == "true"	//六洞裝		賣出	//																								
 [Sockets] == "6" && [Linked] <= "5" && [Rarity] == "Magic" # [SellUnid] == "true"	//魔法六洞裝			//																								
 [Sockets] == "6" && [Linked] <= "5" && [Rarity] == "Rare" # [SellUnid] == "true"	//稀有六洞裝			//																								
+
 
