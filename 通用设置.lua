@@ -20,7 +20,7 @@ g_needMinimizeGame=false			--×îĞ¡»¯ß[‘ò´°¿Ú trueÎª×îĞ¡»¯ false»ònilÎª²»×îĞ¡»¯
 g_imBoss=false					--Èç¹ûÊÇ²Ö¿âºÅÒªÎªtrue ¹Ò»úºÅÎªfalse
 g_attackDis=50					--¹¥»÷¾àÀë
 g_yiJieTimeOut=15*60			--Òì½çµØÍ¼ÄÚµÄ³¬Ê±Ê±¼ä µ¥Î»ÎªÃë Èç¹ûÎ´ÉèÖÃ¾Í»áÓÃg_timeOut *ÊÇ³ËºÅ ÕâÀïÎª15³ËÒÔ60=15·ÖÖÓ
-g_timeOut=35*60					--ÔÚÒ»¸öµØÍ¼´ôµÄÊ±¼ä³¬¹ıÉèÖÃµÄ ¾ÍÖØĞÂ¿ªÍ¼ÖØĞÂ µ¥Î»ÎªÃë
+g_timeOut=25*60					--ÔÚÒ»¸öµØÍ¼´ôµÄÊ±¼ä³¬¹ıÉèÖÃµÄ ¾ÍÖØĞÂ¿ªÍ¼ÖØĞÂ µ¥Î»ÎªÃë
 g_addTianFu=true				--×Ô¶¯°´Éè¶¨ºÃµÄÅäÖÃ¼ÓÌì¸³ trueÎª¼Ó nil»òfalseÎª²»¼Ó
 g_shengJiBaoShi=true			--×Ô¶¯Éı¼¶±¦Ê¯ trueÎªÉı¼¶ nil»òfalseÎª²»Éı¼¶
 g_sellSkillGem=true				--×Ô¶¯Âô³¬¹ı40Æ·ÖÊµÄ¼¼ÄÜ±¦Ê¯
@@ -144,11 +144,16 @@ SetZhongShenData("Lunaris","Gruthkul")--ÉèÖÃÔÂÓ°Å®ÉñÖ®»êÓë¾øÍûÖ®Ä¸ ¸ñÂ³Ë¿¿ËÖ®»ê
 
 -------×¢ÒâÒª´óÀàÔÚÇ° Ğ¡Àà µ¥¶ÀÉèÖÃÔÚºóÃæÌí¼Ó
 SetSaveIndex("Í¨»õ|¿É¶ÑµşÍ¨»õ","1")
+SetSaveIndex("Òì½çµØÍ¼","2")
 SetSaveIndex("ÏîÁ´|½äÖ¸|×¦|Ø°Ê×|·¨ÕÈ|µ¥ÊÖ½£|Ï¸½£|µ¥ÊÖ¸«|µ¥ÊÖ´¸|·ûÎÄØ°Ê×|¶ÌÕÈ|Õ½ÕÈ|¹­|³¤ÕÈ|Ë«ÊÖ½£|Ë«ÊÖ¸«|Ë«ÊÖ´¸|Ñü´ø|ÊÖÌ×|Ğ¬×Ó|Í·¿ø","3|4")
-SetSaveIndex("Ö÷¶¯¼¼ÄÜ±¦Ê¯|¸¨Öú¼¼ÄÜ±¦Ê¯|Öé±¦|ÃüÔË¿¨|µØÍ¼ËéÆ¬","4")
+SetSaveIndex("Ö÷¶¯¼¼ÄÜ±¦Ê¯|¸¨Öú¼¼ÄÜ±¦Ê¯|Öé±¦|ÃüÔË¿¨|ÒÂ·ş|¶Ü|¼ı´ü|µØÍ¼ËéÆ¬","4")
 SetSaveIndex("ÉúÃüÒ©¼Á|Ä§Á¦Ò©¼Á|¸´ºÏÒ©¼Á|¹¦ÄÜÒ©¼Á","4")
 SetSaveIndex(nil,"4","†¢ÃÉİoÖú","Metadata/Items/Gems/SupportGemAdditionalXP")--¼¼ÄÜŒšÊ¯
 SetSaveIndex(nil,"4","ÙxÓèİoÖú","Metadata/Items/Gems/SupportGemAdditionalLevel")--¼¼ÄÜŒšÊ¯
+SetSaveIndex(nil,"4","å€Ä§ÑÛ¾¦","Metadata/Items/Metamorphosis/MetamorphosisEye")
+SetSaveIndex(nil,"4","Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy")
+SetSaveIndex(nil,"4","æœ½YÊ¯","Metadata/Items/Currency/CurrencyRerollSocketLinks")
+SetSaveIndex(nil,"4","¸ÄÔìÊ¯","Metadata/Items/Currency/CurrencyRerollMagic")
 
 ------------------¹Ò»úÏà¹Ø
 g_yijieNoWhiteMonster=false		--Òì½çÊ±ÊÇ·ñ²»´ò°×¹Ö trueÎª²»´ò nil»òfalseÎª´ò
@@ -169,7 +174,7 @@ g_yuyanCnt=nil				--¹»¶àÉÙÒø±ÒÈ¥Ô¤ÑÔ£¬Ğ¡ÓÚ10Òø±Ò»òÌînil½«²»»á´¥·¢ Èç¹ûÉè¶¨È¥Ô¤ÑÔ
 --SetNotMapGoMap(className,cnt) ÉèÖÃÎŞµØÍ¼»òÎ´µ½µÈ¼¶Ê±ÒªË¢µÄ¾çÇéµØÍ¼ className×Ö·û´®ĞÍ µØÍ¼ÀàÃû cnt=´ÎÊı
 SetNotMapGoMap("2_9_1",10)	--ÎŞµØÍ¼Ê±Ë¢ÑªÉ«Í¨µÀ
 
-g_yiJieLv=70				--¹»ÁË¶àÉÙ¼¶²ÅÈ¥Ë¢Òì½ç
+g_yiJieLv=90				--¹»ÁË¶àÉÙ¼¶²ÅÈ¥Ë¢Òì½ç
 g_checkSellMapCnt=100		--µØÍ¼³¬¹ıÕâ¸öÊıÁ¿²Å»á¼ì²â³öÊÛµØÍ¼
 g_destroyNoUseMap=true		--Ïú»ÙÉÏÃæÉèÖÃ²»Ê¹ÓÃµÄµØÍ¼ nil»òfalseÎª²»Ïú»Ù
 g_mapUseFuHaoLv=78			--´óÓÚµÈÓÚ¶àÉÙ¼¶¶ÔÀ¶Í¼Ê¹ÓÃ¸»ºÀÊ¯ nilÎªÓÀÔ¶²»Ê¹ÓÃ
@@ -225,9 +230,96 @@ SetLastEnterSmallMap("MapWorldsGorge")--±ù´¨É½Çğ
 --SetSellGoodsData(name,className,cnt,color)--ÉèÖÃÂô(»»)µÄµØÍ¼ 
 --name=ÎïÆ·Ãû className=ÎïÆ·ÀàÃû ÏÈÊ¶±ğÎïÆ·Ãû Ê¶±ğ²»µ½¾ÍÊ¶±ğÀàÃû cnt=¹»¶àÉÙÈ¥Âô color=ÑÕÉ« 0°× 1À¶ 2»Æ ¶à¸öÓÃ|¸ô¿ª
 
+SetSellGoodsData("„¡¶¾ÁÖ¹È","Metadata/Items/Maps/MapWorldsJungleValley",3,"0|1|2|")
+SetSellGoodsData("¶¾ÑÀº£¸Û","Metadata/Items/Maps/MapWorldsWharf",3,"0|1|2|")
+SetSellGoodsData("Å­ÀËÖ®¸Û","Metadata/Items/Maps/MapWorldsPier",3,"0|1|2|")
+SetSellGoodsData("°×É³©î^","Metadata/Items/Maps/MapWorldsBeach",3,"0|1|2|")
+SetSellGoodsData("÷ÈÓ°„eÊû","Metadata/Items/Maps/MapWorldsVilla",3,"0|1|2|")
+SetSellGoodsData("ÃÜÁÖ¹ûˆ@","Metadata/Items/Maps/MapWorldsOrchard",3,"0|1|2|")
+SetSellGoodsData("ºÖäÁêÄ¹","Metadata/Items/Maps/MapWorldsCursedCrypt",9,"0|1|2|")
+SetSellGoodsData("ÜŠĞµì","Metadata/Items/Maps/MapWorldsArmoury",3,"0|1|2|")
+SetSellGoodsData("Œò¾ÓËù","Metadata/Items/Maps/MapWorldsLaboratory",3,"0|1|2|")
+SetSellGoodsData("Iº£±¤‰¾","Metadata/Items/Maps/MapWorldsRamparts",3,"0|1|2|")
+SetSellGoodsData("Iº£ÓÄÑ¨","Metadata/Items/Maps/MapWorldsUndergroundSea",9,"0|1|2|")
+SetSellGoodsData("ºµÄ¾ÁÖµØ","Metadata/Items/Maps/MapWorldsAshenWood",9,"0|1|2|")
+SetSellGoodsData("ìo¿OÁêÄ¹","Metadata/Items/Maps/MapWorldsMausoleum",3,"0|1|2|")
+SetSellGoodsData("ÓÄ»êÕ¬Û¡","Metadata/Items/Maps/MapWorldsHauntedMansion",3,"0|1|2|")
+SetSellGoodsData("Ÿo½®ÌïÒ°","Metadata/Items/Maps/MapWorldsFields",3,"0|1|2|")
+SetSellGoodsData("±ù´¨É½Çğ","Metadata/Items/Maps/MapWorldsGorge",3,"0|1|2|")
+SetSellGoodsData("ÖÂÃüÑÒ©","Metadata/Items/Maps/MapWorldsStrand",9,"0|1|2|")
+SetSellGoodsData("Ç¬³±ÁÖµØ","Metadata/Items/Maps/MapWorldsPeninsula",3,"0|1|2|")
+SetSellGoodsData("¶¾¾úÄ§Óò","Metadata/Items/Maps/MapWorldsSprings",9,"0|1|2|")
+SetSellGoodsData("Øšñ¤Ö®µØ","Metadata/Items/Maps/MapWorldsDesert",3,"0|1|2|")
+SetSellGoodsData("Î£³ÇÏïÅª","Metadata/Items/Maps/MapWorldsAlleyways",9,"0|1|2|")
+SetSellGoodsData("‰™Ó°Ä¹ˆö","Metadata/Items/Maps/MapWorldsGraveyard",9,"0|1|2|")
+SetSellGoodsData("¹Å±ø¹¤S","Metadata/Items/Maps/MapWorldsArsenal",9,"0|1|2|")
+SetSellGoodsData("Æ½í”»ÄÄ®","Metadata/Items/Maps/MapWorldsMesa",3,"0|1|2|")
+SetSellGoodsData("¼²ïL{³","Metadata/Items/Maps/MapWorldsCoves",3,"0|1|2|")
+SetSellGoodsData("ÕÎšâÄàÕÓ","Metadata/Items/Maps/MapWorldsBog",3,"0|1|2|")
+SetSellGoodsData("»ÄµØ","Metadata/Items/Maps/MapWorldsWasteland",3,"0|1|2|")
+SetSellGoodsData("ë…í”çŠ˜Ç","Metadata/Items/Maps/MapWorldsBelfry",3,"0|1|2|")
+SetSellGoodsData("¹Å²©Îïğ^","Metadata/Items/Maps/MapWorldsMuseum",3,"0|1|2|")
+SetSellGoodsData("¸‚¼¼ˆö","Metadata/Items/Maps/MapWorldsArena",3,"0|1|2|")
+SetSellGoodsData("³¿êØÄ¹µØ","Metadata/Items/Maps/MapWorldsCemetery",3,"0|1|2|")
+SetSellGoodsData("Ä§½ğŒšì","Metadata/Items/Maps/MapWorldsVault",3,"0|1|2|")
+SetSellGoodsData("Î£™CË®µÀ","Metadata/Items/Maps/MapWorldsWaterways",3,"0|1|2|")
+SetSellGoodsData("‹È¾êÉñµî","Metadata/Items/Maps/MapWorldsMoonTemple",3,"0|1|2|")
+SetSellGoodsData("Íß –½ğ×ÖËş","Metadata/Items/Maps/MapWorldsVaalPyramid",3,"0|1|2|")
+SetSellGoodsData("éL²İßzÛE","Metadata/Items/Maps/MapWorldsOvergrownRuin",3,"0|1|2|")
+SetSellGoodsData("ßh¹ÅÊĞ¼¯","Metadata/Items/Maps/MapWorldsBazaar",9,"0|1|2|")
+SetSellGoodsData("ÄºÉ«É³Çğ","Metadata/Items/Maps/MapWorldsDunes",9,"0|1|2|")
+SetSellGoodsData("ŠZ»êÖ®µî","Metadata/Items/Maps/MapWorldsTemple",3,"0|1|2|")
+SetSellGoodsData("ßh¹ÅÎ£³Ç","Metadata/Items/Maps/MapWorldsAncientCity",3,"0|1|2|")
+SetSellGoodsData("¸¯”¡ÏÂË®µÀ","Metadata/Items/Maps/MapWorldsToxicSewer",3,"0|1|2|")
+SetSellGoodsData("»ğÉ½Ñ×Óò","Metadata/Items/Maps/MapWorldsVolcano",9,"0|1|2|")
+SetSellGoodsData("¹ÅµäÃÜÊÒ","Metadata/Items/Maps/MapWorldsRelicChambers",3,"0|1|2|")
+SetSellGoodsData("±À‰ÄéLÀÈ","Metadata/Items/Maps/MapWorldsArcade",9,"0|1|2|")
+SetSellGoodsData("ÁbÆÆÀÎ","Metadata/Items/Maps/MapWorldsCage",3,"0|1|2|")
+SetSellGoodsData("·xêªzÀÎ","Metadata/Items/Maps/MapWorldsPen",3,"0|1|2|")
+SetSellGoodsData("×Ï¾§µVÉ½","Metadata/Items/Maps/MapWorldsCrystalOre",3,"0|1|2|")
+SetSellGoodsData("²»½ÌÌÃ","Metadata/Items/Maps/MapWorldsDefiledCathedral",3,"0|1|2|")
+SetSellGoodsData("¾Ş¿Ó","Metadata/Items/Maps/MapWorldsPit",3,"0|1|2|")
+SetSellGoodsData("®ÖëÄ¹‰V","Metadata/Items/Maps/MapWorldsArachnidTomb",9,"0|1|2|")
+SetSellGoodsData("ËÀ¼ÅÄàœÏ","Metadata/Items/Maps/MapWorldsWastePool",3,"0|1|2|")
+SetSellGoodsData("Ô×H¾§¶´","Metadata/Items/Maps/MapWorldsGeode",3,"0|1|2|")
+SetSellGoodsData("¹ÇÛEÁêÄ¹","Metadata/Items/Maps/MapWorldsBoneCrypt",3,"0|1|2|")
+SetSellGoodsData("ÈÛÑÒÖ®ÊÒ","Metadata/Items/Maps/MapWorldsLavaChamber",3,"0|1|2|")
+SetSellGoodsData("ŸáÁÖ‰VÄ¹","Metadata/Items/Maps/MapWorldsBarrows",9,"0|1|2|")
+SetSellGoodsData("Ä§ì`»Ãªz","Metadata/Items/Maps/MapWorldsPhantasmagoria",3,"0|1|2|")
+SetSellGoodsData("ºì`ŒWÔº","Metadata/Items/Maps/MapWorldsAcademy",3,"0|1|2|")
+SetSellGoodsData("éœªz¼âËş","Metadata/Items/Maps/MapWorldsTower",3,"0|1|2|")
+SetSellGoodsData("»ğÉ½Ñ×¿Ú","Metadata/Items/Maps/MapWorldsCaldera",3,"0|1|2|")
+
 
 
 --SetCompoundDivinationCard(name,className,nType) --ÉèÖÃĞèÒªºÏ³ÉµÄÃüÔË¿¨ name=¿¨Æ¬Ãû className=¿¨Æ¬ÀàÃû nType=ºÏ³É³¡¾° nil»ò²»ÌîÎªÎŞÂÛºÎÊ±¶¼ºÏ³É 0ÎªÃ»ÔÚË¢Òì½ç²ÅºÏ 1ÎªÖ»ÔÚË¢Òì½ç²ÅºÏ
+SetCompoundDivinationCard("ºÚ°µÈıÃæ","Metadata/Items/DivinationCards/DivinationCardThreeFacesInTheDark")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
+SetCompoundDivinationCard("ÌmËş¶äÃÔã¯Ö®Û","Metadata/Items/DivinationCards/DivinationCardLantadorsLostLove")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
+SetCompoundDivinationCard("Ş±ÄİÑÅµÄĞÅÎï","Metadata/Items/DivinationCards/DivinationCardViniasToken")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
+SetCompoundDivinationCard("Öé±¦½³","Metadata/Items/DivinationCards/DivinationCardTheGemcutter")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
+SetCompoundDivinationCard("»ëãçĞÔÇé","Metadata/Items/DivinationCards/DivinationCardChaoticDisposition")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
+SetCompoundDivinationCard("µÛÔË","Metadata/Items/DivinationCards/DivinationCardEmperorsLuck")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
+SetCompoundDivinationCard("ºÃÔËÁ¬Á¬","Metadata/Items/DivinationCards/DivinationCardLuckyConnections")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
+SetCompoundDivinationCard("»ìãçÖ®Óê","Metadata/Items/DivinationCards/DivinationCardRainOfChaos")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
+SetCompoundDivinationCard("ï|¿ÊÖ®×","Metadata/Items/DivinationCards/DivinationCardCovetedPossession")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
+SetCompoundDivinationCard("—‰Ø”ÇóÉú","Metadata/Items/DivinationCards/DivinationCardAbandonedWealth")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
+SetCompoundDivinationCard("·¢Ã÷¼Ò","Metadata/Items/DivinationCards/DivinationCardTheInventor")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
+SetCompoundDivinationCard("¾ªÏ²ºĞ","Metadata/Items/DivinationCards/DivinationCardJackInTheBox")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
+SetCompoundDivinationCard("ÁªÒö","Metadata/Items/DivinationCards/DivinationCardTheUnion")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
+SetCompoundDivinationCard("Ô¹·Ş","Metadata/Items/DivinationCards/DivinationCardTheWrath")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
+SetCompoundDivinationCard("ÔÖ±ä","Metadata/Items/DivinationCards/DivinationCardTheCatalyst")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
+SetCompoundDivinationCard("ÇóÉú×¨¼Ò","Metadata/Items/DivinationCards/DivinationCardTheSurvivalist")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
+SetCompoundDivinationCard("ÖÒ³Ï","Metadata/Items/DivinationCards/DivinationCardLoyalty")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
+SetCompoundDivinationCard("ÖÆÍ¼Ê¦","Metadata/Items/DivinationCards/DivinationCardTheCartographer")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
+SetCompoundDivinationCard("ÉúÃüÖ®˜ä","Metadata/Items/DivinationCards/DivinationCardTheSephirot")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
+SetCompoundDivinationCard("Â}Í½Ö®Ø”","Metadata/Items/DivinationCards/DivinationCardTheSaintsTreasure")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
+SetCompoundDivinationCard("ŸoºÛ","Metadata/Items/DivinationCards/DivinationCardNoTraces")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
+SetCompoundDivinationCard("ÉÆ","Metadata/Items/DivinationCards/DivinationCardTheInnocent")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
+SetCompoundDivinationCard("ÓŞÈË","Metadata/Items/DivinationCards/DivinationCardTheFool")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
+SetCompoundDivinationCard("¶ÄÍ½","Metadata/Items/DivinationCards/DivinationCardTheGambler")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
+SetCompoundDivinationCard("¹¤½³´óÊ¦","Metadata/Items/DivinationCards/DivinationCardTheMasterArtisan")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
+SetCompoundDivinationCard("ÇéÈË","Metadata/Items/DivinationCards/DivinationCardTheLover")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
+SetCompoundDivinationCard("¾»°×","Metadata/Items/DivinationCards/DivinationCardTheOpulecent")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
 SetCompoundDivinationCard("Ç«Ñ·","Metadata/Items/DivinationCards/DivinationCardHumility",0)--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
 
 --SetNeedBuyGoodsData(name,className,cnt,buyName,buyClassName)--ÉèÖÃ¿ªÊ¼Ë¢Òì½çÊ±¼ä¼ì²â¹ºÂòÖ¸¶¨ÎïÆ·
@@ -264,7 +356,7 @@ SetNeedBuyGoodsData("´«ËÍ¾íÖá","Metadata/Items/Currency/CurrencyPortal",nil,"ÍÉ±
 --lineCnt Êı×ÖĞÍ Á¬¶´ÊıÁ¿ ºöÂÔÔòÌî nil
 --checkCangKu ¼ÆËã±£ÁôÊıÁ¿Ê±ÊÇ·ñÁ¬²Ö¿âÄÚµÄÊıÁ¿Ò²¼ÆËã½øÈ¥ nil»òfalseÎª²»¼ÆËã²Ö¿â true ÎªĞèÒª¼ÆËã
 SetGoodsCaoZuo("Í¨»õ|¿É¶ÑµşÍ¨»õ|Òì½çµØÍ¼","0|2")--¶à¸ö´óÀàÉèÖÃ¼ñ´æ
-SetGoodsCaoZuo("Ö÷¶¯¼¼ÄÜ±¦Ê¯|¸¨Öú¼¼ÄÜ±¦Ê¯","0|2",nil,nil,nil,nil,21)--Ê°È¡Æ·ÖÊ³¬¹ı5µÄ¼¼ÄÜ±¦Ê¯
+SetGoodsCaoZuo("Ö÷¶¯¼¼ÄÜ±¦Ê¯|¸¨Öú¼¼ÄÜ±¦Ê¯","0|2",nil,nil,nil,nil,5)--Ê°È¡Æ·ÖÊ³¬¹ı5µÄ¼¼ÄÜ±¦Ê¯
 
 SetGoodsCaoZuo(nil,"0|1|4",nil,nil,nil,nil,nil,nil,"3")--Ê°È¡ ¼ø¶¨ ³öÊÛ³ÈÉ«ÎïÆ·
 SetGoodsCaoZuo(nil,nil,"ÖªÊ¶¾íÖá","Metadata/Items/Currency/CurrencyIdentification",nil,nil,nil,40)--¹»ÁË¾Í²»¼ñÁË
@@ -280,6 +372,7 @@ SetGoodsCaoZuo(nil,"0","Ä¥µ¶Ê¯","Metadata/Items/Currency/CurrencyWeaponQuality")
 SetGoodsCaoZuo(nil,"0","»¤¼×Æ¬","Metadata/Items/Currency/CurrencyArmourQuality")--»¤¼×Æ¬²»´æ
 SetGoodsCaoZuo(nil,"3","¾íÖáËéÆ¬","Metadata/Items/Currency/CurrencyIdentificationShard")--¾íÖáËéÆ¬¶ª
 SetGoodsCaoZuo(nil,"3","Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy")--¶ªÔ¤ÑÔ
+SetGoodsCaoZuo(nil,"0|2","ÌmËş¶äÃÔã¯Ö®Û","Metadata/Items/DivinationCards/DivinationCardLantadorsLostLove")
 SetGoodsCaoZuo(nil,"1|3","×£¸£Ê¯","Metadata/Items/Currency/CurrencyRerollImplicit")--
 SetGoodsCaoZuo(nil,"1|3","Êø¿`Ê¯","Metadata/Items/Currency/CurrencyUpgradeToRareAndSetSockets")--
 SetGoodsCaoZuo(nil,"1|3","¹¤³ÌÊ¯","Metadata/Items/Currency/CurrencyStrongboxQuality")--
