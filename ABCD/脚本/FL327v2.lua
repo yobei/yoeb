@@ -81,6 +81,7 @@ g_newRoleJob="野蛮人"
 g_shengHuaJob="暴徒"
 --SetUseWeapon(str)--设置使用的武器 支持(盾}箭袋}爪}匕首|法杖|单手剑|细剑|单手斧|单手锤|符文匕首|短杖|战杖|弓|长杖|双手剑|双手斧|双手锤) 如果需要用两样中间用|分开
 SetUseWeapon("双手斧")
+SetUseWeapon("双手斧")
 
 --SetUseZhuangBeiTypeData(typeStr,pos)--设置自己用的装备类型 
 --typeStr=类型 支持("StrDex"为决斗者装+护甲闪避 "Str"为野蛮人装+护甲 "DexInt"为暗影装+闪避护盾 "Int"为女巫装+护盾 "Dex"为游侠装+闪避 "StrInt"为圣堂武僧装+力量护盾)
@@ -106,22 +107,12 @@ SetUseZhuangBeiTypeData("StrInt|StrDex|DexInt","项链")
 SetNeedSkillLineData(100,"沉重之擊,nil|殘暴輔助,nil",2,nil,nil) --2等失效
 SetNeedSkillLineData(120,"裂地之擊,nil|殘暴輔助,nil|機率流血輔助,nil",12,nil,nil)
 SetNeedSkillLineData(76,"灰燼之捷,nil",nil,nil,nil)
-SetNeedSkillLineData(77,"純淨之捷,nil",24,nil,nil)
-SetNeedSkillLineData(82,"威嚇戰吼,nil|緊急詔令輔助,nil",nil,24,nil) 
+SetNeedSkillLineData(77,"純淨之捷,nil|撲殺輔助,nil",nil,nil,nil)
+SetNeedSkillLineData(82,"威嚇戰吼,nil|緊急詔令輔助,nil",nil,nil,nil) 
 SetNeedSkillLineData(83,"鮮血狂怒,nil|受傷時施放輔助,nil|不朽怒嚎,nil",nil,nil,nil) 
-SetNeedSkillLineData(84,"躍擊,nil|快速攻擊輔助,nil",nil,nil,nil)
+SetNeedSkillLineData(90,"躍擊,nil|快速攻擊輔助,nil",nil,nil,nil)
 SetNeedSkillLineData(85,"脆弱,nil",nil,nil,nil)
-SetNeedSkillLineData(95,"緊急詔令輔助,nil|堅決戰吼,nil|裂地戰吼,nil|激勵戰吼,nil",nil,nil,nil)
-SetNeedSkillLineData(99,"自動竭盡,nil|威嚇戰吼,nil|將軍戰吼,nil|煉獄戰吼,nil",nil,nil,nil)
 SetNeedSkillLineData(100,"大地震擊,nil|殘暴輔助,nil|拳霸輔助,nil|近戰物理傷害輔助,nil|近身戰輔助,nil|機率流血輔助,nil",nil,nil,nil)
-
---异界主力技能设置
-SetNeedSkillLineData(100,"召唤灵体,Metadata/Items/Gems/SkillGemRaiseSpectre,1|施放迴響輔助,Metadata/Items/Gems/SupportGemMulticast|召喚物傷害輔助,Metadata/Items/Gems/SupportGemMinionDamage|投射物返回輔助,Metadata/Items/Gems/SupportGemReturningProjectiles|精準破壞輔助,Metadata/Items/Gems/SupportGemControlledDestruction|穿透輔助,Metadata/Items/Gems/SupportGemPierce",nil,2,1,nil,nil,nil,nil,nil,nil,nil,nil,true,nil)
-SetNeedSkillLineData(96,"赦免,Metadata/Items/Gems/SkillGemAbsolution,1|物理轉閃電輔助,Metadata/Items/Gems/SupportGemPhysicalToLightning|施放迴響輔助,Metadata/Items/Gems/SupportGemMulticast|召喚物傷害輔助,Metadata/Items/Gems/SupportGemMinionDamage",nil,10,1)--鞋子
-SetNeedSkillLineData(94,"殭屍復甦,Metadata/Items/Gems/SkillGemRaiseZombie|召喚巨石魔像,Metadata/Items/Gems/SkillGemSummonRockGolem|召喚物生命輔助,Metadata/Items/Gems/SupportGemMinionLife|豢養狂熱輔助,Metadata/Items/Gems/SupportGemFeedingFrenzy",nil,9,1)--手套
-SetNeedSkillLineData(98,"迅捷,Metadata/Items/Gems/SkillGemHaste|元素淨化,Metadata/Items/Gems/SkillGemPurity|暴风之盾,Metadata/Items/Gems/SkillGemTempestShield|召唤圣物,Metadata/Items/Gems/SkillGemSummonRelic",nil,5,1,nil,nil,nil,nil,nil,nil,nil,nil,true,nil)--頭盔
-SetNeedSkillLineData(92,"重盾冲锋,Metadata/Items/Gems/SkillGemShieldCharge|熔岩护盾,Metadata/Items/Gems/SkillGemMoltenShell|快速攻擊輔助,Metadata/Items/Gems/SupportGemFasterAttack",nil,4,1)--盾牌
-SetNeedSkillLineData(90,"血肉奉獻,Metadata/Items/Gems/SkillGemFleshOffering|號召,Metadata/Items/Gems/SkillGemConvocation|亵渎,Metadata/Items/Gems/SkillGemDesecrate",nil,3,1)--武器
 
 --SetSkillLimitMaxLv(name,className,maxLv)--设置技能宝石最大等级 name=技能宝石物品名 className=技能宝石物品类名 maxLv=限制的最大等级
 --SetSkillLimitMaxLv("亵渎","Metadata/Items/Gems/SkillGemDesecrate",2)
@@ -142,18 +133,6 @@ AddAttackSkillData("裂地之擊","Ground Slam",false,40,0)--添加攻击技能
 AddAttackSkillData("沉重之擊","Heavy Strike",false,30,0)
 AddAttackSkillData("普通攻击","melee")
 
---SetNeedZhaoHuanMonster(name,className,val)--设置需要召唤的灵体会自动选择比重大的召唤 name=怪物名 className=怪物类名 val=比重
-SetNeedZhaoHuanMonster(nil,"Metadata/Monsters/Revenant/RevenantMapBossStandalone_AtlasUber",99999)
---SetNeedZhaoHuanMonster("霜寒自動巡守","Metadata/Monsters/LeagueHeist/Robot/RobotClockworkGolemCold",99999)
-SetNeedZhaoHuanMonster("冷血酋长","Metadata/Monsters/BloodChieftain/MonkeyChiefBloodEnrage",1)
-SetNeedZhaoHuanMonster("废墟地狱犬","Metadata/Monsters/Hellion/Hellion3",2)
---SetNeedZhaoHuanMonster("驱刑者","Metadata/Monsters/TemplarSlaveDriver/TemplarSlaveDriver",6)
-SetNeedZhaoHuanMonster("太阳军卫","Metadata/Monsters/HolyFireElemental/HolyFireElementalSolarisBeam",6)
-SetNeedZhaoHuanMonster("冰哨带","Metadata/Monsters/Guardians/GuardianFire_Blue",8)
-SetNeedZhaoHuanMonster("火炎哨带","Metadata/Monsters/Guardians/GuardianFire",5)
-SetNeedZhaoHuanMonster("诡异行者","Metadata/Monsters/WickerMan/WickerMan",4)
-SetNeedZhaoHuanMonster("恶魔奴隶","Metadata/Monster/CageSpider/CageSpider2",3)
-
 --bossName 字符串型 灵体仓库号的名字
 --minLv 数字型 满多少级才会去仓库号家召唤 nil为忽略等级总是去
 --SetNeedZhaoHuanMonster("Flayed Lookout","Metadata/Monsters/LeagueBetrayal/BetrayalSkeletonRangedSpectre",7)
@@ -166,6 +145,8 @@ SetNeedZhaoHuanMonster(nil,"Metadata/Monsters/Revenant/RevenantMapBossStandalone
 --SetYiJieZhaoHuanLingTiData("2_10_2","诡异行者","Metadata/Monsters/WickerMan/WickerMan")
 --SetYiJieZhaoHuanLingTiData("1_5_2","驱刑者","Metadata/Monsters/TemplarSlaveDriver/TemplarSlaveDriver")
 --SetYiJieZhaoHuanLingTiData("2_7_7","冷血酋长","Metadata/Monsters/BloodChieftain/MonkeyChiefBloodEnrage")
+
+--SetUseBuffSkill("自動竭盡","Autoexertion")
 
 --RemoveUseBuffSkill(name,className)--设置不使用的buff name=技能名 className=技能类名
 --RemoveUseBuffSkill("召喚巨石魔像","summon_rock_golem")
@@ -242,16 +223,6 @@ SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","盾","护甲",10,2)
 SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","盾","base_maximum_life",20,2)                                    --加基礎最大生命
 SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","鞋子","movement_velocity_+%",30,2)                               --移动速度 +%
 SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","鞋子","base_movement_velocity_+%",40,2)                          --基础移动速度 +%
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","法杖","minion_critical_strike_multiplier_+",898,2)               --召唤暴击加成
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","法杖","minion_critical_strike_chance_+%",999,2)                  --召唤暴击
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","法杖","minion_attack_and_cast_speed_+%",8988,2)                  --召唤攻擊和施放速度
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","法杖","minion_damage_+%",9999,2)                                 --召唤伤害
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","法杖","spell_skill_gem_level_+%",88888,2)                        --全部法术等级+1
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","法杖","minion_skill_gem_leve_+%",99999,2)                        --召唤物等级+1
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指","minion_damage_+%",9999,2)                                 --召唤伤害
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指","minion_attack_and_cast_speed_+%",8888,2)                  --召唤攻擊和施放速度
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指","minion_movement_speed_+%",777,2)                          --召喚移動速度
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指","minion_elemental_resistance_%",666,2)                     --召唤抗性基底
 SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","项链","base_maximum_life",5,2)                                   --加基礎最大生命
 SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","项链","additional_strength",10,2)                                --力量
 SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","项链","additional_intelligence",10,2)                            --智慧
