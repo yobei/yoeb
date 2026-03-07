@@ -114,6 +114,7 @@ SetNeedSkillLineData(79,"烈焰冲刺,Metadata/Items/Gems/SkillGemFlameDash|亵渎,Met
 
 --异界主力技能设置
 SetNeedSkillLineData(100,"召唤灵体,Metadata/Items/Gems/SkillGemRaiseSpectre,1|施放迴響輔助,Metadata/Items/Gems/SupportGemMulticast|召喚物傷害輔助,Metadata/Items/Gems/SupportGemMinionDamage|投射物返回輔助,Metadata/Items/Gems/SupportGemReturningProjectiles|精準破壞輔助,Metadata/Items/Gems/SupportGemControlledDestruction|穿透輔助,Metadata/Items/Gems/SupportGemPierce",nil,2,1,nil,nil,nil,nil,nil,nil,nil,nil,true,nil)
+SetNeedSkillLineData(97,"瓦爾．赦免,MMetadata/Items/Gems/SkillGemVaalAbsolution,1|物理轉閃電輔助,Metadata/Items/Gems/SupportGemPhysicalToLightning|施放迴響輔助,Metadata/Items/Gems/SupportGemMulticast|召喚物傷害輔助,Metadata/Items/Gems/SupportGemMinionDamage",nil,10,1)--鞋子
 SetNeedSkillLineData(96,"赦免,Metadata/Items/Gems/SkillGemAbsolution,1|物理轉閃電輔助,Metadata/Items/Gems/SupportGemPhysicalToLightning|施放迴響輔助,Metadata/Items/Gems/SupportGemMulticast|召喚物傷害輔助,Metadata/Items/Gems/SupportGemMinionDamage",nil,10,1)--鞋子
 SetNeedSkillLineData(94,"殭屍復甦,Metadata/Items/Gems/SkillGemRaiseZombie|召喚巨石魔像,Metadata/Items/Gems/SkillGemSummonRockGolem|召喚物生命輔助,Metadata/Items/Gems/SupportGemMinionLife|豢養狂熱輔助,Metadata/Items/Gems/SupportGemFeedingFrenzy",nil,9,1)--手套
 SetNeedSkillLineData(98,"迅捷,Metadata/Items/Gems/SkillGemHaste|元素淨化,Metadata/Items/Gems/SkillGemPurity|暴风之盾,Metadata/Items/Gems/SkillGemTempestShield|召唤圣物,Metadata/Items/Gems/SkillGemSummonRelic",nil,5,1,nil,nil,nil,nil,nil,nil,nil,nil,true,nil)--頭盔
@@ -132,7 +133,7 @@ SetSkillUseWaEr("迅捷","Metadata/Items/Gems/SkillGemHaste","瓦爾．迅捷","Metadat
 
 --AddAttackSkillData(name,className,noLine)--添加攻击技能 name=技能名 className=技能类名 noLine=不在直线就能攻击 挑选攻击技能会从上到下寻找，要把厉害的技能加在前面
 --AddAttackSkillData("电弧","arc")
-AddAttackSkillData("赦免","absolution")
+AddAttackSkillData("赦罪","absolution")
 AddAttackSkillData("召唤愤怒狂灵","summon_raging_spirit")
 AddAttackSkillData("火球","fireball")
 AddAttackSkillData("普通攻击","melee")
@@ -152,8 +153,7 @@ SetNeedZhaoHuanMonster("恶魔奴隶","Metadata/Monster/CageSpider/CageSpider2",3)
 --bossName 字符串型 灵体仓库号的名字
 --minLv 数字型 满多少级才会去仓库号家召唤 nil为忽略等级总是去
 --SetNeedZhaoHuanMonster("Flayed Lookout","Metadata/Monsters/LeagueBetrayal/BetrayalSkeletonRangedSpectre",7)
---FANXING
-SetHaveLingTiBossName("FAN_GOST",30)--设置灵体仓库号 如果灵体号的灵体比身上的更好，他就会去灵体号所在位置召唤灵体
+SetHaveLingTiBossName("gost_go",30)--设置灵体仓库号 如果灵体号的灵体比身上的更好，他就会去灵体号所在位置召唤灵体
 SetNeedZhaoHuanMonster(nil,"Metadata/Monsters/Revenant/RevenantMapBossStandalone_AtlasUber",99999)
 --SetNeedZhaoHuanMonster("霜寒自動巡守","Metadata/Monsters/LeagueHeist/Robot/RobotClockworkGolemCold",99999)
 
