@@ -77,6 +77,11 @@ g_needAutoChangeEquip=true		--开启自动换装 true为换 nil或false为不换
 g_youXianMapLv=90                    --取图时人物满多少级就从高阶开始取
 --SetMapGongYi("神諭聯盟")                   --每次开图时选择諭工艺
 g_needAutoSetBaoShi=true		--开启自动换宝石 true为换 nil或false为不换
+g_needAutoChangeEquip=true  --开启自动换装 true为换 nil或false为不换
+g_needAutoSetBaoShi=true  --开启自动换宝石 true为换 nil或false为不换备
+g_xiaoHaoGetZhuangBei=true  --挂机号向仓库号申请领高级换装中的装备
+
+
 
 --药瓶摆放
 --SetNeedFlaskData(pos,flask)--设置药  pos=位置 1-5  flask=药 字符串型，支持以下 (生命药剂,魔力药剂,复合药剂,宝钻药剂,红玉药剂,蓝玉药剂,黄玉药剂,坚岩药剂,水银药剂,紫晶药剂,石英药剂,翠玉药剂,石化药剂,海蓝药剂,迷雾药剂,硫磺药剂,真银药剂,灰岩药剂)
@@ -153,7 +158,7 @@ SetTaskMiGongDataByLv(80,3)
 --指定职业  野蛮人、野蛮人、贵族、游侠、决斗者、暗影、圣堂武僧、
 g_newRoleJob="野蛮人"
 --升华职业 勇士、暴徒、酋长、侠客、锐眼、追猎者、秘术家、元素使、召唤师、处刑者、卫士、冠军、判官、圣宗、守护者、暗影大师、欺诈师、破坏者、升华使徒、
-g_shengHuaJob="勇士"
+g_shengHuaJob="暴徒"
 --SetUseWeapon(str)--设置使用的武器 支持(盾}箭袋}爪}匕首|法杖|单手剑|细剑|单手斧|单手锤|符文匕首|短杖|战杖|弓|长杖|双手剑|双手斧|双手锤) 如果需要用两样中间用|分开
 SetUseWeapon("法杖|盾")
 
@@ -200,27 +205,41 @@ AddNeedBuySkillTime(3,"a3q1")
 AddNeedBuySkillTime(3,"a3q8")
 AddNeedBuySkillTime(3,"a3q9")
 AddNeedBuySkillTime(3,"a3q10")
+AddNeedBuySkillTime(3,"a3q11")
 AddNeedBuySkillTime(3,"a3q12")
 AddNeedBuySkillTime(4,"a4q1")
 AddNeedBuySkillTime(4,"a4q2")
 AddNeedBuySkillTime(4,"a4q3")
 AddNeedBuySkillTime(4,"a4q4")
 AddNeedBuySkillTime(6,"a6q1")
+AddNeedBuySkillTime(7,"a7q1")
+AddNeedBuySkillTime(7,"a7q2")
+AddNeedBuySkillTime(7,"a7q3")
+AddNeedBuySkillTime(7,"a7q4")
+AddNeedBuySkillTime(7,"a7q5")
+AddNeedBuySkillTime(7,"a7q6")
+AddNeedBuySkillTime(7,"a7q7")
+AddNeedBuySkillTime(7,"a7q8")
+AddNeedBuySkillTime(7,"a7q9")
+AddNeedBuySkillTime(7,"a7q10")
+AddNeedBuySkillTime(7,"a7q11")
+AddNeedBuySkillTime(7,"a7q12")
 AddNeedBuySkillTime(10,"a10q2")
 AddNeedBuySkillTime(11,"a11q1")
 
 --剧情主力技能设置
 SetNeedSkillLineData(100,"沉重之擊,nil|殘暴輔助,nil",2,nil,nil)
-SetNeedSkillLineData(130,"虛空匕首,nil|機率流血輔助,nil",8,nil,nil)
+SetNeedSkillLineData(120,"裂地之擊,nil|殘暴輔助,nil|機率流血輔助,nil",13,nil,nil)
 SetNeedSkillLineData(130,"神聖火舌圖騰,nil",12,nil,nil)
 SetNeedSkillLineData(77,"召唤愤怒狂灵,Metadata/Items/Gems/SkillGemSummonRagingSpirit|秘术增强(辅),Metadata/Items/Gems/SupportGemArcaneSurge|召唤生物伤害(辅),Metadata/Items/Gems/SupportGemMinionDamage",25,nil,0)
 SetNeedSkillLineData(89,"赦免,Metadata/Items/Gems/SkillGemAbsolution,1|施放迴響輔助,Metadata/Items/Gems/SupportGemMulticast|物理轉閃電輔助,Metadata/Items/Gems/SupportGemPhysicalToLightning|召喚物傷害輔助,Metadata/Items/Gems/SupportGemMinionDamage|附加閃電傷害輔助,Metadata/Items/Gems/SupportGemAddedLightningDamage",nil,nil,0)
 SetNeedSkillLineData(87,"殭屍復甦,Metadata/Items/Gems/SkillGemRaiseZombie|豢養狂熱輔助,Metadata/Items/Gems/SupportGemFeedingFrenzy|召喚幻影輔助,Metadata/Items/Gems/SupportGemSummonGhostOnKill",nil,nil,0)
-SetNeedSkillLineData(85,"召喚巨石魔像,Metadata/Items/Gems/SkillGemSummonRockGolem|召唤灵体,Metadata/Items/Gems/SkillGemRaiseSpectre|召唤圣物,Metadata/Items/Gems/SkillGemSummonRelic",nil,nil,0)
+SetNeedSkillLineData(85,"召唤灵体,Metadata/Items/Gems/SkillGemRaiseSpectre|召喚巨石魔像,Metadata/Items/Gems/SkillGemSummonRockGolem|召唤圣物,Metadata/Items/Gems/SkillGemSummonRelic",nil,nil,0)
+
 SetNeedSkillLineData(83,"元素淨化,Metadata/Items/Gems/SkillGemPurity|血肉奉獻,Metadata/Items/Gems/SkillGemFleshOffering|號召,Metadata/Items/Gems/SkillGemConvocation",nil,nil,0)
 SetNeedSkillLineData(81,"神聖火舌圖騰,Metadata/Items/Gems/SkillGemFlameTotem|钢铁之肤,Metadata/Items/Gems/SkillGemSteelskin",nil,nil,0)
 SetNeedSkillLineData(79,"烈焰冲刺,Metadata/Items/Gems/SkillGemFlameDash|亵渎,Metadata/Items/Gems/SkillGemDesecrate",nil,nil,0)
-SetNeedSkillLineData(79,"重盾衝鋒,nil|快速攻擊輔助,nil|褻瀆,nil",nil,nil,0)
+SetNeedSkillLineData(78,"重盾衝鋒,nil|快速攻擊輔助,nil|褻瀆,nil",nil,nil,0)
 --异界主力技能设置
 SetNeedSkillLineData(100,"召唤灵体,Metadata/Items/Gems/SkillGemRaiseSpectre,1|施放迴響輔助,Metadata/Items/Gems/SupportGemMulticast|召喚物傷害輔助,Metadata/Items/Gems/SupportGemMinionDamage|投射物返回輔助,Metadata/Items/Gems/SupportGemReturningProjectiles|精準破壞輔助,Metadata/Items/Gems/SupportGemControlledDestruction|穿透輔助,Metadata/Items/Gems/SupportGemPierce",nil,2,1,nil,nil,nil,nil,nil,nil,nil,nil,true,nil)
 SetNeedSkillLineData(96,"赦免,Metadata/Items/Gems/SkillGemAbsolution,1|物理轉閃電輔助,Metadata/Items/Gems/SupportGemPhysicalToLightning|施放迴響輔助,Metadata/Items/Gems/SupportGemMulticast|召喚物傷害輔助,Metadata/Items/Gems/SupportGemMinionDamage",nil,10,1)--鞋子
@@ -252,7 +271,7 @@ SetSkillUseWaEr("迅捷","Metadata/Items/Gems/SkillGemHaste","瓦爾．迅捷","Metadat
 --AddAttackSkillData(name,className,noLine)--添加攻击技能 name=技能名 className=技能类名 noLine=不在直线就能攻击 挑选攻击技能会从上到下寻找，要把厉害的技能加在前面
 AddAttackSkillData("赦免","absolution")
 AddAttackSkillData("召唤愤怒狂灵","summon_raging_spirit")
-AddAttackSkillData("虛空匕首","Ethereal Knives",false,40.0)
+AddAttackSkillData("裂地之擊", "Ground Slam", true, 18)
 AddAttackSkillData("沉重之擊","Heavy Strike",false,30,0)
 AddAttackSkillData("普通攻击","melee")
 
@@ -523,7 +542,7 @@ AddShengJiZhuangBeiGoodsData("富豪石","Metadata/Items/Currency/CurrencyUpgradeMa
 --mohu true为模糊匹配 false 或 nil 或不填为完整匹配 逻辑型
 --isComputerName 逻辑型 发装号名字是否是电脑名 true 为是 false或nil 为不是
 --發裝號
-SetZhuangBeiBoss("发装号电脑名",nil,nil,nil,true) --用发装号电脑名的方式指定发装号
+SetZhuangBeiBoss("Fan_gost",nil,nil,nil,true) --用发装号电脑名的方式指定发装号
 
 ---------------------------------------高级换装
 --SetGaoJiHuanZhuangData(job,name,className,wordName,wordClassName,lineSocketCnt,goodsLv,flaskPos,zbPos,color,nType,yxName,yxClassName,yxWordName,yxWordClassName,wxName,wxClassName,wxWordName,wxWordClassName,val) 高级换装设置 设置换指定的装备
@@ -578,12 +597,26 @@ SetGaoJiHuanZhuangData("野蛮人",nil,nil,nil,nil,4,28,nil,10,nil,nil,nil,nil,nil,
 SetGaoJiHuanZhuangData("野蛮人",nil,nil,nil,nil,3,15,nil,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,300,nil,1,69,nil)
 
 -- 武器: 优先3连 (召唤物管理技能)
-SetGaoJiHuanZhuangData("野蛮人",nil,nil,nil,nil,3,15,nil,3,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,250,nil,1,69,nil)
+------------------------------------------------------------
+-- 前期武器自動切換策略 (錘子轉法杖) [替換原有的3連武器設置]
+------------------------------------------------------------
+
+-- 階段1: 1-12級 強制使用 單手錘 (配合裂地之擊)
+-- 分數給 1000，確保絕對優先於其他雜物
+SetGaoJiHuanZhuangData("野蛮人", nil, "单手锤", nil, nil, nil, nil, nil, 3, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, 1000, nil, 1, 12)
+
+-- 階段2: 12級開始 強制使用 法杖 (配合召喚技能)
+-- 分數給 2000，確保轉型後只拿法杖，不拿斧劍
+SetGaoJiHuanZhuangData("野蛮人", nil, "法杖", nil, nil, nil, nil, nil, 3, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, 2000, nil, 12, nil)
+
+-- 階段3: 12級以上，如果有 "3連的法杖"，額外加分 (優化)
+-- 這樣既限制了必須是法杖，又鼓勵拿多孔的
+SetGaoJiHuanZhuangData("野蛮人", nil, "法杖", nil, nil, 3, 15, nil, 3, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, 3000, nil, 13, nil)
 
 ------------------------------------------------------------
 -- 70级后传奇装备 (以下为原有配置)
 ------------------------------------------------------------
-SetGaoJiHuanZhuangData("野蛮人","简易之袍","Metadata/Items/Armours/BodyArmours/BodyInt1","无尽之衣","Tabula Rasa",nil,nil,nil,2,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,999999,nil,70,nil,nil)
+SetGaoJiHuanZhuangData("野蛮人","简易之袍","Metadata/Items/Armours/BodyArmours/BodyInt1","无尽之衣","Tabula Rasa",nil,nil,nil,2,nil,nil,nil,nil,"无尽之衣",nil,nil,nil,nil,nil,999999,nil,2,nil,nil)
 --SetGaoJiHuanZhuangData("野蛮人","聖戰鎖甲","Metadata/Items/Armours/BodyArmours/BodyStrInt9","安姆布的戰甲","Ambu's Charge",4,nil,nil,2,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,999999,nil,70,nil,nil)
 SetGaoJiHuanZhuangData("野蛮人","堅毅塔盾","Metadata/Items/Armours/Shields/ShieldStr17","獅眼的榮耀之盾","Lioneye's Remorse",3,15,nil,4,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,999999,nil,70,nil,nil)--盾牌
 --SetGaoJiHuanZhuangData("野蛮人","重革腰帶","Metadata/Items/Belts/Belt4","突圍","Siegebreaker",nil,nil,nil,11,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,999999,nil,70,nil,nil)--腰带
@@ -601,18 +634,8 @@ SetGaoJiHuanZhuangData("野蛮人","堅岩藥劑","Metadata/Items/Flasks/FlaskUtility5"
 
 --SetNeedAddTianFu(tfStr)--设置天赋加点 
 
---SetNeedAddTianFu("野蛮人=spell_damage721-法術傷害和魔力|intelligence922-智慧|intelligence920-智慧|intelligence918-智慧|strength828-力量|minion_duration2624_-召喚物傷害和持續時間|minion_duration2625-召喚物傷害和持續時間|minion_duration_notable2626-持久合作|savant901-奧術師之統御|stun_ignore1680-施放時避免干擾和元素抗性|stun_ignore_str_dex1678-化虛為實|life_mana1639-魔力和生命|life_mana_notable1638-心與靈|minion_damage285-召喚物傷害|lord_of_the_dead1122-亡靈之主|intelligence101-智慧|mana_spell_block2610-魔力和法術格擋|mana_spell_block_notable2611-神幻壁壘|mastery_mana162-魔力專精-64875|intelligence902-智慧|life1219-生命|divine_toughness1167-殘忍準備|intelligence882-智慧|mana388-魔力回復和生命|mana397-魔力回復和生命|life_mana_notable1730-快速回復|dexterity869-敏捷|intelligence885-智慧|spellcaster_notable1873-制裁|life1407-生命|discipline_and_training1194-嚴峻訓練|minion_damage1152-召喚物生命|minion_life1124-召喚物生命|additional_minions1150-獻祭|minion_damage769-召喚物攻擊和施放速度|player_and_minion_notable2237-精神號令|damage_and_minion_damage2226-召喚物攻擊和施放速度|intelligence904-智慧|shield_damage_elemental2554-法術格擋|shield_damage_elemental2555-法術格擋和元素抗性|shield_damage_elemental2556-法術格擋和元素抗性|shield_damage_elemental_notable2557-庇護|life187-生命和能量護盾|life182-生命和能量護盾|life1161-生命和能量護盾|fitness1212-肉體之純潔|mastery_life131-生命專精-34242|intelligence912-智慧|intelligence919-智慧|intelligence921-智慧|intelligence955-智慧|minion_life1125-召喚物生命和傷害|minion_damage1128-召喚物傷害|minion_damage1129-召喚物傷害|additional_spectre278-亡靈諧曲|aura_area_of_effect1205-光環效果範圍|reduced_mana_reservation1198-保留效用|reduced_mana_reservation1197-保留效用|aura_effect_reservation_cost_notable1559-主權|intelligence917-智慧|speed_and_minion_speed2231-召喚物傷害和攻擊和施放速度|speed_and_minion_speed2230-召喚物傷害和攻擊和施放速度|player_and_minion_notable2238-救贖|damage_and_minion_damage2228-召喚物傷害和生命|damage_and_minion_damage2227-召喚物傷害和生命|player_and_minion_notable2236-正義軍團|strength811-力量|strength824-力量|life1209-生命|fitness1186-奉獻|strength780-力量|strength784-力量|strength1012-力量|strength1002-力量|agility876-超群身法|strength827-力量|strength814-力量|shield_block32-持盾元素抗性|shield_defences1063-盾牌格擋和持盾元素抗性|shield_mastery34-庇護聖所|mastery_shield212-盾牌專精-30612|life_reduced_mana_cost1934-生命與減少消耗|life_reduced_mana_cost1936-生命與減少消耗|life_reduced_mana_cost1935-生命與減少消耗|life_reduced_mana_notable1937-冷酷|strength791-力量|strength806-力量|life_resistances1899-生命與元素抗性|life_resistances_notable1900-野蠻|strength787-力量|strength781-力量|life_and_armour1902-生命與護甲|life_armour_flask_life_notable1903-戰神|mastery_life134-護甲專精-48720|shield_damage_block2552-盾牌傷害|shield_damage_block2551-盾牌傷害和格擋|shield_damage_block_notable2553_-進擊的壁壘|strength775-力量|block_node_2933-格檔|block_node_2932-格檔|block_notable_2934-宛如神山|armour94-護甲和能量護盾|armour95-護甲和能量護盾|armour_crit_reduction_notable1944-靈思聖殿|mastery_armour9-護甲和能量護盾專精-16215|intelligence890-智慧|curse_mitigation2835-詛咒和混沌抗性|curse_mitigation2834-詛咒和混沌抗性|curse_mitigation_notable2836-避難所|mastery_resistance261-保護專精-9074|strength998-力量|dexterity973-敏捷|minion_damage1126-召喚物傷害和命中|minion_damage1127-召喚物傷害和命中|minion_damage284-召喚物傷害和命中|additional_minions1123-亡靈之約|accuracy_minion_accuracy_and_resists2234-召喚物傷害|accuracy_minion_accuracy_and_resists2235-召喚物傷害|")
-
-SetNeedAddTianFu("野蛮人升华=AscendancyChieftan5-生命回復、火焰抗性|AscendancyChieftan10-淨化之水．塔薩里奧|AscendancyChieftan4-生命回復、火焰傷害|AscendancyChieftan9-死之狂怒．悉妮蔻拉|")
-
 SetNeedAddTianFu("野蛮人=melee_damage687-近戰傷害和生命|strength810-力量|strength808-力量|strength809-力量|intelligence945-智慧|strength998-力量|strength1002-力量|agility876-超群身法|savant878-先祖智慧|strength1012-力量|strength784-力量|strength780-力量|strength824-力量|strength811-力量|intelligence917-智慧|speed_and_minion_speed2231-召喚物傷害和攻擊和施放速度|speed_and_minion_speed2230-召喚物傷害和攻擊和施放速度|player_and_minion_notable2238-救贖|intelligence912-智慧|aura_area_of_effect1205-光環效果範圍|reduced_mana_reservation1198-保留效用|reduced_mana_reservation1197-保留效用|aura_effect_reservation_cost_notable1559-主權|intelligence919-智慧|intelligence921-智慧|intelligence955-智慧|minion_life1125-召喚物生命和傷害|minion_damage1128-召喚物傷害|minion_damage1129-召喚物傷害|additional_spectre278-亡靈諧曲|intelligence886-智慧|intelligence911-智慧|elemental_overload_keystone2152-元素超載|life1161-生命和能量護盾|fitness1212-肉體之純潔|life182-生命和能量護盾|life187-生命和能量護盾|intelligence904-智慧|damage_and_minion_damage2226-召喚物攻擊和施放速度|minion_damage769-召喚物攻擊和施放速度|player_and_minion_notable2237-精神號令|minion_life1124-召喚物生命|additional_minions1150-獻祭|minion_damage1152-召喚物生命|shield_damage_elemental2554-法術格擋|shield_damage_elemental2555-法術格擋和元素抗性|shield_damage_elemental2556-法術格擋和元素抗性|shield_damage_elemental_notable2557-庇護|intelligence885-智慧|spellcaster_notable1873-制裁|life1407-生命|discipline_and_training1194-嚴峻訓練|dexterity869-敏捷|intelligence882-智慧|mana388-魔力回復和生命|mana397-魔力回復和生命|life_mana_notable1730-快速回復|strength828-力量|minion_duration2624_-召喚物傷害和持續時間|minion_duration2625-召喚物傷害和持續時間|minion_duration_notable2626-持久合作|intelligence890-智慧|curse_mitigation2835-詛咒和混沌抗性|curse_mitigation2834-詛咒和混沌抗性|curse_mitigation_notable2836-避難所|mana_arcane_surge2587-魔力和秘能波動效果|mana_arcane_surge2588_-魔力和秘能波動效果|mana_arcane_surge_notable2590-秘能容器|mastery_mana160-魔力專精-64875|damage_and_minion_damage2228-召喚物傷害和生命|damage_and_minion_damage2227-召喚物傷害和生命|player_and_minion_notable2236-正義軍團|dexterity973-敏捷|minion_damage1126-混沌抗性與召喚物傷害|minion_damage1127-混沌抗性與召喚物傷害|minion_damage284-混沌抗性與召喚物傷害|additional_minions1123-亡靈之約|strength827-力量|life_reduced_mana_cost1934-生命與減少消耗|life_reduced_mana_cost1936-生命與減少消耗|life_reduced_mana_cost1935-生命與減少消耗|life_reduced_mana_notable1937-冷酷|strength814-力量|shield_block32-持盾元素抗性|shield_defences1063-盾牌格擋和持盾元素抗性|shield_mastery34-庇護聖所|mastery_shield212-盾牌專精-30612|strength791-力量|strength806-力量|life_resistances1899-生命與元素抗性|life_resistances_notable1900-野蠻|strength787-力量|strength781-力量|life_and_armour1902-生命與護甲|life_armour_flask_life_notable1903-戰神|shield_damage_block2552-盾牌傷害|shield_damage_block2551-盾牌傷害和格擋|shield_damage_block_notable2553_-進擊的壁壘|strength775-力量|block_node_2933-格檔|block_node_2932-格檔|block_notable_2934-宛如神山|savant901-奧術師之統御|life_mana1639-魔力和生命|life_mana_notable1638-心與靈|minion_damage285-召喚物傷害|lord_of_the_dead1122-亡靈之主|")
 
 
---异界天赋 種子-精髓-神諭-炸墳-寶箱
---SetNeedAddTianFu([[异界地图天赋=atlas_path_22-相鄰地圖掉落機率|atlas_path_12-相鄰地圖掉落機率|atlas_path_24_-相鄰地圖掉落機率|atlas_path_16-相鄰地圖掉落機率|atlas_path_25_-相鄰地圖掉落機率|atlas_path_27-相鄰地圖掉落機率|atlas_path_28-相鄰地圖掉落機率|atlas_map_drops_20-聖甲蟲掉落率|atlas_map_drops_2-聖甲蟲掉落率|atlas_map_drops_4-聖甲蟲掉落率|atlas_map_drops_8-聖甲蟲掉落率|atlas_path_92-聖甲蟲掉落率|atlas_path_61-物品數量|atlas_path_44-物品數量|atlas_path_35-物品數量|atlas_path_39-物品數量|atlas_path_34-物品數量|atlas_path_80-地圖詞綴效果|atlas_map_drops_7-地圖詞綴效果|atlas_mod_effect_6-地圖詞綴效果|atlas_keystone_nofragments_1-堅定不移的遠見|atlas_harbinger_1_1-額外神諭碎片|atlas_harbinger_1_2_-額外神諭碎片|atlas_harbinger_1_4-額外神諭碎片|atlas_harbinger_1_3-不祥到來|atlas_harbinger_3_1-額外神諭機率|atlas_harbinger_3_5-額外神諭碎片|atlas_harbinger_3_3-額外神諭碎片|atlas_harbinger_3_4-不可描述侵犯|atlas_harbinger_3_2-額外神諭機率|atlas_harbinger_3_6-額外神諭機率|atlas_harbinger_2_3-額外神諭機率|atlas_harbinger_2_5-額外神諭機率|atlas_harbinger_2_2-額外神諭機率|atlas_path_14-相鄰地圖掉落機率|atlas_path_26-相鄰地圖掉落機率|atlas_harvest_1_2-豐收機率|atlas_harvest_1_3-豐收機率|atlas_harvest_1_1-豐收機率|atlas_harvest_1_4-密園呼喚|atlas_harvest_2_1-豐收怪物複製機率|atlas_harvest_3_2-豐收機率|atlas_harvest_3_5-豐收機率|atlas_harvest_4_1-豐收額外生靈之力|atlas_harvest_2_3-豐收額外生靈之力|atlas_harvest_2_4-豐收額外生靈之力|atlas_harvest_3_4__-豐收|atlas_harvest_4_2-豐收怪物複製機率|atlas_harvest_2_5_-大豐收|atlas_path_83-聖甲蟲掉落率|atlas_harvest_4222-豐收額外生靈之力|atlas_harvest_4220-豐收額外生靈之力|atlas_harvest_4225-豐收額外生靈之力|atlas_harvest_4212-倍增期|atlas_harvest_4218-豐收機率|atlas_boss_adjacent_maps_10-物品數量和稀有度|atlas_boss_adjacent_maps_12-物品數量和稀有度|atlas_harvest_3_1-豐收階級 3 作物機率|atlas_harvest_2_6-密園之心|atlas_harvest_2_7-豐收階級 3 作物機率|atlas_harvest_3_3-豐收階級 3 作物機率|atlas_boss_adjacent_maps_2-相鄰地圖掉落機率|atlas_essence_1_1-精髓稀有機率|atlas_essence_1_5-精髓稀有機率|atlas_essence_1_3-海量精華|atlas_boss_adjacent_maps_11-物品數量和稀有度|atlas_essence_2_2-精髓機率|atlas_essence_2_4-強化能量|atlas_essence_2_5-精髓機率|atlas_essence_2_3-精髓機率|atlas_path_93-聖甲蟲掉落率|atlas_map_drops_9-聖甲蟲掉落率|atlas_map_drops_15-聖甲蟲掉落率|atlas_essence_3_1-精髓機率|atlas_essence_3_2-禁錮怪物額外精髓機率|atlas_essence_3_3-禁錮怪物額外精髓機率|atlas_essence_3_5-水晶共振|atlas_map_drops_16-聖甲蟲掉落率|atlas_map_drops_1-聖甲蟲掉落率|atlas_map_drops_10-聖甲蟲掉落率|atlas_map_drops_11-聖甲蟲掉落率|atlas_path_4-相鄰地圖掉落機率|atlas_path_7-相鄰地圖掉落機率|atlas_essence_4_1-禁錮怪物額外精髓機率|atlas_essence_4_2-禁錮怪物額外精髓機率|atlas_essence_4_3-禁錮怪物額外精髓機率|atlas_essence_4_4-水晶格|atlas_expedition_3_3_-探險機率|atlas_keystone_expedition_single_explosive-極限考古學|atlas_expedition_3_4-探險商人重骰通貨機率|atlas_expedition_3_5-古文|atlas_expedition_1_2-探險機率|atlas_expedition_4209-探險機率|atlas_expedition_4208-探險機率|atlas_expedition_1_3-尋找答案|atlas_expedition_4_1-探險機率|atlas_expedition_4_2-爆裂物放置距離|atlas_expedition_1_4-傑出的拆遷專家|atlas_strongbox_1_2-保險箱額外怪物群機率|atlas_strongbox_1_4-保險箱額外怪物群機率|atlas_strongbox_1_1-二次誘惑|atlas_strongbox_2_3-重新開啟保險箱機率|atlas_strongbox_2_2-重新開啟保險箱機率|atlas_strongbox_2_1-防篡改|atlas_strongbox_2_4-重新開啟保險箱機率|atlas_strongbox_2_5-秘密伏擊|atlas_strongbox_3_1-保險箱物品數量|atlas_strongbox_3_2-奧術師的保險箱機率|atlas_strongbox_3_6-奧術師的保險箱機率|atlas_strongbox_3_5-備份暫存|atlas_expedition_4_5-探險機率|atlas_expedition_3_7-探險機率|atlas_expedition_4_7-探險機率|atlas_expedition_4_4-探險文物數量|atlas_expedition_1_1-探險文物數量|]])
-
---异界天赋 種子-祭祀-神諭-炸墳
---SetNeedAddTianFu([[异界地图天赋=atlas_path_22-相鄰地圖掉落機率|atlas_path_12-相鄰地圖掉落機率|atlas_path_24_-相鄰地圖掉落機率|atlas_path_16-相鄰地圖掉落機率|atlas_path_25_-相鄰地圖掉落機率|atlas_path_27-相鄰地圖掉落機率|atlas_path_28-相鄰地圖掉落機率|atlas_map_drops_20-聖甲蟲掉落率|atlas_map_drops_2-聖甲蟲掉落率|atlas_map_drops_4-聖甲蟲掉落率|atlas_map_drops_8-聖甲蟲掉落率|atlas_path_92-聖甲蟲掉落率|atlas_path_61-物品數量|atlas_path_44-物品數量|atlas_path_35-物品數量|atlas_path_39-物品數量|atlas_path_34-物品數量|atlas_path_80-地圖詞綴效果|atlas_map_drops_7-地圖詞綴效果|atlas_mod_effect_6-地圖詞綴效果|atlas_keystone_nofragments_1-堅定不移的遠見|atlas_harbinger_1_1-額外神諭碎片|atlas_harbinger_1_2_-額外神諭碎片|atlas_harbinger_1_4-額外神諭碎片|atlas_harbinger_1_3-不祥到來|atlas_harbinger_3_1-額外神諭機率|atlas_harbinger_3_5-額外神諭碎片|atlas_harbinger_3_3-額外神諭碎片|atlas_harbinger_3_4-不可描述侵犯|atlas_harbinger_3_2-額外神諭機率|atlas_harbinger_3_6-額外神諭機率|atlas_harbinger_2_3-額外神諭機率|atlas_harbinger_2_5-額外神諭機率|atlas_harbinger_2_2-額外神諭機率|atlas_path_14-相鄰地圖掉落機率|atlas_path_26-相鄰地圖掉落機率|atlas_harvest_1_2-豐收機率|atlas_harvest_1_3-豐收機率|atlas_harvest_1_1-豐收機率|atlas_harvest_1_4-密園呼喚|atlas_harvest_2_1-豐收怪物複製機率|atlas_harvest_3_2-豐收機率|atlas_harvest_3_5-豐收機率|atlas_harvest_4_1-豐收額外生靈之力|atlas_harvest_2_3-豐收額外生靈之力|atlas_harvest_2_4-豐收額外生靈之力|atlas_harvest_3_4__-豐收|atlas_harvest_4_2-豐收怪物複製機率|atlas_harvest_2_5_-大豐收|atlas_path_83-聖甲蟲掉落率|atlas_harvest_4222-豐收額外生靈之力|atlas_harvest_4220-豐收額外生靈之力|atlas_harvest_4225-豐收額外生靈之力|atlas_harvest_4212-倍增期|atlas_harvest_4218-豐收機率|atlas_boss_adjacent_maps_10-物品數量和稀有度|atlas_boss_adjacent_maps_12-物品數量和稀有度|atlas_harvest_3_1-豐收階級 3 作物機率|atlas_harvest_2_6-密園之心|atlas_harvest_2_7-豐收階級 3 作物機率|atlas_harvest_3_3-豐收階級 3 作物機率|atlas_path_93-聖甲蟲掉落率|atlas_map_drops_9-聖甲蟲掉落率|atlas_map_drops_15-聖甲蟲掉落率|atlas_map_drops_16-聖甲蟲掉落率|atlas_map_drops_1-聖甲蟲掉落率|atlas_path_17-相鄰地圖掉落機率|atlas_path_18-相鄰地圖掉落機率|atlas_path_15-相鄰地圖掉落機率|atlas_path_2-相鄰地圖掉落機率|atlas_ritual_1_1-祭祀機率|atlas_ritual_1_2-祭祀機率|atlas_ritual_1_3-祭祀機率|atlas_ritual_1_4-聖地|atlas_path_82-聖甲蟲掉落率|atlas_map_drops_14-聖甲蟲掉落率|atlas_ritual_3_1-祭祀機率|atlas_ritual_3_2-重骰後免費獎勵機率|atlas_ritual_3_5-重骰後免費獎勵機率|atlas_ritual_3_4-貪財信徒|atlas_ritual_3_3-祭祀重骰消耗|atlas_ritual_3_6-祭祀重骰消耗|atlas_ritual_4253-靈活教條|atlas_path_85-聖甲蟲掉落率|atlas_mod_effect_1-地圖詞綴效果|atlas_ritual_4267-祭祀機率|atlas_ritual_4266-增加祭祀延遲消耗|atlas_ritual_4265_-增加祭祀延遲消耗|atlas_ritual_4254_-已答上訴|atlas_mod_effect_9-地圖詞綴效果|atlas_mod_effect_10-地圖詞綴效果|atlas_path_51-地圖詞綴效果|atlas_mod_effect_2-地圖詞綴效果|atlas_mod_effect_3-地圖詞綴效果|atlas_ritual_2_6-祭祀機率|atlas_ritual_2_3-祭祀貢禮數量|atlas_ritual_2_4_-祭祀貢禮數量|atlas_ritual_2_5-神秘奉獻|atlas_expedition_1_2-探險機率|atlas_expedition_4209-探險機率|atlas_expedition_4208-探險機率|atlas_expedition_1_3-尋找答案|atlas_expedition_3_3_-探險機率|atlas_keystone_expedition_single_explosive-極限考古學|atlas_expedition_3_4-探險商人重骰通貨機率|atlas_expedition_3_5-古文|atlas_expedition_4_5-探險機率|atlas_expedition_4_3-探險文物數量|atlas_expedition_4_6-被埋葬的知識|atlas_expedition_3_7-探險機率|atlas_expedition_4_7-探險機率|atlas_expedition_4_1-探險機率|atlas_expedition_4_2-爆裂物放置距離|atlas_expedition_1_4-傑出的拆遷專家|atlas_harbinger_2_4-初潮|]])
-
 --异界天赋 輿圖點速刷轉EB
-SetNeedAddTianFu([[异界地图天赋=atlas_boss_adjacent_maps_2-相鄰地圖掉落機率|atlas_path_23_-相鄰地圖掉落機率|atlas_boss_adjacent_maps_1-相鄰地圖掉落機率|atlas_boss_adjacent_maps_8-相鄰地圖掉落機率|atlas_zana_1_11-偵查報告掉落機率|atlas_zana_1_3-偵查報告掉落機率|atlas_zana_1_6-重點偵察|atlas_zana_1_1-偵查報告掉落機率|atlas_zana_1_2-偵查報告掉落機率|atlas_path_96-聖甲蟲掉落率|atlas_map_tier_3_3-雕塑世界|atlas_map_tier_5_2-高階地圖機率|atlas_keystone_fortune_favours_doubled-大膽行動|atlas_map_tier_4_1-高階地圖機率|atlas_map_tier_5_1-高階地圖機率|atlas_path_61-物品數量|atlas_path_44-物品數量|atlas_path_35-物品數量|atlas_path_39-物品數量|atlas_path_34-物品數量|atlas_path_80-物品稀有度|atlas_map_drops_7-物品稀有度|atlas_mod_effect_6-地圖詞綴效果|atlas_keystone_nofragments_1-堅定不移的遠見|atlas_map_tier_3_2-高階地圖機率|atlas_map_tier_3_1-高階地圖機率|atlas_path_38-相鄰地圖掉落機率|atlas_path_21-相鄰地圖掉落機率|atlas_path_27-相鄰地圖掉落機率|atlas_path_28-相鄰地圖掉落機率|atlas_map_tier_1_2_-高階地圖機率|atlas_map_tier_1_1-高階地圖機率|atlas_map_tier_1_3-雕塑山型|atlas_path_37-相鄰地圖掉落機率|atlas_path_30-相鄰地圖掉落機率|atlas_path_18-相鄰地圖掉落機率|atlas_path_17-相鄰地圖掉落機率|atlas_map_tier_2_1-高階地圖機率|atlas_map_tier_2_2-高階地圖機率|atlas_map_tier_2_3-雕塑天空|atlas_path_15-相鄰地圖掉落機率|atlas_path_2-相鄰地圖掉落機率|atlas_path_10-相鄰地圖掉落機率|atlas_path_1-相鄰地圖掉落機率|atlas_path_20-相鄰地圖掉落機率|atlas_path_9-相鄰地圖掉落機率|atlas_path_6-相鄰地圖掉落機率|atlas_path_8-相鄰地圖掉落機率|atlas_path_5-相鄰地圖掉落機率|atlas_path_13-相鄰地圖掉落機率|atlas_path_25_-相鄰地圖掉落機率|atlas_path_16-相鄰地圖掉落機率|atlas_path_24_-相鄰地圖掉落機率|atlas_path_12-相鄰地圖掉落機率|atlas_path_22-相鄰地圖掉落機率|atlas_path_14-相鄰地圖掉落機率|atlas_path_26-相鄰地圖掉落機率|]])
+SetNeedAddTianFu([[异界地图天赋=atlas_path_9-相鄰地圖掉落機率|atlas_path_20-相鄰地圖掉落機率|atlas_path_1-相鄰地圖掉落機率|atlas_path_19-相鄰地圖掉落機率|atlas_path_10-相鄰地圖掉落機率|atlas_boss_adjacent_maps_2-相鄰地圖掉落機率|atlas_path_23_-相鄰地圖掉落機率|atlas_boss_adjacent_maps_1-相鄰地圖掉落機率|atlas_path_8-相鄰地圖掉落機率|atlas_path_13-相鄰地圖掉落機率|atlas_path_22-相鄰地圖掉落機率|atlas_path_12-相鄰地圖掉落機率|atlas_path_24_-相鄰地圖掉落機率|atlas_path_16-相鄰地圖掉落機率|atlas_path_25_-相鄰地圖掉落機率|atlas_path_27-相鄰地圖掉落機率|atlas_path_21-相鄰地圖掉落機率|atlas_path_38-相鄰地圖掉落機率|atlas_boss_adjacent_maps_8-相鄰地圖掉落機率|atlas_path_37-相鄰地圖掉落機率|atlas_path_30-相鄰地圖掉落機率|atlas_path_18-相鄰地圖掉落機率|atlas_kirac_1_10-基拉克任務機率|atlas_kirac_1_9-基拉克任務機率|atlas_zana_1_5_chayula-預期意外|atlas_kirac_1_8_-基拉克任務機率|atlas_kirac_1_7-基拉克任務機率|atlas_path_96-聖甲蟲掉落率|atlas_zana_1_4-委任官員|atlas_path_28-相鄰地圖掉落機率|atlas_map_tier_1_2_-高階地圖機率|atlas_map_tier_1_1-高階地圖機率|atlas_map_tier_1_3-雕塑山型|atlas_path_17-相鄰地圖掉落機率|atlas_map_tier_2_1-高階地圖機率|atlas_map_tier_2_2-高階地圖機率|atlas_map_tier_2_3-雕塑天空|atlas_path_94-聖甲蟲掉落率|atlas_map_drops_8-聖甲蟲掉落率|atlas_path_92-聖甲蟲掉落率|atlas_path_61-物品數量|atlas_path_44-物品數量|atlas_path_35-物品數量|atlas_path_39-物品數量|atlas_path_34-物品數量|atlas_path_80-物品稀有度|atlas_map_drops_7-物品稀有度|atlas_mod_effect_6-地圖詞綴效果|atlas_keystone_nofragments_1-堅定不移的遠見|atlas_path_95-聖甲蟲掉落率|atlas_map_drops_9-聖甲蟲掉落率|atlas_map_drops_15-聖甲蟲掉落率|atlas_path_82-聖甲蟲掉落率|atlas_map_drops_14-聖甲蟲掉落率|atlas_path_85-聖甲蟲掉落率|atlas_mod_effect_1-地圖詞綴效果|atlas_mod_effect_9-地圖詞綴效果|atlas_cleansing_fire_1_4-灼烙總督物品機率|atlas_cleansing_fire_1_12_-灼烙總督物品機率|atlas_cleansing_fire_1_3-灼烙總督物品機率|atlas_cleansing_fire_1_7-火紋身|]])
