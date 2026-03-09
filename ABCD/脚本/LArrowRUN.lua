@@ -19,7 +19,7 @@ SetUseZhuangBeiTypeData("Str|StrInt|Int","手套")
 SetUseZhuangBeiTypeData("Str|StrDex|Dex","鞋子")
 SetUseZhuangBeiTypeData("StrInt","项链")
 
-g_attackDis=50				--攻击距离
+g_attackDis=30			--攻击距离
 g_duobiHpVal=0.2
 
 --SetNeedSkillLineData(val,str,invalidLv,pos)--设置换技能宝石数据 
@@ -44,9 +44,9 @@ AddAttackSkillData("閃電箭矢","Lightning Arrow",false,100,0)--添加攻击技能
 AddAttackSkillData("電流箭矢","Galvanic Arrow",false,50,0)--添加攻击技能
 AddAttackSkillData("燃燒箭矢","Burning Arrow")
 AddAttackSkillData("普通攻击","melee")
-SetDebuffSkill(nil,"snipers_mark",nil,"curse_snipers_mark")--狙擊者印記
 
 --SetSkillLimitMaxLv(name,className,maxLv)--设置技能宝石最大等级 name=技能宝石物品名 className=技能宝石物品类名 maxLv=限制的最大等级
+SetDebuffSkill(nil,"snipers_mark",nil,"curse_snipers_mark")--狙擊者印記
 SetSkillLimitMaxLv("鋼筋鐵骨",nil,14)
 
 -- SetYiJieZhaoHuanLingTiData(mapClassName,name,className)--设置异界时召唤的灵体数据 mapClassName=剧情图类名 name=灵体名 className=灵体类名
