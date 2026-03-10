@@ -5,7 +5,7 @@ do
 	package.loaded[loadArr[i]]=nil;
 	require(loadArr[i]);
 end
-g_changeHunDunLv=84         --多少级前不换C
+g_changeHunDunLv=70         --多少级前不换C
 g_zhuaShenLv=99             --多少级前不抓众神
 g_yuyanCnt=99				--够多少银币去预言
 g_needSuDiLv=99             --大于等于多少级打宿敌
@@ -63,12 +63,12 @@ SetNeedFlaskData(1,"生命药剂","沸腾的,	FlaskFullInstantRecovery1",68,"不朽生命藥
 g_useMoveSkillType=nil		--使用位移技能赶路场景 nil为一直都使用 0为剧情时使用 1为异界生产使用 2为从不使用
 g_shengJiBaoShi=true		--自动升级宝石 true为升级 nil或false为不升级
 g_notShuaBaiPao=true        --是否刷白袍 true为不刷 nil或false为刷
-g_attackDis=40			    --攻击距离
-g_duobiHpVal=0.2            --打怪时HP少于多少躲避
-g_yiJieLv=70				--够了多少级才去刷异界
+g_attackDis=50			    --攻击距离
+g_duobiHpVal=0.3            --打怪时HP少于多少躲避
+g_yiJieLv=80				--够了多少级才去刷异界
 --SetTaskShengJiData(taskClassName,taskIndex,shengjiMapClassName,needLv)--设置跑图时升级 taskClassName=任务类名 taskIndex=任务索引 nil为忽略，只匹配任务类名 shengjiMapClassName=要刷的地图类名 needLv=升级到多少级为止
-SetTaskShengJiData("a5q7",nil,"1_5_5",47)--做 到奇塔弗的受难 的时候刷纯净圣地到45级再进行下一任务
-SetTaskShengJiData("a9q3",nil,"2_9_1",65)--滲血水道
+SetTaskShengJiData("a5q7",nil,"1_5_5",46)--做 到奇塔弗的受难 的时候刷纯净圣地到45级再进行下一任务
+SetTaskShengJiData("a9q3",nil,"2_9_1",63)--滲血水道
 SetTaskShengJiData("a10q3",nil,"2_9_1",85)--滲血水道
 
 --SetTaskMiGongData(taskClassName,taskIndex,migongIndex)--设置跑图时迷宫 taskClassName=任务类名 taskIndex=任务索引 nil为忽略，只匹配任务类名 migongIndex为迷宫索引填 1=第一次迷宫 2=第二次迷宫
@@ -209,12 +209,6 @@ SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","盾","护甲",10,2)
 SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","盾","base_maximum_life",20,2)                                    --加基礎最大生命
 SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","鞋子","movement_velocity_+%",30,2)                               --移动速度 +%
 SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","鞋子","base_movement_velocity_+%",40,2)                          --基础移动速度 +%
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","法杖","minion_critical_strike_multiplier_+",898,2)               --召唤暴击加成
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","法杖","minion_critical_strike_chance_+%",999,2)                  --召唤暴击
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","法杖","minion_attack_and_cast_speed_+%",8988,2)                  --召唤攻擊和施放速度
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","法杖","minion_damage_+%",9999,2)                                 --召唤伤害
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","法杖","spell_skill_gem_level_+%",88888,2)                        --全部法术等级+1
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","法杖","minion_skill_gem_leve_+%",99999,2)                        --召唤物等级+1
 SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","项链","base_maximum_life",5,2)                                   --加基礎最大生命
 SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","项链","additional_strength",10,2)                                --力量
 SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","项链","additional_intelligence",10,2)                            --智慧
@@ -285,7 +279,7 @@ SetZhengTiColorVarData(10,0,2,0,nil,200,true)
 SetZhengTiColorVarData(10,0,1,0,nil,100)
 
 --女巫--主线
-AddShengJiZhuangBeiGoodsData("点金石","Metadata/Items/Currency/CurrencyUpgradeToRare",0,40,0)--主线生效 超过50级就用点金点白色装备
+AddShengJiZhuangBeiGoodsData("点金石","Metadata/Items/Currency/CurrencyUpgradeToRare",0,80,0)--主线生效 超过50级就用点金点白色装备
 AddShengJiZhuangBeiGoodsData("富豪石","Metadata/Items/Currency/CurrencyUpgradeMagicToRare",1,40,0)--主线生效 超过50级就用富豪点蓝色装备
 
 ---------------------------------------高级换装

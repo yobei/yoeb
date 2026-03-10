@@ -103,9 +103,9 @@ AddNeedBuySkillTime(6,"a6q1")	--在第6章的惊海之王时 检测购买一遍
 AddNeedBuySkillTime(6,"a6q2")
 AddNeedBuySkillTime(6,"a6q3")
 AddNeedBuySkillTime(6,"a6q5")
-AddNeedBuySkillTime(6,"a7q2")
-AddNeedBuySkillTime(6,"a8q2")
-AddNeedBuySkillTime(6,"a10q2")	--第10章的死亡和重生任务 检测购买一遍
+AddNeedBuySkillTime(7,"a7q2")
+AddNeedBuySkillTime(8,"a8q2")
+AddNeedBuySkillTime(10,"a10q2")	--第10章的死亡和重生任务 检测购买一遍
 AddNeedBuySkillTime(11,"a11q1")	--在拾取碎片 这个任务时检测购买一遍
 
 
@@ -174,7 +174,7 @@ g_yuyanCnt=nil				--够多少银币去预言，小于10银币或填nil将不会触发 如果设定去预言
 --SetNotMapGoMap(className,cnt) 设置无地图或未到等级时要刷的剧情地图 className字符串型 地图类名 cnt=次数
 SetNotMapGoMap("2_9_1",10)	--无地图时刷血色通道
 
-g_yiJieLv=70				--够了多少级才去刷异界
+g_yiJieLv=80				--够了多少级才去刷异界
 g_checkSellMapCnt=100		--地图超过这个数量才会检测出售地图
 g_destroyNoUseMap=true		--销毁上面设置不使用的地图 nil或false为不销毁
 g_mapUseFuHaoLv=78			--大于等于多少级对蓝图使用富豪石 nil为永远不使用
