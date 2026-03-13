@@ -19,7 +19,7 @@
 g_needMinimizeGame=false			--最小化遊戲窗口 true为最小化 false或nil为不最小化
 g_imBoss=false					--如果是仓库号要为true 挂机号为false
 g_attackDis=40					--攻击距离
-g_yiJieTimeOut=15*60			--异界地图内的超时时间 单位为秒 如果未设置就会用g_timeOut *是乘号 这里为15乘以60=15分钟
+g_yiJieTimeOut=25*60			--异界地图内的超时时间 单位为秒 如果未设置就会用g_timeOut *是乘号 这里为15乘以60=15分钟
 g_timeOut=25*60					--在一个地图呆的时间超过设置的 就重新开图重新 单位为秒
 g_addTianFu=true				--自动按设定好的配置加天赋 true为加 nil或false为不加
 g_shengJiBaoShi=true			--自动升级宝石 true为升级 nil或false为不升级
@@ -368,8 +368,8 @@ SetGoodsCaoZuo(nil,nil,"点金石","Metadata/Items/Currency/CurrencyUpgradeToRare",
 SetGoodsCaoZuo(nil,"0|1",nil,nil,nil,nil,nil,nil,"0|1|2",6)--6洞装设置捡卖
 SetGoodsCaoZuo(nil,"0|1",nil,nil,nil,nil,nil,nil,"0|1|2",nil,6)--6连洞装设置捡卖
 SetGoodsCaoZuo(nil,"1|3","玻璃弹珠","Metadata/Items/Currency/CurrencyFlaskQuality")--
-SetGoodsCaoZuo(nil,"0","磨刀石","Metadata/Items/Currency/CurrencyWeaponQuality")--磨刀石不存
-SetGoodsCaoZuo(nil,"0","护甲片","Metadata/Items/Currency/CurrencyArmourQuality")--护甲片不存
+SetGoodsCaoZuo(nil,"0|1","磨刀石","Metadata/Items/Currency/CurrencyWeaponQuality")--磨刀石不存
+SetGoodsCaoZuo(nil,"0|1","护甲片","Metadata/Items/Currency/CurrencyArmourQuality")--护甲片不存
 SetGoodsCaoZuo(nil,"3","卷轴碎片","Metadata/Items/Currency/CurrencyIdentificationShard")--卷轴碎片丢
 SetGoodsCaoZuo(nil,"3","预言","Metadata/Items/Currency/CurrencyItemisedProphecy")--丢预言
 SetGoodsCaoZuo(nil,"1|3","祝福石","Metadata/Items/Currency/CurrencyRerollImplicit")--
