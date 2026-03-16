@@ -60,6 +60,10 @@ SetNeedFlaskData(1,"生命药剂","沸腾的,	FlaskFullInstantRecovery1",68,"不朽生命藥
 --SetMapGongYi(name)
 --name 字符串型 地图工艺的名字 开图时会选择相符的地图工艺
 
+SetSellGoodsData("蜕变石","Metadata/Items/Currency/CurrencyUpgradeToMagic",30,"0|1|2")
+
+
+
 g_useMoveSkillType=nil		--使用位移技能赶路场景 nil为一直都使用 0为剧情时使用 1为异界生产使用 2为从不使用
 g_shengJiBaoShi=true		--自动升级宝石 true为升级 nil或false为不升级
 g_notShuaBaiPao=true        --是否刷白袍 true为不刷 nil或false为刷
@@ -277,7 +281,7 @@ SetZhengTiColorVarData(10,0,2,0,nil,200,true)
 SetZhengTiColorVarData(10,0,1,0,nil,100)
 
 --女巫--主线
--- AddShengJiZhuangBeiGoodsData("点金石","Metadata/Items/Currency/CurrencyUpgradeToRare",0,80,0)--主线生效 超过50级就用点金点白色装备
+AddShengJiZhuangBeiGoodsData("点金石","Metadata/Items/Currency/CurrencyUpgradeToRare",0,80,0)--主线生效 超过50级就用点金点白色装备
 -- AddShengJiZhuangBeiGoodsData("富豪石","Metadata/Items/Currency/CurrencyUpgradeMagicToRare",1,40,0)--主线生效 超过50级就用富豪点蓝色装备
 
 ---------------------------------------高级换装
@@ -312,22 +316,22 @@ SetZhengTiColorVarData(10,0,1,0,nil,100)
 --22faZhuangLv 数字型 发装等级 满多少级才向发装号要装备 如果填了，就会按照设置的等级向发装号要 如果填nil的话 白袍从1级开始要，其他装备从进异界开始要
 --23minLv 数字型 满多少级生效
 --24maxLv 数字型 满多少级失效
-SetGaoJiHuanZhuangData("游侠","简易之袍","Metadata/Items/Armours/BodyArmours/BodyInt1","无尽之衣","Tabula Rasa",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
-SetGaoJiHuanZhuangData("游侠","皮帽","Metadata/Items/Armours/Helmets/HelmetDex1","金缕帽","Goldrim",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,4000)
+--SetGaoJiHuanZhuangData("游侠","简易之袍","Metadata/Items/Armours/BodyArmours/BodyInt1","无尽之衣","Tabula Rasa",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
+--SetGaoJiHuanZhuangData("游侠","皮帽","Metadata/Items/Armours/Helmets/HelmetDex1","金缕帽","Goldrim",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,4000)
 
-SetGaoJiHuanZhuangData("游侠","锻铁戒指","Metadata/Items/Rings/Ring1","英灵宝环","Le Heup of All",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
+--SetGaoJiHuanZhuangData("游侠","锻铁戒指","Metadata/Items/Rings/Ring1","英灵宝环","Le Heup of All",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
 
-SetGaoJiHuanZhuangData("游侠","海灵戒指","Metadata/Items/Rings/Ring3","普兰德斯之记","Perandus Signet",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
+--SetGaoJiHuanZhuangData("游侠","海灵戒指","Metadata/Items/Rings/Ring3","普兰德斯之记","Perandus Signet",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
 
-SetGaoJiHuanZhuangData("游侠","素布腰带","Metadata/Items/Belts/Belt1","幻彩菱织","Prismweave",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
+--SetGaoJiHuanZhuangData("游侠","素布腰带","Metadata/Items/Belts/Belt1","幻彩菱织","Prismweave",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
 
-SetGaoJiHuanZhuangData("游侠","原矢箭袋","Metadata/Items/Quivers/QuiverNew13","平衡棱镜","The Poised Prism",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
+--SetGaoJiHuanZhuangData("游侠","原矢箭袋","Metadata/Items/Quivers/QuiverNew13","平衡棱镜","The Poised Prism",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
 
-SetGaoJiHuanZhuangData("游侠","熊首皮盔","Metadata/Items/Armours/Helmets/HelmetDex7","鼠巢","Rat's Nest",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
+--SetGaoJiHuanZhuangData("游侠","熊首皮盔","Metadata/Items/Armours/Helmets/HelmetDex7","鼠巢","Rat's Nest",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
 
-SetGaoJiHuanZhuangData("游侠","环带护手","Metadata/Items/Armours/Gloves/GlovesDexInt3","沙尘之影","Shadows and Dust",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
+--SetGaoJiHuanZhuangData("游侠","环带护手","Metadata/Items/Armours/Gloves/GlovesDexInt3","沙尘之影","Shadows and Dust",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
 
-SetGaoJiHuanZhuangData("游侠","环带长靴","Metadata/Items/Armours/Boots/BootsDexInt3","日耀","Sundance",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
+--SetGaoJiHuanZhuangData("游侠","环带长靴","Metadata/Items/Armours/Boots/BootsDexInt3","日耀","Sundance",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
 
 
 SetChangeLimitCnt("武器|衣服|头盔|手套|鞋子",2)
