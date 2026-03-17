@@ -61,6 +61,7 @@ SetNeedFlaskData(1,"生命药剂","沸腾的,	FlaskFullInstantRecovery1",68,"不朽生命藥
 --name 字符串型 地图工艺的名字 开图时会选择相符的地图工艺
 
 SetSellGoodsData("蜕变石","Metadata/Items/Currency/CurrencyUpgradeToMagic",30,"0|1|2")
+SetGoodsCaoZuo(nil,"0|1","蜕变石","Metadata/Items/Currency/CurrencyUpgradeToMagic",nil,nil,nil,40)--身上保留40
 
 
 
