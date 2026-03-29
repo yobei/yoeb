@@ -20,9 +20,11 @@
 [Type] == "Map" && [Rarity] == "Magic"  # [StashItem] == "true" //
 [Type] == "Map" && [Rarity] == "Normal"  # [StashItem] == "true" //
 [Type] == "Map" && [Rarity] == "Rare"  # [StashItem] == "true" //
-
-[Category] == "Map" # [StashItem] == "true" 
+[Category] == "Map" && [MapTier] >= "1" # [StashItem] == "true" 
+//[Category] == "Map" # [StashItem] == "true" 
 [Category] == "Map" && [Rarity] == "Unique"  # [ForceSellItem] == "true" 
+//sssss[Category] == "Contracts" # [ForceSellItem] == "true"
+
 //[Type] == "Amethyst Flask"&& 		[ItemLevel] >= "50" && [ItemLevel] <="100" # [StashItem] == "true" //紫晶
 //[Type] == "Bismuth Flask"&& 		[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //灰岩
 //[Type] == "Granite Flask"&& 		[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //+1500護甲
@@ -51,7 +53,7 @@
 [Type] == "Orb of Fusing" # [StashItem] == "true" //	//鏈結石		存倉																									
 [Type] == "Orb of Regret" # [StashItem] == "true" //	//後悔石		存倉																									
 [Type] == "Orb of Scouring" # [StashItem] == "true" //	//重鑄石		存倉																									
-//[Type] == "Regal Orb" # [StashItem] == "true" //	//富豪石		存倉																									
+[Type] == "Regal Orb" # [StashItem] == "true" //	//富豪石		存倉																									
 [Type] == "Vaal Orb" # [StashItem] == "true" //	//瓦爾寶珠		存倉																									
 [Type] == "Cartographer's Chisel" # [StashItem] == "true" //	//製圖釘		存倉																									
 //[Type] == "Orb of Horizons" # [StashItem] == "true" //	//地平石		存倉																									
@@ -84,7 +86,7 @@
 
 //																												
 //	// 15F 六連裝 (目前有無法正常賣出的語法錯誤，但是我找不到問題點)			//																								
-//[Sockets] == "6" && [Linked] >= "6" # [ForceSellItem] ="true" //	//六連裝		存倉	//																								
+[Sockets] == "6" && [Linked] >= "6" # [ForceSellItem] ="true" //	//六連裝		存倉	//																								
 //[Sockets] == "6" && [Linked] >= "6" && [Rarity] == "Normal" # [ForceSellItem] =="true"	//普通六連裝			//																								
 //[Sockets] == "6" && [Linked] >= "6" && [Rarity] == "Magic" # [ForceSellItem] =="true"	//魔法六連裝			//																								
 //[Sockets] == "6" && [Linked] >= "6" && [Rarity] == "Rare" # [ForceSellItem] =="true"	//稀有六連裝			//																								
