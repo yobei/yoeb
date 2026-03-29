@@ -6,7 +6,8 @@
 [Category] == "Belt"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && [StashItem] == "true"//	//搬磚用腰帶																											
 [Category] == "Gloves"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && [StashItem] == "true"//	//搬磚用手套																											
 [Category] == "Boots" && [Rarity] == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && [base_movement_velocity_+%] >= "999" && [StashItem] == "true"//	//磚用鞋子																											
-[Category] == "Weapon"         && [Rarity]         == "Rare" # [DPS] > "999" && [StashItem] == "true"//	//搬磚用武器																											
+//[Category] == "Weapon"         && [Rarity]         == "Rare" # [DPS] > "999" && [StashItem] == "true"//	//搬磚用武器														
+[Category] == "one_hand_weapon"         && [Rarity]         == "Rare" # [DPS] > "999" && [StashItem] == "true"//	//搬磚用武器			
 [Category] == "Shield"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && [StashItem] == "true"//	//搬磚用盾牌																											
 //	// 2F 基礎通貨
 
