@@ -177,7 +177,7 @@ g_yuyanCnt=nil				--够多少银币去预言，小于10银币或填nil将不会触发 如果设定去预言
 --SetNotMapGoMap(className,cnt) 设置无地图或未到等级时要刷的剧情地图 className字符串型 地图类名 cnt=次数
 SetNotMapGoMap("2_9_1",10)	--无地图时刷血色通道
 
-g_yiJieLv=80				--够了多少级才去刷异界
+g_yiJieLv=70				--够了多少级才去刷异界
 g_checkSellMapCnt=100		--地图超过这个数量才会检测出售地图
 g_destroyNoUseMap=true		--销毁上面设置不使用的地图 nil或false为不销毁
 g_mapUseFuHaoLv=78			--大于等于多少级对蓝图使用富豪石 nil为永远不使用
@@ -334,6 +334,7 @@ mapClassName="1_1_town"
 SetGoodsCaoZuo("通货|可堆叠通货","0|2")--多个大类设置捡存
 SetGoodsCaoZuo("主动技能宝石|辅助技能宝石","0|2",nil,nil,nil,nil,20)--拾取品质超过5的技能宝石
 SetGoodsCaoZuo("珠宝","1|3",nil,nil,nil,nil)--拾取品质超过5的技能宝石
+SetGoodsCaoZuo("异界地图","0|2",nil,nil,nil,nil,nil,nil,"0|1|2")--拾取白色+蓝色+黄色地图
 SetGoodsCaoZuo(nil,"0|1|4",nil,nil,nil,nil,nil,nil,"3")--拾取 鉴定 出售橙色物品
 SetGoodsCaoZuo(nil,nil,"知识卷轴","Metadata/Items/Currency/CurrencyIdentification",nil,nil,nil,80)--够了就不捡了
 SetGoodsCaoZuo(nil,nil,"传送卷轴","Metadata/Items/Currency/CurrencyPortal",nil,nil,nil,40)--够了就不捡了

@@ -31,7 +31,7 @@ g_needAutoSetBaoShi=true		--开启自动换宝石 true为换 nil或false为不换
 --SetNeedFlaskData(pos,flask)--设置药  pos=位置 1-5  flask=药 字符串型，支持以下 (生命药剂,魔力药剂,复合药剂,宝钻药剂,红玉药剂,蓝玉药剂,黄玉药剂,坚岩药剂,水银药剂,紫晶药剂,石英药剂,翠玉药剂,石化药剂,海蓝药剂,迷雾药剂,硫磺药剂,真银药剂,灰岩药剂)
 SetNeedFlaskData(1,"生命药剂")
 SetNeedFlaskData(2,"生命药剂")
-SetNeedFlaskData(3,"水银药剂")
+SetNeedFlaskData(3,"宝钻药剂")
 SetNeedFlaskData(4,"水银药剂")
 SetNeedFlaskData(5,"魔力药剂")
 
@@ -70,7 +70,7 @@ g_shengJiBaoShi=true		--自动升级宝石 true为升级 nil或false为不升级
 g_notShuaBaiPao=true        --是否刷白袍 true为不刷 nil或false为刷
 g_attackDis=50			    --攻击距离
 g_duobiHpVal=0.3            --打怪时HP少于多少躲避
-g_yiJieLv=71				--够了多少级才去刷异界
+g_yiJieLv=70				--够了多少级才去刷异界
 --SetTaskShengJiData(taskClassName,taskIndex,shengjiMapClassName,needLv)--设置跑图时升级 taskClassName=任务类名 taskIndex=任务索引 nil为忽略，只匹配任务类名 shengjiMapClassName=要刷的地图类名 needLv=升级到多少级为止
 SetTaskShengJiData("a5q7",nil,"1_5_5",46)--做 到奇塔弗的受难 的时候刷纯净圣地到45级再进行下一任务
 SetTaskShengJiData("a9q3",nil,"2_9_1",63)--滲血水道
