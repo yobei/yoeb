@@ -20,6 +20,13 @@
 # 【特殊語法-六洞裝備】0002
 #============
 
+#甲蟲隱藏
+Hide
+    BaseType "Scarab"
+    SetTextColor 255 255 255
+    SetBackgroundColor 33 19 38
+    SetBorderColor 255 0 0
+    SetFontSize 44
 # 【特殊語法-六連裝備】0001
 
 Show # 地圖 - 普通輿圖 - T1~5魔法/稀有
