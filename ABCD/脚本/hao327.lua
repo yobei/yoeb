@@ -153,7 +153,7 @@ SetTaskShengJiData("a9q3",nil,"2_9_1",60)--滲血水道
 SetTaskMiGongData("a5q2",nil,1)--在复活的梦魇这个任务时 做迷宫1
 SetTaskMiGongData("a9q1",nil,2)--在复活的梦魇这个任务时 做迷宫2
 --SetTaskMiGongDataByLv(lv,mgIndex)--设置到等级时做迷宫 lv 数字型 为大于等于多少级做 mgIndex=迷宫索引 数字型，只支持 1 2 3 对应3个迷宫
-SetTaskMiGongDataByLv(80,3)
+SetTaskMiGongDataByLv(77,3)
 
 --指定职业  野蛮人、野蛮人、贵族、游侠、决斗者、暗影、圣堂武僧、
 g_newRoleJob="野蛮人"
@@ -291,7 +291,7 @@ SetNeedZhaoHuanMonster("恶魔奴隶","Metadata/Monster/CageSpider/CageSpider2",3)
 --minLv 数字型 满多少级才会去仓库号家召唤 nil为忽略等级总是去
 --SetNeedZhaoHuanMonster("Flayed Lookout","Metadata/Monsters/LeagueBetrayal/BetrayalSkeletonRangedSpectre",7)
 --FANXING
-SetHaveLingTiBossName("尺餞仿匙螢",30)--设置灵体仓库号 如果灵体号的灵体比身上的更好，他就会去灵体号所在位置召唤灵体
+SetHaveLingTiBossName("FAN_GOGO",30)--设置灵体仓库号 如果灵体号的灵体比身上的更好，他就会去灵体号所在位置召唤灵体
 SetNeedZhaoHuanMonster(nil,"Metadata/Monsters/Revenant/RevenantMapBossStandalone_AtlasUber",99999)
 --SetNeedZhaoHuanMonster("霜寒自動巡守","Metadata/Monsters/LeagueHeist/Robot/RobotClockworkGolemCold",99999)
 
@@ -639,3 +639,5 @@ SetNeedAddTianFu("野蛮人=melee_damage687-近戰傷害和生命|strength810-力量|strengt
 
 --异界天赋 輿圖點速刷轉EB
 SetNeedAddTianFu([[异界地图天赋=atlas_path_9-相鄰地圖掉落機率|atlas_path_20-相鄰地圖掉落機率|atlas_path_1-相鄰地圖掉落機率|atlas_path_19-相鄰地圖掉落機率|atlas_path_10-相鄰地圖掉落機率|atlas_boss_adjacent_maps_2-相鄰地圖掉落機率|atlas_path_23_-相鄰地圖掉落機率|atlas_boss_adjacent_maps_1-相鄰地圖掉落機率|atlas_path_8-相鄰地圖掉落機率|atlas_path_13-相鄰地圖掉落機率|atlas_path_22-相鄰地圖掉落機率|atlas_path_12-相鄰地圖掉落機率|atlas_path_24_-相鄰地圖掉落機率|atlas_path_16-相鄰地圖掉落機率|atlas_path_25_-相鄰地圖掉落機率|atlas_path_27-相鄰地圖掉落機率|atlas_path_21-相鄰地圖掉落機率|atlas_path_38-相鄰地圖掉落機率|atlas_boss_adjacent_maps_8-相鄰地圖掉落機率|atlas_path_37-相鄰地圖掉落機率|atlas_path_30-相鄰地圖掉落機率|atlas_path_18-相鄰地圖掉落機率|atlas_kirac_1_10-基拉克任務機率|atlas_kirac_1_9-基拉克任務機率|atlas_zana_1_5_chayula-預期意外|atlas_kirac_1_8_-基拉克任務機率|atlas_kirac_1_7-基拉克任務機率|atlas_path_96-聖甲蟲掉落率|atlas_zana_1_4-委任官員|atlas_path_28-相鄰地圖掉落機率|atlas_map_tier_1_2_-高階地圖機率|atlas_map_tier_1_1-高階地圖機率|atlas_map_tier_1_3-雕塑山型|atlas_path_17-相鄰地圖掉落機率|atlas_map_tier_2_1-高階地圖機率|atlas_map_tier_2_2-高階地圖機率|atlas_map_tier_2_3-雕塑天空|atlas_path_94-聖甲蟲掉落率|atlas_map_drops_8-聖甲蟲掉落率|atlas_path_92-聖甲蟲掉落率|atlas_path_61-物品數量|atlas_path_44-物品數量|atlas_path_35-物品數量|atlas_path_39-物品數量|atlas_path_34-物品數量|atlas_path_80-物品稀有度|atlas_map_drops_7-物品稀有度|atlas_mod_effect_6-地圖詞綴效果|atlas_keystone_nofragments_1-堅定不移的遠見|atlas_path_95-聖甲蟲掉落率|atlas_map_drops_9-聖甲蟲掉落率|atlas_map_drops_15-聖甲蟲掉落率|atlas_path_82-聖甲蟲掉落率|atlas_map_drops_14-聖甲蟲掉落率|atlas_path_85-聖甲蟲掉落率|atlas_mod_effect_1-地圖詞綴效果|atlas_mod_effect_9-地圖詞綴效果|atlas_cleansing_fire_1_4-灼烙總督物品機率|atlas_cleansing_fire_1_12_-灼烙總督物品機率|atlas_cleansing_fire_1_3-灼烙總督物品機率|atlas_cleansing_fire_1_7-火紋身|]])
+
+SetNeedAddTianFu("野蛮人升华=AscendancyBerserker3-物理傷害，近戰打擊範圍|AscendancyBerserker10-先祖之怒|AscendancyBerserker4-物理傷害、擊中獲得盛怒機率|AscendancyBerserker11-屠戮之慾|AscendancyBerserker5-物理傷害、擊中獲得盛怒機率|AscendancyBerserker8-毀滅儀式|")
