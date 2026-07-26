@@ -121,11 +121,13 @@ SetNeedSkillLineData(100,"閃電箭矢,nil|附加冰冷傷害輔助,nil|元素攻擊傷害輔助,nil
 
 --异界主力技能设置
 
+
+SetUseTuTengMonsterShuXingCnt("2|3",0)
 --SetSkillLimitMaxLv(name,className,maxLv)--设置技能宝石最大等级 name=技能宝石物品名 className=技能宝石物品类名 maxLv=限制的最大等级
 --SetSkillLimitMaxLv("亵渎","Metadata/Items/Gems/SkillGemDesecrate",2)
 --SetSkillLimitMaxLv("迅捷","Metadata/Items/Gems/SkillGemHaste",11)
 ---SetSkillLimitMaxLv("瓦爾．迅捷","Metadata/Items/Gems/SkillGemVaalHaste",11)
-SetDebuffSkill(nil,"snipers_mark",nil,"curse_snipers_mark")--狙擊者印記
+SetDebuffSkill(nil,"snipers_mark",nil,"curse_snipers_mark","2|3")--狙擊者印記
 SetSkillLimitMaxLv("鋼筋鐵骨",nil,10)
 -- SetSkillLimitMaxLv("狙擊者印記","Metadata/Items/Gems/SkillGemProjectileWeakness",11)
 -- SetSkillLimitMaxLv("受傷時施放輔助","Metadata/Items/Gems/SupportGemCastOnDamageTaken",2)
@@ -135,8 +137,8 @@ SetSkillLimitMaxLv("鋼筋鐵骨",nil,10)
 
 --AddAttackSkillData(name,className,noLine)--添加攻击技能 name=技能名 className=技能类名 noLine=不在直线就能攻击 挑选攻击技能会从上到下寻找，要把厉害的技能加在前面
 --AddAttackSkillData("电弧","arc")
-AddAttackSkillData("閃電箭矢","Lightning Arrow",false,100,0)--添加攻击技能
-AddAttackSkillData("電流箭矢","Galvanic Arrow",false,50,0)--添加攻击技能
+AddAttackSkillData("閃電箭矢","Lightning Arrow",false,40,0)--添加攻击技能
+AddAttackSkillData("電流箭矢","Galvanic Arrow",false,40,0)--添加攻击技能
 AddAttackSkillData("燃燒箭矢","Burning Arrow")
 AddAttackSkillData("普通攻击","melee")
 

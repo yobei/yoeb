@@ -41,9 +41,18 @@ SetUseTuTengData("flame_totem_channelled","Metadata/Monsters/Totems/HolyFireSpra
 SetUseTuTengData("totem_earthquake","Metadata/Monsters/Totems/EarthquakeTotem")--Õğ²¨Í¼ÌÚ
 SetUseTuTengData("searing_bond","Metadata/Monsters/Totems/SearingBondTotem",nil,nil,true)--ÖËÈÈÁ¬½Ó Í¼ÌÚÊıÁ¿£ºskill_display_number_of_traps_allowed
 SetUseTuTengData("shrapnel_ballista_totem","Metadata/Monsters/Totems/ShotgunTotem")--É¢ÉäæåÅÚ
+SetUseTuTengData("shrapnel_ballista","Metadata/Monsters/Totems/ShotgunTotem")--É¢ÉäæåÅÚ
+
 SetUseTuTengData("siege_ballista","Metadata/Monsters/Totems/SnipeTotem")--¹¥³ÇÅÚÌ¨
 SetUseTuTengData("artillery_ballista_totem","Metadata/Monsters/Totems/MortarTotem")--»ğÁ¦åóÅÚ
+SetUseTuTengData("artillery_ballista","Metadata/Monsters/Totems/MortarTotem")--»ğÁ¦åóÅÚ
 SetUseTuTengData("holy_flame_totem","Metadata/Items/Gems/SkillGemFlameTotem")--»ğÉßˆDòv
+
+AddUseSkillData(1,"»ğÁ¦åóÅÚ","artillery_ballista",nil,nil,nil,3,"2|3")
+AddUseSkillData(1,"»ğÁ¦åóÅÚ","artillery_ballista_totem",nil,nil,nil,3,"2|3")
+AddUseSkillData(1,"¹¥³ÇÅÚÌ¨","siege_ballista",nil,nil,nil,3,"2|3")
+AddUseSkillData(1,"É¢ÉäæåÅÚ","shrapnel_ballista",nil,nil,nil,3,"2|3")
+AddUseSkillData(1,"É¢ÉäæåÅÚ","shrapnel_ballista_totem",nil,nil,nil,3,"2|3")
 
 
 --AddUseSkillData(useType,name,className,buffName,buffClassName,funcNeedUse)--Ôö¼ÓÊ¹ÓÃÒ»°ãµÄ¼¼ÄÜ³¡¾° useType=Ê¹ÓÃ³¡¾° 0=×ßÂ·Ê±Ê¹ÓÃ 1=´ò¹ÖÊ±Ê¹ÓÃ 2=ÄÜÓÃÁË¾ÍÓÃ
@@ -53,6 +62,8 @@ SetUseTuTengData("holy_flame_totem","Metadata/Items/Gems/SkillGemFlameTotem")--»
 --buffName ÔöÒæÃû×Ö ×Ö·û´®ĞÍ Èç¹ûÓĞÕâ¸öÔöÒæ ¾Í²»Ê¹ÓÃ
 --buffClassName ÔöÒæÀàÃû ×Ö·û´®ĞÍ Èç¹ûÓĞÕâ¸öÔöÒæ ¾Í²»Ê¹ÓÃ
 --funcNeedUse Ê¹ÓÃµÄ¼ì²âº¯Êı£¬ÄãÃÇ²»ĞèÒªÌî£¬ÊÇ¸ø×÷ÕßÓÃÀ´Ìí¼ÓÌØÊâ¼¼ÄÜµÄ½Ó¿Ú ÌînilºöÂÔ
+--cdTime Ê¹ÓÃ¼ä¸ô µ¥Î»ÎªÃë Ö§³ÖĞ¡Êı Èç¹û²»Ìî »òÕß ÌînilÎªºöÂÔ£¬Ã»ÓĞ¼ä¸ô
+--monColor ×Ö·û´®ĞÍ ´òÊ²Ã´ÑÕÉ«µÄ¹ÖÎïÊ±Ê¹ÓÃ °×¹ÖÎª0 À¶¹ÖÎª1 ½ğ¹ÖÎª2 ³È¹ÖÎª3 (¿ÉÖ§³Ö¶à¸ö£¬ÖĞ¼äÓÃ|¸ô¿ª) Ìînil »ò"0|1|2|3"ÎªËùÓĞ
 AddUseSkillData(2,"°µÓ°ÃÔ×Ù","phase_run")
 AddUseSkillData(1,"µòÁãÖ®²½","slither")
 AddUseSkillData(1,"¹ÇÖÆÕ½¼×","bone_armour")
