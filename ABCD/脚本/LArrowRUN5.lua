@@ -68,9 +68,9 @@ SetGoodsCaoZuo(nil,"0|1","ÍÉ±äÊ¯","Metadata/Items/Currency/CurrencyUpgradeToMagi
 g_useMoveSkillType=nil		--Ê¹ÓÃÎ»ÒÆ¼¼ÄÜ¸ÏÂ·³¡¾° nilÎªÒ»Ö±¶¼Ê¹ÓÃ 0Îª¾çÇéÊ±Ê¹ÓÃ 1ÎªÒì½çÉú²úÊ¹ÓÃ 2Îª´Ó²»Ê¹ÓÃ
 g_shengJiBaoShi=true		--×Ô¶¯Éı¼¶±¦Ê¯ trueÎªÉı¼¶ nil»òfalseÎª²»Éı¼¶
 g_notShuaBaiPao=true        --ÊÇ·ñË¢°×ÅÛ trueÎª²»Ë¢ nil»òfalseÎªË¢
-g_attackDis=50			    --¹¥»÷¾àÀë
-g_duobiHpVal=0.3            --´ò¹ÖÊ±HPÉÙÓÚ¶àÉÙ¶ã±Ü
-g_yiJieLv=70				--¹»ÁË¶àÉÙ¼¶²ÅÈ¥Ë¢Òì½ç
+g_attackDis=40			    --¹¥»÷¾àÀë
+g_duobiHpVal=0.2           --´ò¹ÖÊ±HPÉÙÓÚ¶àÉÙ¶ã±Ü
+g_yiJieLv=71				--¹»ÁË¶àÉÙ¼¶²ÅÈ¥Ë¢Òì½ç
 --SetTaskShengJiData(taskClassName,taskIndex,shengjiMapClassName,needLv)--ÉèÖÃÅÜÍ¼Ê±Éı¼¶ taskClassName=ÈÎÎñÀàÃû taskIndex=ÈÎÎñË÷Òı nilÎªºöÂÔ£¬Ö»Æ¥ÅäÈÎÎñÀàÃû shengjiMapClassName=ÒªË¢µÄµØÍ¼ÀàÃû needLv=Éı¼¶µ½¶àÉÙ¼¶ÎªÖ¹
 SetTaskShengJiData("a5q7",nil,"1_5_5",46)--×ö µ½ÆæËş¸¥µÄÊÜÄÑ µÄÊ±ºòË¢´¿¾»Ê¥µØµ½45¼¶ÔÙ½øĞĞÏÂÒ»ÈÎÎñ
 SetTaskShengJiData("a9q3",nil,"2_9_1",63)--BÑªË®µÀ
@@ -92,10 +92,10 @@ SetUseWeapon("¹­|¼ı´ü")
 --SetUseZhuangBeiTypeData(typeStr,pos)--ÉèÖÃ×Ô¼ºÓÃµÄ×°±¸ÀàĞÍ 
 --typeStr=ÀàĞÍ Ö§³Ö("StrDex"Îª¾ö¶·Õß×°+»¤¼×ÉÁ±Ü "Str"ÎªÒ°ÂùÈË×°+»¤¼× "DexInt"Îª°µÓ°×°+ÉÁ±Ü»¤¶Ü "Int"ÎªÅ®Î××°+»¤¶Ü "Dex"ÎªÓÎÏÀ×°+ÉÁ±Ü "StrInt"ÎªÊ¥ÌÃÎäÉ®×°+Á¦Á¿»¤¶Ü)
 --pos=²¿Î»Ö§³Ö²¿Î» Ö§³Ö(½äÖ¸|ÏîÁ´|Ñü´ø|Ğ¬×Ó|ÊÖÌ×|ÒÂ·ş|Í·¿ø|¶Ü|¼ı´ü|×¦}Ø°Ê×|·¨ÕÈ|µ¥ÊÖ½£|Ï¸½£|µ¥ÊÖ¸«|µ¥ÊÖ´¸|·ûÎÄØ°Ê×|¶ÌÕÈ|Õ½ÕÈ|¹­|³¤ÕÈ|Ë«ÊÖ½£|Ë«ÊÖ¸«|Ë«ÊÖ´¸) ²»Ìî»ònilÎªÉèÖÃËùÓĞ
-SetUseZhuangBeiTypeData("Dex|StrDex","ÒÂ·ş")
-SetUseZhuangBeiTypeData("Dex|DexInt","Í·¿ø")
-SetUseZhuangBeiTypeData("Str|StrInt|Int","ÊÖÌ×")
-SetUseZhuangBeiTypeData("Str|StrDex|Dex","Ğ¬×Ó")
+SetUseZhuangBeiTypeData("StrDex|DexInt|StrInt|Int|Dex|Str","ÒÂ·ş")
+SetUseZhuangBeiTypeData("StrDex|DexInt|StrInt|Int|Dex|Str","Í·¿ø")
+SetUseZhuangBeiTypeData("StrDex|DexInt|StrInt|Int|Dex|Str","ÊÖÌ×")
+SetUseZhuangBeiTypeData("StrDex|DexInt|StrInt|Int|Dex|Str","Ğ¬×Ó")
 SetUseZhuangBeiTypeData("StrInt","ÏîÁ´")
 
 --SetNeedSkillLineData(val,str,invalidLv)--ÉèÖÃ»»¼¼ÄÜ±¦Ê¯Êı¾İ 
@@ -231,9 +231,9 @@ SetAtuoChangeEquipData("°µÓ°|Ò°ÂùÈË|¾ö¶·Õß|Å®Î×|ÓÎÏÀ|Ê¥ÌÃÎäÉ®","½äÖ¸|ÏîÁ´|Ñü´ø|Ğ
 SetAtuoChangeEquipData("ÓÎÏÀ","ÏîÁ´","additional_strength",0.2)--
 SetAtuoChangeEquipData("ÓÎÏÀ","ÏîÁ´","additional_intelligence",0.2)--
 SetAtuoChangeEquipData("ÓÎÏÀ","ÏîÁ´","additional_strength_and_intelligence",0.3)--
-SetAtuoChangeEquipData("ÓÎÏÀ","¹­","local_maximum_added_fire_damage",5)--
-SetAtuoChangeEquipData("ÓÎÏÀ","¹­","local_maximum_added_cold_damage",5)--
-SetAtuoChangeEquipData("ÓÎÏÀ","¹­","local_maximum_added_lightning_damage",5)--
+SetAtuoChangeEquipData("ÓÎÏÀ","¹­","local_maximum_added_fire_damage",10)--
+SetAtuoChangeEquipData("ÓÎÏÀ","¹­","local_maximum_added_cold_damage",10)--
+SetAtuoChangeEquipData("ÓÎÏÀ","¹­","local_maximum_added_lightning_damage",10)--
 
 --SetZhengTiColorVarData(ÒÂ·ş,ºì¿×Êı,ÂÌ¿×Êı,À¶¿×Êı,¾çÇé0/Òì½ç1/ÎŞÊÓnil),·ÖÖµ,Á¬¶´true/²»Á¬false/ÎŞÊÓnil)
 --ÒÂ·ş---
