@@ -114,7 +114,7 @@ SetUseZhuangBeiTypeData("StrInt","项链")
 
 --剧情主力技能设置
 SetNeedSkillLineData(93,"燃燒箭矢,nil|氣勢輔助,nil",2,nil,nil)
-SetNeedSkillLineData(94,"火砲砲塔,nil|元素攻擊傷害輔助,nil|快速攻擊輔助,nil|多重圖騰輔助,nil",65,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,30)
+SetNeedSkillLineData(94,"火砲砲塔,nil|元素攻擊傷害輔助,nil|快速攻擊輔助,nil|多重圖騰輔助,nil",70,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,30)
 SetNeedSkillLineData(95,"魔改箭矢輔助,nil|狂怒,nil|冰霜射擊,nil|暴擊獲得暴擊球輔助,nil|活栓輔助,nil|活栓輔助,nil|魔改箭矢輔助,nil|龍捲射擊,nil|誘捕箭矢,nil|物品稀有度增幅輔助,nil|幻步,nil|恢復輔助,nil|鮮血狂怒,nil|迅捷,nil",nil,nil,nil)
 SetNeedSkillLineData(99,"鋼筋鐵骨,nil|元素淨化,nil|憤怒,nil",nil,nil,nil)
 SetNeedSkillLineData(96,"狙擊者印記,nil|召喚寒冰魔像,nil|擊中時印記輔助,nil",nil,nil,nil)
