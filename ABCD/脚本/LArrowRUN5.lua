@@ -74,11 +74,11 @@ g_yiJieLv=71				--够了多少级才去刷异界
 --SetTaskShengJiData(taskClassName,taskIndex,shengjiMapClassName,needLv)--设置跑图时升级 taskClassName=任务类名 taskIndex=任务索引 nil为忽略，只匹配任务类名 shengjiMapClassName=要刷的地图类名 needLv=升级到多少级为止
 SetTaskShengJiData("a5q7",nil,"1_5_5",46)--做 到奇塔弗的受难 的时候刷纯净圣地到45级再进行下一任务
 SetTaskShengJiData("a9q3",nil,"2_9_1",63)--滲血水道
-SetTaskShengJiData("a10q1",nil,"2_9_1",85)--滲血水道
+--SetTaskShengJiData("a10q1",nil,"2_9_1",85)--滲血水道
 
 --SetTaskMiGongData(taskClassName,taskIndex,migongIndex)--设置跑图时迷宫 taskClassName=任务类名 taskIndex=任务索引 nil为忽略，只匹配任务类名 migongIndex为迷宫索引填 1=第一次迷宫 2=第二次迷宫
---SetTaskMiGongData("a8q7",nil,1)--大于等于a8q7级 做迷宫1
---SetTaskMiGongData("a9q1",nil,2)--在复活的梦魇这个任务时 做迷宫2
+SetTaskMiGongData("a8q7",nil,1)--大于等于a8q7级 做迷宫1
+SetTaskMiGongData("a9q1",nil,2)--在复活的梦魇这个任务时 做迷宫2
 
 
 --SetTaskMiGongDataByLv(lv,mgIndex)--设置到等级时做迷宫 lv 数字型 为大于等于多少级做 mgIndex=迷宫索引 数字型，只支持 1 2 3 对应3个迷宫
