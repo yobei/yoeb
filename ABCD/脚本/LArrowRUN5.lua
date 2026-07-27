@@ -31,11 +31,11 @@ g_needAutoSetBaoShi=true		--开启自动换宝石 true为换 nil或false为不换
 --SetNeedFlaskData(pos,flask)--设置药  pos=位置 1-5  flask=药 字符串型，支持以下 (生命药剂,魔力药剂,复合药剂,宝钻药剂,红玉药剂,蓝玉药剂,黄玉药剂,坚岩药剂,水银药剂,紫晶药剂,石英药剂,翠玉药剂,石化药剂,海蓝药剂,迷雾药剂,硫磺药剂,真银药剂,灰岩药剂)
 SetNeedFlaskData(1,"生命药剂")
 SetNeedFlaskData(2,"生命药剂")
-SetNeedFlaskData(3,"宝钻药剂")
+SetNeedFlaskData(3,"水银药剂")
 SetNeedFlaskData(4,"水银药剂")
 SetNeedFlaskData(5,"魔力药剂")
 
-SetNeedFlaskData(1,"生命药剂","沸腾的,	FlaskFullInstantRecovery1",68,"不朽生命藥劑","Metadata/Items/Flasks/FlaskLife11",true)
+--SetNeedFlaskData(1,"生命药剂","沸腾的,	FlaskFullInstantRecovery1",68,"不朽生命藥劑","Metadata/Items/Flasks/FlaskLife11",true)
 
 --SetJiaoYiGoods(goodsType,name,className,wordName,wordClassName,color,chufaCnt,bossJiaoYiCnt,giveFaZhuang,baoliuCnt,lineSocketCnt,shuXingLimit,funcCheck)-- 设置要交易的物品
 --goodsType 字符串型 操作的物品类型忽略类型请填 nil 支持以下种类 多种类型以|分开 --saveType 类型 支持以下种类 多种类型以|分开 生命药剂|魔力药剂|复合药剂|通货|项链|戒指|爪|匕首|法杖|单手剑|细剑|单手斧|单手锤|符文匕首|短杖|战杖|弓|长杖|双手剑|双手斧|双手锤|主动技能宝石|辅助技能宝石|箭袋|腰带|手套|鞋子|衣服|头盔|盾|小型圣物|中型圣物|大型圣物|可堆叠通货|任务物品|短杖|功能药剂|暴击药剂|异界地图||鱼竿|地图碎片|藏身处装饰|商城物品|珠宝|命运卡|迷宫物品|迷宫饰品|异界迷宫物品|裂隙之石|赛季石|神灵之魂|传奇装备碎片|深渊珠宝|穿越通货|地心探索：可镶嵌的通货|孕育石|碎片|破碎之心|符文匕首|战杖|地心探索可堆叠可插入通货|
@@ -63,6 +63,7 @@ SetNeedFlaskData(1,"生命药剂","沸腾的,	FlaskFullInstantRecovery1",68,"不朽生命藥
 SetSellGoodsData("蜕变石","Metadata/Items/Currency/CurrencyUpgradeToMagic",30,"0|1|2")
 SetGoodsCaoZuo(nil,"0|1","蜕变石","Metadata/Items/Currency/CurrencyUpgradeToMagic",nil,nil,nil,40)--身上保留40
 
+SetGoodsCaoZuo(nil,"0|2","真银药剂","	Metadata/Items/Flasks/FlaskUtility14")
 
 
 g_useMoveSkillType=nil		--使用位移技能赶路场景 nil为一直都使用 0为剧情时使用 1为异界生产使用 2为从不使用
