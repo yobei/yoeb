@@ -148,6 +148,7 @@ SetZhongShenData("Lunaris","Gruthkul")--设置月影女神之魂与绝望之母 格鲁丝克之魂
 -------注意要大类在前 小类 单独设置在后面添加
 SetSaveIndex("通货|可堆叠通货","1")
 SetSaveIndex("异界地图","3")
+SetSaveIndex("異界地圖","3")
 SetSaveIndex("项链|戒指|爪|匕首|法杖|单手剑|细剑|单手斧|单手锤|符文匕首|短杖|战杖|弓|长杖|双手剑|双手斧|双手锤|腰带|手套|鞋子|头盔","4")
 SetSaveIndex("主动技能宝石|辅助技能宝石|珠宝|命运卡|衣服|盾|箭袋|地图碎片","4")
 SetSaveIndex("生命药剂|魔力药剂|复合药剂|功能药剂","4")
@@ -334,7 +335,8 @@ mapClassName="1_1_town"
 SetGoodsCaoZuo("通货|可堆叠通货","0|2")--多个大类设置捡存
 SetGoodsCaoZuo("主动技能宝石|辅助技能宝石","0|2",nil,nil,nil,nil,20)--拾取品质超过5的技能宝石
 SetGoodsCaoZuo("珠宝","1|3",nil,nil,nil,nil)--拾取品质超过5的技能宝石
-SetGoodsCaoZuo("异界地图","0|2",nil,nil,nil,nil,nil,nil,"0|1|2")--拾取白色+蓝色+黄色地图
+SetGoodsCaoZuo("异界地图","0|2",nil,nil,nil,nil,nil,nil,nil)--拾取白色+蓝色+黄色地图
+SetGoodsCaoZuo("異界地圖","0|2",nil,nil,nil,nil,nil,nil,nil)--拾取白色+蓝色+黄色地图
 SetGoodsCaoZuo(nil,"0|1|4",nil,nil,nil,nil,nil,nil,"3")--拾取 鉴定 出售橙色物品
 SetGoodsCaoZuo(nil,nil,"知识卷轴","Metadata/Items/Currency/CurrencyIdentification",nil,nil,nil,80)--够了就不捡了
 SetGoodsCaoZuo(nil,nil,"传送卷轴","Metadata/Items/Currency/CurrencyPortal",nil,nil,nil,40)--够了就不捡了
@@ -349,6 +351,7 @@ SetGoodsCaoZuo(nil,"1|3","祝福石","Metadata/Items/Currency/CurrencyRerollImplici
 SetGoodsCaoZuo(nil,"1|3","束縛石","Metadata/Items/Currency/CurrencyUpgradeToRareAndSetSockets")--
 SetGoodsCaoZuo(nil,"1|3","工程石","Metadata/Items/Currency/CurrencyStrongboxQuality")--
 --SetGoodsCaoZuo(nil,"0|1","蜕变石","Metadata/Items/Currency/CurrencyUpgradeToMagic",nil,nil,nil,40)--身上保留40
+
 
 
 

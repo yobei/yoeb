@@ -62,8 +62,9 @@ SetNeedFlaskData(5,"魔力药剂")
 
 SetSellGoodsData("蜕变石","Metadata/Items/Currency/CurrencyUpgradeToMagic",30,"0|1|2")
 SetGoodsCaoZuo(nil,"0|1","蜕变石","Metadata/Items/Currency/CurrencyUpgradeToMagic",nil,nil,nil,40)--身上保留40
+SetGoodsCaoZuo(nil,"0|1","蛻變石","Metadata/Items/Currency/CurrencyUpgradeToMagic",nil,nil,nil,40)--身上保留40
 
-SetGoodsCaoZuo(nil,"0|2","真银药剂","	Metadata/Items/Flasks/FlaskUtility14")
+SetGoodsCaoZuo(nil,"0|2","真銀藥劑","	Metadata/Items/Flasks/FlaskUtility14")
 
 
 g_useMoveSkillType=nil		--使用位移技能赶路场景 nil为一直都使用 0为剧情时使用 1为异界生产使用 2为从不使用
