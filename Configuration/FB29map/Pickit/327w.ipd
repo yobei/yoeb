@@ -83,7 +83,8 @@
 [Type] == "Enlighten Support" # [StashItem] == "true" //	//啟蒙輔助		存倉		
 
 [Type] == "Humility" # [StashItem] == "true" //	謙遜 (9)	3	存倉		
-
+[Type] == "Brother's Gift" # [StashItem] == "true" // 兄弟之贈 有價
+[Type] == "Brother's Stash" # [StashItem] == "true" // 624 C//Brother's Stash拾取且存倉5E
 
 //																												
 //	// 15F 六連裝 (目前有無法正常賣出的語法錯誤，但是我找不到問題點)			//																								
