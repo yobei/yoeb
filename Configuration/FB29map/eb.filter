@@ -637,7 +637,7 @@ Show # 通貨 - 初始 - 幻色石
     SetFontSize 45
     PlayAlertSound 9 300
 
-Hide # 通貨 - 初始 - 玻璃彈珠
+Show # 通貨 - 初始 - 玻璃彈珠
     Class "Currency"
     BaseType "Glassblower's Bauble"
     SetTextColor 0 0 0
