@@ -6,8 +6,10 @@
 [Category] == "Belt"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && [StashItem] == "true"//	//搬磚用腰帶																											
 [Category] == "Gloves"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && [StashItem] == "true"//	//搬磚用手套																											
 [Category] == "Boots" && [Rarity] == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && [base_movement_velocity_+%] >= "999" && [StashItem] == "true"//	//磚用鞋子																											
-[Category] == "Weapon"         && [Rarity]         == "Rare" # [DPS] > "999" && [StashItem] == "true"//	//搬磚用武器																											
+//[Category] == "Weapon"         && [Rarity]         == "Rare" # [DPS] > "999" && [StashItem] == "true"//	//搬磚用武器														
+[Category] == "one_hand_weapon"         && [Rarity]         == "Rare" # [DPS] > "999" && [StashItem] == "true"//	//搬磚用武器			
 [Category] == "Shield"         && [Rarity]         == "Rare" # [base_maximum_life] >= "999" && [TotalResistances] >= "999" && [StashItem] == "true"//	//搬磚用盾牌																											
+//	// 2F 基礎通貨																								
 //	// 2F 基礎通貨
 
 //藥水//
@@ -30,7 +32,7 @@
 [Type] == "Mirror of Kalandra" # [StashItem] == "true" //	//卡蘭德的魔鏡		存倉																									
 //[Type] == "Orb of Annulment" # [StashItem] == "true" //	//無效石		存倉																									
 [Type] == "Ancient Orb" # [StashItem] == "true" //	//古變石		存倉																									
-[Type] == "Fracturing Orb" # [StashItem] == "true" //	//破裂石		存倉																									
+//[Type] == "Fracturing Orb" # [StashItem] == "true" //	//破裂石		存倉																									
 [Type] == "Hinekora's Lock" # [StashItem] == "true" //	//悉妮蔻拉的髮絲		存倉																									
 [Type] == "Valdo's Puzzle Box" # [StashItem] == "true" //	//瓦爾多的謎盒		存倉																									
 [Type] == "Reflecting Mist" # [StashItem] == "true" //	//映像迷霧		存倉																									
@@ -40,7 +42,7 @@
 [Type] == "Jeweller's Orb" # [StashItem] == "true" //	//工匠石		存倉																									
 [Type] == "Orb of Alchemy" # [StashItem] == "true" //	//點金石		存倉																									
 [Type] == "Orb of Alteration" # [StashItem] == "true" //	//改造石		存倉																									
-[Type] == "Orb of Transmutation" # [StashItem] == "true" //	//蛻變石		存倉																									
+//[Type] == "Orb of Transmutation" # [StashItem] == "true" //	//蛻變石		存倉																									
 [Type] == "Orb of Augmentation" # [StashItem] == "true" //	//增幅石		存倉																									
 [Type] == "Orb of Chance" # [StashItem] == "true" //	//機會石		存倉																									
 [Type] == "Orb of Fusing" # [StashItem] == "true" //	//鏈結石		存倉																									
