@@ -18,7 +18,13 @@
 //[Type] == "Quicksilver Flask"&& 	[ItemLevel] >= "50" && [ItemLevel] <="100" # [StashItem] == "true" //跑水
 //[Type] == "Gold Flask"&& 	[ItemLevel] >= "50" && [ItemLevel] <="100" # [StashItem] == "true" //黃金藥劑
 
-
+[Type] == "Map" && [Rarity] == "Magic"  # [StashItem] == "true" //
+[Type] == "Map" && [Rarity] == "Normal"  # [StashItem] == "true" //
+[Type] == "Map" && [Rarity] == "Rare"  # [StashItem] == "true" //
+[Category] == "Map" && [MapTier] >= "1" # [StashItem] == "true" 
+//[Category] == "Map" # [StashItem] == "true" 
+[Category] == "Map" && [Rarity] == "Unique"  # [ForceSellItem] == "true" 
+//sssss[Category] == "Contracts" # [ForceSellItem] == "true"
 
 //[Type] == "Amethyst Flask"&& 		[ItemLevel] >= "50" && [ItemLevel] <="100" # [StashItem] == "true" //紫晶
 //[Type] == "Bismuth Flask"&& 		[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //灰岩
