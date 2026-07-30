@@ -20,17 +20,19 @@
 # 【特殊語法-六洞裝備】0002
 #============
 
-#甲蟲隱藏
-Hide
-    BaseType "Scarab"
-    SetTextColor 255 255 255
-    SetBackgroundColor 33 19 38
-    SetBorderColor 255 0 0
-    SetFontSize 44
 # 【特殊語法-六連裝備】0001
 
-Show # 地圖 - 普通輿圖 - T1~5魔法/稀有
+Hide # 地圖 - 普通輿圖 - T1~5魔法/稀有
     Class "Maps"
+
+Hide # 通貨 - 低階藝能
+    Class "Currency"
+    BaseType "Lesser Eldritch Ember"
+
+Hide # 通貨 - 頂低階藝能
+    Class "Currency"
+    BaseType "Lesser Eldritch Ichor"
+
 
 
 Show # 裝備 - 特殊裝備 - 3色連洞 (2*2體積)
@@ -273,7 +275,7 @@ Show # 通貨 - 高級 - 無效石
     MinimapIcon 0 Red Diamond
     PlayEffect Red
 
-Show # 通貨 - 高級 - 撤銷石
+Hide # 通貨 - 高級 - 撤銷石
     Class "Currency"
     BaseType "Orb of Unmaking"
     SetTextColor 0 0 0 255
@@ -374,7 +376,7 @@ Show # 通貨 - 普通 - 混沌石
     MinimapIcon 2 Green Diamond
     PlayEffect Green
 
-Show # 通貨 - 普通 - 富豪石
+Hide # 通貨 - 普通 - 富豪石
     Class "Currency"
     BaseType "Regal Orb"
     SetTextColor 0 0 0
@@ -396,7 +398,7 @@ Show # 通貨 - 普通 - 寶石匠的稜鏡
     PlayEffect Green
     PlayAlertSound ShChaos 200
 
-Show # 通貨 - 普通 - 後悔石
+Hide # 通貨 - 普通 - 後悔石
     Class "Currency"
     BaseType "Orb of Regret"
     SetTextColor 0 0 0
@@ -418,7 +420,7 @@ Show # 通貨 - 普通 - 鏈結石
     PlayEffect Green
     PlayAlertSound ShChaos 200
 
-Show # 通貨 - 普通 - 祝福石
+Hide # 通貨 - 普通 - 祝福石
     Class "Currency"
     BaseType "Blessed Orb"
     SetTextColor 0 0 0
@@ -440,7 +442,7 @@ Show # 通貨 - 普通 - 重鑄石
     PlayEffect Green
     PlayAlertSound ShChaos 200
 
-Show # 通貨 - 普通 - 瓦爾石
+Hide # 通貨 - 普通 - 瓦爾石
     Class "Currency"
     BaseType "Vaal Orb"
     SetTextColor 0 0 0
@@ -473,7 +475,7 @@ Show # 通貨 - 普通 - 地平石
     MinimapIcon 2 Green Diamond
     PlayEffect Green
 
-Show # 通貨 - 普通 - 豐裕牌組
+Hide # 通貨 - 普通 - 豐裕牌組
     Class "Currency"
     BaseType "Stacked Deck"
     SetTextColor 0 0 0
@@ -495,7 +497,7 @@ Show # 通貨 - 普通 - 工程石
     MinimapIcon 2 Green Diamond
     PlayEffect Green
 
-Show # 通貨 - 普通 - 束縛石
+Hide # 通貨 - 普通 - 束縛石
     Class "Currency"
     BaseType "Orb of Binding"
     SetTextColor 0 0 0
@@ -635,7 +637,7 @@ Show # 通貨 - 初始 - 幻色石
     SetFontSize 45
     PlayAlertSound 9 300
 
-Show # 通貨 - 初始 - 玻璃彈珠
+Hide # 通貨 - 初始 - 玻璃彈珠
     Class "Currency"
     BaseType "Glassblower's Bauble"
     SetTextColor 0 0 0
@@ -643,7 +645,7 @@ Show # 通貨 - 初始 - 玻璃彈珠
     SetBorderColor 250 250 250
     SetFontSize 40
 
-Show # 通貨 - 初始 - 點燃石
+Hide # 通貨 - 初始 - 點燃石
     Class "Currency"
     BaseType "Enkindling Orb"
     SetTextColor 0 0 0
@@ -652,7 +654,7 @@ Show # 通貨 - 初始 - 點燃石
     SetFontSize 40
     PlayEffect Brown
 
-Show # 通貨 - 初始 - 滴注石
+Hide # 通貨 - 初始 - 滴注石
     Class "Currency"
     BaseType "Instilling Orb"
     SetTextColor 0 0 0
@@ -732,7 +734,7 @@ Show # 通貨 - 垃圾 - 點金石碎片
     BaseType "Alchemy Shard"
     SetTextColor 215 190 160
 
-Show # 通貨 - 垃圾 - 束縛石碎片
+Hide # 通貨 - 垃圾 - 束縛石碎片
     Class "Currency"
     BaseType "Binding Shard"
     SetTextColor 0 0 0
@@ -1685,7 +1687,7 @@ Show # 聯盟 - 3.10譫妄 - 譫妄玉
     MinimapIcon 1 Grey Diamond
     PlayEffect Grey
 
-Show # 聯盟 - 3.10譫妄 - 幻像斷片
+Hide # 聯盟 - 3.10譫妄 - 幻像斷片
     Class "Currency"
     BaseType "Simulacrum Splinter"
     SetTextColor 0 0 0
