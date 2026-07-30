@@ -24,7 +24,15 @@
 [Category] == "Map" && [MapTier] >= "1" # [StashItem] == "true" 
 //[Category] == "Map" # [StashItem] == "true" 
 [Category] == "Map" && [Rarity] == "Unique"  # [ForceSellItem] == "true" 
-//sssss[Category] == "Contracts" # [ForceSellItem] == "true"
+//[Category] == "Contracts" # [ForceSellItem] == "true"
+
+[Type] == "Map (Tier 1)" && [map_zana_influence] >= "1" # [ForceSellItem] =="true"
+[Type] == "Map (Tier 2)" && [map_zana_influence] >= "1" # [ForceSellItem] =="true"
+[Type] == "Map (Tier 3)" && [map_zana_influence] >= "1" # [ForceSellItem] =="true"
+[Type] == "Map (Tier 4)" && [map_zana_influence] >= "1" # [ForceSellItem] =="true"
+[Type] == "Map (Tier 5)" && [map_zana_influence] >= "1" # [ForceSellItem] =="true"
+[Type] == "Map (Tier 6)" && [map_zana_influence] >= "1" # [ForceSellItem] =="true"
+
 
 //[Type] == "Amethyst Flask"&& 		[ItemLevel] >= "50" && [ItemLevel] <="100" # [StashItem] == "true" //紫晶
 //[Type] == "Bismuth Flask"&& 		[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //灰岩
