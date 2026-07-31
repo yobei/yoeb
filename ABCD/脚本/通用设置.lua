@@ -115,7 +115,7 @@ AddNeedBuySkillTime(11,"a11q1")	--在拾取碎片 这个任务时检测购买一遍
 
 
 --AddNotMakeTaskData(taskClassName)--添加不需要做的任务 taskClassName为任务类名
-AddNotMakeTaskData("a2q5")--梦中圣地
+--AddNotMakeTaskData("a2q5")--梦中圣地
 AddNotMakeTaskData("a2q10")--白色巨兽
 AddNotMakeTaskData("a3q13")--重生的渴望
 AddNotMakeTaskData("a3q12")--命运之语

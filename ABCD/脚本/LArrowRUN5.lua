@@ -72,7 +72,7 @@ g_shengJiBaoShi=true		--自动升级宝石 true为升级 nil或false为不升级
 g_notShuaBaiPao=true        --是否刷白袍 true为不刷 nil或false为刷
 g_attackDis=40			    --攻击距离
 g_duobiHpVal=0.2           --打怪时HP少于多少躲避
-g_yiJieLv=71				--够了多少级才去刷异界
+g_yiJieLv=65				--够了多少级才去刷异界
 --SetTaskShengJiData(taskClassName,taskIndex,shengjiMapClassName,needLv)--设置跑图时升级 taskClassName=任务类名 taskIndex=任务索引 nil为忽略，只匹配任务类名 shengjiMapClassName=要刷的地图类名 needLv=升级到多少级为止
 SetTaskShengJiData("a5q7",nil,"1_5_5",46)--做 到奇塔弗的受难 的时候刷纯净圣地到45级再进行下一任务
 SetTaskShengJiData("a9q3",nil,"2_9_1",63)--滲血水道
