@@ -162,15 +162,15 @@ SetSaveIndex(nil,"1","改造石","Metadata/Items/Currency/CurrencyRerollMagic")
 ------------------挂机相关
 g_yijieNoWhiteMonster=false		--异界时是否不打白怪 true为不打 nil或false为打
 g_yijieNoWhiteBox=true			--异界时是否不开白箱子 true为不开 nil或false为开
-g_useYiJieWanChengDuLv=90	--使用下面异界完成度那个设置的等级，如果未到等则刷全图
+g_useYiJieWanChengDuLv=68	--使用下面异界完成度那个设置的等级，如果未到等则刷全图
 g_yiJieWanChengDu=0.9		--异界完成度 完成多少就回去 为1或1以下的小数
-g_yongHengShiBeiLv=90		--大于等于多少级打永恒石碑 
-g_needTaFangLv=90			--大于等于多少级打塔防
-g_needLianMoLv=90			--大于等于多少级打炼魔
-g_attackFreezeMonsterLv=90	--大于等于多少级打冰冻怪
-g_needChuanYueLv=90			--大于等于多少级打穿越怪
-g_needLieXiLv=90			--大於等于多少级打时空裂缝怪
-g_needMiWuLv=90				--大于等于多少级打迷雾
+g_yongHengShiBeiLv=68		--大于等于多少级打永恒石碑 
+g_needTaFangLv=68			--大于等于多少级打塔防
+g_needLianMoLv=68			--大于等于多少级打炼魔
+g_attackFreezeMonsterLv=68	--大于等于多少级打冰冻怪
+g_needChuanYueLv=68			--大于等于多少级打穿越怪
+g_needLieXiLv=68			--大於等于多少级打时空裂缝怪
+g_needMiWuLv=68				--大于等于多少级打迷雾
 
 g_yuyanCnt=nil				--够多少银币去预言，小于10银币或填nil将不会触发 如果设定去预言，那下面还需要设置交易给仓库号的预言
 
@@ -184,11 +184,11 @@ g_destroyNoUseMap=true		--销毁上面设置不使用的地图 nil或false为不销毁
 g_mapUseFuHaoLv=78			--大于等于多少级对蓝图使用富豪石 nil为永远不使用
 g_mapUseZengFuLv=78			--大于等于多少级对蓝图使用增幅石 nil为永远不使用
 g_mapUseDianJingLv=76		--大于等于多少级对白图使用点金石 nil为永远不使用
-g_mapUseTuiBianLv=72		--大于等于多少级对白图使用蜕变石 nil为永远不使用
+g_mapUseTuiBianLv=68		--大于等于多少级对白图使用蜕变石 nil为永远不使用
 g_mapUseJiHuiLv=75			--大于等于多少级对白图使用机会石 nil为永远不使用
 g_mapUseWaErLv=81			--大于等于多少级对白、蓝地图使用瓦尔宝珠 nil为永远不使用
 g_mapUseDingZiLv=nil			--大于等于多少级使用制图钉 nil为永远不使用
-g_noUseMapLv=0				--不使用、不捡多少阶及以上的地图 nil或0为忽略 设置优先的地图除外
+g_noUseMapLv=16				--不使用、不捡多少阶及以上的地图 nil或0为忽略 设置优先的地图除外
 
 g_mapUseOrangeMap=false		--true为使用橙图 nil或false为不使用
 --SetYouXianUseMapData(name,className,color)--设置优先使用的异界地图 
