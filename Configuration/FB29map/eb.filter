@@ -22,8 +22,7 @@
 
 # 【特殊語法-六連裝備】0001
 
-Show # 地圖 - 普通輿圖 - T1~5魔法/稀有
-    Class "Maps"
+
 
 Hide # 通貨 - 低階藝能
     Class "Currency"
@@ -64,14 +63,11 @@ Hide
     SetFontSize 44
 
 # 地圖已複製
+# 地圖已複製 - 完全隱藏
 Hide
-　　Mirrored True
+    Mirrored True
     Class "Maps"
     MapTier <= 16
-    SetTextColor 255 255 255
-    SetBackgroundColor 33 19 38
-    SetBorderColor 255 0 0
-    SetFontSize 44
 
 Show # 特殊語法 - 六連裝備
     LinkedSockets = 6
@@ -5268,3 +5264,5 @@ Show # 新物品防漏 - 若遊戲更新添加新物品（新裝備基底除外�
     SetFontSize 40
     PlayAlertSound 15 200
 
+Show # 地圖 - 普通輿圖 - T1~5魔法/稀有
+    Class "Maps"
