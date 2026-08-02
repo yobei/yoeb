@@ -66,7 +66,10 @@
 //[Type] == "Vaal Orb" # [StashItem] == "true" //	//瓦爾寶珠		存倉																									
 [Type] == "Cartographer's Chisel" # [StashItem] == "true" //	//製圖釘		存倉																									
 //[Type] == "Orb of Horizons" # [StashItem] == "true" //	//地平石		存倉																									
-[Type] == "Harbinger's Orb" # [StashItem] == "true" //	//神諭石		存倉																									
+[Type] == "Harbinger's Orb" # [StashItem] == "true" //	//神諭石		存倉	
+[Type] == "Sacred Orb" # [StashItem] == "true" //	//勝玉		存倉
+
+
 //此通貨不撿	//工程石		賣出																									
 [Type] == "Blacksmith's Whetstone" # [StashItem] == "true" //	//磨刀石		存倉																									
 [Type] == "Armourer's Scrap" # [StashItem] == "true" //	//護甲片		存倉																									
