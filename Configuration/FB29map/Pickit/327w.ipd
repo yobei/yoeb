@@ -96,7 +96,7 @@
 
 //																												
 //	// 15F 六連裝 (目前有無法正常賣出的語法錯誤，但是我找不到問題點)			//																								
-[Sockets] == "6" && [Linked] >= "6" # [ForceSellItem] ="true" //	//六連裝		存倉	//																								
+[Sockets] == "6" && [Linked] >= "6" # [SellUnid] ="true" //	//六連裝		存倉	//																								
 //	// 16F 六洞裝 																											
 [Sockets] == "6" && [Linked] <= "6" # [SellUnid] == "true"	//六洞裝		賣出	//																								
 
