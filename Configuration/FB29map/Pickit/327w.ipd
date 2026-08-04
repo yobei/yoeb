@@ -96,23 +96,11 @@
 //[Type] == "Humility" # [StashItem] == "true" //	謙遜 (9)	3	存倉		
 [Type] == "Brother's Gift" # [StashItem] == "true" // 兄弟之贈 有價
 [Type] == "Brother's Stash" # [StashItem] == "true" // 624 C//Brother's Stash拾取且存倉5E
-
-//																												
-[Sockets] == "6" && [Linked] >= "6" # [ForceSellItem] ="true" //	//六連裝		存倉	//																								
 [Sockets] == "6" && [Linked] >= "6" && [Rarity] == "Normal" # [ForceSellItem] =="true"	//普通六連裝			//																								
 [Sockets] == "6" && [Linked] >= "6" && [Rarity] == "Magic" # [ForceSellItem] =="true"	//魔法六連裝			//																								
-[Sockets] == "6" && [Linked] >= "6" && [Rarity] == "Rare" # [ForceSellItem] =="true"	//稀有六連裝			//	
-[Sockets] == "6" && [Linked] >= "6" && [Rarity] == "Unique" # [ForceSellItem] =="true"	//稀有六連裝			//	
-//	// 16F 六洞裝 																											
+[Sockets] == "6" && [Linked] >= "6" && [Rarity] == "Rare" # [ForceSellItem] =="true"	//稀有六連
+[Sockets] == "6" && [Linked] >= "6" && [Rarity] == "Unique" # [ForceSellItem] =="true"	//稀有六連裝
 [Sockets] == "6" && [Linked] <= "6" && [Rarity] == "Normal" # [SellUnid] == "true"	//六洞裝		賣出	//																								
 [Sockets] == "6" && [Linked] <= "6" && [Rarity] == "Magic" # [SellUnid] == "true"	//魔法六洞裝			//																								
 [Sockets] == "6" && [Linked] <= "6" && [Rarity] == "Rare" # [SellUnid] == "true"	//稀有六洞裝			//		
-[Sockets] == "6" && [Linked] <= "6" && [Rarity] == "Unique" # [SellUnid] == "true"	//稀有六洞裝			//		
-[Sockets] == "6" && [Linked] <= "6" # [SellUnid] == "true"	//六洞裝		賣出	//	
-[Sockets] == "6" && [Linked] <= "6" # [SellUnid] == "true"	//六洞裝		賣出	//	
-
-
-[Sockets] == "6" && [Linked] >= "6" && [Rarity] == "Normal" # [SellUnid] =="true"	//普通六連裝			//																								
-[Sockets] == "6" && [Linked] >= "6" && [Rarity] == "Magic" # [SellUnid] =="true"	//魔法六連裝			//																								
-[Sockets] == "6" && [Linked] >= "6" && [Rarity] == "Rare" # [SellUnid] =="true"	//稀有六連裝			//	
-[Sockets] == "6" && [Linked] >= "6" && [Rarity] == "Unique" # [SellUnid] =="true"	//稀有六連裝			//	
+[Sockets] == "6" && [Linked] <= "6" && [Rarity] == "Unique" # [SellUnid] == "true"	//稀有六洞裝			//	
