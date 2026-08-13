@@ -1375,7 +1375,7 @@ Show # 聯盟 - 3.12劫盜 - 契約書
     SetBorderColor 204 102 0
     SetFontSize 40
 
-Show # 聯盟 - 3.12劫盜 - 合同
+Hide # 聯盟 - 3.12劫盜 - 合同
     Class "Quest Item"
     BaseType "Contract"
     SetTextColor 0 255 0
@@ -2556,7 +2556,7 @@ Show # 命運卡 - 安全防漏線
 
 # 【輿圖物品】5001
 
-Show # 輿圖物品 - 任務道具
+Hide # 輿圖物品 - 任務道具
     Class "Quest Items"
     SetTextColor 0 255 0
     SetBackgroundColor 0 0 0
