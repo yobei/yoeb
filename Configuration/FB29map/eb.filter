@@ -22,6 +22,12 @@
 
 # 【特殊語法-六連裝備】0001
 
+Hide  # 胎贈
+    Class "Wombgift"
+
+Hide  # "裂片"
+    Class "Currency" "Stackable Currency"
+    BaseType "Splinter"
 
 
 Hide # 通貨 - 低階藝能
