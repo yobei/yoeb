@@ -70,13 +70,16 @@ SetGoodsCaoZuo(nil,"0|2","真銀藥劑","	Metadata/Items/Flasks/FlaskUtility14")
 g_useMoveSkillType=nil		--使用位移技能赶路场景 nil为一直都使用 0为剧情时使用 1为异界生产使用 2为从不使用
 g_shengJiBaoShi=true		--自动升级宝石 true为升级 nil或false为不升级
 g_notShuaBaiPao=true        --是否刷白袍 true为不刷 nil或false为刷
-g_attackDis=40			    --攻击距离
-g_duobiHpVal=0.2           --打怪时HP少于多少躲避
-g_yiJieLv=65				--够了多少级才去刷异界
+g_attackDis=40	 --攻击距离
+g_duobiHpVal=0.3           --打怪时HP少于多少躲避
+g_yiJieLv=70				--够了多少级才去刷异界
 --SetTaskShengJiData(taskClassName,taskIndex,shengjiMapClassName,needLv)--设置跑图时升级 taskClassName=任务类名 taskIndex=任务索引 nil为忽略，只匹配任务类名 shengjiMapClassName=要刷的地图类名 needLv=升级到多少级为止
-SetTaskShengJiData("a5q7",nil,"1_5_5",46)--做 到奇塔弗的受难 的时候刷纯净圣地到45级再进行下一任务
-SetTaskShengJiData("a9q3",nil,"2_9_1",63)--滲血水道
+--SetTaskShengJiData("a5q7",nil,"1_5_5",46)--做 到奇塔弗的受难 的时候刷纯净圣地到45级再进行下一任务
+--SetTaskShengJiData("a9q3",nil,"2_9_1",63)--滲血水道
 --SetTaskShengJiData("a10q1",nil,"2_9_1",85)--滲血水道
+
+SetTaskShengJiData("a5q7",nil,"1_5_5",46,true)--做 到奇塔弗的受难 的时候刷纯净圣地到46级再进行下一任务，不开箱子
+SetTaskShengJiData("a9q3",nil,"2_9_1",63,true)--滲血水道练等，不开箱子
 
 --SetTaskMiGongData(taskClassName,taskIndex,migongIndex)--设置跑图时迷宫 taskClassName=任务类名 taskIndex=任务索引 nil为忽略，只匹配任务类名 migongIndex为迷宫索引填 1=第一次迷宫 2=第二次迷宫
 SetTaskMiGongData("a8q7",nil,1)--大于等于a8q7级 做迷宫1
@@ -197,17 +200,17 @@ AddAttackSkillData("普通攻击","melee")
 -- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","衣服","local_has_no_sockets",-99999)--减分 岡姆
 
 --剧情有效
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","fire_and_cold_damage_resistance_%",0.25)--火焰与冰霜伤害抗性 %
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","fire_and_lightning_damage_resistance_%",0.25)--火焰与闪电伤害抗性 %
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","cold_and_lightning_damage_resistance_%",0.2)--冰霜与闪电伤害抗性 %
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","base_resist_all_elements_%",0.35)--全元素抗性 %
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","base_fire_damage_resistance_%",0.3)--基础火焰伤害抗性 %
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","base_cold_damage_resistance_%",0.3)--基础冰霜伤害抗性 %
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","base_lightning_damage_resistance_%",0.3)--基础闪电伤害抗性 %
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","cold_damage_resistance_%",0.3)--冰霜抗性 %
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","fire_damage_resistance_%",0.3)--火焰抗性 %
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","lightning_damage_resistance_%",0.3)--闪电抗性 %
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","base_movement_velocity_+%",0.3)--基础移动速度 +%
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","fire_and_cold_damage_resistance_%",0.8)--火焰与冰霜伤害抗性 %
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","fire_and_lightning_damage_resistance_%",0.8)--火焰与闪电伤害抗性 %
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","cold_and_lightning_damage_resistance_%",0.8)--冰霜与闪电伤害抗性 %
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","base_resist_all_elements_%",0.9)--全元素抗性 %
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","base_fire_damage_resistance_%",0.6)--基础火焰伤害抗性 %
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","base_cold_damage_resistance_%",0.6)--基础冰霜伤害抗性 %
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","base_lightning_damage_resistance_%",0.6)--基础闪电伤害抗性 %
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","cold_damage_resistance_%",0.6)--冰霜抗性 %
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","fire_damage_resistance_%",0.6)--火焰抗性 %
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","lightning_damage_resistance_%",0.6)--闪电抗性 %
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","base_movement_velocity_+%",0.6)--基础移动速度 +%
 SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","base_maximum_life",0.3)--生命
 SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","movement_velocity_+%",0.3)--移动速度 +%
 
@@ -352,5 +355,109 @@ SetNeedAddTianFu("游侠升华=AscendancyDeadeye5-投射物傷害、命中率|AscendancyDeade
 
 --SetNeedAddTianFu([[异界地图天赋=atlas_path_22-相鄰地圖掉落機率|atlas_path_12-相鄰地圖掉落機率|atlas_path_24_-相鄰地圖掉落機率|atlas_path_16-相鄰地圖掉落機率|atlas_path_25_-相鄰地圖掉落機率|atlas_path_27-相鄰地圖掉落機率|atlas_path_28-相鄰地圖掉落機率|atlas_map_drops_20-聖甲蟲掉落率|atlas_map_drops_2-聖甲蟲掉落率|atlas_map_drops_4-聖甲蟲掉落率|atlas_map_drops_8-聖甲蟲掉落率|atlas_path_92-聖甲蟲掉落率|atlas_path_61-物品數量|atlas_path_44-物品數量|atlas_path_35-物品數量|atlas_path_39-物品數量|atlas_path_34-物品數量|atlas_path_80-地圖詞綴效果|atlas_map_drops_7-地圖詞綴效果|atlas_mod_effect_6-地圖詞綴效果|atlas_keystone_nofragments_1-堅定不移的遠見|atlas_harbinger_1_1-額外神諭碎片|atlas_harbinger_1_2_-額外神諭碎片|atlas_harbinger_1_4-額外神諭碎片|atlas_harbinger_1_3-不祥到來|atlas_harbinger_3_1-額外神諭機率|atlas_harbinger_3_5-額外神諭碎片|atlas_harbinger_3_3-額外神諭碎片|atlas_harbinger_3_4-不可描述侵犯|atlas_harbinger_3_2-額外神諭機率|atlas_harbinger_3_6-額外神諭機率|atlas_harbinger_2_3-額外神諭機率|atlas_harbinger_2_5-額外神諭機率|atlas_harbinger_2_2-額外神諭機率|atlas_path_14-相鄰地圖掉落機率|atlas_path_26-相鄰地圖掉落機率|atlas_harvest_1_2-豐收機率|atlas_harvest_1_3-豐收機率|atlas_harvest_1_1-豐收機率|atlas_harvest_1_4-密園呼喚|atlas_harvest_2_1-豐收怪物複製機率|atlas_harvest_3_2-豐收機率|atlas_harvest_3_5-豐收機率|atlas_harvest_4_1-豐收額外生靈之力|atlas_harvest_2_3-豐收額外生靈之力|atlas_harvest_2_4-豐收額外生靈之力|atlas_harvest_3_4__-豐收|atlas_harvest_4_2-豐收怪物複製機率|atlas_harvest_2_5_-大豐收|atlas_path_83-聖甲蟲掉落率|atlas_harvest_4222-豐收額外生靈之力|atlas_harvest_4220-豐收額外生靈之力|atlas_harvest_4225-豐收額外生靈之力|atlas_harvest_4212-倍增期|atlas_harvest_4218-豐收機率|atlas_boss_adjacent_maps_10-物品數量和稀有度|atlas_boss_adjacent_maps_12-物品數量和稀有度|atlas_harvest_3_1-豐收階級 3 作物機率|atlas_harvest_2_6-密園之心|atlas_harvest_2_7-豐收階級 3 作物機率|atlas_harvest_3_3-豐收階級 3 作物機率|atlas_path_93-聖甲蟲掉落率|atlas_map_drops_9-聖甲蟲掉落率|atlas_map_drops_15-聖甲蟲掉落率|atlas_map_drops_16-聖甲蟲掉落率|atlas_map_drops_1-聖甲蟲掉落率|atlas_path_17-相鄰地圖掉落機率|atlas_path_18-相鄰地圖掉落機率|atlas_path_15-相鄰地圖掉落機率|atlas_path_2-相鄰地圖掉落機率|atlas_ritual_1_1-祭祀機率|atlas_ritual_1_2-祭祀機率|atlas_ritual_1_3-祭祀機率|atlas_ritual_1_4-聖地|atlas_path_82-聖甲蟲掉落率|atlas_map_drops_14-聖甲蟲掉落率|atlas_ritual_3_1-祭祀機率|atlas_ritual_3_2-重骰後免費獎勵機率|atlas_ritual_3_5-重骰後免費獎勵機率|atlas_ritual_3_4-貪財信徒|atlas_ritual_3_3-祭祀重骰消耗|atlas_ritual_3_6-祭祀重骰消耗|atlas_ritual_4253-靈活教條|atlas_path_85-聖甲蟲掉落率|atlas_mod_effect_1-地圖詞綴效果|atlas_ritual_4267-祭祀機率|atlas_ritual_4266-增加祭祀延遲消耗|atlas_ritual_4265_-增加祭祀延遲消耗|atlas_ritual_4254_-已答上訴|atlas_mod_effect_9-地圖詞綴效果|atlas_mod_effect_10-地圖詞綴效果|atlas_path_51-地圖詞綴效果|atlas_mod_effect_2-地圖詞綴效果|atlas_mod_effect_3-地圖詞綴效果|atlas_ritual_2_6-祭祀機率|atlas_ritual_2_3-祭祀貢禮數量|atlas_ritual_2_4_-祭祀貢禮數量|atlas_ritual_2_5-神秘奉獻|atlas_expedition_1_2-探險機率|atlas_expedition_4209-探險機率|atlas_expedition_4208-探險機率|atlas_expedition_1_3-尋找答案|atlas_expedition_3_3_-探險機率|atlas_keystone_expedition_single_explosive-極限考古學|atlas_expedition_3_4-探險商人重骰通貨機率|atlas_expedition_3_5-古文|atlas_expedition_4_5-探險機率|atlas_expedition_4_3-探險文物數量|atlas_expedition_4_6-被埋葬的知識|atlas_expedition_3_7-探險機率|atlas_expedition_4_7-探險機率|atlas_expedition_4_1-探險機率|atlas_expedition_4_2-爆裂物放置距離|atlas_expedition_1_4-傑出的拆遷專家|atlas_harbinger_2_4-初潮|]])
 
---异界天赋 輿圖點速刷轉EB
-SetNeedAddTianFu([[异界地图天赋=atlas_path_22-相鄰地圖掉落機率|atlas_path_23_-相鄰地圖掉落機率|atlas_boss_adjacent_maps_1-相鄰地圖掉落機率|atlas_boss_adjacent_maps_8-相鄰地圖掉落機率|atlas_zana_1_11-偵查報告掉落機率|atlas_zana_1_3-偵查報告掉落機率|atlas_zana_1_6-重點偵察|atlas_zana_1_1-偵查報告掉落機率|atlas_zana_1_2-偵查報告掉落機率|atlas_path_96-聖甲蟲掉落率|atlas_map_tier_3_3-雕塑世界|atlas_map_tier_5_2-高階地圖機率|atlas_keystone_fortune_favours_doubled-大膽行動|atlas_map_tier_4_1-高階地圖機率|atlas_map_tier_5_1-高階地圖機率|atlas_path_61-物品數量|atlas_path_44-物品數量|atlas_path_35-物品數量|atlas_path_39-物品數量|atlas_path_34-物品數量|atlas_path_80-物品稀有度|atlas_map_drops_7-物品稀有度|atlas_mod_effect_6-地圖詞綴效果|atlas_keystone_nofragments_1-堅定不移的遠見|atlas_map_tier_3_2-高階地圖機率|atlas_map_tier_3_1-高階地圖機率|atlas_path_38-相鄰地圖掉落機率|atlas_path_21-相鄰地圖掉落機率|atlas_path_27-相鄰地圖掉落機率|atlas_path_28-相鄰地圖掉落機率|atlas_map_tier_1_2_-高階地圖機率|atlas_map_tier_1_1-高階地圖機率|atlas_map_tier_1_3-雕塑山型|atlas_path_37-相鄰地圖掉落機率|atlas_path_30-相鄰地圖掉落機率|atlas_path_18-相鄰地圖掉落機率|atlas_path_17-相鄰地圖掉落機率|atlas_map_tier_2_1-高階地圖機率|atlas_map_tier_2_2-高階地圖機率|atlas_map_tier_2_3-雕塑天空|atlas_path_15-相鄰地圖掉落機率|atlas_path_2-相鄰地圖掉落機率|atlas_path_10-相鄰地圖掉落機率|atlas_path_19-相鄰地圖掉落機率|atlas_path_1-相鄰地圖掉落機率|atlas_path_20-相鄰地圖掉落機率|atlas_path_9-相鄰地圖掉落機率|atlas_path_6-相鄰地圖掉落機率|atlas_path_8-相鄰地圖掉落機率|atlas_path_13-相鄰地圖掉落機率|atlas_path_22-相鄰地圖掉落機率|atlas_path_12-相鄰地圖掉落機率|atlas_path_24_-相鄰地圖掉落機率|atlas_path_16-相鄰地圖掉落機率|atlas_path_25_-相鄰地圖掉落機率|atlas_path_5-相鄰地圖掉落機率|atlas_path_14-相鄰地圖掉落機率|atlas_path_26-相鄰地圖掉落機率|]])
+SetNotOpenChestMap("1_1_2")   -- 暮光海灘
+SetNotOpenChestMap("1_1_4")   -- 碎岩山坡
+SetNotOpenChestMap("1_1_5")   -- 禁靈之獄下層
+SetNotOpenChestMap("1_1_6")   -- 禁靈之獄上層
+SetNotOpenChestMap("1_1_7")   -- 囚犯之門
+SetNotOpenChestMap("1_1_8")   -- 魅影船墓
+SetNotOpenChestMap("1_1_9")   -- 怨忿之窟深處
+SetNotOpenChestMap("2_2_1")   -- 南部森林
+SetNotOpenChestMap("2_2_2")   -- 危機叉路
+SetNotOpenChestMap("2_2_3")   -- 罪孽之殿1層
+SetNotOpenChestMap("2_2_6")   -- 西部密林
+SetNotOpenChestMap("2_2_7")   -- 織網者巢穴
+SetNotOpenChestMap("2_2_8")   -- 河畔斷橋
+SetNotOpenChestMap("2_2_9")   -- 濕地
+SetNotOpenChestMap("2_2_10")  -- 瓦爾廢墟
+SetNotOpenChestMap("2_2_11")  -- 北部密林
+SetNotOpenChestMap("2_2_12")  -- 瀑布洞穴
+SetNotOpenChestMap("1_3_1")   -- 薩恩城外
+SetNotOpenChestMap("1_3_2")   -- 貧民窟
+SetNotOpenChestMap("1_3_3")   -- 火葬場
+SetNotOpenChestMap("1_3_5")   -- 市集地帶
+SetNotOpenChestMap("1_3_6")   -- 激戰廣場
+SetNotOpenChestMap("1_3_7")   -- 日耀神殿1層
+SetNotOpenChestMap("1_3_8")   -- 日耀神殿2層
+SetNotOpenChestMap("1_3_9")   -- 碼頭
+SetNotOpenChestMap("1_3_10")  -- 烏旗守衛兵營
+SetNotOpenChestMap("1_3_13")  -- 月影神殿1層
+SetNotOpenChestMap("1_3_14")  -- 月影神殿2層
+SetNotOpenChestMap("1_3_15")  -- 皇家花園
+SetNotOpenChestMap("1_3_17")  -- 神權之塔上層
+SetNotOpenChestMap("1_4_1")   -- 乾涸湖岸
+SetNotOpenChestMap("1_4_2")   -- 漆黑礦坑1層
+SetNotOpenChestMap("1_4_3")   -- 漆黑礦坑2層
+SetNotOpenChestMap("1_4_4")   -- 水晶礦脈
+SetNotOpenChestMap("1_4_5")   -- 岡姆的夢境
+SetNotOpenChestMap("1_4_6")   -- 岡姆的堡壘
+SetNotOpenChestMap("1_4_7")   -- 德瑞索的夢境
+SetNotOpenChestMap("1_4_8")   -- 大競技場
+SetNotOpenChestMap("1_4_9")   -- 巨獸之腹1層
+SetNotOpenChestMap("1_4_10")  -- 巨獸之腹2層
+SetNotOpenChestMap("1_4_11")  -- 育靈之室
+SetNotOpenChestMap("1_5_1")   -- 奴隸圍欄
+SetNotOpenChestMap("1_5_2")   -- 監守大道
+SetNotOpenChestMap("1_5_3")   -- 鎮壓地帶
+SetNotOpenChestMap("1_5_4")   -- 聖堂屋頂
+SetNotOpenChestMap("1_5_5")   -- 純淨聖地
+SetNotOpenChestMap("1_5_6")   -- 藏骨堂
+SetNotOpenChestMap("1_5_7")   -- 聖物間
+SetNotOpenChestMap("1_5_8")   -- 毀滅的廣場
+SetNotOpenChestMap("1_5_9")   -- 褻瀆之室
+SetNotOpenChestMap("2_6_1")   -- 暮光海灘(A6)
+SetNotOpenChestMap("2_6_2")   -- 炙熱鹽沼(A6)
+SetNotOpenChestMap("2_6_4")   -- 泥濘灘
+SetNotOpenChestMap("2_6_5")   -- 禁靈之獄下層(A6)
+SetNotOpenChestMap("2_6_7")   -- 囚犯之門(A6)
+SetNotOpenChestMap("2_6_8")   -- 西部密林(A6)
+SetNotOpenChestMap("2_6_9")   -- 河畔斷橋(A6)
+SetNotOpenChestMap("2_6_10")  -- 濕地(A6)
+SetNotOpenChestMap("2_6_11")  -- 南部森林(A6)
+SetNotOpenChestMap("2_6_12")  -- 憤怒之窟
+SetNotOpenChestMap("2_6_13")  -- 烽火柱
+SetNotOpenChestMap("2_6_14")  -- 海洋王座
+SetNotOpenChestMap("2_7_1")   -- 絕望沼澤
+SetNotOpenChestMap("2_7_2")   -- 危機叉路(A7)
+SetNotOpenChestMap("2_7_3")   -- 墮道遺跡
+SetNotOpenChestMap("2_7_4")   -- 罪孽之殿1層(A7)
+SetNotOpenChestMap("2_7_5")   -- 罪孽之殿2層(A7)
+SetNotOpenChestMap("2_7_6")   -- 獸穴
+SetNotOpenChestMap("2_7_7")   -- 灰原
+SetNotOpenChestMap("2_7_8")   -- 北部密林(A7)
+SetNotOpenChestMap("2_7_9")   -- 驚魂樹洞
+SetNotOpenChestMap("2_7_10")  -- 堤道
+SetNotOpenChestMap("2_7_11")  -- 瓦爾城市
+SetNotOpenChestMap("2_7_12")  -- 腐化神殿1層
+SetNotOpenChestMap("2_7_13")  -- 腐化神殿2層
+SetNotOpenChestMap("2_8_1")   -- 薩恩城牆
+SetNotOpenChestMap("2_8_2")   -- 毒氣林谷
+SetNotOpenChestMap("2_8_3")   -- 大決鬥場
+SetNotOpenChestMap("2_8_4")   -- 糧儲關口
+SetNotOpenChestMap("2_8_5")   -- 帝王行宮
+SetNotOpenChestMap("2_8_6")   -- 日耀神殿1層(A8)
+SetNotOpenChestMap("2_8_7")   -- 日耀神殿2層(A8)
+SetNotOpenChestMap("2_8_8")   -- 激戰廣場(A8)
+SetNotOpenChestMap("2_8_9")   -- 港口大橋
+SetNotOpenChestMap("2_8_10")  -- 月影神殿1層(A8)
+SetNotOpenChestMap("2_8_11")  -- 月影神殿2層(A8)
+SetNotOpenChestMap("2_8_12")  -- 浴血大道
+SetNotOpenChestMap("2_8_13")  -- 宏偉長廊
+SetNotOpenChestMap("2_9_1")   -- 滲血水道
+SetNotOpenChestMap("2_9_2")   -- 瓦斯提里荒漠
+SetNotOpenChestMap("2_9_3")   -- 綠洲
+SetNotOpenChestMap("2_9_4")   -- 山麓
+SetNotOpenChestMap("2_9_5")   -- 沸騰湖泊
+SetNotOpenChestMap("2_9_6")   -- 隧道
+SetNotOpenChestMap("2_9_7")   -- 採石場
+SetNotOpenChestMap("2_9_8")   -- 煉油廠
+SetNotOpenChestMap("2_9_9")   -- 巨獸之腹(A9)
+SetNotOpenChestMap("2_9_10")  -- 腐化核心
+SetNotOpenChestMap("2_10_1")  -- 奧瑞亞廣場
+SetNotOpenChestMap("2_10_2")  -- 褻瀆之室(A10)
+SetNotOpenChestMap("2_10_3")  -- 焦黑廣場
+SetNotOpenChestMap("2_10_4")  -- 鎮壓地帶(A10)
+SetNotOpenChestMap("2_10_5")  -- 聖物間(A10)
+SetNotOpenChestMap("2_10_6")  -- 運河
+SetNotOpenChestMap("2_10_7")  -- 豢養場
+SetNotOpenChestMap("2_10_8")  -- 聖堂屋頂(A10)
