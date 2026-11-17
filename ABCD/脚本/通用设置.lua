@@ -161,15 +161,15 @@ SetSaveIndex(nil,"1","改造石","Metadata/Items/Currency/CurrencyRerollMagic")
 ------------------挂机相关
 g_yijieNoWhiteMonster=false		--异界时是否不打白怪 true为不打 nil或false为打
 g_yijieNoWhiteBox=true			--异界时是否不开白箱子 true为不开 nil或false为开
-g_useYiJieWanChengDuLv=68	--使用下面异界完成度那个设置的等级，如果未到等则刷全图
+g_useYiJieWanChengDuLv=70	--使用下面异界完成度那个设置的等级，如果未到等则刷全图
 g_yiJieWanChengDu=0.9		--异界完成度 完成多少就回去 为1或1以下的小数
-g_yongHengShiBeiLv=68		--大于等于多少级打永恒石碑 
-g_needTaFangLv=68			--大于等于多少级打塔防
-g_needLianMoLv=68			--大于等于多少级打炼魔
-g_attackFreezeMonsterLv=68	--大于等于多少级打冰冻怪
-g_needChuanYueLv=68			--大于等于多少级打穿越怪
-g_needLieXiLv=68			--大於等于多少级打时空裂缝怪
-g_needMiWuLv=68				--大于等于多少级打迷雾
+g_yongHengShiBeiLv=78		--大于等于多少级打永恒石碑 
+g_needTaFangLv=78			--大于等于多少级打塔防
+g_needLianMoLv=78			--大于等于多少级打炼魔
+g_attackFreezeMonsterLv=78	--大于等于多少级打冰冻怪
+g_needChuanYueLv=78		--大于等于多少级打穿越怪
+g_needLieXiLv=78			--大於等于多少级打时空裂缝怪
+g_needMiWuLv=78				--大于等于多少级打迷雾
 
 g_yuyanCnt=nil				--够多少银币去预言，小于10银币或填nil将不会触发 如果设定去预言，那下面还需要设置交易给仓库号的预言
 
