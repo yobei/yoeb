@@ -123,13 +123,12 @@ SetUseZhuangBeiTypeData("StrInt","项链")
 
 SetNeedSkillLineData(10,"燃燒箭矢,nil|氣勢輔助,nil",2,nil,nil)
 SetNeedSkillLineData(98,"火砲砲塔,nil|元素攻擊傷害輔助,nil|快速攻擊輔助,nil|多重圖騰輔助,nil",80,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,30)
-SetNeedSkillLineData(60,"魔改箭矢輔助,nil,1|狂怒,nil|冰霜射擊,nil|暴擊獲得暴擊球輔助,nil|活栓輔助,nil|活栓輔助,nil|魔改箭矢輔助,nil|龍捲射擊,nil|誘捕箭矢,nil|物品稀有度增幅輔助,nil|恢復輔助,nil|鮮血狂怒,nil|迅捷,nil",nil,nil,nil,"魔改箭矢輔助",nil,nil,nil,nil,nil,nil,nil,nil,50)
+SetNeedSkillLineData(60,"魔改箭矢輔助,nil|狂怒,nil|冰霜射擊,nil|暴擊獲得暴擊球輔助,nil|活栓輔助,nil|鮮血狂怒,nil|迅捷,nil",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,50)
 SetNeedSkillLineData(99,"元素淨化,nil|憤怒,nil|鋼筋鐵骨,nil",nil,nil,nil)
 SetNeedSkillLineData(96,"幻步,nil|狙擊者印記,nil|擊中時印記輔助,nil|召喚寒冰魔像,nil",nil,nil,nil)
 SetNeedSkillLineData(50,"彈片砲塔,nil|快速攻擊輔助,nil|猛毒投射物輔助,nil|齊射輔助,nil",30,nil,nil)
 SetNeedSkillLineData(30,"電流箭矢,nil|附加冰冷傷害輔助,nil|元素攻擊傷害輔助,nil|幻影射手輔助,nil|附加火焰傷害輔助,nil",18,nil,nil)
-SetNeedSkillLineData(100,"閃電箭矢,nil,1|附加冰冷傷害輔助,nil|元素攻擊傷害輔助,nil|三體輔助,nil|幻影射手輔助,nil|啟發輔助,nil",nil,nil,nil,"閃電箭矢",nil,nil,nil,nil,nil,nil,nil,nil,12)
-
+SetNeedSkillLineData(100,"閃電箭矢,nil|幻影射手輔助,nil|三體輔助,nil|附加冰冷傷害輔助,nil|元素攻擊傷害輔助,nil|啟發輔助,nil",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,12)
 
 AddMoveSkillData("幻步","quick_dodge")
 --异界主力技能设置
