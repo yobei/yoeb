@@ -182,7 +182,9 @@ AddUseSkillData(1,"鮮血狂怒","blood_rage")
 
 
 
-SetUseTuTengMonsterShuXingCnt("2|3",0)
+SetGoodsCaoZuo(nil,"0|1","改造石","Metadata/Items/Currency/CurrencyRerollMagic",nil,nil,nil,15)
+
+SetUseTuTengMonsterShuXingCnt("3",0)
 --SetSkillLimitMaxLv(name,className,maxLv)--设置技能宝石最大等级 name=技能宝石物品名 className=技能宝石物品类名 maxLv=限制的最大等级
 --SetSkillLimitMaxLv("亵渎","Metadata/Items/Gems/SkillGemDesecrate",2)
 --SetSkillLimitMaxLv("迅捷","Metadata/Items/Gems/SkillGemHaste",11)
