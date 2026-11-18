@@ -130,10 +130,10 @@ SetNeedSkillLineData(30,"電流箭矢,nil|附加冰冷傷害輔助,nil|元素攻擊傷害輔助,nil|
 SetNeedSkillLineData(100,"閃電箭矢,nil|幻影射手輔助,nil|三體輔助,nil|附加冰冷傷害輔助,nil|元素攻擊傷害輔助,nil|啟發輔助,nil",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,12)
 
 -- 階段1（15-30等過渡）：雙捷光環 + 鋼筋鐵骨（31等自動失效讓出魔力保留）
-SetNeedSkillLineData(50,"冰霜之捷,nil|灰燼之捷,nil|鋼筋鐵骨,nil",32,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,15)
+SetNeedSkillLineData(50,"冰霜之捷,nil|灰燼之捷,nil|鋼筋鐵骨,nil",33,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,15)
 
 -- 階段2（24等起、打完烏旗守衛將軍買到後接手）：元素淨化 + 憤怒 + 鋼筋鐵骨
-SetNeedSkillLineData(99,"元素淨化,nil,1|憤怒,nil|鋼筋鐵骨,nil",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,32)
+SetNeedSkillLineData(99,"元素淨化,nil,1|憤怒,nil|鋼筋鐵骨,nil",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,33)
 SetUseBuffSkill("冰霜之捷","herald_of_ice","冰霜之捷","herald_of_ice")
 SetUseBuffSkill("灰燼之捷","herald_of_ash","灰燼之捷","herald_of_ash")
 
