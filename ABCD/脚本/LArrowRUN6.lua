@@ -156,8 +156,6 @@ SetUseZhuangBeiTypeData("StrInt","项链")
 
 
 SetNeedSkillLineData(70,"幻步,nil",nil,nil,nil)
-SetNeedSkillLineData(65,"召喚寒冰魔像,nil",nil,nil,nil)
-SetNeedSkillLineData(60,"鋼筋鐵骨,nil",nil,nil,nil)
 SetNeedSkillLineData(10,"燃燒箭矢,nil|氣勢輔助,nil",2,nil,nil)
 SetNeedSkillLineData(98,"火砲砲塔,nil|元素攻擊傷害輔助,nil|快速攻擊輔助,nil|附加冰冷傷害輔助,nil",80,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,30)
 SetNeedSkillLineData(60,"魔改箭矢輔助,nil|狂怒,nil|冰霜射擊,nil|暴擊獲得暴擊球輔助,nil|活栓輔助,nil|鮮血狂怒,nil|迅捷,nil",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,50)
@@ -167,12 +165,17 @@ SetNeedSkillLineData(30,"電流箭矢,nil|附加冰冷傷害輔助,nil|元素攻擊傷害輔助,nil|
 SetNeedSkillLineData(100,"閃電箭矢,nil|幻影射手輔助,nil|三體輔助,nil|附加冰冷傷害輔助,nil|元素攻擊傷害輔助,nil|啟發輔助,nil",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,12)
 
 -- 階段1（15-30等過渡）：雙捷光環 + 鋼筋鐵骨（31等自動失效讓出魔力保留）
-SetNeedSkillLineData(50,"冰霜之捷,nil|灰燼之捷,nil",33,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,15)
+-- SetNeedSkillLineData(50,"冰霜之捷,nil|灰燼之捷,nil",33,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,15)
+
+SetNeedSkillLineData(95,"冰霜之捷,nil|灰燼之捷,nil|鋼筋鐵骨,nil|召喚寒冰魔像,nil",33,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,15)
+
 
 -- 階段2（24等起、打完烏旗守衛將軍買到後接手）：元素淨化 + 憤怒 + 鋼筋鐵骨
-SetNeedSkillLineData(99,"元素淨化,nil,1|憤怒,nil",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,33)
+SetNeedSkillLineData(99,"元素淨化,nil,1|憤怒,nil|鋼筋鐵骨,nil|召喚寒冰魔像,nil",nil,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,33)
+
 SetUseBuffSkill("冰霜之捷","herald_of_ice","冰霜之捷","herald_of_ice")
 SetUseBuffSkill("灰燼之捷","herald_of_ash","灰燼之捷","herald_of_ash")
+
 
 AddMoveSkillData("幻步","quick_dodge")
 --异界主力技能设置
