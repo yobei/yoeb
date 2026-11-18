@@ -97,7 +97,7 @@ AddNeedBuySkillTime(4,"a4q6") -- ÓÀa‰ôô|£¯ñRÀ­„P£¨38µÈ¸ßëAÝoÖú£º±©“ô«@µÃ±©“ôÇòµ
 AddNeedBuySkillTime(6,"a6q1") -- ‰™ÂäÖ®Òí£¯ÇåÀíÄº¹âº£ž©£¨½âæiÈ«ß[‘òŽ×ºõËùÓÐÖ÷„ÓÅcÝoÖúŒšÊ¯£©
 AddNeedBuySkillTime(7,"a7q1") -- µÚÆßÕÂÆðücÑaÙI´_ÕJ
 
-ddNeedBuySkillTime(8,"a8q1") -- ÈÕÒ«ÅcÔÂÓ°£¨µÚ8ÕÂ×î½KBoss£¬´òÍêœÊ‚äßMµÚ9ÕÂ£©
+AddNeedBuySkillTime(8,"a8q1") -- ÈÕÒ«ÅcÔÂÓ°£¨µÚ8ÕÂ×î½KBoss£¬´òÍêœÊ‚äßMµÚ9ÕÂ£©
 AddNeedBuySkillTime(9,"a9q1") -- ßMµÚ9ÕÂ¸ßéT IµØ£¨ÕÒÀòÀò£®Á_Ë¹ÑaÙIÈ«¼¼ÄÜ£©
 
 
