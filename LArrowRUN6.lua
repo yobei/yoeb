@@ -155,7 +155,7 @@ SetUseZhuangBeiTypeData("StrInt","ÏîÁ´")
 --¾çÇéÖ÷Á¦¼¼ÄÜÉèÖÃ
 
 
-SetNeedSkillLineData(70,"»Ã²½,nil",nil,nil,nil)
+SetNeedSkillLineData(70,"ä“½îèF¹Ç,nil",nil,nil,nil)
 SetNeedSkillLineData(10,"È¼Ÿı¼ıÊ¸,nil|šâ„İİoÖú,nil",2,nil,nil)
 SetNeedSkillLineData(98,"»ğ³h³hËş,nil|ÔªËØ¹¥“ô‚ûº¦İoÖú,nil|¿ìËÙ¹¥“ôİoÖú,nil|¸½¼Ó±ùÀä‚ûº¦İoÖú,nil",80,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,30)
 SetNeedSkillLineData(60,"Ä§¸Ä¼ıÊ¸İoÖú,nil|¿ñÅ­,nil|±ùËªÉä“ô,nil|±©“ô«@µÃ±©“ôÇòİoÖú,nil|»îË¨İoÖú,nil|õrÑª¿ñÅ­,nil|Ñ¸½İ,nil",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,50)
@@ -167,11 +167,11 @@ SetNeedSkillLineData(100,"éWëŠ¼ıÊ¸,nil|»ÃÓ°ÉäÊÖİoÖú,nil|ÈıówİoÖú,nil|¸½¼Ó±ùÀä‚ûº
 -- ëA¶Î1£¨15-30µÈß^¶É£©£ºëp½İ¹â­h + ä“½îèF¹Ç£¨31µÈ×Ô„ÓÊ§Ğ§×Œ³öÄ§Á¦±£Áô£©
 -- SetNeedSkillLineData(50,"±ùËªÖ®½İ,nil|»Ò aÖ®½İ,nil",33,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,15)
 
-SetNeedSkillLineData(95,"±ùËªÖ®½İ,nil|»Ò aÖ®½İ,nil|ä“½îèF¹Ç,nil|ÕÙ†¾º®±ùÄ§Ïñ,nil",33,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,15)
+SetNeedSkillLineData(95,"±ùËªÖ®½İ,nil|»Ò aÖ®½İ,nil|ÕÙ†¾º®±ùÄ§Ïñ,nil|»Ã²½,nil",33,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,15)
 
 
 -- ëA¶Î2£¨24µÈÆğ¡¢´òÍêõÆìÊØĞlŒ¢ÜŠÙIµ½áá½ÓÊÖ£©£ºÔªËØœQ»¯ + ‘Å­ + ä“½îèF¹Ç
-SetNeedSkillLineData(99,"ÔªËØœQ»¯,nil,1|‘Å­,nil|ä“½îèF¹Ç,nil|ÕÙ†¾º®±ùÄ§Ïñ,nil",nil,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,33)
+SetNeedSkillLineData(99,"ÔªËØœQ»¯,nil,1|‘Å­,nil|ÕÙ†¾º®±ùÄ§Ïñ,nil|»Ã²½,nil",nil,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,33)
 
 SetUseBuffSkill("±ùËªÖ®½İ","herald_of_ice","±ùËªÖ®½İ","herald_of_ice")
 SetUseBuffSkill("»Ò aÖ®½İ","herald_of_ash","»Ò aÖ®½İ","herald_of_ash")
