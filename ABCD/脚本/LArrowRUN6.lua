@@ -60,16 +60,16 @@ SetNeedFlaskData(5,"魔力药剂")
 --SetMapGongYi(name)
 --name 字符串型 地图工艺的名字 开图时会选择相符的地图工艺
 
-SetSellGoodsData("蜕变石","Metadata/Items/Currency/CurrencyUpgradeToMagic",30,"0|1|2")
-SetGoodsCaoZuo(nil,"0|1","蜕变石","Metadata/Items/Currency/CurrencyUpgradeToMagic",nil,nil,nil,5)--身上保留40
-SetGoodsCaoZuo(nil,"0|1","蛻變石","Metadata/Items/Currency/CurrencyUpgradeToMagic",nil,nil,nil,5)--身上保留40
+--SetSellGoodsData("蜕变石","Metadata/Items/Currency/CurrencyUpgradeToMagic",30,"0|1|2")
+--SetGoodsCaoZuo(nil,"0|1","蜕变石","Metadata/Items/Currency/CurrencyUpgradeToMagic",nil,nil,nil,5)--身上保留40
+--SetGoodsCaoZuo(nil,"0|1","蛻變石","Metadata/Items/Currency/CurrencyUpgradeToMagic",nil,nil,nil,5)--身上保留40
 
 SetGoodsCaoZuo(nil,"0|2","真銀藥劑","Metadata/Items/Flasks/FlaskUtility14")
 SetGoodsCaoZuo(nil,"0|2","寶鑽藥劑","Metadata/Items/Flasks/FlaskUtility4")
 SetGoodsCaoZuo(nil,"0|2","水銀藥劑","Metadata/Items/Flasks/FlaskUtility6")
 
-SetGoodsCaoZuo(nil,"0|1","知識卷軸","Metadata/Items/Currency/CurrencyIdentification",nil,nil,nil,40)
-SetGoodsCaoZuo(nil,"0|1","知识卷轴","Metadata/Items/Currency/CurrencyIdentification",nil,nil,nil,40)
+--SetGoodsCaoZuo(nil,"0|1","知識卷軸","Metadata/Items/Currency/CurrencyIdentification",nil,nil,nil,40)
+--SetGoodsCaoZuo(nil,"0|1","知识卷轴","Metadata/Items/Currency/CurrencyIdentification",nil,nil,nil,40)
 
 
 -- 第一章（Act 1）：所有解鎖商店寶石的關鍵節點
