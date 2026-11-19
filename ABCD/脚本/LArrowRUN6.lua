@@ -157,7 +157,7 @@ SetUseZhuangBeiTypeData("StrInt","ÏîÁ´")
 
 SetNeedSkillLineData(10,"È¼Ÿı¼ıÊ¸,nil|šâ„İİoÖú,nil",2,nil,nil)
 SetNeedSkillLineData(98,"»ğ³h³hËş,nil|ÔªËØ¹¥“ô‚ûº¦İoÖú,nil|¿ìËÙ¹¥“ôİoÖú,nil|¸½¼Ó±ùÀä‚ûº¦İoÖú,nil",80,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,30)
-SetNeedSkillLineData(60,"Ä§¸Ä¼ıÊ¸İoÖú,nil|¿ñÅ­,nil|±ùËªÉä“ô,nil|±©“ô«@µÃ±©“ôÇòİoÖú,nil|»îË¨İoÖú,nil|õrÑª¿ñÅ­,nil|Ñ¸½İ,nil",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,50)
+SetNeedSkillLineData(95,"Ä§¸Ä¼ıÊ¸İoÖú,nil|¿ñÅ­,nil|±ùËªÉä“ô,nil|±©“ô«@µÃ±©“ôÇòİoÖú,nil|»îË¨İoÖú,nil|»îË¨İoÖú,nil|Ä§¸Ä¼ıÊ¸İoÖú,nil|ıˆ’ÔÉä“ô,nil|ÕT²¶¼ıÊ¸,nil|ÎïÆ·Ï¡ÓĞ¶ÈÔö·ùİoÖú,nil|»Ã²½,nil|»ÖÍİoÖú,nil|õrÑª¿ñÅ­,nil|Ñ¸½İ,nil",nil,nil,nil)
 SetNeedSkillLineData(96,"»Ã²½,nil|¾Ñ“ôÕßÓ¡Ó›,nil|“ôÖĞ•rÓ¡Ó›İoÖú,nil",nil,nil,nil)
 SetNeedSkillLineData(50,"—Æ¬³hËş,nil|¿ìËÙ¹¥“ôİoÖú,nil|ÃÍ¶¾Í¶ÉäÎïİoÖú,nil|ıRÉäİoÖú,nil",30,nil,nil)
 SetNeedSkillLineData(30,"ëŠÁ÷¼ıÊ¸,nil|¸½¼Ó±ùÀä‚ûº¦İoÖú,nil|ÔªËØ¹¥“ô‚ûº¦İoÖú,nil|»ÃÓ°ÉäÊÖİoÖú,nil|¸½¼Ó»ğÑæ‚ûº¦İoÖú,nil",14,nil,nil)
@@ -321,7 +321,7 @@ SetGaoJiHuanZhuangData("ÓÎÏÀ","º†Ò×Ö®ÅÛ","Metadata/Items/Armours/BodyArmours/Bod
 
 -- î^¿ø£ºÇ°ÆÚ½ğ¿|Ã±£¨4000·Ö£© -> 55µÈáá×Ô„ÓÉı¼‰³ÉÊó³²£¨5000·Ö£©
 SetGaoJiHuanZhuangData("ÓÎÏÀ","Æ¤Ã±","Metadata/Items/Armours/Helmets/HelmetDex1","½ğ¿|Ã±","Goldrim",nil,nil,nil,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,4000)
-SetGaoJiHuanZhuangData("ÓÎÏÀ","ĞÜÊ×Æ¤¿ø","Metadata/Items/Armours/Helmets/HelmetDex7","Êó³²","Rat's Nest",nil,nil,nil,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
+-- SetGaoJiHuanZhuangData("ÓÎÏÀ","ĞÜÊ×Æ¤¿ø","Metadata/Items/Armours/Helmets/HelmetDex7","Êó³²","Rat's Nest",nil,nil,nil,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
 
 -- ½äÖ¸£ºŠÖÆ·Öé_×ó½ä(7)ÅcÓÒ½ä(8)£¬±ÜÃâƒÉîw‚÷Ææ½äÖ¸»¥Ïà“ŒÎ»
 SetGaoJiHuanZhuangData("ÓÎÏÀ","å‘èF½äÖ¸","Metadata/Items/Rings/Ring1","Ó¢ì`Œš­h","Le Heup of All",nil,nil,nil,7,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
