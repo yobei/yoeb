@@ -184,8 +184,6 @@ AddUseSkillData(1,"õrÑª¿ñÅ­","blood_rage")
 
 
 
-SetGoodsCaoZuo(nil,"0|1","¸ÄÔìÊ¯","Metadata/Items/Currency/CurrencyRerollMagic",nil,nil,nil,15)
-
 SetUseTuTengMonsterShuXingCnt("3",0)
 --SetSkillLimitMaxLv(name,className,maxLv)--ÉèÖÃ¼¼ÄÜ±¦Ê¯×î´óµÈ¼¶ name=¼¼ÄÜ±¦Ê¯ÎïÆ·Ãû className=¼¼ÄÜ±¦Ê¯ÎïÆ·ÀàÃû maxLv=ÏŞÖÆµÄ×î´óµÈ¼¶
 --SetSkillLimitMaxLv("ÙôäÂ","Metadata/Items/Gems/SkillGemDesecrate",2)
@@ -320,7 +318,7 @@ AddShengJiZhuangBeiGoodsData("¸»ºÀÊ¯","Metadata/Items/Currency/CurrencyUpgradeMa
 SetGaoJiHuanZhuangData("ÓÎÏÀ","º†Ò×Ö®ÅÛ","Metadata/Items/Armours/BodyArmours/BodyInt1","Ÿo±MÖ®ÒÂ","Tabula Rasa",nil,nil,nil,2,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
 
 -- î^¿ø£ºÇ°ÆÚ½ğ¿|Ã±£¨4000·Ö£© -> 55µÈáá×Ô„ÓÉı¼‰³ÉÊó³²£¨5000·Ö£©
-SetGaoJiHuanZhuangData("ÓÎÏÀ","Æ¤Ã±","Metadata/Items/Armours/Helmets/HelmetDex1","½ğ¿|Ã±","Goldrim",nil,nil,nil,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,4000)
+-- SetGaoJiHuanZhuangData("ÓÎÏÀ","Æ¤Ã±","Metadata/Items/Armours/Helmets/HelmetDex1","½ğ¿|Ã±","Goldrim",nil,nil,nil,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,4000)
 -- SetGaoJiHuanZhuangData("ÓÎÏÀ","ĞÜÊ×Æ¤¿ø","Metadata/Items/Armours/Helmets/HelmetDex7","Êó³²","Rat's Nest",nil,nil,nil,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
 
 -- ½äÖ¸£ºŠÖÆ·Öé_×ó½ä(7)ÅcÓÒ½ä(8)£¬±ÜÃâƒÉîw‚÷Ææ½äÖ¸»¥Ïà“ŒÎ»
@@ -330,10 +328,12 @@ SetGaoJiHuanZhuangData("ÓÎÏÀ","º£ì`½äÖ¸","Metadata/Items/Rings/Ring3","ÆÕÌmµÂË¹Ö
 -- Ñü§¡¢¼ı´ü¡¢ÊÖÌ×¡¢Ğ¬×Ó
 SetGaoJiHuanZhuangData("ÓÎÏÀ","ËØ²¼Ñü§","Metadata/Items/Belts/Belt1","»Ã²ÊÁâ¿—","Prismweave",nil,nil,nil,11,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
 SetGaoJiHuanZhuangData("ÓÎÏÀ","Ô­Ê¸¼ı´ü","Metadata/Items/Quivers/QuiverNew13","Æ½ºâ¶ çR","The Poised Prism",nil,nil,nil,4,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
-SetGaoJiHuanZhuangData("ÓÎÏÀ","­h§×oÊÖ","Metadata/Items/Armours/Gloves/GlovesDexInt3","É³‰mÖ®Ó°","Shadows and Dust",nil,nil,nil,9,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
-SetGaoJiHuanZhuangData("ÓÎÏÀ","­h§éLÑ¥","Metadata/Items/Armours/Boots/BootsDexInt3","ÈÕÒ«","Sundance",nil,nil,nil,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
+-- SetGaoJiHuanZhuangData("ÓÎÏÀ","­h§×oÊÖ","Metadata/Items/Armours/Gloves/GlovesDexInt3","É³‰mÖ®Ó°","Shadows and Dust",nil,nil,nil,9,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
+-- SetGaoJiHuanZhuangData("ÓÎÏÀ","­h§éLÑ¥","Metadata/Items/Armours/Boots/BootsDexInt3","ÈÕÒ«","Sundance",nil,nil,nil,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
 
-
+SetGaoJiHuanZhuangData("ÓÎÏÀ","­h§×oÊÖ","Metadata/Items/Armours/Gloves/GlovesDexInt3","É³‰mÖ®Ó°","Shadows and Dust",4,28,nil,9,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
+SetGaoJiHuanZhuangData("ÓÎÏÀ","­h§éLÑ¥","Metadata/Items/Armours/Boots/BootsDexInt3","ÈÕÒ«","Sundance",4,28,nil,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
+SetGaoJiHuanZhuangData("ÓÎÏÀ","Æ¤Ã±","Metadata/Items/Armours/Helmets/HelmetDex1","½ğ¿|Ã±","Goldrim",4,28,nil,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,4000)
 
 SetChangeLimitCnt("ÎäÆ÷|ÒÂ·ş|Í·¿ø|ÊÖÌ×|Ğ¬×Ó",2)
 SetChangeLimitCnt("Ñü´ø",3)

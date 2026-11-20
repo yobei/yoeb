@@ -230,69 +230,6 @@ SetLastEnterSmallMap("MapWorldsArena")--競技場
 SetLastEnterSmallMap("MapWorldsOvergrownRuin")--長草遺跡
 SetLastEnterSmallMap("MapWorldsGorge")--冰川山丘
 
---SetSellGoodsData(name,className,cnt,color)--设置卖(换)的地图 
---name=物品名 className=物品类名 先识别物品名 识别不到就识别类名 cnt=够多少去卖 color=颜色 0白 1蓝 2黄 多个用|隔开
-
-SetSellGoodsData("劇毒林谷","Metadata/Items/Maps/MapWorldsJungleValley",3,"0|1|2|")
-SetSellGoodsData("毒牙海港","Metadata/Items/Maps/MapWorldsWharf",3,"0|1|2|")
-SetSellGoodsData("怒浪之港","Metadata/Items/Maps/MapWorldsPier",3,"0|1|2|")
-SetSellGoodsData("白沙灘頭","Metadata/Items/Maps/MapWorldsBeach",3,"0|1|2|")
-SetSellGoodsData("魅影別墅","Metadata/Items/Maps/MapWorldsVilla",3,"0|1|2|")
-SetSellGoodsData("密林果園","Metadata/Items/Maps/MapWorldsOrchard",3,"0|1|2|")
-SetSellGoodsData("惡咒陵墓","Metadata/Items/Maps/MapWorldsCursedCrypt",9,"0|1|2|")
-SetSellGoodsData("軍械庫","Metadata/Items/Maps/MapWorldsArmoury",3,"0|1|2|")
-SetSellGoodsData("實驗居所","Metadata/Items/Maps/MapWorldsLaboratory",3,"0|1|2|")
-SetSellGoodsData("濱海堡壘","Metadata/Items/Maps/MapWorldsRamparts",3,"0|1|2|")
-SetSellGoodsData("濱海幽穴","Metadata/Items/Maps/MapWorldsUndergroundSea",9,"0|1|2|")
-SetSellGoodsData("旱木林地","Metadata/Items/Maps/MapWorldsAshenWood",9,"0|1|2|")
-SetSellGoodsData("靜縊陵墓","Metadata/Items/Maps/MapWorldsMausoleum",3,"0|1|2|")
-SetSellGoodsData("幽魂宅邸","Metadata/Items/Maps/MapWorldsHauntedMansion",3,"0|1|2|")
-SetSellGoodsData("無疆田野","Metadata/Items/Maps/MapWorldsFields",3,"0|1|2|")
-SetSellGoodsData("冰川山丘","Metadata/Items/Maps/MapWorldsGorge",3,"0|1|2|")
-SetSellGoodsData("致命岩灘","Metadata/Items/Maps/MapWorldsStrand",9,"0|1|2|")
-SetSellGoodsData("乾潮林地","Metadata/Items/Maps/MapWorldsPeninsula",3,"0|1|2|")
-SetSellGoodsData("毒菌魔域","Metadata/Items/Maps/MapWorldsSprings",9,"0|1|2|")
-SetSellGoodsData("貧瘠之地","Metadata/Items/Maps/MapWorldsDesert",3,"0|1|2|")
-SetSellGoodsData("危城巷弄","Metadata/Items/Maps/MapWorldsAlleyways",9,"0|1|2|")
-SetSellGoodsData("墮影墓場","Metadata/Items/Maps/MapWorldsGraveyard",9,"0|1|2|")
-SetSellGoodsData("古兵工廠","Metadata/Items/Maps/MapWorldsArsenal",9,"0|1|2|")
-SetSellGoodsData("平頂荒漠","Metadata/Items/Maps/MapWorldsMesa",3,"0|1|2|")
-SetSellGoodsData("疾風峽灣","Metadata/Items/Maps/MapWorldsCoves",3,"0|1|2|")
-SetSellGoodsData("瘴氣泥沼","Metadata/Items/Maps/MapWorldsBog",3,"0|1|2|")
-SetSellGoodsData("荒地","Metadata/Items/Maps/MapWorldsWasteland",3,"0|1|2|")
-SetSellGoodsData("雲頂鐘樓","Metadata/Items/Maps/MapWorldsBelfry",3,"0|1|2|")
-SetSellGoodsData("古博物館","Metadata/Items/Maps/MapWorldsMuseum",3,"0|1|2|")
-SetSellGoodsData("競技場","Metadata/Items/Maps/MapWorldsArena",3,"0|1|2|")
-SetSellGoodsData("晨曦墓地","Metadata/Items/Maps/MapWorldsCemetery",3,"0|1|2|")
-SetSellGoodsData("魔金寶庫","Metadata/Items/Maps/MapWorldsVault",3,"0|1|2|")
-SetSellGoodsData("危機水道","Metadata/Items/Maps/MapWorldsWaterways",3,"0|1|2|")
-SetSellGoodsData("嬋娟神殿","Metadata/Items/Maps/MapWorldsMoonTemple",3,"0|1|2|")
-SetSellGoodsData("瓦爾金字塔","Metadata/Items/Maps/MapWorldsVaalPyramid",3,"0|1|2|")
-SetSellGoodsData("長草遺跡","Metadata/Items/Maps/MapWorldsOvergrownRuin",3,"0|1|2|")
-SetSellGoodsData("遠古市集","Metadata/Items/Maps/MapWorldsBazaar",9,"0|1|2|")
-SetSellGoodsData("暮色沙丘","Metadata/Items/Maps/MapWorldsDunes",9,"0|1|2|")
-SetSellGoodsData("奪魂之殿","Metadata/Items/Maps/MapWorldsTemple",3,"0|1|2|")
-SetSellGoodsData("遠古危城","Metadata/Items/Maps/MapWorldsAncientCity",3,"0|1|2|")
-SetSellGoodsData("腐敗下水道","Metadata/Items/Maps/MapWorldsToxicSewer",3,"0|1|2|")
-SetSellGoodsData("火山炎域","Metadata/Items/Maps/MapWorldsVolcano",9,"0|1|2|")
-SetSellGoodsData("古典密室","Metadata/Items/Maps/MapWorldsRelicChambers",3,"0|1|2|")
-SetSellGoodsData("崩壞長廊","Metadata/Items/Maps/MapWorldsArcade",9,"0|1|2|")
-SetSellGoodsData("羈破牢","Metadata/Items/Maps/MapWorldsCage",3,"0|1|2|")
-SetSellGoodsData("穢陰獄牢","Metadata/Items/Maps/MapWorldsPen",3,"0|1|2|")
-SetSellGoodsData("紫晶礦山","Metadata/Items/Maps/MapWorldsCrystalOre",3,"0|1|2|")
-SetSellGoodsData("不潔教堂","Metadata/Items/Maps/MapWorldsDefiledCathedral",3,"0|1|2|")
-SetSellGoodsData("巨坑","Metadata/Items/Maps/MapWorldsPit",3,"0|1|2|")
-SetSellGoodsData("異蛛墓塚","Metadata/Items/Maps/MapWorldsArachnidTomb",9,"0|1|2|")
-SetSellGoodsData("死寂泥溝","Metadata/Items/Maps/MapWorldsWastePool",3,"0|1|2|")
-SetSellGoodsData("詭譎晶洞","Metadata/Items/Maps/MapWorldsGeode",3,"0|1|2|")
-SetSellGoodsData("骨跡陵墓","Metadata/Items/Maps/MapWorldsBoneCrypt",3,"0|1|2|")
-SetSellGoodsData("熔岩之室","Metadata/Items/Maps/MapWorldsLavaChamber",3,"0|1|2|")
-SetSellGoodsData("熱林塚墓","Metadata/Items/Maps/MapWorldsBarrows",9,"0|1|2|")
-SetSellGoodsData("魔靈幻獄","Metadata/Items/Maps/MapWorldsPhantasmagoria",3,"0|1|2|")
-SetSellGoodsData("惡靈學院","Metadata/Items/Maps/MapWorldsAcademy",3,"0|1|2|")
-SetSellGoodsData("闇獄尖塔","Metadata/Items/Maps/MapWorldsTower",3,"0|1|2|")
-SetSellGoodsData("火山炎口","Metadata/Items/Maps/MapWorldsCaldera",3,"0|1|2|")
-
 
 
 --SetCompoundDivinationCard(name,className,nType) --设置需要合成的命运卡 name=卡片名 className=卡片类名 nType=合成场景 nil或不填为无论何时都合成 0为没在刷异界才合 1为只在刷异界才合
@@ -306,10 +243,10 @@ mapClassName="1_1_town"
 ,className="Metadata/NPC/Act1/NessaTown"
 }--将会在1章 1_1_town 此NPC下购买 name:奈沙
 
---SetNeedBuyGoodsData("知识卷轴","Metadata/Items/Currency/CurrencyIdentification",nil,"传送卷轴","Metadata/Items/Currency/CurrencyPortal")
---SetNeedBuyGoodsData("传送卷轴","Metadata/Items/Currency/CurrencyPortal",nil,"蜕变石","Metadata/Items/Currency/CurrencyUpgradeToMagic")
---SetNeedBuyGoodsData("蜕变石","Metadata/Items/Currency/CurrencyUpgradeToMagic",200,"增幅石","Metadata/Items/Currency/CurrencyAddModToMagic")
---SetNeedBuyGoodsData("增幅石","Metadata/Items/Currency/CurrencyAddModToMagic",200,"改造石","Metadata/Items/Currency/CurrencyRerollMagic")
+SetNeedBuyGoodsData("知识卷轴","Metadata/Items/Currency/CurrencyIdentification",nil,"传送卷轴","Metadata/Items/Currency/CurrencyPortal")
+SetNeedBuyGoodsData("传送卷轴","Metadata/Items/Currency/CurrencyPortal",nil,"蜕变石","Metadata/Items/Currency/CurrencyUpgradeToMagic")
+SetNeedBuyGoodsData("蜕变石","Metadata/Items/Currency/CurrencyUpgradeToMagic",200,"增幅石","Metadata/Items/Currency/CurrencyAddModToMagic")
+SetNeedBuyGoodsData("增幅石","Metadata/Items/Currency/CurrencyAddModToMagic",200,"改造石","Metadata/Items/Currency/CurrencyRerollMagic")
 --SetNeedBuyGoodsData("改造石","Metadata/Items/Currency/CurrencyRerollMagic",nil,"工匠石","Metadata/Items/Currency/CurrencyRerollSocketNumbers")
 --SetNeedBuyGoodsData("工匠石","Metadata/Items/Currency/CurrencyRerollSocketNumbers",100,"链结石","Metadata/Items/Currency/CurrencyRerollSocketLinks")
 --SetNeedBuyGoodsData("链结石","Metadata/Items/Currency/CurrencyRerollSocketLinks",100,"机会石","Metadata/Items/Currency/CurrencyUpgradeRandomly")
@@ -332,7 +269,7 @@ mapClassName="1_1_town"
 --lineCnt 数字型 连洞数量 忽略则填 nil
 --checkCangKu 计算保留数量时是否连仓库内的数量也计算进去 nil或false为不计算仓库 true 为需要计算
 SetGoodsCaoZuo("通货|可堆叠通货","0|2")--多个大类设置捡存
-SetGoodsCaoZuo("主动技能宝石|辅助技能宝石","0|2",nil,nil,nil,nil,20)--拾取品质超过5的技能宝石
+SetGoodsCaoZuo("主动技能宝石|辅助技能宝石","0|2",nil,nil,nil,nil,25)--拾取品质超过5的技能宝石
 SetGoodsCaoZuo("珠宝","1|3",nil,nil,nil,nil)--拾取品质超过5的技能宝石
 SetGoodsCaoZuo("异界地图|地圖|地图","0|2",nil,nil,nil,nil,nil,nil,nil)--拾取白色+蓝色+黄色地图
 SetGoodsCaoZuo(nil,"0|1|4",nil,nil,nil,nil,nil,nil,"3")--拾取 鉴定 出售橙色物品
@@ -341,14 +278,14 @@ SetGoodsCaoZuo(nil,nil,"传送卷轴","Metadata/Items/Currency/CurrencyPortal",nil,n
 SetGoodsCaoZuo(nil,"0|1",nil,nil,nil,nil,nil,nil,"0|1|2",6)--6洞装设置捡卖
 SetGoodsCaoZuo(nil,"0|1",nil,nil,nil,nil,nil,nil,"0|1|2",nil,6)--6连洞装设置捡卖
 SetGoodsCaoZuo(nil,"1|3","玻璃弹珠","Metadata/Items/Currency/CurrencyFlaskQuality")--
-SetGoodsCaoZuo(nil,"0|1","磨刀石","Metadata/Items/Currency/CurrencyWeaponQuality")--磨刀石不存
-SetGoodsCaoZuo(nil,"0|1","护甲片","Metadata/Items/Currency/CurrencyArmourQuality")--护甲片不存
+SetGoodsCaoZuo(nil,"0|2","磨刀石","Metadata/Items/Currency/CurrencyWeaponQuality")--磨刀石不存
+SetGoodsCaoZuo(nil,"0|2","护甲片","Metadata/Items/Currency/CurrencyArmourQuality")--护甲片不存
 SetGoodsCaoZuo(nil,"3","卷轴碎片","Metadata/Items/Currency/CurrencyIdentificationShard")--卷轴碎片丢
 SetGoodsCaoZuo(nil,"3","预言","Metadata/Items/Currency/CurrencyItemisedProphecy")--丢预言
 SetGoodsCaoZuo(nil,"1|3","祝福石","Metadata/Items/Currency/CurrencyRerollImplicit")--
 SetGoodsCaoZuo(nil,"1|3","束縛石","Metadata/Items/Currency/CurrencyUpgradeToRareAndSetSockets")--
 SetGoodsCaoZuo(nil,"1|3","工程石","Metadata/Items/Currency/CurrencyStrongboxQuality")--
---SetGoodsCaoZuo(nil,"0|1","蜕变石","Metadata/Items/Currency/CurrencyUpgradeToMagic",nil,nil,nil,40)--身上保留40
+SetGoodsCaoZuo(nil,"0|2","蜕变石","Metadata/Items/Currency/CurrencyUpgradeToMagic",nil,nil,nil,40)--身上保留40
 
 
 
