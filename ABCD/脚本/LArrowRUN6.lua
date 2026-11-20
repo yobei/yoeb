@@ -332,7 +332,7 @@ SetGaoJiHuanZhuangData("ÓÎÏÀ","Ô­Ê¸¼ı´ü","Metadata/Items/Quivers/QuiverNew13","Æ
 -- SetGaoJiHuanZhuangData("ÓÎÏÀ","­h§éLÑ¥","Metadata/Items/Armours/Boots/BootsDexInt3","ÈÕÒ«","Sundance",nil,nil,nil,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
 
 SetGaoJiHuanZhuangData("ÓÎÏÀ","­h§×oÊÖ","Metadata/Items/Armours/Gloves/GlovesDexInt3","É³‰mÖ®Ó°","Shadows and Dust",4,28,nil,9,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
-SetGaoJiHuanZhuangData("ÓÎÏÀ","­h§éLÑ¥","Metadata/Items/Armours/Boots/BootsDexInt3","ÈÕÒ«","Sundance",4,28,nil,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
+SetGaoJiHuanZhuangData("ÓÎÏÀ","èFÓ°éLÑ¥",nil,"Ó­Äº","Greedtrap",4,28,nil,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
 SetGaoJiHuanZhuangData("ÓÎÏÀ","Æ¤Ã±","Metadata/Items/Armours/Helmets/HelmetDex1","½ğ¿|Ã±","Goldrim",4,28,nil,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,4000)
 
 SetChangeLimitCnt("ÎäÆ÷|ÒÂ·ş|Í·¿ø|ÊÖÌ×|Ğ¬×Ó",2)
