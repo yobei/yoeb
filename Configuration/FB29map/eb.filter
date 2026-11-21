@@ -29,6 +29,9 @@ Hide  # "裂片"
     Class "Currency" "Stackable Currency"
     BaseType "Splinter"
 
+Show # 通貨 - 破裂石與破裂碎片
+    Class "Currency"
+    BaseType "Fracturing Orb" "Fracturing Shard"
 
 Hide # 通貨 - 低階藝能
     Class "Currency"
@@ -378,7 +381,7 @@ Show # 通貨 - 普通 - 混沌石
     MinimapIcon 2 Green Diamond
     PlayEffect Green
 
-Hide # 通貨 - 普通 - 富豪石
+Show # 通貨 - 普通 - 富豪石
     Class "Currency"
     BaseType "Regal Orb"
     SetTextColor 0 0 0
@@ -400,7 +403,7 @@ Show # 通貨 - 普通 - 寶石匠的稜鏡
     PlayEffect Green
     PlayAlertSound ShChaos 200
 
-Hide # 通貨 - 普通 - 後悔石
+Show # 通貨 - 普通 - 後悔石
     Class "Currency"
     BaseType "Orb of Regret"
     SetTextColor 0 0 0
@@ -444,7 +447,7 @@ Show # 通貨 - 普通 - 重鑄石
     PlayEffect Green
     PlayAlertSound ShChaos 200
 
-Hide # 通貨 - 普通 - 瓦爾石
+Show # 通貨 - 普通 - 瓦爾石
     Class "Currency"
     BaseType "Vaal Orb"
     SetTextColor 0 0 0
@@ -726,7 +729,7 @@ Hide # 通貨 - 垃圾 - 蛻變石碎片
     BaseType "Transmutation Shard"
     SetTextColor 215 190 160
 
-Hide # 通貨 - 垃圾 - 改造石碎片
+Show # 通貨 - 垃圾 - 改造石碎片
     Class "Currency"
     BaseType "Alteration Shard"
     SetTextColor 215 190 160
