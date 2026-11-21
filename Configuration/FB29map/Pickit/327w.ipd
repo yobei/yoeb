@@ -60,6 +60,10 @@
 [Type] == "Fracturing Orb" # [StashItem] == "true" //	//破裂石		存倉
 [Type] == "Fracturing Shard" # [StashItem] == "true" //	//破裂碎片		存倉
 [Type] == "Sacred Orb" # [StashItem] == "true" //	//聖玉		存倉
+
+
+
+
 																										
 [Type] == "Divine Orb" # [StashItem] == "true" //	//神聖石		存倉																									
 [Type] == "Exalted Orb" # [StashItem] == "true" //	//崇高石		存倉																									
@@ -126,3 +130,32 @@
 [Sockets] == "6" && [Linked] <= "6" && [Rarity] == "Magic" # [SellUnid] == "true"	//魔法六洞裝			//																								
 [Sockets] == "6" && [Linked] <= "6" && [Rarity] == "Rare" # [SellUnid] == "true"	//稀有六洞裝			//		
 [Sockets] == "6" && [Linked] <= "6" && [Rarity] == "Unique" # [SellUnid] == "true"	//稀有六洞裝			//	
+// ==================== T2 地圖可自然掉落（高價全域傳奇） ====================
+[Type] == "Leather Belt" && [Rarity] == "Unique" #    [UniqueName] == "Headhunter" && 				[StashItem] == "true"//獵首
+[Type] == "Ring" && [Rarity] == "Unique" #    [UniqueName] == "Kalandra's Touch" && 				[StashItem] == "true"//卡蘭德之觸
+[Type] == "Paua Amulet" && [Rarity] == "Unique" #    [UniqueName] == "Defiance of Destiny" && 				[StashItem] == "true"//命運抗爭
+[Type] == "Elegant Round Shield" && [Rarity] == "Unique" #    [UniqueName] == "The Squire" && 				[StashItem] == "true"//大地主
+[Type] == "Riveted Boots" && [Rarity] == "Unique" #    [UniqueName] == "Ralakesh's Impatience" && 				[StashItem] == "true"//芮勒蓋許的急躁
+[Type] == "Engraved Greatsword" && [Rarity] == "Unique" #    [UniqueName] == "Rakiata's Dance" && 				[StashItem] == "true"//拉奇亞塔之舞
+[Type] == "Champion Kite Shield" && [Rarity] == "Unique" #    [UniqueName] == "Aegis Aurora" && 				[StashItem] == "true"//曙光
+[Type] == "Turquoise Amulet" && [Rarity] == "Unique" #    [UniqueName] == "Badge of the Brotherhood" && 				[StashItem] == "true"//兄弟會徽章
+
+// ── 高價全域傳奇珠寶 ──
+[Type] == "Viridian Jewel" && [Rarity] == "Unique" #    [UniqueName] == "Unnatural Instinct" && 				[StashItem] == "true"//超自然本能
+[Type] == "Viridian Jewel" && [Rarity] == "Unique" #    [UniqueName] == "Stormshroud" && 				[StashItem] == "true"//風暴之罩
+[Type] == "Viridian Jewel" && [Rarity] == "Unique" #    [UniqueName] == "Ancestral Vision" && 				[StashItem] == "true"//先祖的遠視
+[Type] == "Crimson Jewel" && [Rarity] == "Unique" #    [UniqueName] == "Bloodnotch" && 				[StashItem] == "true"//血痕
+[Type] == "Crimson Jewel" && [Rarity] == "Unique" #    [UniqueName] == "Immutable Force" && 				[StashItem] == "true"//不變之力
+[Type] == "Crimson Jewel" && [Rarity] == "Unique" #    [UniqueName] == "Inspired Learning" && 				[StashItem] == "true"//求知熱情
+
+// ── 熱門中高價全域胸甲／飾品 ──
+[Type] == "Sage's Robe" && [Rarity] == "Unique" #    [UniqueName] == "Dialla's Malefaction" && 				[StashItem] == "true"//達拉的罪刑
+[Type] == "Devout Chainmail" && [Rarity] == "Unique" #    [UniqueName] == "The Fourth Vow" && 				[StashItem] == "true"//第四誓言
+[Type] == "Spidersilk Robe" && [Rarity] == "Unique" #    [UniqueName] == "The Covenant" && 				[StashItem] == "true"//誓約
+[Type] == "Saint's Hauberk" && [Rarity] == "Unique" #    [UniqueName] == "Doryani's Prototype" && 				[StashItem] == "true"//多里亞尼的原型
+[Type] == "Onyx Amulet" && [Rarity] == "Unique" #    [UniqueName] == "Astramentis" && 				[StashItem] == "true"//均衡之符
+[Type] == "Gold Ring" && [Rarity] == "Unique" #    [UniqueName] == "Ventor's Gamble" && 				[StashItem] == "true"//賭神芬多
+
+// ==================== 高階圖備用（掉落等級 75+） ====================
+[Type] == "Heavy Belt" && [Rarity] == "Unique" #    [UniqueName] == "Mageblood" && 				[StashItem] == "true"//法師之血
+[Type] == "Gladiator Plate" && [Rarity] == "Unique" #    [UniqueName] == "The Brass Dome" && 				[StashItem] == "true"//黃銅穹頂
