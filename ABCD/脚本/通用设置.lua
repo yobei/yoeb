@@ -271,7 +271,7 @@ SetNeedBuyGoodsData("增幅石","Metadata/Items/Currency/CurrencyAddModToMagic",200
 SetGoodsCaoZuo("通货|可堆叠通货","0|2")--多个大类设置捡存
 SetGoodsCaoZuo("主动技能宝石|辅助技能宝石","0|2",nil,nil,nil,nil,25)--拾取品质超过5的技能宝石
 SetGoodsCaoZuo("珠宝","1|3",nil,nil,nil,nil)--拾取品质超过5的技能宝石
-SetGoodsCaoZuo("异界地图|地圖|地图","0|2",nil,nil,nil,nil,nil,nil,nil)--拾取白色+蓝色+黄色地图
+--SetGoodsCaoZuo("异界地图|地圖|地图","0|2",nil,nil,nil,nil,nil,nil,nil)--拾取白色+蓝色+黄色地图
 SetGoodsCaoZuo(nil,"0|1|4",nil,nil,nil,nil,nil,nil,"3")--拾取 鉴定 出售橙色物品
 SetGoodsCaoZuo(nil,nil,"知识卷轴","Metadata/Items/Currency/CurrencyIdentification",nil,nil,nil,80)--够了就不捡了
 SetGoodsCaoZuo(nil,nil,"传送卷轴","Metadata/Items/Currency/CurrencyPortal",nil,nil,nil,40)--够了就不捡了
@@ -287,7 +287,8 @@ SetGoodsCaoZuo(nil,"1|3","束縛石","Metadata/Items/Currency/CurrencyUpgradeToRare
 SetGoodsCaoZuo(nil,"1|3","工程石","Metadata/Items/Currency/CurrencyStrongboxQuality")--
 SetGoodsCaoZuo(nil,"0|2","蜕变石","Metadata/Items/Currency/CurrencyUpgradeToMagic",nil,nil,nil,40)--身上保留40
 
-
+SetGoodsCaoZuo(nil,"0|2",nil,"地圖",nil,nil,nil,nil,"0|1|2")--拾取+存+白色+蓝色+黄色地图
+SetGoodsCaoZuo(nil,"0|2",nil,"地圖")--拾取+存ALL地图
 
 
 SetGoodsCaoZuo(nil,"1|3",nil,"Metadata/Items/Metamorphosis/MetamorphosisBrain")--鍊魔腦髓不捡
