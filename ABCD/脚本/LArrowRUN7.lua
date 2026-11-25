@@ -223,9 +223,9 @@ SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","鞋子","base_move
 SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","鞋子","movement_velocity_+%",15)                                              -- 鞋子跑速詞綴
 
 -- 不看顏色，純粹按「連洞數量」給分
-SetAtuoChangeEquipData("游侠","衣服","连洞",140)                     -- 衣服保底主技能連線 (4連=480分, 5連=600分)
-SetAtuoChangeEquipData("游侠","手套|鞋子","连洞",50)          -- 其他部位連洞僅作輔助加分 (4連=120分，不會蓋過高血抗裝)
-SetAtuoChangeEquipData("游侠","头盔","连洞",70)          -- 其他部位連洞僅作輔助加分 (4連=120分，不會蓋過高血抗裝)
+SetAtuoChangeEquipData("游侠","衣服","连洞",200)                     -- 衣服保底主技能連線 (4連=480分, 5連=600分)
+SetAtuoChangeEquipData("游侠","手套|鞋子","连洞",200)          -- 其他部位連洞僅作輔助加分 (4連=120分，不會蓋過高血抗裝)
+SetAtuoChangeEquipData("游侠","头盔","连洞",300)          -- 其他部位連洞僅作輔助加分 (4連=120分，不會蓋過高血抗裝)
 -- 不看顏色，純粹按「連洞數量」給分 混抗
 SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","base_chaos_damage_resistance_%",5)
 SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","chaos_damage_resistance_%",5)
