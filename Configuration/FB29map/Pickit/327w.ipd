@@ -154,7 +154,6 @@
 [Type] == "Spidersilk Robe" && [Rarity] == "Unique" #    [UniqueName] == "The Covenant" && 				[StashItem] == "true"//誓約
 [Type] == "Saint's Hauberk" && [Rarity] == "Unique" #    [UniqueName] == "Doryani's Prototype" && 				[StashItem] == "true"//多里亞尼的原型
 [Type] == "Onyx Amulet" && [Rarity] == "Unique" #    [UniqueName] == "Astramentis" && 				[StashItem] == "true"//均衡之符
-[Type] == "Gold Ring" && [Rarity] == "Unique" #    [UniqueName] == "Ventor's Gamble" && 				[StashItem] == "true"//賭神芬多
 
 // ==================== 高階圖備用（掉落等級 75+） ====================
 [Type] == "Heavy Belt" && [Rarity] == "Unique" #    [UniqueName] == "Mageblood" && 				[StashItem] == "true"//法師之血
