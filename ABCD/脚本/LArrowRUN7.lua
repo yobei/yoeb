@@ -19,7 +19,7 @@ g_needZhuangYuanLv=80       --大于等于多少级打庄园
 g_needLianMoLv=80			--大于等于多少级打炼魔
 g_needZaFenLv=80		    --大于等于多少级打炸坟
 g_needMiWuLv=80				--大于等于多少级打迷雾
-g_needYongBingLv=70         --满多少级打佣兵玩法
+g_needYongBingLv=75         --满多少级打佣兵玩法
 
 g_addTianFu=true			--自动按设定好的配置加天赋 true为加 nil或false为不加
 g_needAutoChangeEquip=true		--开启自动换装 true为换 nil或false为不换
@@ -30,9 +30,9 @@ g_needAutoSetBaoShi=true		--开启自动换宝石 true为换 nil或false为不换
 --药瓶摆放
 --SetNeedFlaskData(pos,flask)--设置药  pos=位置 1-5  flask=药 字符串型，支持以下 (生命药剂,魔力药剂,复合药剂,宝钻药剂,红玉药剂,蓝玉药剂,黄玉药剂,坚岩药剂,水银药剂,紫晶药剂,石英药剂,翠玉药剂,石化药剂,海蓝药剂,迷雾药剂,硫磺药剂,真银药剂,灰岩药剂)
 SetNeedFlaskData(1,"生命药剂")
-SetNeedFlaskData(2,"生命药剂")
+SetNeedFlaskData(2,"水银药剂")
 SetNeedFlaskData(3,"水银药剂")
-SetNeedFlaskData(4,"水银药剂")
+SetNeedFlaskData(4,"生命药剂")
 SetNeedFlaskData(5,"魔力药剂")
 
 --SetNeedFlaskData(1,"生命药剂","沸腾的,	FlaskFullInstantRecovery1",68,"不朽生命藥劑","Metadata/Items/Flasks/FlaskLife11",true)
@@ -60,11 +60,47 @@ SetNeedFlaskData(5,"魔力药剂")
 --SetMapGongYi(name)
 --name 字符串型 地图工艺的名字 开图时会选择相符的地图工艺
 
-SetSellGoodsData("蜕变石","Metadata/Items/Currency/CurrencyUpgradeToMagic",30,"0|1|2")
-SetGoodsCaoZuo(nil,"0|1","蜕变石","Metadata/Items/Currency/CurrencyUpgradeToMagic",nil,nil,nil,40)--身上保留40
-SetGoodsCaoZuo(nil,"0|1","蛻變石","Metadata/Items/Currency/CurrencyUpgradeToMagic",nil,nil,nil,40)--身上保留40
+--SetSellGoodsData("蜕变石","Metadata/Items/Currency/CurrencyUpgradeToMagic",30,"0|1|2")
+--SetGoodsCaoZuo(nil,"0|1","蜕变石","Metadata/Items/Currency/CurrencyUpgradeToMagic",nil,nil,nil,5)--身上保留40
+--SetGoodsCaoZuo(nil,"0|1","蛻變石","Metadata/Items/Currency/CurrencyUpgradeToMagic",nil,nil,nil,5)--身上保留40
 
-SetGoodsCaoZuo(nil,"0|2","真銀藥劑","	Metadata/Items/Flasks/FlaskUtility14")
+SetGoodsCaoZuo(nil,"0|2","真銀藥劑","Metadata/Items/Flasks/FlaskUtility14")
+SetGoodsCaoZuo(nil,"0|2","寶鑽藥劑","Metadata/Items/Flasks/FlaskUtility4")
+SetGoodsCaoZuo(nil,"0|2","水銀藥劑","Metadata/Items/Flasks/FlaskUtility6")
+
+--SetGoodsCaoZuo(nil,"0|1","知識卷軸","Metadata/Items/Currency/CurrencyIdentification",nil,nil,nil,40)
+--SetGoodsCaoZuo(nil,"0|1","知识卷轴","Metadata/Items/Currency/CurrencyIdentification",nil,nil,nil,40)
+
+
+-- 第一章（Act 1）：所有解鎖商店寶石的關鍵節點
+AddNeedBuySkillTime(1,"a1q1") -- 敵人於門（進獅眼守望，初始1等技能）
+AddNeedBuySkillTime(1,"a1q4") -- 打破鳥蛋（4等輔助寶石：幻影射手、氣勢、猛毒投射物）
+AddNeedBuySkillTime(1,"a1q5") -- 沖刷上岸／醫藥箱（4等跑速與功能技：幻步、狙擊者印記）
+AddNeedBuySkillTime(1,"a1q6") -- 禁靈之獄（8等核心輔助：附加冰冷/火焰/閃電傷害、齊射）
+AddNeedBuySkillTime(1,"a1q7") -- 深入絕境／海妖梅薇兒（12等主攻技：閃電箭矢）
+
+-- 第二章（Act 2）：捷光環與 18 等核心元素輔助
+AddNeedBuySkillTime(2,"a2q6") -- 銳利的Apex／黑色入侵者（16等：冰霜之捷、灰燼之捷、鮮血狂怒）
+AddNeedBuySkillTime(2,"a2q4") -- 清理蜘蛛／織網者（18等核心輔助：元素攻擊傷害、三體、快速攻擊）
+
+-- 第三章（Act 3）：光環、魔像與圖書館全職業寶石解鎖
+AddNeedBuySkillTime(3,"a3q3") -- 迷失的愛情／火葬場（24等詛咒與部分光環）
+AddNeedBuySkillTime(3,"a3q9") -- 斷其右手／格拉維奇將軍（24等核心光環：元素淨化、憤怒）
+AddNeedBuySkillTime(3,"a3q11") -- 鏟除腐敗／神權之塔前（28等砲塔：火砲砲塔）
+AddNeedBuySkillTime(3,"a3q12") -- 命運之語／圖書館（31等全職業輔助：啟發輔助、多重圖騰、擊中時印記）
+
+-- 第四章（Act 4）：魔像與高階輔助
+AddNeedBuySkillTime(4,"a4q2") -- 打破封印（34等：召喚寒冰魔像）
+AddNeedBuySkillTime(4,"a4q6") -- 永恆夢魘／馬拉凱（38等高階輔助：暴擊獲得暴擊球等）
+
+-- 第六章（Act 6）：莉莉．羅斯全遊戲寶石商店解鎖（重要！）
+AddNeedBuySkillTime(6,"a6q1") -- 墮落之翼／清理暮光海灘（解鎖全遊戲幾乎所有主動與輔助寶石）
+AddNeedBuySkillTime(7,"a7q1") -- 第七章起點補買確認
+
+AddNeedBuySkillTime(8,"a8q1") -- 日耀與月影（第8章最終Boss，打完準備進第9章）
+AddNeedBuySkillTime(9,"a9q1") -- 進第9章高門營地（找莉莉．羅斯補買全技能）
+
+
 
 
 g_useMoveSkillType=nil		--使用位移技能赶路场景 nil为一直都使用 0为剧情时使用 1为异界生产使用 2为从不使用
@@ -78,11 +114,11 @@ g_yiJieLv=70				--够了多少级才去刷异界
 --SetTaskShengJiData("a9q3",nil,"2_9_1",63)--滲血水道
 --SetTaskShengJiData("a10q1",nil,"2_9_1",85)--滲血水道
 
-SetTaskShengJiData("a5q7",nil,"1_5_5",46,true)--做 到奇塔弗的受难 的时候刷纯净圣地到46级再进行下一任务，不开箱子
-SetTaskShengJiData("a9q3",nil,"2_9_1",63,true)--滲血水道练等，不开箱子
+SetTaskShengJiData("a5q6",nil,"1_5_5",46,true)--做 到奇塔弗的受难 的时候刷纯净圣地到46级再进行下一任务，不开箱子
+SetTaskShengJiData("a9q3",nil,"2_9_1",64,true)--滲血水道练等，不开箱子
 
 --SetTaskMiGongData(taskClassName,taskIndex,migongIndex)--设置跑图时迷宫 taskClassName=任务类名 taskIndex=任务索引 nil为忽略，只匹配任务类名 migongIndex为迷宫索引填 1=第一次迷宫 2=第二次迷宫
-SetTaskMiGongData("a8q7",nil,1)--大于等于a8q7级 做迷宫1
+SetTaskMiGongData("a5q7",nil,1)--在第五章打奇塔弗前（奇塔弗的受難）做迷宫1
 SetTaskMiGongData("a9q1",nil,2)--在复活的梦魇这个任务时 做迷宫2
 
 
@@ -117,186 +153,117 @@ SetUseZhuangBeiTypeData("StrInt","项链")
 --nType 有效场景 nil为无论何时都有效 0为没在刷异界才有效 1为只在刷异界才有效
 
 --剧情主力技能设置
-SetNeedSkillLineData(80,"電流箭矢,nil|幻影射手輔助,nil|附加冰冷傷害輔助,nil|元素攻擊傷害輔助,nil|附加火焰傷害輔助,nil",16,nil,nil)
-SetNeedSkillLineData(99,"元素打擊．光譜,nil|幻影射手輔助,nil|三體輔助,nil|投射物返回輔助,nil|附加冰冷傷害輔助,nil|元素攻擊傷害輔助,nil",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,12)
-SetNeedSkillLineData(100,"閃電箭矢,nil|附加冰冷傷害輔助,nil|元素攻擊傷害輔助,nil|三體輔助,nil|幻影射手輔助,nil|啟發輔助,nil",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,60)
+
 
 SetNeedSkillLineData(10,"燃燒箭矢,nil|氣勢輔助,nil",2,nil,nil)
-SetNeedSkillLineData(95,"魔改箭矢輔助,nil|狂怒,nil|冰霜射擊,nil|暴擊獲得暴擊球輔助,nil|活栓輔助,nil|活栓輔助,nil|魔改箭矢輔助,nil|龍捲射擊,nil|誘捕箭矢,nil|物品稀有度增幅輔助,nil|復輔助,nil|鮮血狂怒,nil|迅捷,nil", nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, 60)
-SetNeedSkillLineData(95,"鋼筋鐵骨,nil|元素淨化,nil|憤怒,nil",nil,nil,nil)
-SetNeedSkillLineData(90,"幻步,nil|狙擊者印記,nil|擊中時印記輔助,nil召喚寒冰魔像,nil|",nil,nil,nil)
-SetNeedSkillLineData(97,"彈片砲塔,nil|快速攻擊輔助,nil|猛毒投射物輔助,nil|齊射輔助,nil",60,nil,nil)
+SetNeedSkillLineData(98,"火砲砲塔,nil|元素攻擊傷害輔助,nil|快速攻擊輔助,nil|附加冰冷傷害輔助,nil",80,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,30)
+SetNeedSkillLineData(95,"魔改箭矢輔助,nil|狂怒,nil|冰霜射擊,nil|暴擊獲得暴擊球輔助,nil|活栓輔助,nil|魔改箭矢輔助,nil|龍捲射擊,nil|誘捕箭矢,nil|物品稀有度增幅輔助,nil|活栓輔助,nil",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,55)
+SetNeedSkillLineData(96,"幻步,nil|恢復輔助,nil|狙擊者印記,nil|擊中時印記輔助,nil",nil,nil,nil)
+SetNeedSkillLineData(50,"彈片砲塔,nil|快速攻擊輔助,nil|猛毒投射物輔助,nil|齊射輔助,nil",30,nil,nil)
+SetNeedSkillLineData(30,"電流箭矢,nil|附加冰冷傷害輔助,nil|元素攻擊傷害輔助,nil|幻影射手輔助,nil|附加火焰傷害輔助,nil",14,nil,nil)
+SetNeedSkillLineData(100,"閃電箭矢,nil|幻影射手輔助,nil|三體輔助,nil|附加冰冷傷害輔助,nil|元素攻擊傷害輔助,nil|啟發輔助,nil",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,12)
+
+-- 階段1（15-30等過渡）：雙捷光環 + 鋼筋鐵骨（31等自動失效讓出魔力保留）
+-- SetNeedSkillLineData(50,"冰霜之捷,nil|灰燼之捷,nil",33,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,15)
+
+SetNeedSkillLineData(95,"冰霜之捷,nil|灰燼之捷,nil|鋼筋鐵骨,nil|召喚寒冰魔像,nil",33,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,15)
+
+
+-- 階段2（24等起、打完烏旗守衛將軍買到後接手）：元素淨化 + 憤怒 + 鋼筋鐵骨
+SetNeedSkillLineData(99,"元素淨化,nil,1|憤怒,nil|鋼筋鐵骨,nil|鮮血狂怒,nil|召喚寒冰魔像,nil",nil,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,33)
+
+SetUseBuffSkill("冰霜之捷","herald_of_ice","冰霜之捷","herald_of_ice")
+SetUseBuffSkill("灰燼之捷","herald_of_ash","灰燼之捷","herald_of_ash")
+
+
 AddMoveSkillData("幻步","quick_dodge")
 --异界主力技能设置
 
+AddUseSkillData(1,"鋼筋鐵骨","steelskin")
+AddUseSkillData(1,"鮮血狂怒","blood_rage")
 
-SetUseTuTengMonsterShuXingCnt("2|3",0)
+
+
+SetUseTuTengMonsterShuXingCnt("3",0)
 --SetSkillLimitMaxLv(name,className,maxLv)--设置技能宝石最大等级 name=技能宝石物品名 className=技能宝石物品类名 maxLv=限制的最大等级
 --SetSkillLimitMaxLv("亵渎","Metadata/Items/Gems/SkillGemDesecrate",2)
 --SetSkillLimitMaxLv("迅捷","Metadata/Items/Gems/SkillGemHaste",11)
 ---SetSkillLimitMaxLv("瓦爾．迅捷","Metadata/Items/Gems/SkillGemVaalHaste",11)
 SetDebuffSkill(nil,"snipers_mark",nil,"curse_snipers_mark","2|3")--狙擊者印記
-AddUseSkillData(1, "鋼筋鐵骨", "steelskin")
----SetSkillLimitMaxLv("鋼筋鐵骨",nil,10)
+SetSkillLimitMaxLv("鋼筋鐵骨",nil,10)
 -- SetSkillLimitMaxLv("狙擊者印記","Metadata/Items/Gems/SkillGemProjectileWeakness",11)
 -- SetSkillLimitMaxLv("受傷時施放輔助","Metadata/Items/Gems/SupportGemCastOnDamageTaken",2)
 
---SetSkillUseWaEr("赦免","Metadata/Items/Gems/SkillGemAbsolution","瓦爾．赦免","Metadata/Items/Gems/SkillGemVaalAbsolution",1)
---SetSkillUseWaEr("迅捷","Metadata/Items/Gems/SkillGemHaste","瓦爾．迅捷","Metadata/Items/Gems/SkillGemVaalHaste",6)
 
 --AddAttackSkillData(name,className,noLine)--添加攻击技能 name=技能名 className=技能类名 noLine=不在直线就能攻击 挑选攻击技能会从上到下寻找，要把厉害的技能加在前面
 --AddAttackSkillData("电弧","arc")
 AddAttackSkillData("閃電箭矢","Lightning Arrow",false,65,0)--添加攻击技能
 AddAttackSkillData("電流箭矢","Galvanic Arrow",false,50,0)--添加攻击技能
-AddAttackSkillData("元素打擊．光譜","Galvanic Arrow",false,50,0)--添加攻击技能
-
 AddAttackSkillData("燃燒箭矢","Burning Arrow")
 AddAttackSkillData("普通攻击","melee")
 
-
---bossName 字符串型 灵体仓库号的名字
---minLv 数字型 满多少级才会去仓库号家召唤 nil为忽略等级总是去
---SetNeedZhaoHuanMonster("Flayed Lookout","Metadata/Monsters/LeagueBetrayal/BetrayalSkeletonRangedSpectre",7)
---FANXING
---SetNeedZhaoHuanMonster("霜寒自動巡守","Metadata/Monsters/LeagueHeist/Robot/RobotClockworkGolemCold",99999)
-
---SetYiJieZhaoHuanLingTiData(mapClassName,name,className)--设置异界时召唤的灵体数据 mapClassName=剧情图类名 name=灵体名 className=灵体类名
---SetYiJieZhaoHuanLingTiData("2_10_2","诡异行者","Metadata/Monsters/WickerMan/WickerMan")
---SetYiJieZhaoHuanLingTiData("1_5_2","驱刑者","Metadata/Monsters/TemplarSlaveDriver/TemplarSlaveDriver")
---SetYiJieZhaoHuanLingTiData("2_7_7","冷血酋长","Metadata/Monsters/BloodChieftain/MonkeyChiefBloodEnrage")
-
---RemoveUseBuffSkill(name,className)--设置不使用的buff name=技能名 className=技能类名
---RemoveUseBuffSkill("召喚巨石魔像","summon_rock_golem")
+SetUseBuffSkill("召喚寒冰魔像","summon_ice_golem","寒冰魔像","ice_golem_buff")
 
 ---------------------------------------换装设置
---SetAtuoChangeEquipData(job,pos,name,val,yijie) 计算方式如下 定义过的属性值乘以比重值  哪样装备高就会用哪样
---job 职业 支持(暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧) 可填多个，中间用|隔开
---pos 部位 支持(戒指|项链|腰带|鞋子|手套|衣服|头盔|盾|箭袋|爪}匕首|法杖|单手剑|细剑|单手斧|单手锤|符文匕首|短杖|战杖|弓|长杖|双手剑|双手斧|双手锤) 可填多个，中间用|隔开
---name 属性名 支持游戏内的装备属性名 还有其他的自定义名(物理伤害、护甲、护盾、闪避、连洞、总洞)
---val 比重值 支持小数
---nType 换装类型 0或nil或不填为一直有效 1为跑图时才有效 2为异界时才有效
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|盾","fire_and_cold_damage_resistance_%",0.2)--火焰与冰霜伤害抗性 %
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|盾","fire_and_lightning_damage_resistance_%",0.2)--火焰与闪电伤害抗性 %
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|盾","cold_and_lightning_damage_resistance_%",0.2)--冰霜与闪电伤害抗性 %
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|盾","base_resist_all_elements_%",0.3)--全元素抗性 %
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|盾","base_fire_damage_resistance_%",0.1)--基础火焰伤害抗性 %
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|盾","base_cold_damage_resistance_%",0.1)--基础冰霜伤害抗性 %
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|盾","base_lightning_damage_resistance_%",0.1)--基础闪电伤害抗性 %
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|盾","cold_damage_resistance_%",0.1)--冰霜抗性 %
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|盾","fire_damage_resistance_%",0.1)--火焰抗性 %
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|盾","lightning_damage_resistance_%",0.1)--闪电抗性 %
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带","base_chaos_damage_resistance_%",0.15)--基础混沌伤害抗性 %
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带","chaos_damage_resistance_%",0.15)--混沌抗性 %
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","鞋子","base_movement_velocity_+%",10)--基础移动速度 +%
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","鞋子","movement_velocity_+%",10)--移动速度 +%
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","手套|衣服|头盔","连洞",100)--每连一线加xx点比重
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","爪|盾|鞋子","总洞",100,1)--每连一线加xx点比重
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","项链|戒指|腰带","base_maximum_life",0.4,1)--加基礎最大生命
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","项链","敏捷",0.5,0)--每点物理伤害加xx点比重
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","盾","护甲",0.6)--加基礎最大生命
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","爪","物理伤害",200,1)--每点物理伤害加xx点比重
-
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","手套","sacrifice_%_maximum_life_to_gain_as_es_on_spell_cast",-99999)--减分 恶魔缝补者
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","头盔","you_cannot_have_non_spectre_minions",-99999)--减分 不能有非幽魂的召喚物
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","腰带","you_have_no_armour_or_energy_shield",-99999)--减分 你沒有護甲和能量護盾
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","腰带","FireResistance",-99999)--减分 戴亚迪安的晨曦
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","法杖","life_reserved_by_stat_%",-99999)--减分 冥约
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","衣服","local_has_no_sockets",-99999)--减分 岡姆
-
---剧情有效
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","fire_and_cold_damage_resistance_%",0.8)--火焰与冰霜伤害抗性 %
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","fire_and_lightning_damage_resistance_%",0.8)--火焰与闪电伤害抗性 %
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","cold_and_lightning_damage_resistance_%",0.8)--冰霜与闪电伤害抗性 %
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","base_resist_all_elements_%",0.9)--全元素抗性 %
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","base_fire_damage_resistance_%",0.6)--基础火焰伤害抗性 %
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","base_cold_damage_resistance_%",0.6)--基础冰霜伤害抗性 %
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","base_lightning_damage_resistance_%",0.6)--基础闪电伤害抗性 %
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","cold_damage_resistance_%",0.6)--冰霜抗性 %
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","fire_damage_resistance_%",0.6)--火焰抗性 %
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","lightning_damage_resistance_%",0.6)--闪电抗性 %
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","base_movement_velocity_+%",0.6)--基础移动速度 +%
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","base_maximum_life",0.3)--生命
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","movement_velocity_+%",0.3)--移动速度 +%
 
 
+-- 劇情與通用有效（血量與抗性絕對優先，忽略孔色、只算連洞）
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","base_maximum_life",10)                  -- 生命 (每10血=100分)
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","base_resist_all_elements_%",20)         -- 全元素抗性 % (每10%全抗=200分)
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","fire_and_cold_damage_resistance_%",8)   -- 雙抗 %
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","fire_and_lightning_damage_resistance_%",8)
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","cold_and_lightning_damage_resistance_%",8)
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","base_fire_damage_resistance_%",6)         -- 基底抗性 %
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","base_cold_damage_resistance_%",6)
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","base_lightning_damage_resistance_%",6)
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","fire_damage_resistance_%",6)              -- 單抗 % (每30%單抗=180分)
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","cold_damage_resistance_%",6)
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","lightning_damage_resistance_%",6)
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","鞋子","base_movement_velocity_+%",15)                                         -- 鞋子跑速基底
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","鞋子","movement_velocity_+%",15)                                              -- 鞋子跑速詞綴
 
---异界有效
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","盾","护甲",10,2)                                                 --护甲
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","盾","base_maximum_life",20,2)                                    --加基礎最大生命
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","鞋子","movement_velocity_+%",30,2)                               --移动速度 +%
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","鞋子","base_movement_velocity_+%",40,2)                          --基础移动速度 +%
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","项链","base_maximum_life",5,2)                                   --加基礎最大生命
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","项链","additional_strength",10,2)                                --力量
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","项链","additional_intelligence",10,2)                            --智慧
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔","base_maximum_life",5,2)    --加基礎最大生命
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔","base_resist_all_elements_%",10,2)--全元素抗性 %
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔","fire_and_cold_damage_resistance_%",6,2)--火焰与冰霜伤害抗性 %
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔","fire_and_lightning_damage_resistance_%",6,2)--火焰与闪电伤害抗性 %
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔","cold_and_lightning_damage_resistance_%",5,2)--冰霜与闪电伤害抗性 %
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔","base_fire_damage_resistance_%",4,2)--基础火焰伤害抗性 %
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔","base_cold_damage_resistance_%",3,2)--基础冰霜伤害抗性 %
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔","base_lightning_damage_resistance_%",3,2)--基础闪电伤害抗性 %
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔","fire_damage_resistance_%",4,2)--火焰抗性 %
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔","cold_damage_resistance_%",3,2)--冰霜抗性 %
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔","lightning_damage_resistance_%",3,2)--闪电抗性 %
-
-
-SetAtuoChangeEquipData("游侠","项链","additional_strength",0.2)--
-SetAtuoChangeEquipData("游侠","项链","additional_intelligence",0.2)--
-SetAtuoChangeEquipData("游侠","项链","additional_strength_and_intelligence",0.3)--
-SetAtuoChangeEquipData("游侠","弓","local_maximum_added_fire_damage",10)--
-SetAtuoChangeEquipData("游侠","弓","local_maximum_added_cold_damage",10)--
-SetAtuoChangeEquipData("游侠","弓","local_maximum_added_lightning_damage",10)--
-
---SetZhengTiColorVarData(衣服,红孔数,绿孔数,蓝孔数,剧情0/异界1/无视nil),分值,连洞true/不连false/无视nil)
---衣服---
-SetZhengTiColorVarData(2,2,3,1,nil,800,true)
-SetZhengTiColorVarData(2,2,2,1,nil,700,true)
-SetZhengTiColorVarData(2,1,3,1,nil,600,true)
-SetZhengTiColorVarData(2,1,2,1,nil,500,true)
-SetZhengTiColorVarData(2,1,3,0,nil,400,true)
-SetZhengTiColorVarData(2,1,2,0,nil,300,true)
-SetZhengTiColorVarData(2,0,3,0,nil,250,true)
-SetZhengTiColorVarData(2,0,2,0,nil,200,true)
-SetZhengTiColorVarData(2,1,1,0,nil,150,true)
-SetZhengTiColorVarData(2,0,1,0,nil,100)
-SetZhengTiColorVarData(2,1,0,0,nil,60)
-
---武器---绿蓝蓝
-SetZhengTiColorVarData(3,0,5,1,nil,600,true)
-SetZhengTiColorVarData(3,0,4,1,nil,500,true)
-SetZhengTiColorVarData(3,0,3,1,nil,400,true)
-SetZhengTiColorVarData(3,0,3,0,nil,300,true)
-SetZhengTiColorVarData(3,0,2,0,nil,200,true)
-SetZhengTiColorVarData(3,0,1,0,nil,10)
---盾牌---红红红
-SetZhengTiColorVarData(4,3,0,0,nil,300,true)
-SetZhengTiColorVarData(4,2,0,0,nil,200,true)
-SetZhengTiColorVarData(4,1,0,0,nil,100)
-
---头盔---蓝红红蓝--绿蓝
-SetZhengTiColorVarData(5,0,3,1,nil,400,true)
-SetZhengTiColorVarData(5,0,3,0,nil,300,true)
-SetZhengTiColorVarData(5,0,2,0,nil,200,true)
-SetZhengTiColorVarData(5,0,1,0,nil,100)
---手套---蓝蓝红红-蓝
-
-SetZhengTiColorVarData(9,3,0,1,nil,500,true)
-SetZhengTiColorVarData(9,2,0,2,nil,400,true)
-SetZhengTiColorVarData(9,2,0,1,nil,300,true)
-SetZhengTiColorVarData(9,1,0,1,nil,200,true)
-SetZhengTiColorVarData(9,0,0,1,nil,100)
+-- 不看顏色，純粹按「連洞數量」給分
+SetAtuoChangeEquipData("游侠","衣服","连洞",120)                     -- 衣服保底主技能連線 (4連=480分, 5連=600分)
+SetAtuoChangeEquipData("游侠","手套|鞋子","连洞",30)          -- 其他部位連洞僅作輔助加分 (4連=120分，不會蓋過高血抗裝)
+SetAtuoChangeEquipData("游侠","头盔","连洞",50)          -- 其他部位連洞僅作輔助加分 (4連=120分，不會蓋過高血抗裝)
+-- 不看顏色，純粹按「連洞數量」給分 混抗
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","base_chaos_damage_resistance_%",5)
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|箭袋","chaos_damage_resistance_%",5)
 
 
---鞋子---蓝蓝蓝蓝-蓝
-SetZhengTiColorVarData(10,2,2,0,nil,400,true)
-SetZhengTiColorVarData(10,1,2,0,nil,300,true)
-SetZhengTiColorVarData(10,0,2,0,nil,200,true)
-SetZhengTiColorVarData(10,0,1,0,nil,100)
+-- 遊俠屬性與弓箭點傷
+SetAtuoChangeEquipData("游侠","项链","additional_strength",2)
+SetAtuoChangeEquipData("游侠","项链","additional_intelligence",2)
+SetAtuoChangeEquipData("游侠","项链","additional_strength_and_intelligence",3)
 
---女巫--主线
-AddShengJiZhuangBeiGoodsData("点金石","Metadata/Items/Currency/CurrencyUpgradeToRare",0,80,0)--主线生效 超过50级就用点金点白色装备
--- AddShengJiZhuangBeiGoodsData("富豪石","Metadata/Items/Currency/CurrencyUpgradeMagicToRare",1,40,0)--主线生效 超过50级就用富豪点蓝色装备
+SetAtuoChangeEquipData("游侠","弓","DPS",6)                                    -- 內建武器總秒傷（自動淘汰低等弓基底，優先換高等高傷弓）
+SetAtuoChangeEquipData("游侠","弓","local_maximum_added_fire_damage",12)      -- 武器附加火焰點傷
+SetAtuoChangeEquipData("游侠","弓","local_maximum_added_cold_damage",12)      -- 武器附加冰冷點傷
+SetAtuoChangeEquipData("游侠","弓","local_maximum_added_lightning_damage",12) -- 武器附加閃電點傷
+SetAtuoChangeEquipData("游侠","弓","local_attack_speed_+%",25)                -- 武器局部攻擊速度 %（提升手感與總 DPS 核心）
+SetAtuoChangeEquipData("游侠","弓","local_critical_strike_chance_+%",9)      -- 武器局部暴擊率 %（脊弓/象牙弓核心）
+SetAtuoChangeEquipData("游侠","弓","base_critical_strike_multiplier_+",8)    -- 全域暴擊傷害加成 %
+SetAtuoChangeEquipData("游侠","弓","weapon_elemental_damage_+%",8)            -- 攻擊元素傷害提高 %
+SetAtuoChangeEquipData("游侠","弓","local_socketed_bow_gem_level_+",250)      -- 弓上寶石等級 +1/+2（對元素打擊．光譜提升極大）
+SetAtuoChangeEquipData("游侠","弓","number_of_additional_arrows",500)         -- 額外發射箭矢 +1
+
+-- 箭袋輸出補強（與弓相輔相成，兼顧點傷、攻速與暴擊）
+SetAtuoChangeEquipData("游侠","箭袋","attack_maximum_added_fire_damage",10)
+SetAtuoChangeEquipData("游侠","箭袋","attack_maximum_added_cold_damage",10)
+SetAtuoChangeEquipData("游侠","箭袋","attack_maximum_added_lightning_damage",10)
+SetAtuoChangeEquipData("游侠","箭袋","weapon_elemental_damage_+%",8)
+SetAtuoChangeEquipData("游侠","箭袋","attack_speed_+%",15)
+SetAtuoChangeEquipData("游侠","箭袋","critical_strike_chance_+%",8)
+SetAtuoChangeEquipData("游侠","箭袋","base_critical_strike_multiplier_+",12)
+SetAtuoChangeEquipData("游侠","箭袋","number_of_additional_arrows",500)
+
+
+-- 前期 30 等起自動用點金石/富豪石點裝備（參考你朋友的改法，讓身上白/藍裝直接變金裝出抗性與血量）
+AddShengJiZhuangBeiGoodsData("点金石","Metadata/Items/Currency/CurrencyUpgradeToRare",0,25,nil)
+AddShengJiZhuangBeiGoodsData("富豪石","Metadata/Items/Currency/CurrencyUpgradeMagicToRare",1,25,nil)
+
+
+
 
 ---------------------------------------高级换装
 --SetGaoJiHuanZhuangData(job,name,className,wordName,wordClassName,lineSocketCnt,goodsLv,flaskPos,zbPos,color,nType,yxName,yxClassName,yxWordName,yxWordClassName,wxName,wxClassName,wxWordName,wxWordClassName,val) 高级换装设置 设置换指定的装备
@@ -347,6 +314,27 @@ AddShengJiZhuangBeiGoodsData("点金石","Metadata/Items/Currency/CurrencyUpgradeTo
 
 --SetGaoJiHuanZhuangData("游侠","环带长靴","Metadata/Items/Armours/Boots/BootsDexInt3","日耀","Sundance",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
 
+
+-- 衣服：白袍（1等即可穿，5000分壓過普通金裝）
+SetGaoJiHuanZhuangData("游侠","簡易之袍","Metadata/Items/Armours/BodyArmours/BodyInt1","無盡之衣","Tabula Rasa",nil,nil,nil,2,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
+
+-- 頭盔：前期金縷帽（4000分） -> 55等後自動升級成鼠巢（5000分）
+-- SetGaoJiHuanZhuangData("游侠","皮帽","Metadata/Items/Armours/Helmets/HelmetDex1","金縷帽","Goldrim",nil,nil,nil,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,4000)
+-- SetGaoJiHuanZhuangData("游侠","熊首皮盔","Metadata/Items/Armours/Helmets/HelmetDex7","鼠巢","Rat's Nest",nil,nil,nil,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
+
+-- 戒指：強制分開左戒(7)與右戒(8)，避免兩顆傳奇戒指互相搶位
+SetGaoJiHuanZhuangData("游侠","鍛鐵戒指","Metadata/Items/Rings/Ring1","英靈寶環","Le Heup of All",nil,nil,nil,7,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
+SetGaoJiHuanZhuangData("游侠","海靈戒指","Metadata/Items/Rings/Ring3","普蘭德斯之記","Perandus Signet",nil,nil,nil,8,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
+
+-- 腰帶、箭袋、手套、鞋子
+SetGaoJiHuanZhuangData("游侠","素布腰帶","Metadata/Items/Belts/Belt1","幻彩菱織","Prismweave",nil,nil,nil,11,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
+SetGaoJiHuanZhuangData("游侠","原矢箭袋","Metadata/Items/Quivers/QuiverNew13","平衡稜鏡","The Poised Prism",nil,nil,nil,4,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
+-- SetGaoJiHuanZhuangData("游侠","環帶護手","Metadata/Items/Armours/Gloves/GlovesDexInt3","沙塵之影","Shadows and Dust",nil,nil,nil,9,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
+-- SetGaoJiHuanZhuangData("游侠","環帶長靴","Metadata/Items/Armours/Boots/BootsDexInt3","日耀","Sundance",nil,nil,nil,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
+
+--SetGaoJiHuanZhuangData("游侠","環帶護手","Metadata/Items/Armours/Gloves/GlovesDexInt3","沙塵之影","Shadows and Dust",4,28,nil,9,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
+--SetGaoJiHuanZhuangData("游侠","鐵影長靴",nil,"迎暮","Greedtrap",4,28,nil,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
+--SetGaoJiHuanZhuangData("游侠","皮帽","Metadata/Items/Armours/Helmets/HelmetDex1","金縷帽","Goldrim",4,28,nil,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,4000)
 
 SetChangeLimitCnt("武器|衣服|头盔|手套|鞋子",2)
 SetChangeLimitCnt("腰带",3)
