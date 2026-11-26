@@ -14,7 +14,7 @@
 
 //藥水//
 //[Type] == "Divine Life Flask"&& 	[ItemLevel] >= "60" && [ItemLevel] <="100" # [StashItem] == "true" //不朽生命藥劑
-//[Type] == "Silver Flask"&& 		[ItemLevel] >= "50" && [ItemLevel] <="100" # [StashItem] == "true" //猛攻
+[Type] == "Silver Flask"&& 		[ItemLevel] >= "50" && [ItemLevel] <="100" # [StashItem] == "true" //猛攻
 //[Type] == "Quicksilver Flask"&& 	[ItemLevel] >= "50" && [ItemLevel] <="100" # [StashItem] == "true" //跑水
 //[Type] == "Gold Flask"&& 	[ItemLevel] >= "50" && [ItemLevel] <="100" # [StashItem] == "true" //黃金藥劑
 
@@ -130,6 +130,14 @@
 [Sockets] == "6" && [Linked] <= "6" && [Rarity] == "Magic" # [SellUnid] == "true"	//魔法六洞裝			//																								
 [Sockets] == "6" && [Linked] <= "6" && [Rarity] == "Rare" # [SellUnid] == "true"	//稀有六洞裝			//		
 [Sockets] == "6" && [Linked] <= "6" && [Rarity] == "Unique" # [SellUnid] == "true"	//稀有六洞裝			//	
+
+[Type] == "Paua Ring" && [Rarity] == "Unique" # [UniqueName] == "Perandus Signet" && [StashItem] == "true" //普蘭德斯之記 海靈戒指
+[Type] == "Two-Stone Ring" && [Rarity] == "Unique" # [UniqueName] == "The Taming" && [StashItem] == "true" //元素之章
+[Type] == "Cloth Belt" && [Rarity] == "Unique" # [UniqueName] == "Prismweave" && [StashItem] == "true" //幻彩菱織 素布腰帶
+[Type] == "Primal Arrow Quiver" && [Rarity] == "Unique" # [UniqueName] == "The Poised Prism" && [StashItem] == "true" //優雅迷鏡 始祖箭袋
+[Type] == "Clasped Mitts" && [Rarity] == "Unique" # [UniqueName] == "Shadows and Dust" && [StashItem] == "true" //沙塵之影 環帶護手
+[Type] == "Ironscale Boots" && [Rarity] == "Unique" # [UniqueName] == "Dusktoe" && [StashItem] == "true" //迎暮 鐵影長靴
+
 // ==================== T2 地圖可自然掉落（高價全域傳奇） ====================
 [Type] == "Leather Belt" && [Rarity] == "Unique" #    [UniqueName] == "Headhunter" && 				[StashItem] == "true"//獵首
 [Type] == "Ring" && [Rarity] == "Unique" #    [UniqueName] == "Kalandra's Touch" && 				[StashItem] == "true"//卡蘭德之觸
@@ -139,6 +147,7 @@
 [Type] == "Engraved Greatsword" && [Rarity] == "Unique" #    [UniqueName] == "Rakiata's Dance" && 				[StashItem] == "true"//拉奇亞塔之舞
 [Type] == "Champion Kite Shield" && [Rarity] == "Unique" #    [UniqueName] == "Aegis Aurora" && 				[StashItem] == "true"//曙光
 [Type] == "Turquoise Amulet" && [Rarity] == "Unique" #    [UniqueName] == "Badge of the Brotherhood" && 				[StashItem] == "true"//兄弟會徽章
+
 
 // ── 高價全域傳奇珠寶 ──
 [Type] == "Viridian Jewel" && [Rarity] == "Unique" #    [UniqueName] == "Unnatural Instinct" && 				[StashItem] == "true"//超自然本能
