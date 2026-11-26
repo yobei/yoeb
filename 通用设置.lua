@@ -21,15 +21,15 @@ g_imBoss=false				--如果是仓库号要为true 挂机号为false
 g_yiJieTimeOut=18*60			--异界地图内的超时时间 单位为秒 如果未设置就会用g_timeOut *是乘号 这里为15乘以60=15分钟
 g_timeOut=18*60				--在一个地图呆的时间超过设置的 就重新开图重新 单位为秒
 g_attackDis=40	                        --攻击距离
-g_sellSkillGem=true			--自动卖超过40品质的技能宝石
+g_sellSkillGem=false			--自动卖超过40品质的技能宝石
 g_notHuanYaoLv=82			--大于等于多少级只捡蓝色以上药
-g_bossGiveZhuangBei=true 	        --交易时仓库号给予缺少的高级换装中的装备
-g_xiaoHaoGetZhuangBei=true		--挂机号向仓库号申请领高级换装中的装备
+g_bossGiveZhuangBei=false 	        --交易时仓库号给予缺少的高级换装中的装备
+g_xiaoHaoGetZhuangBei=false		--挂机号向仓库号申请领高级换装中的装备
 g_duobiHpVal=0.5                       --打怪时HP少于多少躲避
 g_addHpVal=0.6                          --HP低于多少吃红药
 g_addMpVal=0.3                          --MP低于多少吃蓝药
 g_changeHunDunLv=90                     --多少级前不换C
-g_notShuaBaiPao=nil                     --是否不需要刷白袍 true为不需要 false或nil为需要
+g_notShuaBaiPao=true                    --是否不需要刷白袍 true为不需要 false或nil为需要
 g_wenWuChangeTime=60*60  	        --間隔多久检测一次文物兑换 单位为秒
 
 g_needAutoSetBaoShi=true		--开启自动换宝石 true为换 nil或false为不换
@@ -45,8 +45,8 @@ g_openQlkMaxMapTianFuCnt=nil     -- 不限制天赋数量
 ------------------挂机相关
 g_yijieNoWhiteMonster=false	--异界时是否不打白怪 true为不打 nil或false为打
 g_yijieNoWhiteBox=true		--异界时是否不开白箱子 true为不开 nil或false为开
-g_useYiJieWanChengDuLv=68	--使用异界地图完成度机制的等级,68级开始
-g_yiJieWanChengDu=0.5		--异界完成度 50%即可回城 为1即1以下的小数
+g_useYiJieWanChengDuLv=75	--使用异界地图完成度机制的等级,68级开始
+g_yiJieWanChengDu=0.7		--异界完成度 50%即可回城 为1即1以下的小数
 g_yongHengShiBeiLv=85		--大于等于多少级打永恒石碑 
 g_needTaFangLv=90		--大于等于多少级打塔防
 g_needZhuangYuanLv=85           --大于等于多少级打庄园
@@ -235,6 +235,7 @@ SetSaveIndex("SentinelDrone","1|4")
 --SetMapCfg("魔金宝库","Metadata/Items/Maps/MapWorldsVault",true,true,true,nil)
 --SetMapCfg("異蛛墓塚","Metadata/Items/Maps/MapWorldsArachnidTomb",true,true,true,nil)
 SetMapCfg("核心","Metadata/Items/Maps/MapWorldsCore",true,true,true,nil)
+SetMapCfg("巨坑","Metadata/Items/Maps/MapAtlasPit",true,true,true,nil)
 SetMapCfg("奇術秘殿","Metadata/Items/Maps/MapWorldsShrine",true,true,true,nil)
 --SetMapCfg("神域之殿","Metadata/Items/Maps/MapWorldsPalace",true,true,true,nil)
 --SetMapCfg("密林果園","Metadata/Items/Maps/MapWorldsOrchard",true,true,true,nil)
