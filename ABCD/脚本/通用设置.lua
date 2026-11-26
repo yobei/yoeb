@@ -458,8 +458,8 @@ SetGoodsCaoZuo(nil,"0|2","护甲片","Metadata/Items/Currency/CurrencyArmourQuality
 SetGoodsCaoZuo(nil,"3",nil,"Metadata/Items/Currency/CurrencyUpgradeToRareAndSetSocketsShard",nil,nil,nil)--束縛石碎片
 SetGoodsCaoZuo(nil,"3",nil,"Metadata/Items/Currency/CurrencyUpgradeToRareAndSetSockets",nil,nil,nil)--束縛石
 SetGoodsCaoZuo(nil,"3",nil,"Metadata/Items/Currency/CurrencyStrongboxQualityShard",nil,nil,nil)--工程石碎片
-SetGoodsCaoZuo(nil,"3",nil,"Metadata/Items/Currency/CurrencyUpgradeToMagicShard",nil,nil,nil)--蜕变石碎片
-SetGoodsCaoZuo(nil,"3",nil,"Metadata/Items/Currency/CurrencyRerollMagicShard",nil,nil,nil)--改造石碎片
+--SetGoodsCaoZuo(nil,"3",nil,"Metadata/Items/Currency/CurrencyUpgradeToMagicShard",nil,nil,nil)--蜕变石碎片
+--SetGoodsCaoZuo(nil,"3",nil,"Metadata/Items/Currency/CurrencyRerollMagicShard",nil,nil,nil)--改造石碎片
 SetGoodsCaoZuo(nil,"3","卷轴碎片","Metadata/Items/Currency/CurrencyIdentificationShard")--卷轴碎片丢
 SetGoodsCaoZuo(nil,"3","阿兹瓦特史记","Metadata/Items/Incursion/ItemisedTemple")
 SetGoodsCaoZuo(nil,"3",nil,"Metadata/Items/Currency/CurrencyPerandusCoin",nil,nil,nil)--普兰德斯金币
